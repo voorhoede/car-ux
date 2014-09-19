@@ -4,6 +4,9 @@
     "version": "0.0.0",
     "repository": "git@bitbucket.org:voorhoede/2dehands-be",
     "private": true,
+    "scripts": {
+        "deploy": "./tasks/deploy-to-gh-pages.sh"
+    },
     "devDependencies": {
         "grunt": "~0.4.1",
         "grunt-bump": "0.0.13",
