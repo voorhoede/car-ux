@@ -2,6 +2,8 @@
 
 [about project]
 
+[View live](https://voorhoede.github.io/car-ux)
+
 ## Getting started
 
 __Clone repository__
