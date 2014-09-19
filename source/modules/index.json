@@ -1,6 +1,7 @@
 {
-    "components": [
-    ],
-    "views": [
-    ]
+	"components": [
+		"demo-component"
+	],
+	"views": [
+	]
 }

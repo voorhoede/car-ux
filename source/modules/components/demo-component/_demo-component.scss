@@ -1,0 +1,14 @@
+@import "../../../assets/scss/variables";
+@import "../../../assets/scss/helpers";
+
+/* demo-component component */
+
+.demo-component {
+    border: 1px solid gray;
+
+    p {
+        font-weight: bold;
+        color: blue;
+    }
+
+}
