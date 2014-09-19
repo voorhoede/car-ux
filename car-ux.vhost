@@ -1,0 +1,9 @@
+<VirtualHost *:8888>
+	ServerName local.car-ux.voorhoede.nl
+	DocumentRoot "/Volumes/Voorhoede/www/car-ux/web"
+</VirtualHost>
+
+<VirtualHost *:8888>
+	ServerName distribution.car-ux.voorhoede.nl
+	DocumentRoot "/Volumes/Voorhoede/www/car-ux/distribution"
+</VirtualHost>
