@@ -46,8 +46,6 @@ This project uses the common Voorhoede architecture with [Nunjucks](http://jlong
 	
 	tasks/
 		grunt/
-		java/
-		phing/
 		
 	tests/
 	
