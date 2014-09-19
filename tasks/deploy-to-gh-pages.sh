@@ -1,8 +1,9 @@
 #!/bin/bash
-rm -rf out || exit 0;
-mkdir out;
+# build new distribution
+rm -rf distribution || exit 0;
 npm install -g grunt-cli
 grunt deploy
+# push it to gh-pages
 ( cd distribution
  git init
  git config user.name "Travis-CI"
