@@ -5,7 +5,7 @@ module.exports = function (grunt) {
 	'use strict';
 	grunt.registerTask(
 		'compile-html',
-		'Compile all views, components & chapters for distribution.',
+		'Compile all views, components for distribution.',
 		/**
 		 * ...
 		 */
@@ -55,37 +55,6 @@ module.exports = function (grunt) {
 				return html;
 			}
 
-            function compileChapterHtml (name) {
-				var filename = name + '/' + name + '.html';
-				var template = compiler.getTemplate('views/_chapter-template/chapter-template.html');
-				var chaptersDir = compiler.getChaptersDir();
-
-                var readmeFilename = name + '/' + name + '.md';
-                var markdown = file.exists(chaptersDir + readmeFilename) ? file.read(chaptersDir + readmeFilename) : '';
-                markdown = marked(markdown)
-                    .replace(/<code>/g, '<code class="language-unknown">'); // triggers primsjs css
-
-				var html = template.render({
-					'webRoot': webRoot,
-                    'name': name,
-                    'project': project,
-					'pathToAssets': compiler.pathToAssets,
-                    'chapters': compiler.getChapters(),
-                    'components': compiler.getComponents(),
-                    'views': compiler.getViews(),
-                    'pathToGuide': '/guide',
-					'pathToStubs': webRoot + 'stubs/',
-                    'code': {
-                        'markdown': markdown
-                    },
-					'mode': mode
-				});
-
-				grunt.file.write(chaptersDir + filename, html);
-				grunt.log.writeln('Compiled chapter to '+ chaptersDir + filename);
-				return html;
-			}
-
 			if(mode === 'development'){
 				compiler.setBaseDir('web');
                 compiler.getComponents().forEach(compileComponentHtml);
@@ -93,7 +62,6 @@ module.exports = function (grunt) {
 				compiler.getComponents().forEach(compileComponentHtml);
 			}
 			compiler.getViews().forEach(compileViewHtml);
-			compiler.getChapters().forEach(compileChapterHtml);
 			compileViewHtml('_style-guide');
 		}
 	);

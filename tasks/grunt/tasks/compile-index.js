@@ -29,7 +29,6 @@ module.exports = function (grunt) {
 				'pathToGuide': webRoot + 'guide/',
 				'components': compiler.getComponents(),
 				'views': compiler.getViews(),
-				'chapters': compiler.getChapters(),
 				'mode': mode
 			});
 

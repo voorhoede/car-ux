@@ -21,9 +21,6 @@ var nunjucks = require('nunjucks');
 	function getViewsDir(dir){
 		return getModulesDir(dir) + 'views/';
 	}
-    function getChaptersDir(dir){
-		return getModulesDir(dir) + 'chapters/';
-	}
 
     var pathToAssets = '/assets/';
 
@@ -55,24 +52,14 @@ var nunjucks = require('nunjucks');
             });
     }
 
-    function getChapters () {
-        return fs.readdirSync(getChaptersDir('source'))
-            .filter(isNotUnderscored)
-            .filter(function(name){
-                return grunt.file.isDir(getChaptersDir('source') + name);
-            });
-    }
-
     module.exports = {
 	    getModulesDir: getModulesDir,
 	    getComponentsDir: getComponentsDir,
 	    getViewsDir: getViewsDir,
-	    getChaptersDir: getChaptersDir,
         pathToAssets: pathToAssets,
         getTemplate: getTemplate,
         getComponents: getComponents,
         getViews: getViews,
-        getChapters: getChapters,
 	    setBaseDir: setBaseDir
     };
 

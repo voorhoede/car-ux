@@ -51,7 +51,6 @@ module.exports = function (grunt) {
 					'webRoot': webRoot,
 					'pathToAssets': webRoot + compiler.pathToAssets,
 					'pathToGuide': webRoot + '/guide/',
-                    'chapters': compiler.getChapters(),
                     'components': compiler.getComponents(),
                     'views': compiler.getViews(),
 					'code': {
