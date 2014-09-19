@@ -5,5 +5,5 @@ before_install: gem install sass
 script: npm run-script deploy
 env:
  global:
- - GH_REF: github.com/voorhoede/car-ux.git
- - secure: LSyy+E41GnSnv3fQ5oA6Ap/5hNfx9LT78Z0TNnQNUCZN5iQotdW0opeOYmyitf+LE5shoIVOtgo5vyqlFQJ9Owi9eJBY9ci6aA81K+emzuGQ3PC7uIrijF3A6HEefFtqnS+fcTluG8+gwQ6AdluxuWV7KiV1XQ1up1lGzy9jdB8=
+ - GH_REF: 'github.com/voorhoede/car-ux.git'
+ - secure: 'LSyy+E41GnSnv3fQ5oA6Ap/5hNfx9LT78Z0TNnQNUCZN5iQotdW0opeOYmyitf+LE5shoIVOtgo5vyqlFQJ9Owi9eJBY9ci6aA81K+emzuGQ3PC7uIrijF3A6HEefFtqnS+fcTluG8+gwQ6AdluxuWV7KiV1XQ1up1lGzy9jdB8='
