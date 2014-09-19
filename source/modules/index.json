@@ -3,5 +3,6 @@
 		"demo-component"
 	],
 	"views": [
+		"demo-view"
 	]
 }
