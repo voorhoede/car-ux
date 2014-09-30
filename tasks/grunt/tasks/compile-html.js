@@ -30,7 +30,8 @@ module.exports = function (grunt) {
 					'webRoot': webRoot,
 					'pathToAssets': compiler.pathToAssets,
 					'pathToStubs': webRoot + 'stubs/',
-					'mode': mode
+					'mode': mode,
+                    'intro' : 'lorem ipsum'
 				});
 				grunt.file.write(componentsDir + filename, html);
 				grunt.log.writeln('Compiled component to '+ componentsDir + filename);
@@ -41,6 +42,11 @@ module.exports = function (grunt) {
 				var filename = name + '/' + name + '.html';
 				var template = compiler.getTemplate('views/' + filename);
 				var viewsDir = compiler.getViewsDir();
+
+                var introFilename = viewsDir + name + '/intro.md';
+                var intro = file.exists(introFilename) ? file.read(introFilename) : '';
+                intro = marked(intro);
+
 				var html = template.render({
 					'webRoot': webRoot,
 					'name': name,
@@ -48,10 +54,12 @@ module.exports = function (grunt) {
 					'pathToAssets': compiler.pathToAssets,
 					'pathToGuide': './',
 					'pathToStubs': webRoot + 'stubs/',
-					'mode': mode
+					'mode': mode,
+                    'intro': intro
 				});
 				grunt.file.write(viewsDir + filename, html);
 				grunt.log.writeln('Compiled view to '+ viewsDir + filename);
+
 				return html;
 			}
 
