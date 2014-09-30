@@ -1,5 +1,9 @@
 # Car UX
 
+[![Build Status](https://travis-ci.org/voorhoede/car-ux.svg?branch=master)](https://travis-ci.org/voorhoede/car-ux)
+[![Dependency Status](https://david-dm.org/voorhoede/car-ux.svg?theme=shields.io)](https://david-dm.org/voorhoede/car-ux)
+[![devDependency Status](https://david-dm.org/voorhoede/car-ux/dev-status.svg?theme=shields.io)](https://david-dm.org/voorhoede/car-ux#info=devDependencies)
+
 [about project]
 
 [View live](https://voorhoede.github.io/car-ux)
