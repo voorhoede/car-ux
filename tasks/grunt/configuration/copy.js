@@ -17,6 +17,11 @@ function getConfiguration(grunt) {
                 dest: 'web/guide/images/'
             }, {
                 expand: true,
+                cwd: 'source/assets/images/',
+                src: ['**'],
+                dest: 'web/assets/images/'
+            }, {
+                expand: true,
                 cwd: 'source/vendor/',
                 src: ['**'],
                 dest: 'web/guide/vendor/'
