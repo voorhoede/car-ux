@@ -15,11 +15,14 @@ function getConfiguration(grunt) {
             ],
             options: {
                 customselectors: {
+                    'left-red' : ['.icon-left:hover', '.icon-left:focus']
                 },
                 prefix: {
                     prefix: '.icon-'
                 },
 	            colors: {
+                    red: '#CD4D4D',
+                    yellow: '#fee165'
 	            },
                 defaultWidth: '30px',
                 defaultHeight: '30px'
