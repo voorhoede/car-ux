@@ -5,7 +5,8 @@
     "repository": "git@bitbucket.org:voorhoede/2dehands-be",
     "private": true,
     "scripts": {
-        "deploy": "./tasks/deploy-to-gh-pages.sh"
+        "deploy": "grunt deploy",
+	    "travis": "npm run deploy && ./tasks/travis/update-gh-pages.sh"
     },
     "devDependencies": {
         "grunt": "~0.4.1",

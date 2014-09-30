@@ -1,9 +1,12 @@
 language: node_js
 node_js:
 - '0.10'
-before_install: gem install sass
-script: npm run-script deploy
+before_install:
+- gem install sass
+- npm install -g grunt-cli
+- npm install -g bower
+- bower install
+script: npm run travis
 env:
- global:
- - GH_REF: 'github.com/voorhoede/car-ux.git'
- - secure: 'LSyy+E41GnSnv3fQ5oA6Ap/5hNfx9LT78Z0TNnQNUCZN5iQotdW0opeOYmyitf+LE5shoIVOtgo5vyqlFQJ9Owi9eJBY9ci6aA81K+emzuGQ3PC7uIrijF3A6HEefFtqnS+fcTluG8+gwQ6AdluxuWV7KiV1XQ1up1lGzy9jdB8='
+  global:
+    secure: EPX+NUuZXxM+IDYhgY1sy1Ruc9uCzvnrIpa/XqTS1FciWrjMP36y6oUu4xMxwbcsapYOd4cgwygprXE8xjQBuI+hKHTmbjHsZQhjvbyZ/XD3ZK0sOVC4SWjCGk5PTuMsGIUqU03oc19OTH6brFWgQJ2cxZ7jtI0Oy64w5PTI8Gk=
