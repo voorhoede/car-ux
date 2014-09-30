@@ -187,9 +187,34 @@ a.app-guide-icon {
   height: 80px;
 }
 
+[title="yellow"] .app-guide-swatch {
+  background-color: #ffc300;
+}
+
+[title="black"] .app-guide-swatch {
+  background-color: #000000;
+}
+
+[title="dark-grey"] .app-guide-swatch {
+  background-color: #7f7f7f;
+}
+
+[title="medium-grey"] .app-guide-swatch {
+  background-color: #dcdcdc;
+}
+
+[title="light-grey"] .app-guide-swatch {
+  background-color: #f2f2f2;
+}
+
+[title="white"] .app-guide-swatch {
+  background-color: #ffffff;
+}
+
 .app-guide-swatches li {
   float: left;
   width: 120px;
+  list-style: none;
 }
 
 .app-guide-info {
