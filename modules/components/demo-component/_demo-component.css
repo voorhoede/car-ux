@@ -1,0 +1,15 @@
+/* demo-component component */
+.demo-component {
+  border: 1px solid gray;
+}
+.demo-component p {
+  font-weight: bold;
+  color: blue;
+}
+.demo-component .icon-left {
+  width: 14px;
+  height: 22px;
+  display: block;
+}
+
+/*# sourceMappingURL=_demo-component.css.map */

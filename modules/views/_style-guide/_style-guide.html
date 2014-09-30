@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html class="no-js">
+
+<head>
+    <title>_style-guide | car-ux</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta name="description" content="ADD A DESCRIPTION" />
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <link rel="shortcut icon" href="/assets/images/favicon.ico" type="image/ico" />
+    <script>
+        (function(e) {
+            e.className = e.className.replace('no-js', 'js');
+        }(document.documentElement));
+    </script>
+    <script>
+        /* grunticon Stylesheet Loader | https://github.com/filamentgroup/grunticon | (c) 2012 Scott Jehl, Filament Group, Inc. | MIT license. */
+        window.grunticon = function(e) {
+            if (e && 3 === e.length) {
+                var t = window,
+                    n = !(!t.document.createElementNS || !t.document.createElementNS(
+                            "http://www.w3.org/2000/svg", "svg").createSVGRect || !document.implementation
+                        .hasFeature("http://www.w3.org/TR/SVG11/feature#Image", "1.1") || window.opera &&
+                        -1 === navigator.userAgent.indexOf("Chrome")),
+                    o = function(o) {
+                        var r = t.document.createElement("link"),
+                            a = t.document.getElementsByTagName("script")[0];
+                        r.rel = "stylesheet", r.href = e[o && n ? 0 : o ? 1 : 2], a.parentNode.insertBefore(
+                            r, a)
+                    },
+                    r = new t.Image;
+                r.onerror = function() {
+                    o(!1)
+                }, r.onload = function() {
+                    o(1 === r.width && 1 === r.height)
+                }, r.src = "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="
+            }
+        };
+        grunticon(["/assets/images/grunticon-output/icons.data.svg.css",
+            "/assets/images/grunticon-output/icons.data.png.css",
+            "/assets/images/grunticon-output/icons.fallback.css"
+        ]);
+    </script>
+    <noscript>
+        <link rel="stylesheet" href="/assets/images/grunticon-output/icons.fallback.css" />
+    </noscript>
+    <link rel="stylesheet" href="/assets/style/main.css">
+    <!--<link rel="stylesheet" href=".//voorhoede-core-styles.css">-->
+    <!--<link rel="stylesheet" href=".//core-layout.css">-->
+    <link rel="stylesheet" href="./guide.css">
+</head>
+
+<body>
+    <!-- use data attributes to target in JS -->
+    <div id="page">
+        <div class="page">
+            <div class="core-layout">
+                <header class="app-guide-content">
+                    <img src="./images/voorhoede-logo.svg" onerror="this.src='./images/voorhoede-logo.min.png'"
+                    alt="De Voorhoede" height="75" width="75" />
+                    <h1>car-ux</h1>
+                    <h2>Front-end guide for car-ux by de Voorhoede</h2>
+                </header>
+                <div class="style-guide">
+                    <h1>Style Guide</h1>
+                    <!--
+		LOGO:
+	-->
+                    <section id="section-logo" class="app-guide-section">
+                        <h2 class="app-guide-section-title">
+			Logo 
+<a href="#section-logo"
+   class="app-guide-permalink app-guide-icon"
+   title="permalink to this section"></a>
+
+		</h2>
+                        <img src="/assets/images/logo.svg" alt="2dehands logo" class="logo" />
+                    </section>
+                    <!--
+		COLORS:
+	-->
+                    <section id="section-colors" class="app-guide-section">
+                        <h2 class="app-guide-section-title">
+			Colors 
+<a href="#section-colors"
+   class="app-guide-permalink app-guide-icon"
+   title="permalink to this section"></a>
+
+		</h2>
+                        <div class="app-guide-section-content">
+                            <h3 class="app-guide-section-title">Yellow</h3>
+                            <ul class="app-guide-example-box app-guide-swatches">
+                                <li title="yellow-dark">	<span class="app-guide-info">#f9d021</span>
+                                    <span class="app-guide-swatch"></span>
+                                    <span class="app-guide-info">$yellow-dark</span>
+                                </li>
+                                <li title="yellow-medium">	<span class="app-guide-info">#ffe886</span>
+                                    <span class="app-guide-swatch"></span>
+                                    <span class="app-guide-info">$yellow-medium</span>
+                                </li>
+                                <li title="yellow-pale">	<span class="app-guide-info">#e8d890</span>
+                                    <span class="app-guide-swatch"></span>
+                                    <span class="app-guide-info">$yellow-pale</span>
+                                </li>
+                                <li title="yellow-light">	<span class="app-guide-info">#fff7d8</span>
+                                    <span class="app-guide-swatch"></span>
+                                    <span class="app-guide-info">$yellow-light</span>
+                                </li>
+                            </ul>
+                            <h3 class="app-guide-section-title">Blue</h3>
+                            <ul class="app-guide-example-box app-guide-swatches">
+                                <li title="blue-extra-light">	<span class="app-guide-info">#e8eaf0</span>
+                                    <span class="app-guide-swatch"></span>
+                                    <span class="app-guide-info">$blue-extra-light</span>
+                                </li>
+                                <li title="blue-light-pale">	<span class="app-guide-info">#93adcf</span>
+                                    <span class="app-guide-swatch"></span>
+                                    <span class="app-guide-info">$blue-light-pale</span>
+                                </li>
+                                <li title="blue-light">	<span class="app-guide-info">#5f92cd</span>
+                                    <span class="app-guide-swatch"></span>
+                                    <span class="app-guide-info">$blue-light</span>
+                                </li>
+                                <li title="blue-medium-pale">	<span class="app-guide-info">#4c597a</span>
+                                    <span class="app-guide-swatch"></span>
+                                    <span class="app-guide-info">$blue-medium-pale</span>
+                                </li>
+                                <li title="blue-medium">	<span class="app-guide-info">#537eaf</span>
+                                    <span class="app-guide-swatch"></span>
+                                    <span class="app-guide-info">$blue-medium</span>
+                                </li>
+                                <li title="blue-dark">	<span class="app-guide-info">#323e59</span>
+                                    <span class="app-guide-swatch"></span>
+                                    <span class="app-guide-info">$blue-dark</span>
+                                </li>
+                                <li title="blue-darker">	<span class="app-guide-info">#1f2637</span>
+                                    <span class="app-guide-swatch"></span>
+                                    <span class="app-guide-info">$blue-darker</span>
+                                </li>
+                            </ul>
+                            <h3 class="app-guide-section-title">Grey</h3>
+                            <ul class="app-guide-example-box app-guide-swatches">
+                                <li title="grey-extra-light">	<span class="app-guide-info">#ebebeb</span>
+                                    <span class="app-guide-swatch"></span>
+                                    <span class="app-guide-info">$grey-extra-light</span>
+                                </li>
+                                <li title="grey-lighter">	<span class="app-guide-info">#ccc</span>
+                                    <span class="app-guide-swatch"></span>
+                                    <span class="app-guide-info">$grey-lighter</span>
+                                </li>
+                                <li title="grey-light-pale">	<span class="app-guide-info">#c8cad2</span>
+                                    <span class="app-guide-swatch"></span>
+                                    <span class="app-guide-info">$grey-light-pale</span>
+                                </li>
+                                <li title="grey-light">	<span class="app-guide-info">#999</span>
+                                    <span class="app-guide-swatch"></span>
+                                    <span class="app-guide-info">$grey-light</span>
+                                </li>
+                                <li title="grey-medium">	<span class="app-guide-info">#9ea1ad</span>
+                                    <span class="app-guide-swatch"></span>
+                                    <span class="app-guide-info">$grey-medium</span>
+                                </li>
+                            </ul>
+                            <h3 class="app-guide-section-title">Social icon colors</h3>
+                            <ul class="app-guide-example-box app-guide-swatches">
+                                <li title="facebook-color">	<span class="app-guide-info">#3b5998</span>
+                                    <span class="app-guide-swatch"></span>
+                                    <span class="app-guide-info">$facebook-color</span>
+                                </li>
+                                <li title="twitter-color">	<span class="app-guide-info">#55c1e1</span>
+                                    <span class="app-guide-swatch"></span>
+                                    <span class="app-guide-info">$twitter-color</span>
+                                </li>
+                                <li title="google-color">	<span class="app-guide-info">#d13f2d</span>
+                                    <span class="app-guide-swatch"></span>
+                                    <span class="app-guide-info">$google-color</span>
+                                </li>
+                                <li title="instagram-color">	<span class="app-guide-info">#3f6a8c</span>
+                                    <span class="app-guide-swatch"></span>
+                                    <span class="app-guide-info">$instagram-color</span>
+                                </li>
+                                <li title="pinterest-color">	<span class="app-guide-info">#b8252c</span>
+                                    <span class="app-guide-swatch"></span>
+                                    <span class="app-guide-info">$pinterest-color</span>
+                                </li>
+                                <li title="linkedin-color">	<span class="app-guide-info">#9ea1ad</span>
+                                    <span class="app-guide-swatch"></span>
+                                    <span class="app-guide-info">$linkedin-color</span>
+                                </li>
+                                <li title="youtube-color">	<span class="app-guide-info">#ce332d</span>
+                                    <span class="app-guide-swatch"></span>
+                                    <span class="app-guide-info">$youtube-color</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <p>Note: Each color swatch has a hexadecimal color code (for designers) on top and
+                            an scss variable name (for developers) below.</p>
+                    </section>
+                    <!--
+		ICONS:
+	-->
+                    <section id="section-icons" class="app-guide-section">
+                        <h2 class="app-guide-section-title">
+			Icons 
+<a href="#section-icons"
+   class="app-guide-permalink app-guide-icon"
+   title="permalink to this section"></a>
+
+		</h2>
+                        <div class="app-guide-section-content">
+                            <p>Note: Icons are managed using Grunticon, preferring SVG icons and providing
+                                a PNG fallback for browsers not supporting SVG.</p>
+                            <h3 class="app-guide-section-title">Social media icons</h3>
+                            <ul class="social-media-links">
+                                <li>
+                                    <a href="#" title="Facebook" class="icon-facebook social-media-link"></a>
+                                </li>
+                                <li>
+                                    <a href="#" title="Twitter" class="icon-twitter social-media-link"></a>
+                                </li>
+                                <li>
+                                    <a href="#" title="GooglePlus" class="icon-google social-media-link"></a>
+                                </li>
+                                <li>
+                                    <a href="#" title="Instagram" class="icon-instagram social-media-link"></a>
+                                </li>
+                                <li>
+                                    <a href="#" title="Pinterest" class="icon-pinterest social-media-link"></a>
+                                </li>
+                                <li>
+                                    <a href="#" title="Linkedin" class="icon-linkedin social-media-link"></a>
+                                </li>
+                                <li>
+                                    <a href="#" title="Youtube" class="icon-youtube social-media-link"></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+                    <!--
+		TYPOGRAPHY:
+	-->
+                    <section id="section-typography" class="app-guide-section">
+                        <h2 class="app-guide-section-title">
+			Typography 
+<a href="#section-typography"
+   class="app-guide-permalink app-guide-icon"
+   title="permalink to this section"></a>
+
+		</h2>
+                        <div class="app-guide-section-content">
+                            <h3>Header text</h3>
+                            <h1>Source Sans Pro Semibold - 32px - Lineheight: 26px</h1>
+                            <h2>Source Sans Pro Semibold - 22px - Lineheight: 24px</h2>
+                            <h3>Source Sans Pro Semibold - 20px - Lineheight: 22px</h3>
+                            <h3>Heading with text</h3>
+                            <h1>Heading 1</h1>
+                            <p>Zoekertjes met veel foto's verkopen sneller. Voeg tot 8 foto's toe in jpg,
+                                gif of png formaat (maximaal 5MB per foto). Zoekertjes met veel foto's
+                                verkopen sneller. Voeg tot 8 foto's toe in jpg, gif of png formaat (maximaal
+                                5MB per foto).</p>
+                            <h2>Heading 2</h2>
+                            <p>Zoekertjes met veel foto's verkopen sneller. Voeg tot 8 foto's toe in jpg,
+                                gif of png formaat (maximaal 5MB per foto). Zoekertjes met veel foto's
+                                verkopen sneller. Voeg tot 8 foto's toe in jpg, gif of png formaat (maximaal
+                                5MB per foto).</p>
+                            <h3>Heading 3</h3>
+                            <p>Zoekertjes met veel foto's verkopen sneller. Voeg tot 8 foto's toe in jpg,
+                                gif of png formaat (maximaal 5MB per foto).</p>
+                            <h3>Body text</h3>
+                            <p>Zoekertjes met veel foto's verkopen sneller. Voeg tot 8 foto's toe in jpg,
+                                gif of png formaat (maximaal 5MB per foto). Zoekertjes met veel foto's
+                                verkopen sneller. Voeg tot 8 foto's toe in jpg, gif of png formaat (maximaal
+                                5MB per foto).</p>
+                            <p>Zoekertjes met veel foto's verkopen sneller. Voeg tot 8 foto's toe in jpg,
+                                gif of png formaat (maximaal 5MB per foto). Zoekertjes met veel foto's
+                                verkopen sneller. Voeg tot 8 foto's toe in jpg, gif of <a href="#">png formaat</a>
+                                (maximaal 5MB per foto).</p>
+                        </div>
+                    </section>
+                    <!--
+		LINKS:
+	-->
+                    <section id="section-links" class="app-guide-section">
+                        <h2 class="app-guide-section-title">
+			Links 
+<a href="#section-links"
+   class="app-guide-permalink app-guide-icon"
+   title="permalink to this section"></a>
+
+		</h2>
+                        <div class="app-guide-section-content">
+                            <div class="app-guide-example">
+                                <h3 class="app-guide-section-title">Primary action - block level</h3>
+                                <a href="#" class="ui-button-primary">Plaats gratis zoekertje</a>
+                            </div>
+                            <div class="app-guide-example">
+                                <h3 class="app-guide-section-title">Secondary action - block level</h3>
+                                <a href="#" class="ui-button-secondary">Plaats gratis zoekertje</a>
+                            </div>
+                            <div class="app-guide-example">
+                                <h3 class="app-guide-section-title">Tertiary action - block level</h3>
+                                <a href="#" class="ui-button-tertiary">Blader in afdelingen</a>
+                            </div>
+                            <div class="app-guide-example">
+                                <h3 class="app-guide-section-title">Primary action - inline level</h3>
+                                <a href="#" class="">Plaats gratis zoekertje</a>
+                            </div>
+                            <div class="app-guide-example">
+                                <h3 class="app-guide-section-title">Primary action - inline level - dark</h3>
+                                <a href="#" class="ui-link-dark">Plaats gratis zoekertje</a>
+                            </div>
+                            <div class="app-guide-example">
+                                <h3 class="app-guide-section-title">Primary action - inline level - with underline</h3>
+                                <a href="#" class="ui-link-highlight">Plaats gratis zoekertje</a>
+                            </div>
+                            <div class="app-guide-example">
+                                <h3 class="app-guide-section-title">Primary action - inline level - with background</h3>
+                                <a href="#" class="ui-link-background">Plaats gratis zoekertje</a>
+                            </div>
+                            <div class="app-guide-example">
+                                <h3 class="app-guide-section-title">Inline level - in footer</h3>
+                                <a href="#" class="ui-link-footer">Plaats gratis zoekertje</a>
+                            </div>
+                        </div>
+                    </section>
+                    <!--
+		FORM ELEMENTS:
+	-->
+                    <section id="section-form-elements" class="app-guide-section">
+                        <h2 class="app-guide-section-title">
+			Form elements 
+<a href="#section-form-elements"
+   class="app-guide-permalink app-guide-icon"
+   title="permalink to this section"></a>
+
+		</h2>
+                        <div class="app-guide-section-content">
+                            <h3 class="app-guide-section-title">Input fields</h3>
+                            <div class="app-guide-example">
+                                <label for="name">	<span class="has-hidden-label">Naam:</span>
+                                    <input type="text" placeholder="Naam" id="name" required="">
+                                </label>
+                            </div>
+                            <div class="app-guide-example">
+                                <label for="telephone">	<span class="has-hidden-label">Telefoonnummer:</span>
+                                    <input type="tel" placeholder="Telefoonnummer" id="telephone" required="">
+                                </label>
+                            </div>
+                            <div class="app-guide-example">
+                                <label for="email">	<span class="has-hidden-label">Email:</span>
+                                    <input type="email" placeholder="Email" id="email" required="">
+                                </label>
+                            </div>
+                            <div class="app-guide-example">
+                                <label for="password">	<span class="has-hidden-label">Wachtwoord:</span>
+                                    <input type="password" placeholder="Wachtwoord" id="password" required="">
+                                </label>
+                            </div>
+                            <div class="app-guide-example">
+                                <label for="postal-code">	<span class="has-hidden-label">Postcode:</span>
+                                    <input type="text" placeholder="Postcode" id="postal-code" required="">
+                                </label>
+                            </div>
+                            <div class="app-guide-example">
+                                <label for="url">	<span class="has-hidden-label">Website:</span>
+                                    <input type="url" placeholder="Website" id="url" required="">
+                                </label>
+                            </div>
+                            <div class="app-guide-example">
+                                <label for="message">	<span class="has-hidden-label">Textarea:</span>
+                                    <textarea class="text-input" placeholder="Uw boodschap" id="message"></textarea>
+                                </label>
+                            </div>
+                            <div class="app-guide-example">
+                                <button class="ui-button-primary" type="submit">Verfijn</button>
+                            </div>
+                            <div class="app-guide-example">
+                                <div class="file-input">
+                                    <label for="add-picture">Voeg een foto toe</label>
+                                    <input type="file" name="add-picture" id="add-picture"
+                                    placeholder="Voeg een foto toe">
+                                </div>
+                            </div>
+                            <div class="app-guide-example">
+                                <div class="select-department" data-custom-select>
+                                    <label for="department" class="has-hidden-label">Zoek in afdelingen:</label>
+                                    <select id="department">
+                                        <option>Alle afdelingen</option>
+                                        <option>Option 1</option>
+                                        <option>Option 2</option>
+                                        <option>Option 3</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="app-guide-example">
+                                <div class="custom-checkbox">
+                                    <input type="checkbox" class="filter-option" name="locale" id="dutch"
+                                    value="nl">
+                                    <label class="checkbox" for="dutch">	<span class="icon-checkbox"></span>
+                                        Nederlands<span class="counter">(10.499)</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="app-guide-example">
+                                <div class="custom-radio">
+                                    <input type="radio" name="options" id="nederlands" value="nederlands"
+                                    checked="" />
+                                    <label class="radio" for="nederlands">	<span class="icon-radiobutton"></span>
+                                        Nederlands</label>
+                                </div>
+                                <div class="custom-radio">
+                                    <input type="radio" name="options" id="frans" value="frans" checked=""
+                                    />
+                                    <label class="radio" for="frans">	<span class="icon-radiobutton"></span>
+                                        Frans</label>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!--
+		LISTS:
+	-->
+                    <section id="section-lists" class="app-guide-section">
+                        <h2 class="app-guide-section-title">
+			Lists 
+<a href="#section-lists"
+   class="app-guide-permalink app-guide-icon"
+   title="permalink to this section"></a>
+
+		</h2>
+                        <div class="app-guide-section-content">
+                            <h3>List - with icons</h3>
+                            <div class="app-guide-example">
+                                <ul class="icon-list">
+                                    <li>Combineer cijfers en letters</li>
+                                    <li>Combinner kleine letters en hoofdletters</li>
+                                    <li class="is-disabled">Gebruik speciale tekens</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+        <footer class="app-guide-footer">This page is generated using <a href="http://voorhoede.nl">De Voorhoede</a>'s template builder</footer>
+        <script
+        src="/assets/scripts/vendor.js"></script>
+            <script src="/assets/scripts/main.js"></script>
+    </div>
+</body>
+
+</html>
