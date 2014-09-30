@@ -60,6 +60,11 @@ function getConfiguration(grunt) {
                 src: ['guide.css', 'debug.css'],
                 dest: 'distribution/guide/'
             }, {
+	            expand: true,
+	            cwd: 'distribution/assets/images/guide',
+	            src: ['*'],
+	            dest: 'distribution/guide/images'
+            }, {
                 src: 'distribution/modules/views/_style-guide/_style-guide.html',
                 dest: 'distribution/guide/style-guide.html'
             }]

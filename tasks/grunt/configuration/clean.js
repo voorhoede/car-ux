@@ -11,6 +11,7 @@ function getConfiguration(grunt) {
 			'distribution/assets/scripts.json',
 			'distribution/assets/scss',
 			'distribution/assets/style/guide.css',
+			'distribution/assets/images/guide',
 			'distribution/guide/**/*.scss',
 			'distribution/modules/**/*.scss',
 			'distribution/modules/components/_*',
