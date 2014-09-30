@@ -1,9 +1,5 @@
 distribution
-web/assets/scripts/*
-web/assets/styles/*
-web/modules/*
-web/guide/*.html
-web/index.html
+web
 
 # Compiled CSS files
 *.css
