@@ -1,0 +1,10 @@
+.icon-left-blue { background-image: url('png/left-blue.png'); background-repeat: no-repeat; }
+
+.icon-left:hover,
+.icon-left:focus,
+.icon-left-red { background-image: url('png/left-red.png'); background-repeat: no-repeat; }
+
+.icon-left-yellow { background-image: url('png/left-yellow.png'); background-repeat: no-repeat; }
+
+.icon-left { background-image: url('png/left.png'); background-repeat: no-repeat; }
+
