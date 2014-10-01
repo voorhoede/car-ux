@@ -109,7 +109,23 @@ Or delete this file if not applicable.
 			</h3>
                             <div class="app-guide-code">	<pre class="language-markup"><code>&lt;!-- intro -->
 &lt;div class="intro" data-component="intro">
-	&lt;section class="max-width-centered">&lt;/section>
+	&lt;img class="intro-background" src="http://placekitten.com/960/500" alt="BMW i3 dashboard" />
+	&lt;section class="intro-content max-width-centered">
+		&lt;article class="intro-text">
+			&lt;header>
+				&lt;img src="/assets/images/bmw-i3/bmw-i3-small.png" alt="BMW i3 small" />
+				&lt;h1>
+					BMW i3
+					&lt;span class="subtitle">Business model 1.5 TDI&lt;/span>
+				&lt;/h1>
+				&lt;p>Introtekst over de nieuwe BMW i3. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+					commodo consequa orem psum dolor sit.&lt;/p>
+			&lt;/header>
+		&lt;/article>
+		&lt;!--
+		-->
+		&lt;div class="widget-score">&lt;/div>
+	&lt;/section>
 &lt;/div>
 &lt;!-- /intro --></code></pre>
                                 <ul class="app-guide-code-options">
@@ -135,7 +151,34 @@ Or delete this file if not applicable.
                             <div class="app-guide-code">	<pre class="language-css"><code>/* intro component */
 .intro {
   background-color: #f2f2f2;
+  padding: 30px 0;
   min-height: 700px;
+}
+.intro .intro-background {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+}
+.intro .intro-content {
+  margin-top: -170px;
+}
+.intro .intro-text {
+  background-color: #ffffff;
+  display: inline-block;
+  vertical-align: top;
+  padding: 30px 30px 25px 33px;
+  width: 66.66%;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.intro .widget-score {
+  display: inline-block;
+  vertical-align: top;
+  width: 33.33%;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 /*# sourceMappingURL=_intro.css.map */

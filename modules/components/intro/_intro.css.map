@@ -1,7 +1,7 @@
 {
 "version": 3,
-"mappings": ";AAKA,MAAO;EACN,gBAAgB,ECFF,OAAO;EDIrB,UAAU,EAAE,KAAK",
-"sources": ["../../../../source/modules/components/intro/_intro.scss","../../../../source/assets/scss/core/_colors.scss"],
+"mappings": ";AAKA,MAAO;EACN,gBAAgB,ECFF,OAAO;EDGrB,OAAO,EAAE,MAAM;EACf,UAAU,EAAE,KAAK;;AAEjB,wBAAkB;EACjB,OAAO,EAAE,KAAK;EACd,MAAM,EAAE,MAAM;EACd,SAAS,EAAE,IAAI;;AAGhB,qBAAe;EACd,UAAU,EAAE,MAAM;;AAGnB,kBAAY;EACX,gBAAgB,EChBP,OAAO;EDiBhB,OAAO,EAAE,YAAY;EACrB,cAAc,EAAE,GAAG;EACnB,OAAO,EAAE,mBAAmB;EAC5B,KAAK,EAAE,MAAM;EEvBd,eAAe,EFyBM,UAAU;EExB/B,kBAAkB,EFwBG,UAAU;EEvB/B,UAAU,EFuBW,UAAU;;AAG/B,oBAAc;EACb,OAAO,EAAE,YAAY;EACrB,cAAc,EAAE,GAAG;EACnB,KAAK,EAAE,MAAM;EE/Bd,eAAe,EFiCM,UAAU;EEhC/B,kBAAkB,EFgCG,UAAU;EE/B/B,UAAU,EF+BW,UAAU",
+"sources": ["../../../../source/modules/components/intro/_intro.scss","../../../../source/assets/scss/core/_colors.scss","../../../../source/assets/scss/mixins/_box-sizing.scss"],
 "names": [],
 "file": "_intro.css"
 }
