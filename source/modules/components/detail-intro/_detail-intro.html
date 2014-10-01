@@ -1,24 +1,24 @@
 <!-- intro -->
 <div class="detail-intro" data-component="detail-intro">
-	<img class="intro-background" src="{{ pathToAssets }}images/bmw-i3/bmw-i3-dashboard.png" alt="BMW i3 dashboard" />
+	<img class="intro-background" src="{{ pathToAssets }}images/{{ content.backgroundImage }}" alt="{{ content.backgroundImageAlt }}" />
 	<section class="intro-content max-width-centered">
 		<article class="intro-text" data-intro-text>
 			<header>
-				<img itemprop="image" class="intro-title-image" src="{{ pathToAssets }}images/bmw-i3/bmw-i3-small.png" alt="BMW i3 small" />
+				<img itemprop="image" class="intro-title-image" src="{{ pathToAssets }}images/{{ content.titleImage }}" alt="{{ content.titleImageAlt }}" />
 				<h1 itemprop="name">
-					BMW i3
-					<span class="subtitle">Business model 1.5 TDI</span>
+					{{ content.title }}
+					<span class="subtitle">{{ content.subtitle }}</span>
 				</h1>
-				<p itemprop="description">
-					Introtekst over de nieuwe BMW i3. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequa orem psum dolor sit.
-				</p>
-				<aside class="social-buttons">
-					<p>Deze test delen via</p>
-					<a class="social-button button-facebook" href="#">Facebook</a>
-					<a class="social-button button-twitter" href="#">Twitter</a>
-					<a class="social-button button-gplus" href="#" onclick="javascript:this.href='https://plus.google.com/share?url='+window.location.href;window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;">Google Plus</a>
-				</aside>
 			</header>
+			<p itemprop="description">
+				{{ content.description }}
+			</p>
+			<aside class="social-buttons">
+				<p>Deze test delen via</p>
+				<a target="_blank" href="http://www.facebook.com/sharer.php?s=100&amp;p[url]={{ content.pageUrl | urlencode }}&amp;p[title]=Car%20UX%20-%20{{ content.title }}%20{{ content.subtitle }}&amp;p[summary]={{ content.socialSharing.facebook | urlencode }}" class="social-button button-facebook" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=368,width=600');return false;">Facebook</a>
+				<a target="_blank" href="http://twitter.com/share?text={{ content.socialSharing.twitter | urlencode }}&amp;url={{ content.pageUrl | urlencode }}" class="social-button button-twitter" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=438,width=600');return false;">Twitter</a>
+				<a target="_blank" class="social-button button-gplus" href="https://plus.google.com/share?url={{ content.pageUrl }}" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;">Google Plus</a>
+			</aside>
 		</article><!--
 		--><div class="widget-score-block">
 			{% include "components/widget-score/_widget-score.html" %}
