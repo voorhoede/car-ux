@@ -3,6 +3,117 @@
 
 /* header component */
 
-.header {
+//nav-breakpoints
+$nav-breakpoint-m: 600px;
+$nav-breakpoint-s: 450px;
+$nav-breakpoint-xs: 360px;
 
+.header {
+	position: relative;
+	height: 80px;
+
+	.header-content {
+		width: 100%;
+		max-width: 1200px;
+		margin-right: auto;
+		margin-left: auto;
+		background-color: $black;
+	}
+	.logo-area, nav {
+		display: inline-block;
+		vertical-align: top;
+	}
+	.logo-area {
+		position: relative;
+		height: 80px;
+		width: 19%;
+		min-width: 95px;
+		background-color: $yellow;
+	}
+	.logo {
+		display: block;
+		position: absolute;
+		background-color: $black;
+		height: 40px;
+		width: 55px;
+		top: 20px;
+		right: 20px;
+		color: $yellow;
+		text-align: right;
+	}
+	nav {
+		ul {
+			-webkit-margin-before: 0;
+			-webkit-margin-after: 0;
+			-webkit-padding-start: 0;
+			margin-top: 2.5em;
+			margin-left: -1.5em;
+			@media only screen and (max-width: $nav-breakpoint-m) {
+				margin-top: 2.8em;
+			}
+			@media only screen and (max-width: $nav-breakpoint-s) {
+				margin-top: 3em;
+				margin-left: 0;
+			}
+		}
+		li {
+			display: inline-block;
+			vertical-align: top;
+			margin-left: 4.5em;
+			list-style: none;
+			@media only screen and (max-width: $nav-breakpoint-m) {
+				margin-left: 3em;
+			}
+			@media only screen and (max-width: $nav-breakpoint-s) {
+				margin-left: 2em;
+				&:first-child {
+					display: none;
+				}
+			}
+			@media only screen and ($nav-breakpoint-xs) {
+				margin-left: 1.5em;
+			}
+			&:first-child {
+				padding-bottom: 5px;
+				border-bottom: 4px solid $yellow;
+				@media only screen and (max-width: $nav-breakpoint-m) {
+					border-bottom: 3px solid $yellow;
+					padding-bottom: 1px;
+				}
+				a {
+					color: $yellow;
+				}
+			}
+		}
+		a {
+			font-family: $helvetica-nue-bold;
+			font-size: 2.5em;
+			line-height: 1.2;
+			color: $white;
+			@media only screen and (max-width: $nav-breakpoint-m) {
+				font-size: 2em;
+			}
+			@media only screen and (max-width: $nav-breakpoint-xs) {
+				font-size: 1.6em;
+			}
+			&:hover {
+				color: $yellow;
+			}
+		}
+	}
+	.header-background-left, .header-background-right {
+		position: absolute;
+		top: 0;
+		z-index: -1;
+		width: 50%;
+		height: 100%;
+	}
+	.header-background-left {
+		left: 0;
+		background-color: $yellow;
+	}
+	.header-background-right {
+		right: 0;
+		background-color: $black;
+	}
 }
