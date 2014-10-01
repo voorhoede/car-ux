@@ -5,6 +5,9 @@
 @import 'base';
 @import 'modules';
 
+body {
+	font-size: 10px;
+}
 
 .max-width-centered {
 	max-width: $max-width-tablet;
