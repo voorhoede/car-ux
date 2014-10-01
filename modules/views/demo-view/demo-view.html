@@ -51,6 +51,9 @@
 <body>
     <!-- use data attributes to target in JS -->
     <div id="page">
+        <!-- header -->
+        <div class="header" data-component="header">Write HTML for `header` component</div>
+        <!-- /header -->
         <h1>Demo-view</h1>
         Write content for this view here. You can include components like this:	<pre>&#123;&#37; include "components/demo-component/_demo-component.html" &#37;&#125;</pre>
         It will result in:
@@ -61,6 +64,9 @@
             <h1 id="intro">INTro</h1>
         </div>
         <!-- /demo-component -->
+        <!-- footer -->
+        <div class="footer" data-component="footer">Write HTML for `footer` component</div>
+        <!-- /footer -->
         <script src="/assets/scripts/vendor.js"></script>
         <script src="/assets/scripts/main.js"></script>
     </div>
