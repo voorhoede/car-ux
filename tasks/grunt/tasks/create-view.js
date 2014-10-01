@@ -34,6 +34,7 @@ module.exports = function (grunt) {
 
             var sourceDir = 'tasks/grunt/templates/view';
             var destinationDir = 'source/modules/views/' + viewName;
+            var imagesDir = 'source/assets/images/' + viewName;
 
             /**
              * @param {String} filename
@@ -50,6 +51,8 @@ module.exports = function (grunt) {
             function capitalize (word) {
                 return word.charAt(0).toUpperCase() + word.slice(1);
             }
+
+            file.mkdir(imagesDir);
 
             file.mkdir(destinationDir);
 
