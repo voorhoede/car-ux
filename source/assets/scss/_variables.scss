@@ -1,5 +1,4 @@
 @import 'core/colors';
-@import 'core/fonts';
 
 //
 // Global variables
@@ -8,10 +7,17 @@
 // duplicate styles to the browser.
 //
 
+//Font variables
+$helvetica-nue-fallback: 	Helvetica, Arial, sans-serif;
+
+$helvetica-nue-bold: 		'Helvetica Nue Bold', $helvetica-nue-fallback;
+$helvetica-nue: 			'Helvetica Nue', $helvetica-nue-fallback;
+$helvetica-nue-regular: 	'Helvetica Nue Regular', $helvetica-nue-fallback;
+
 // Paths
 
 $path-fonts: 				'../fonts/';
 $path-images: 				'../images/';
 
 // Widths
-$max-width-tablet: 		900px;
+$max-width-tablet: 			900px;
