@@ -1,7 +1,7 @@
 {
 "version": 3,
-"mappings": "",
-"sources": [],
+"mappings": ";AAKA,OAAQ;EACP,gBAAgB,ECLN,OAAO;EDMjB,KAAK,ECFK,OAAO;;ADGjB,uBAAgB;EACf,KAAK,EAAE,IAAI;EACX,SAAS,EAAE,KAAK;EAChB,YAAY,EAAE,IAAI;EAClB,WAAW,EAAE,IAAI;;AAElB,aAAM;EACL,OAAO,EAAE,YAAY;EACrB,gBAAgB,ECXP,OAAO;EDYhB,MAAM,EAAE,IAAI;EACZ,KAAK,EAAE,IAAI;EACX,KAAK,EClBI,OAAO;EDmBhB,UAAU,EAAE,KAAK;EACjB,SAAS,EAAE,KAAK;;AAEjB,sBAAe;;EAEd,KAAK,ECxBI,OAAO;EDyBhB,gBAAgB,ECrBP,OAAO;;ADsBhB,4BAAQ;EACP,gBAAgB,ECxBJ,OAAO",
+"sources": ["../../../../source/modules/components/footer/_footer.scss","../../../../source/assets/scss/core/_colors.scss"],
 "names": [],
 "file": "_footer.css"
 }

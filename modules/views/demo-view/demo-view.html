@@ -52,7 +52,7 @@
     <!-- use data attributes to target in JS -->
     <div id="page">
         <!-- header -->
-        <div class="header" data-component="header">
+        <header class="header" data-component="header">
             <div class="header-content">
                 <div class="logo-area">	<a href="/"><span class="logo">CAR UX</span></a>
                 </div>
@@ -69,7 +69,7 @@
             </div>
             <div class="header-background-left"></div>
             <div class="header-background-right"></div>
-        </div>
+        </header>
         <!-- /header -->
         <h1>Demo-view</h1>
         Write content for this view here. You can include components like this:	<pre>&#123;&#37; include "components/demo-component/_demo-component.html" &#37;&#125;</pre>
@@ -82,7 +82,16 @@
         </div>
         <!-- /demo-component -->
         <!-- footer -->
-        <div class="footer" data-component="footer">Write HTML for `footer` component</div>
+        <footer class="footer" data-component="footer">
+            <div class="footer-content">
+                <h1>Car UX is een initiatief van UNITiD interaction Designers</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmo veniam, quis
+                    nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequaorem ipsum
+                    dolor sit amet, consectetur ad.</p>	<span class="logo">CAR UX</span>
+                <h2>Review aanvragen of opmerkingen?</h2>
+                <a class="footer-button" href="mailto:postbus@unitid.nl?subject=Car UX Review aanvragen / opmerkingen">Mail ons</a>
+            </div>
+        </footer>
         <!-- /footer -->
         <script src="/assets/scripts/vendor.js"></script>
         <script src="/assets/scripts/main.js"></script>

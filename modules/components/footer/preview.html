@@ -57,7 +57,7 @@
     <!-- use data attributes to target in JS -->
     <div id="page">
         <!-- header -->
-        <div class="header" data-component="header">
+        <header class="header" data-component="header">
             <div class="header-content">
                 <div class="logo-area">	<a href="/"><span class="logo">CAR UX</span></a>
                 </div>
@@ -74,7 +74,7 @@
             </div>
             <div class="header-background-left"></div>
             <div class="header-background-right"></div>
-        </div>
+        </header>
         <!-- /header -->
         <div class="page">
             <div class="core-layout">
@@ -125,7 +125,14 @@ Or delete this file if not applicable.
 
 			</h3>
                             <div class="app-guide-code">	<pre class="language-markup"><code>&lt;!-- footer -->
-&lt;div class="footer" data-component="footer">Write HTML for `footer` component&lt;/div>
+&lt;footer class="footer" data-component="footer">
+	&lt;div class="footer-content">
+		&lt;h1>Car UX is een initiatief van UNITiD interaction Designers&lt;/h1>
+		&lt;p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmo veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequaorem ipsum dolor sit amet, consectetur ad.&lt;/p>	&lt;span class="logo">CAR UX&lt;/span>
+		&lt;h2>Review aanvragen of opmerkingen?&lt;/h2>
+		&lt;a class="footer-button" href="mailto:postbus@unitid.nl?subject=Car UX Review aanvragen / opmerkingen">Mail ons&lt;/a>
+	&lt;/div>
+&lt;/footer>
 &lt;!-- /footer --></code></pre>
                                 <ul class="app-guide-code-options">
                                     <li>
@@ -148,6 +155,33 @@ Or delete this file if not applicable.
 
 			</h3>
                             <div class="app-guide-code">	<pre class="language-css"><code>/* footer component */
+.footer {
+  background-color: #000000;
+  color: #ffffff;
+}
+.footer .footer-content {
+  width: 100%;
+  max-width: 900px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.footer .logo {
+  display: inline-block;
+  background-color: #ffffff;
+  height: 40px;
+  width: 55px;
+  color: #000000;
+  text-align: right;
+  font-size: 1.6em;
+}
+.footer .footer-button {
+  /*@extend .ui-button-tertiary;*/
+  color: #000000;
+  background-color: #ffffff;
+}
+.footer .footer-button:hover {
+  background-color: #f2f2f2;
+}
 
 /*# sourceMappingURL=_footer.css.map */
 </code></pre>
