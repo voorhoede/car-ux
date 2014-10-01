@@ -4,3 +4,10 @@
 
 @import 'base';
 @import 'modules';
+
+
+.max-width-centered {
+	max-width: $maxWidthTablet;
+	margin-left: auto;
+	margin-right: auto;
+}
