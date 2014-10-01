@@ -46,6 +46,10 @@ html {
   padding: 0 10px;
 }
 
+body {
+  font-size: 16px;
+}
+
 .app-guide-section {
   padding: .5em 1.5em;
 }

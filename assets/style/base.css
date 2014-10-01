@@ -397,28 +397,28 @@ th {
 .ui-button-primary,
 .ui-button-secondary,
 .ui-button-tertiary {
+  -webkit-transition: color 0.3s ease-out, background-color 0.3s ease-out;
+  transition: color 0.3s ease-out, background-color 0.3s ease-out;
   background-color: #000000;
   border: none;
   color: #ffffff;
   padding: 20px;
   text-decoration: none;
-  font-size: 14px;
-  -webkit-transition: color 0.3s ease-out, background-color 0.3s ease-out;
-  transition: color 0.3s ease-out, background-color 0.3s ease-out;
+  font-size: 1.4em;
 }
 .ui-button-primary:hover,
 .ui-button-secondary:hover,
 .ui-button-tertiary:hover {
-  background-color: #ffc300;
-  color: #000000;
   -webkit-transition: color 0.3s ease-out, background-color 0.3s ease-out;
   transition: color 0.3s ease-out, background-color 0.3s ease-out;
+  background-color: #ffc300;
+  color: #000000;
 }
 
 .ui-button-secondary,
 .ui-button-tertiary {
   padding: 15px;
-  font-size: 12px;
+  font-size: 1.2em;
 }
 
 .ui-button-tertiary,

@@ -397,28 +397,28 @@ th {
 .ui-button-primary,
 .ui-button-secondary,
 .ui-button-tertiary {
+  -webkit-transition: color 0.3s ease-out, background-color 0.3s ease-out;
+  transition: color 0.3s ease-out, background-color 0.3s ease-out;
   background-color: #000000;
   border: none;
   color: #ffffff;
   padding: 20px;
   text-decoration: none;
-  font-size: 14px;
-  -webkit-transition: color 0.3s ease-out, background-color 0.3s ease-out;
-  transition: color 0.3s ease-out, background-color 0.3s ease-out;
+  font-size: 1.4em;
 }
 .ui-button-primary:hover,
 .ui-button-secondary:hover,
 .ui-button-tertiary:hover {
-  background-color: #ffc300;
-  color: #000000;
   -webkit-transition: color 0.3s ease-out, background-color 0.3s ease-out;
   transition: color 0.3s ease-out, background-color 0.3s ease-out;
+  background-color: #ffc300;
+  color: #000000;
 }
 
 .ui-button-secondary,
 .ui-button-tertiary {
   padding: 15px;
-  font-size: 12px;
+  font-size: 1.2em;
 }
 
 .ui-button-tertiary,
@@ -680,36 +680,111 @@ h2 {
 }
 
 /* intro component */
-.intro {
+.detail-intro {
   background-color: #f2f2f2;
   padding: 30px 0;
-  min-height: 700px;
 }
-.intro .intro-background {
+.detail-intro .intro-background {
   display: block;
   margin: 0 auto;
   max-width: 100%;
 }
-.intro .intro-content {
+.detail-intro .intro-content {
   margin-top: -170px;
 }
-.intro .intro-text {
+.detail-intro .intro-text {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
   background-color: #ffffff;
   display: inline-block;
   vertical-align: top;
   padding: 30px 30px 25px 33px;
   width: 66.66%;
+}
+.detail-intro .intro-text .intro-title-image,
+.detail-intro .intro-text h1 {
+  display: inline-block;
+  vertical-align: middle;
+}
+.detail-intro .intro-text .intro-title-image {
+  margin-right: 20px;
+}
+.detail-intro .intro-text h1 {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0;
+}
+.detail-intro .intro-text .subtitle {
+  display: block;
+  font-size: .55em;
+}
+.detail-intro .intro-text p {
+  font-size: 1.6em;
+}
+.detail-intro .social-buttons .social-button {
+  text-indent: 9999px;
+  white-space: nowrap;
+  overflow: hidden;
+  outline: none;
+  background-color: #000000;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+}
+.detail-intro .social-buttons p {
+  color: #7f7f7f;
+  font-size: 1.2em;
+  margin: 10px 0;
+}
+.detail-intro .widget-score-block {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-}
-.intro .widget-score {
   display: inline-block;
   vertical-align: top;
   width: 33.33%;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+}
+
+/* widget-score component */
+.widget-score {
+  background-color: #dcdcdc;
+  overflow: hidden;
+  position: relative;
+}
+.widget-score ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.widget-score .score-overview {
+  -webkit-box-shadow: 0px 0px 2px 1px #7f7f7f;
+  box-shadow: 0px 0px 2px 1px #7f7f7f;
+  -webkit-transition: box-shadow 0.3s ease-out, height 0.5s ease-out;
+  transition: box-shadow 0.3s ease-out, height 0.5s ease-out;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 80px;
+  background-color: #ffc300;
+  overflow: hidden;
+}
+.widget-score .score-overview:hover {
+  -webkit-box-shadow: 0px 0px 10px 1px #7f7f7f;
+  box-shadow: 0px 0px 10px 1px #7f7f7f;
+  -webkit-transition: box-shadow 0.3s ease-out, height 0.5s ease-out;
+  transition: box-shadow 0.3s ease-out, height 0.5s ease-out;
+  height: 100%;
+}
+.widget-score .score-overview .score {
+  color: #000000;
+  line-height: 80px;
+}
+.widget-score .score-summary {
+  margin-top: 80px;
+  background-color: #dcdcdc;
 }
 
 /* BMW-I3 VIEW */
