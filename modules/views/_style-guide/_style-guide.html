@@ -20,8 +20,8 @@
                 var t = window,
                     n = !(!t.document.createElementNS || !t.document.createElementNS(
                             "http://www.w3.org/2000/svg", "svg").createSVGRect || !document.implementation
-                        .hasFeature("http://www.w3.org/TR/SVG11/feature#Image", "1.1") || window.opera &&
-                        -1 === navigator.userAgent.indexOf("Chrome")),
+                        .hasFeature("http://www.w3.org/TR/SVG11/feature#Image", "1.1") ||
+                        window.opera && -1 === navigator.userAgent.indexOf("Chrome")),
                     o = function(o) {
                         var r = t.document.createElement("link"),
                             a = t.document.getElementsByTagName("script")[0];
@@ -30,10 +30,11 @@
                     },
                     r = new t.Image;
                 r.onerror = function() {
-                    o(!1)
-                }, r.onload = function() {
-                    o(1 === r.width && 1 === r.height)
-                }, r.src = "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="
+                        o(!1)
+                    }, r.onload = function() {
+                        o(1 === r.width && 1 === r.height)
+                    }, r.src =
+                    "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="
             }
         };
         grunticon(["/assets/images/grunticon-output/icons.data.svg.css",
@@ -209,7 +210,7 @@
 	-->
                     <section id="section-links" class="app-guide-section">
                         <h2 class="app-guide-section-title">
-			Links 
+			Buttons and Links 
 <a href="#section-links"
    class="app-guide-permalink app-guide-icon"
    title="permalink to this section"></a>
@@ -230,23 +231,7 @@
                             </div>
                             <div class="app-guide-example">
                                 <h3 class="app-guide-section-title">Primary action - inline level</h3>
-                                <a href="#" class="">Meer over Car UX</a>
-                            </div>
-                            <div class="app-guide-example">
-                                <h3 class="app-guide-section-title-light">Primary action - block level - light</h3>
-                                <a href="#" class="ui-button-primary">Meer over Car UX</a>
-                            </div>
-                            <div class="app-guide-example">
-                                <h3 class="app-guide-section-title-light">Secondary action - block level - light</h3>
-                                <a href="#" class="ui-button-secondary">Meer over Car UX</a>
-                            </div>
-                            <div class="app-guide-example">
-                                <h3 class="app-guide-section-title-light">Tertiary action - block level - light</h3>
-                                <a href="#" class="ui-button-tertiary">Meer over Car UX</a>
-                            </div>
-                            <div class="app-guide-example">
-                                <h3 class="app-guide-section-title-light">Primary action - inline level - light</h3>
-                                <a href="#" class="">Meer over Car UX</a>
+                                <a href="#" class="ui-link">Meer over Car UX</a>
                             </div>
                         </div>
                     </section>

@@ -62,6 +62,10 @@ html {
   position: relative;
 }
 
+a {
+  border: none;
+}
+
 a.app-guide-icon {
   color: #ADBCC7;
   text-decoration: none;

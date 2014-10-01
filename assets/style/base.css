@@ -394,6 +394,56 @@ th {
   padding: 0;
 }
 
+.ui-button-primary,
+.ui-button-secondary,
+.ui-button-tertiary {
+  background-color: #000000;
+  border: none;
+  color: #ffffff;
+  padding: 20px;
+  text-decoration: none;
+  font-size: 14px;
+  -webkit-transition: color 0.3s ease-out, background-color 0.3s ease-out;
+  transition: color 0.3s ease-out, background-color 0.3s ease-out;
+}
+.ui-button-primary:hover,
+.ui-button-secondary:hover,
+.ui-button-tertiary:hover {
+  background-color: #ffc300;
+  color: #000000;
+  -webkit-transition: color 0.3s ease-out, background-color 0.3s ease-out;
+  transition: color 0.3s ease-out, background-color 0.3s ease-out;
+}
+
+.ui-button-secondary,
+.ui-button-tertiary {
+  padding: 15px;
+  font-size: 12px;
+}
+
+.ui-button-tertiary,
+.ui-button-tertiary:hover {
+  background-color: #dcdcdc;
+  color: #7f7f7f;
+}
+
+a,
+.ui-link {
+  border-bottom: 1px solid #000000;
+  color: #000000;
+  text-decoration: none;
+  font-size: 16px;
+  -webkit-transition: color 0.3s ease-out, border-bottom 0.3s ease-out;
+  transition: color 0.3s ease-out, border-bottom 0.3s ease-out;
+}
+a:hover,
+.ui-link:hover {
+  border-bottom-color: transparent;
+  color: #ffc300;
+  -webkit-transition: color 0.3s ease-out, border-bottom-color 0.3s ease-out;
+  transition: color 0.3s ease-out, border-bottom-color 0.3s ease-out;
+}
+
 /*
  * Print Styles, shamelessly borrowed from H5BP:
  * https://github.com/h5bp/html5-boilerplate/blob/v4.2.0/css/main.css#L231
