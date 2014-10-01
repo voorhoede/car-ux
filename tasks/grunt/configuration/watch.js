@@ -6,7 +6,7 @@ function getConfiguration(grunt) {
 
     return {
         options: {
-            livereload: true
+            livereload: false
         },
         index: {
             files: [

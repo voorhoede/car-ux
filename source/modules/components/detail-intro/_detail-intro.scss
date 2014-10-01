@@ -1,0 +1,79 @@
+@import "../../../assets/scss/variables";
+@import "../../../assets/scss/helpers";
+
+/* intro component */
+
+.detail-intro {
+	background-color: $light-grey;
+	padding: 30px 0;
+
+	.intro-background {
+		display: block;
+		margin: 0 auto;
+		max-width: 100%;
+	}
+
+	.intro-content {
+		margin-top: -170px;
+	}
+
+	.intro-text {
+		@include box-sizing(border-box);
+
+		background-color: $white;
+		display: inline-block;
+		vertical-align: top;
+		padding: 30px 30px 25px 33px;
+		width: 66.66%;
+
+		.intro-title-image,
+		h1 {
+			display: inline-block;
+			vertical-align: middle;
+		}
+
+		.intro-title-image {
+			margin-right: 20px;
+		}
+
+		h1 {
+			display: inline-block;
+			vertical-align: middle;
+			margin: 0;
+		}
+
+		.subtitle {
+			display: block;
+			font-size: .55em;
+		}
+
+		p {
+			font-size: 1.6em;
+		}
+	}
+
+	.social-buttons {
+		.social-button {
+			@include hide-text;
+
+			background-color: $black;
+			display: inline-block;
+			width: 30px;
+			height: 30px;
+		}
+
+		p {
+			color: $dark-grey;
+			font-size: 1.2em;
+			margin: 10px 0;
+		}
+	}
+
+	.widget-score-block {
+		@include box-sizing(border-box);
+
+		display: inline-block;
+		vertical-align: top;
+		width: 33.33%;
+	}
+}

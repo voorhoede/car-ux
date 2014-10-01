@@ -1,10 +1,11 @@
 {
     "vendor": [
-
     ],
     "common": [
+		"helpers/debounce"
     ],
     "components": [
+		"detail-intro"
     ],
     "views": [
     ]
