@@ -1,8 +1,12 @@
 {
 	"components": [
-		"demo-component"
+		"demo-component",
+		"footer",
+		"header",
+		"intro"
 	],
 	"views": [
+		"bmw-i3",
 		"demo-view"
 	]
 }
