@@ -1,3 +1,6 @@
+@import 'core/colors';
+@import 'core/fonts';
+
 //
 // Global variables
 //
@@ -5,7 +8,10 @@
 // duplicate styles to the browser.
 //
 
-@import 'core/colors';
+// Paths
+
+$path-fonts: 				'../fonts/';
+$path-images: 				'../images/';
 
 // Widths
-$maxWidthTablet: 		900px;
+$max-width-tablet: 		900px;

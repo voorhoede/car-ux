@@ -1,0 +1,21 @@
+@import "../variables";
+
+//@font-face declarations
+/*
+@font-face {
+	font-family: 'PostNLBold';
+	src: url('#{$path-fonts}postnl-bold-webfont.eot');
+	src: url('#{$path-fonts}postnl-bold-webfont.eot?#iefix') format('embedded-opentype'),
+	url('#{$path-fonts}postnl-bold-webfont.woff') format('woff'),
+	url('#{$path-fonts}postnl-bold-webfont.ttf') format('truetype'),
+	url('#{$path-fonts}postnl-bold-webfont.svg#PostNLBold') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}*/
+
+//font variables
+$helvetica-nue-fallback: Helvetica, Arial, sans-serif;
+
+$helvetica-nue-bold: "Helvetica Nue Bold", $helvetica-nue-fallback;
+$helvetica-nue: "Helvetica Nue", $helvetica-nue-fallback;
+$helvetica-nue-regular: "Helvetica Nue Regular", $helvetica-nue-fallback;
