@@ -30,6 +30,10 @@ html {
     position: relative;
 }
 
+a {
+	border: none;
+}
+
 a.app-guide-icon {
     color: $guide-link-color;
     text-decoration: none;

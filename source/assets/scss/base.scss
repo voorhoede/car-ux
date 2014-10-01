@@ -7,6 +7,8 @@
 @import 'variables';
 @import 'helpers';
 // all core
+@import 'core/buttons';
+@import 'core/links';
 @import 'core/typography';
 
 @import 'print'; // always last to overwrite

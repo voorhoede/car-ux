@@ -1,0 +1,37 @@
+// Button styling
+
+.ui-button-primary,
+.ui-button-secondary,
+.ui-button-tertiary {
+	background-color: $black;
+	border: none;
+	color: $white;
+	padding: 20px;
+	text-decoration: none;
+
+	// @TODO: update font
+	font-size: 14px;
+
+	@include transition(color 0.3s ease-out, background-color 0.3s ease-out);
+
+	&:hover {
+		background-color: $yellow;
+		color: $black;
+
+		@include transition(color 0.3s ease-out, background-color 0.3s ease-out);
+	}
+}
+
+.ui-button-secondary,
+.ui-button-tertiary {
+	padding: 15px;
+
+	// @TODO: update font
+	font-size: 12px;
+}
+
+.ui-button-tertiary,
+.ui-button-tertiary:hover {
+	background-color: $medium-grey;
+	color: $dark-grey;
+}
