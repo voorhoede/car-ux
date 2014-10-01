@@ -1,33 +1,28 @@
 // Button styling
-
 .ui-button-primary,
 .ui-button-secondary,
 .ui-button-tertiary {
+	@include transition(color 0.3s ease-out, background-color 0.3s ease-out);
+
 	background-color: $black;
 	border: none;
 	color: $white;
 	padding: 20px;
 	text-decoration: none;
-
-	// @TODO: update font
-	font-size: 14px;
-
-	@include transition(color 0.3s ease-out, background-color 0.3s ease-out);
+	font-size: 1.4em;
 
 	&:hover {
+		@include transition(color 0.3s ease-out, background-color 0.3s ease-out);
+
 		background-color: $yellow;
 		color: $black;
-
-		@include transition(color 0.3s ease-out, background-color 0.3s ease-out);
 	}
 }
 
 .ui-button-secondary,
 .ui-button-tertiary {
 	padding: 15px;
-
-	// @TODO: update font
-	font-size: 12px;
+	font-size: 1.2em;
 }
 
 .ui-button-tertiary,

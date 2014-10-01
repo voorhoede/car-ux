@@ -3,7 +3,8 @@
 		"demo-component",
 		"footer",
 		"header",
-		"intro"
+		"detail-intro",
+		"widget-score"
 	],
 	"views": [
 		"bmw-i3",
