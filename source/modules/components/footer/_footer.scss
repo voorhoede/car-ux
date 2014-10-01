@@ -4,5 +4,29 @@
 /* footer component */
 
 .footer {
-
+	background-color: $black;
+	color: $white;
+	.footer-content {
+		width: 100%;
+		max-width: 900px;
+		margin-right: auto;
+		margin-left: auto;
+	}
+	.logo {
+		display: inline-block;
+		background-color: $white;
+		height: 40px;
+		width: 55px;
+		color: $black;
+		text-align: right;
+		font-size: 1.6em;
+	}
+	.footer-button {
+		/*@extend .ui-button-tertiary;*/
+		color: $black;
+		background-color: $white;
+		&:hover {
+			background-color: $light-grey;
+		}
+	}
 }
