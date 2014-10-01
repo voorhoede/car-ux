@@ -108,7 +108,9 @@ Or delete this file if not applicable.
 
 			</h3>
                             <div class="app-guide-code">	<pre class="language-markup"><code>&lt;!-- intro -->
-&lt;div class="intro" data-component="intro">Write HTML for `intro` component&lt;/div>
+&lt;div class="intro" data-component="intro">
+	&lt;section class="max-width-centered">&lt;/section>
+&lt;/div>
 &lt;!-- /intro --></code></pre>
                                 <ul class="app-guide-code-options">
                                     <li>
@@ -131,6 +133,10 @@ Or delete this file if not applicable.
 
 			</h3>
                             <div class="app-guide-code">	<pre class="language-css"><code>/* intro component */
+.intro {
+  background-color: #f2f2f2;
+  min-height: 700px;
+}
 
 /*# sourceMappingURL=_intro.css.map */
 </code></pre>

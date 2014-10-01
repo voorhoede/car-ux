@@ -533,7 +533,17 @@ a:hover,
 /* footer component */
 /* header component */
 /* intro component */
+.intro {
+  background-color: #f2f2f2;
+  min-height: 700px;
+}
+
 /* BMW-I3 VIEW */
 /* DEMO-VIEW VIEW */
+.max-width-centered {
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 /*# sourceMappingURL=main.css.map */
