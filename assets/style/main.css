@@ -591,6 +591,10 @@ h2 {
 
 /* BMW-I3 VIEW */
 /* DEMO-VIEW VIEW */
+body {
+  font-size: 10px;
+}
+
 .max-width-centered {
   max-width: 900px;
   margin-left: auto;
