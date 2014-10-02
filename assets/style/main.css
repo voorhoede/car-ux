@@ -450,8 +450,25 @@ a:hover,
 .ui-link:hover {
   border-bottom-color: transparent;
   color: #ffc300;
-  -webkit-transition: color 0.2s ease-out, border-bottom-color 0.2s ease-out;
-  transition: color 0.2s ease-out, border-bottom-color 0.2s ease-out;
+  -webkit-transition: color 0.3s ease-out, border-bottom-color 0.3s ease-out;
+  transition: color 0.3s ease-out, border-bottom-color 0.3s ease-out;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+  text-rendering: optimizelegibility;
+  -moz-font-feature-settings: "liga=1, dlig=1";
+  -ms-font-feature-settings: "liga", "dlig";
+  -webkit-font-feature-settings: "liga", "dlig";
+  -o-font-feature-settings: "liga", "dlig";
+  font-feature-settings: "liga", "dlig";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 h1 {
@@ -467,6 +484,11 @@ h2 {
 }
 
 p {
+  font-size: 1.6em;
+  line-height: 1.6;
+}
+
+ol, ul {
   font-size: 1.6em;
 }
 
@@ -560,6 +582,8 @@ p {
 .footer {
   background-color: #000000;
   color: #ffffff;
+  padding-top: 2em;
+  padding-bottom: 5em;
 }
 .footer .footer-content {
   width: 100%;
@@ -569,6 +593,7 @@ p {
 }
 .footer .logo {
   display: inline-block;
+  vertical-align: top;
   background-color: #ffffff;
   height: 40px;
   width: 55px;
@@ -576,13 +601,17 @@ p {
   text-align: right;
   font-size: 1.6em;
 }
-.footer .footer-button {
-  /*@extend .ui-button-tertiary;*/
+.footer .inline-header {
+  display: inline-block;
+}
+.footer .footer-button.ui-button-tertiary {
+  display: inline-block;
+  vertical-align: top;
   color: #000000;
   background-color: #ffffff;
 }
-.footer .footer-button:hover {
-  background-color: #f2f2f2;
+.footer .footer-button.ui-button-tertiary:hover {
+  background-color: #ffc300;
 }
 
 /* header component */
@@ -623,34 +652,34 @@ p {
   -webkit-margin-before: 0;
   -webkit-margin-after: 0;
   -webkit-padding-start: 0;
-  margin-top: 2.5em;
-  margin-left: -1.5em;
+  margin-top: 25px;
+  margin-left: -15px;
 }
 @media only screen and (max-width: 600px) {
   .header nav ul {
-    margin-top: 2.8em;
+    margin-top: 28px;
   }
 }
 @media only screen and (max-width: 450px) {
   .header nav ul {
-    margin-top: 3em;
+    margin-top: 3px;
     margin-left: 0;
   }
 }
 .header nav li {
   display: inline-block;
   vertical-align: top;
-  margin-left: 4.5em;
+  margin-left: 45px;
   list-style: none;
 }
 @media only screen and (max-width: 600px) {
   .header nav li {
-    margin-left: 3em;
+    margin-left: 30px;
   }
 }
 @media only screen and (max-width: 450px) {
   .header nav li {
-    margin-left: 2em;
+    margin-left: 20px;
   }
   .header nav li:first-child {
     display: none;
@@ -658,7 +687,7 @@ p {
 }
 @media only screen and (360px) {
   .header nav li {
-    margin-left: 1.5em;
+    margin-left: 15px;
   }
 }
 .header nav li:first-child {
@@ -676,18 +705,18 @@ p {
 }
 .header nav a {
   font-family: "Helvetica Nue Bold", Helvetica, Arial, sans-serif;
-  font-size: 2.5em;
+  font-size: 25px;
   line-height: 1.2;
   color: #ffffff;
 }
 @media only screen and (max-width: 600px) {
   .header nav a {
-    font-size: 2em;
+    font-size: 20px;
   }
 }
 @media only screen and (max-width: 360px) {
   .header nav a {
-    font-size: 1.6em;
+    font-size: 16px;
   }
 }
 .header nav a:hover {

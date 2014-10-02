@@ -108,9 +108,14 @@ Or delete this file if not applicable.
 &lt;footer class="footer" data-component="footer">
 	&lt;div class="footer-content">
 		&lt;h1>Car UX is een initiatief van UNITiD interaction Designers&lt;/h1>
-		&lt;p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmo veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequaorem ipsum dolor sit amet, consectetur ad.&lt;/p>	&lt;span class="logo">CAR UX&lt;/span>
-		&lt;h2>Review aanvragen of opmerkingen?&lt;/h2>
-		&lt;a class="footer-button" href="mailto:postbus@unitid.nl?subject=Car UX Review aanvragen / opmerkingen">Mail ons&lt;/a>
+		&lt;p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmo veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequaorem ipsum dolor sit amet, consectetur ad.&lt;/p>
+		&lt;h2 class="inline-header">Review aanvragen of opmerkingen?&lt;/h2>
+		&lt;a class="footer-button ui-button-tertiary" href="mailto:postbus@unitid.nl?subject=Car UX Review aanvragen / opmerkingen">
+			Mail ons
+		&lt;/a>
+		&lt;div>	&lt;span class="logo">CAR UX&lt;/span>
+			&lt;span class="logo">UNITiD&lt;/span>
+		&lt;/div>
 	&lt;/div>
 &lt;/footer>
 &lt;!-- /footer --></code></pre>
@@ -138,6 +143,8 @@ Or delete this file if not applicable.
 .footer {
   background-color: #000000;
   color: #ffffff;
+  padding-top: 2em;
+  padding-bottom: 5em;
 }
 .footer .footer-content {
   width: 100%;
@@ -147,6 +154,7 @@ Or delete this file if not applicable.
 }
 .footer .logo {
   display: inline-block;
+  vertical-align: top;
   background-color: #ffffff;
   height: 40px;
   width: 55px;
@@ -154,13 +162,17 @@ Or delete this file if not applicable.
   text-align: right;
   font-size: 1.6em;
 }
-.footer .footer-button {
-  /*@extend .ui-button-tertiary;*/
+.footer .inline-header {
+  display: inline-block;
+}
+.footer .footer-button.ui-button-tertiary {
+  display: inline-block;
+  vertical-align: top;
   color: #000000;
   background-color: #ffffff;
 }
-.footer .footer-button:hover {
-  background-color: #f2f2f2;
+.footer .footer-button.ui-button-tertiary:hover {
+  background-color: #ffc300;
 }
 
 /*# sourceMappingURL=_footer.css.map */

@@ -36,34 +36,34 @@
   -webkit-margin-before: 0;
   -webkit-margin-after: 0;
   -webkit-padding-start: 0;
-  margin-top: 2.5em;
-  margin-left: -1.5em;
+  margin-top: 25px;
+  margin-left: -15px;
 }
 @media only screen and (max-width: 600px) {
   .header nav ul {
-    margin-top: 2.8em;
+    margin-top: 28px;
   }
 }
 @media only screen and (max-width: 450px) {
   .header nav ul {
-    margin-top: 3em;
+    margin-top: 3px;
     margin-left: 0;
   }
 }
 .header nav li {
   display: inline-block;
   vertical-align: top;
-  margin-left: 4.5em;
+  margin-left: 45px;
   list-style: none;
 }
 @media only screen and (max-width: 600px) {
   .header nav li {
-    margin-left: 3em;
+    margin-left: 30px;
   }
 }
 @media only screen and (max-width: 450px) {
   .header nav li {
-    margin-left: 2em;
+    margin-left: 20px;
   }
   .header nav li:first-child {
     display: none;
@@ -71,7 +71,7 @@
 }
 @media only screen and (360px) {
   .header nav li {
-    margin-left: 1.5em;
+    margin-left: 15px;
   }
 }
 .header nav li:first-child {
@@ -89,18 +89,18 @@
 }
 .header nav a {
   font-family: "Helvetica Nue Bold", Helvetica, Arial, sans-serif;
-  font-size: 2.5em;
+  font-size: 25px;
   line-height: 1.2;
   color: #ffffff;
 }
 @media only screen and (max-width: 600px) {
   .header nav a {
-    font-size: 2em;
+    font-size: 20px;
   }
 }
 @media only screen and (max-width: 360px) {
   .header nav a {
-    font-size: 1.6em;
+    font-size: 16px;
   }
 }
 .header nav a:hover {
