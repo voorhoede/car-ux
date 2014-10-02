@@ -6,6 +6,8 @@
 .footer {
 	background-color: $black;
 	color: $white;
+	padding-top: 2em;
+	padding-bottom: 5em;
 	.footer-content {
 		width: 100%;
 		max-width: 900px;
@@ -14,6 +16,7 @@
 	}
 	.logo {
 		display: inline-block;
+		vertical-align: top;
 		background-color: $white;
 		height: 40px;
 		width: 55px;
@@ -21,12 +24,16 @@
 		text-align: right;
 		font-size: 1.6em;
 	}
-	.footer-button {
-		/*@extend .ui-button-tertiary;*/
+	.inline-header {
+		display: inline-block;
+	}
+	.footer-button.ui-button-tertiary {
+		display: inline-block;
+		vertical-align: top;
 		color: $black;
 		background-color: $white;
 		&:hover {
-			background-color: $light-grey;
+			background-color: $yellow;
 		}
 	}
 }
