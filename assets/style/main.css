@@ -404,7 +404,7 @@ th {
   color: #ffffff;
   padding: 20px;
   text-decoration: none;
-  font-size: 1.4em;
+  font-size: 14px;
 }
 .ui-button-primary:hover,
 .ui-button-secondary:hover,
@@ -418,7 +418,7 @@ th {
 .ui-button-secondary,
 .ui-button-tertiary {
   padding: 15px;
-  font-size: 1.2em;
+  font-size: 12px;
 }
 
 .ui-button-tertiary,
