@@ -402,6 +402,7 @@ th {
   background-color: #000000;
   border: none;
   color: #ffffff;
+  display: inline-block;
   padding: 20px;
   text-decoration: none;
   font-size: 14px;
