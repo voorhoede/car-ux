@@ -14,22 +14,32 @@
 	}
 
 	.intro-content {
-		margin-top: -170px;
+		background-color: $white;
+
+		@include min-screen($break-large) {
+			margin-top: -170px;
+		}
 	}
 
 	.intro-text {
-		@include box-sizing(border-box);
+		@include transition(height .2s ease-out);
 
 		background-color: $white;
-		display: inline-block;
-		vertical-align: top;
 		padding: 30px 30px 25px 33px;
-		width: 66.66%;
 
-		.intro-title-image,
-		h1 {
+		@include min-screen($break-small) {
+			@include box-sizing(border-box);
+
 			display: inline-block;
-			vertical-align: middle;
+			vertical-align: top;
+			width: 66.66%;
+			padding-bottom: 0;
+		}
+
+	h1,
+		.intro-title-image {
+			display: inline-block;
+			vertical-align: top;
 		}
 
 		.intro-title-image {
@@ -38,8 +48,9 @@
 
 		h1 {
 			display: inline-block;
-			vertical-align: middle;
+			vertical-align: top;
 			margin: 0;
+			max-width: 70%;
 		}
 
 		.subtitle {
@@ -52,7 +63,34 @@
 		}
 	}
 
+	.widget-score-block {
+		.widget-score {
+			@include transition(height .2s ease-out);
+		}
+
+		@include min-screen($break-small) {
+			@include box-sizing(border-box);
+
+			display: inline-block;
+			vertical-align: top;
+			width: 33.33%;
+		}
+	}
+
 	.social-buttons {
+		@include transition(margin .2s ease-out);
+
+		background-color: $white;
+		padding: 0 0 30px 30px;
+
+		@include min-screen($break-small) {
+			@include box-sizing(border-box);
+
+			display: inline-block;
+			vertical-align: top;
+			width: 66.66%;
+		}
+
 		.social-button {
 			@include hide-text;
 
@@ -65,15 +103,8 @@
 		p {
 			color: $dark-grey;
 			font-size: 1.2em;
-			margin: 10px 0;
+			margin: 0;
+			padding: 10px 0;
 		}
-	}
-
-	.widget-score-block {
-		@include box-sizing(border-box);
-
-		display: inline-block;
-		vertical-align: top;
-		width: 33.33%;
 	}
 }

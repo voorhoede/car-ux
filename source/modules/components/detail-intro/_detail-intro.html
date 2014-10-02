@@ -2,7 +2,7 @@
 <!-- intro -->
 <div class="detail-intro" data-component="detail-intro">
 	<img class="intro-background" src="{{ content.backgroundImage }}" alt="{{ content.backgroundImageAlt }}" />
-	<section class="intro-content max-width-centered">
+	<section class="intro-content max-width-centered" data-intro-section>
 		<article class="intro-text" data-intro-text>
 			<header>
 				<img itemprop="image" class="intro-title-image" src="{{ content.titleImage }}" alt="{{ content.titleImageAlt }}" />
@@ -14,16 +14,16 @@
 			<p itemprop="description">
 				{{ content.description }}
 			</p>
-			<aside class="social-buttons">
-				<p>Deze test delen via</p>
-				<a target="_blank" href="http://www.facebook.com/sharer.php?s=100&amp;p[url]={{ content.pageUrl | urlencode }}&amp;p[title]=Car%20UX%20-%20{{ content.title }}%20{{ content.subtitle }}&amp;p[summary]={{ content.socialSharing.facebook | urlencode }}" class="social-button button-facebook" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=368,width=600');return false;">Facebook</a>
-				<a target="_blank" href="http://twitter.com/share?text={{ content.socialSharing.twitter | urlencode }}&amp;url={{ content.pageUrl | urlencode }}" class="social-button button-twitter" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=438,width=600');return false;">Twitter</a>
-				<a target="_blank" class="social-button button-gplus" href="https://plus.google.com/share?url={{ content.pageUrl }}" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;">Google Plus</a>
-			</aside>
 		</article><!--
 		--><div class="widget-score-block">
 			{% include "components/widget-score/_widget-score.html" %}
-		</div>
+		</div><!--
+		--><aside class="social-buttons" data-social-buttons>
+			<p>Deze test delen via</p>
+			<a target="_blank" href="http://www.facebook.com/sharer.php?s=100&amp;p[url]={{ content.pageUrl | urlencode }}&amp;p[title]=Car%20UX%20-%20{{ content.title }}%20{{ content.subtitle }}&amp;p[summary]={{ content.socialSharing.facebook | urlencode }}" class="social-button button-facebook" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=368,width=600');return false;">Facebook</a>
+			<a target="_blank" href="http://twitter.com/share?text={{ content.socialSharing.twitter | urlencode }}&amp;url={{ content.pageUrl | urlencode }}" class="social-button button-twitter" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=438,width=600');return false;">Twitter</a>
+			<a target="_blank" class="social-button button-gplus" href="https://plus.google.com/share?url={{ content.pageUrl }}" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;">Google Plus</a>
+		</aside>
 	</section>
 </div>
 <!-- /intro -->

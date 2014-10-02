@@ -1,19 +1,25 @@
 (function(d, w){
 	'use strict';
 
-	var introTextElm = d.querySelector('[data-intro-text]');
-	var widgetScoreElm = d.querySelector('[data-component="widget-score"]');
+	var introComponentElm = d.querySelector('[data-component="detail-intro"]');
+	var introTextElm = introComponentElm.querySelector('[data-intro-text]');
+	var widgetScoreElm = introComponentElm.querySelector('[data-component="widget-score"]');
+	var introSectionElm = introComponentElm.querySelector('[data-intro-section]');
+	var socialButtonsElm = introComponentElm.querySelector('[data-social-buttons]');
 
 	// Make the widget height equal to the height of introTextElm
 	function equalizeHeight() {
-		widgetScoreElm.style.height = introTextElm.offsetHeight + 'px';
+		if (helpers.breakSize !== 'extra-small') {
+			introSectionElm.style.height = widgetScoreElm.style.height = (introTextElm.offsetHeight + socialButtonsElm.offsetHeight) + 'px';
+			socialButtonsElm.style.marginTop = -(socialButtonsElm.offsetHeight) + 'px';
+		} else {
+			socialButtonsElm.style.marginTop = introSectionElm.style.height = widgetScoreElm.style.height = '';
+		}
 	}
-	//equalizeHeight(); // Because IE might take some time before firing the load event
 
 	// Fire equalizeHeight debounced on the resize event
 	w.addEventListener('resize', debounce(equalizeHeight, 250), false);
 
 	// Make sure all images inside introTextElm are loaded
 	w.addEventListener('load', equalizeHeight, false);
-
 }(document, window));

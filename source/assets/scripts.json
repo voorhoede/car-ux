@@ -2,7 +2,8 @@
     "vendor": [
     ],
     "common": [
-		"helpers/debounce"
+		"helpers/debounce",
+		"helpers/media-queries"
     ],
     "components": [
 		"detail-intro"

@@ -7,6 +7,23 @@
 
 body {
 	font-size: 10px;
+
+	&:after {
+		display: none;
+		content: 'extra-small';
+
+		@include min-screen($break-small){
+			content: 'small';
+		}
+
+		@include min-screen($break-medium){
+			content: 'medium';
+		}
+
+		@include min-screen($break-large){
+			content: 'large';
+		}
+	}
 }
 
 .max-width-centered {
