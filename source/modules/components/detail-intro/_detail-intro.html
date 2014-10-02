@@ -1,10 +1,11 @@
+{% macro detailIntro(content) %}
 <!-- intro -->
 <div class="detail-intro" data-component="detail-intro">
-	<img class="intro-background" src="{{ pathToAssets }}images/{{ content.backgroundImage }}" alt="{{ content.backgroundImageAlt }}" />
+	<img class="intro-background" src="{{ content.backgroundImage }}" alt="{{ content.backgroundImageAlt }}" />
 	<section class="intro-content max-width-centered">
 		<article class="intro-text" data-intro-text>
 			<header>
-				<img itemprop="image" class="intro-title-image" src="{{ pathToAssets }}images/{{ content.titleImage }}" alt="{{ content.titleImageAlt }}" />
+				<img itemprop="image" class="intro-title-image" src="{{ content.titleImage }}" alt="{{ content.titleImageAlt }}" />
 				<h1 itemprop="name">
 					{{ content.title }}
 					<span class="subtitle">{{ content.subtitle }}</span>
@@ -26,3 +27,39 @@
 	</section>
 </div>
 <!-- /intro -->
+{% endmacro %}
+
+{# this will only output in component guide #}
+{{ detailIntro({
+		pageUrl: 'http://www.car-ux.com/bmw-i3/bmw-i3.html',
+		backgroundImage: '/assets/images/bmw-i3/bmw-i3-dashboard.png',
+		backgroundImageAlt: 'BMW i3 dashboard',
+		titleImage: '/assets/images/bmw-i3/bmw-i3-small.png',
+		titleImageAlt: 'BMW i3 small',
+		title: 'BMW i3',
+		subtitle: 'Business model 1.5 TDI',
+		description: 'Introtekst over de nieuwe BMW i3. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequa orem psum dolor sit.',
+		widgetScore: {
+			score: '8,5',
+			presence: '4',
+			contrast: '5',
+			focus: '4',
+			usability: '4',
+			features: '3',
+			summary: {
+				good: [
+						'De UI is contrastrijk',
+						'Hardware knop'
+					],
+					bad: [
+						'De inputmethode',
+						'Navigatie viel tegen'
+					]
+				}
+			},
+			socialSharing: {
+				twitter: 'Twitter - share text',
+				facebook: 'Facebook - share text'
+			}
+		})
+}}
