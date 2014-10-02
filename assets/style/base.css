@@ -484,6 +484,12 @@ h2 {
   line-height: 1.1;
 }
 
+h2 {
+  font-family: "Helvetica Nue", Helvetica, Arial, sans-serif;
+  font-size: 20px;
+  line-height: 1.1;
+}
+
 p {
   font-size: 1.6em;
   line-height: 1.6;
