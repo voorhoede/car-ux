@@ -2,7 +2,7 @@
 .ui-button-primary,
 .ui-button-secondary,
 .ui-button-tertiary {
-	@include transition(color 0.3s ease-out, background-color 0.3s ease-out);
+	@include transition(color .2s ease-out, background-color .2s ease-out);
 
 	background-color: $black;
 	border: none;
@@ -12,7 +12,7 @@
 	font-size: 14px;
 
 	&:hover {
-		@include transition(color 0.3s ease-out, background-color 0.3s ease-out);
+		@include transition(color .2s ease-out, background-color .2s ease-out);
 
 		background-color: $yellow;
 		color: $black;
