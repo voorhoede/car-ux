@@ -397,8 +397,8 @@ th {
 .ui-button-primary,
 .ui-button-secondary,
 .ui-button-tertiary {
-  -webkit-transition: color 0.3s ease-out, background-color 0.3s ease-out;
-  transition: color 0.3s ease-out, background-color 0.3s ease-out;
+  -webkit-transition: color 0.2s ease-out, background-color 0.2s ease-out;
+  transition: color 0.2s ease-out, background-color 0.2s ease-out;
   background-color: #000000;
   border: none;
   color: #ffffff;
@@ -409,8 +409,8 @@ th {
 .ui-button-primary:hover,
 .ui-button-secondary:hover,
 .ui-button-tertiary:hover {
-  -webkit-transition: color 0.3s ease-out, background-color 0.3s ease-out;
-  transition: color 0.3s ease-out, background-color 0.3s ease-out;
+  -webkit-transition: color 0.2s ease-out, background-color 0.2s ease-out;
+  transition: color 0.2s ease-out, background-color 0.2s ease-out;
   background-color: #ffc300;
   color: #000000;
 }
@@ -443,16 +443,15 @@ a,
   border-bottom: 1px solid #000000;
   color: #000000;
   text-decoration: none;
-  font-size: 16px;
-  -webkit-transition: color 0.3s ease-out, border-bottom 0.3s ease-out;
-  transition: color 0.3s ease-out, border-bottom 0.3s ease-out;
+  -webkit-transition: color 0.2s ease-out, border-bottom 0.2s ease-out;
+  transition: color 0.2s ease-out, border-bottom 0.2s ease-out;
 }
 a:hover,
 .ui-link:hover {
   border-bottom-color: transparent;
   color: #ffc300;
-  -webkit-transition: color 0.3s ease-out, border-bottom-color 0.3s ease-out;
-  transition: color 0.3s ease-out, border-bottom-color 0.3s ease-out;
+  -webkit-transition: color 0.2s ease-out, border-bottom-color 0.2s ease-out;
+  transition: color 0.2s ease-out, border-bottom-color 0.2s ease-out;
 }
 
 h1 {
