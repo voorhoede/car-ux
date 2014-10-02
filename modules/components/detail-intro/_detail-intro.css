@@ -9,30 +9,43 @@
   max-width: 100%;
 }
 .detail-intro .intro-content {
-  margin-top: -170px;
+  background-color: #ffffff;
+}
+@media screen and (min-width: 920px) {
+  .detail-intro .intro-content {
+    margin-top: -170px;
+  }
 }
 .detail-intro .intro-text {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+  -webkit-transition: height 0.2s ease-out;
+  transition: height 0.2s ease-out;
   background-color: #ffffff;
+  padding: 30px 30px 25px 33px;
+}
+@media screen and (min-width: 620px) {
+  .detail-intro .intro-text {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    display: inline-block;
+    vertical-align: top;
+    width: 66.66%;
+    padding-bottom: 0;
+  }
+}
+.detail-intro .intro-text h1,
+.detail-intro .intro-text .intro-title-image {
   display: inline-block;
   vertical-align: top;
-  padding: 30px 30px 25px 33px;
-  width: 66.66%;
-}
-.detail-intro .intro-text .intro-title-image,
-.detail-intro .intro-text h1 {
-  display: inline-block;
-  vertical-align: middle;
 }
 .detail-intro .intro-text .intro-title-image {
   margin-right: 20px;
 }
 .detail-intro .intro-text h1 {
   display: inline-block;
-  vertical-align: middle;
+  vertical-align: top;
   margin: 0;
+  max-width: 70%;
 }
 .detail-intro .intro-text .subtitle {
   display: block;
@@ -40,6 +53,36 @@
 }
 .detail-intro .intro-text p {
   font-size: 1.6em;
+}
+.detail-intro .widget-score-block .widget-score {
+  -webkit-transition: height 0.2s ease-out;
+  transition: height 0.2s ease-out;
+}
+@media screen and (min-width: 620px) {
+  .detail-intro .widget-score-block {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    display: inline-block;
+    vertical-align: top;
+    width: 33.33%;
+  }
+}
+.detail-intro .social-buttons {
+  -webkit-transition: margin 0.2s ease-out;
+  transition: margin 0.2s ease-out;
+  background-color: #ffffff;
+  padding: 0 0 30px 30px;
+}
+@media screen and (min-width: 620px) {
+  .detail-intro .social-buttons {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    display: inline-block;
+    vertical-align: top;
+    width: 66.66%;
+  }
 }
 .detail-intro .social-buttons .social-button {
   text-indent: 9999px;
@@ -54,15 +97,8 @@
 .detail-intro .social-buttons p {
   color: #7f7f7f;
   font-size: 1.2em;
-  margin: 10px 0;
-}
-.detail-intro .widget-score-block {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  display: inline-block;
-  vertical-align: top;
-  width: 33.33%;
+  margin: 0;
+  padding: 10px 0;
 }
 
 /*# sourceMappingURL=_detail-intro.css.map */

@@ -107,7 +107,7 @@ Or delete this file if not applicable.
                             <div class="app-guide-code">	<pre class="language-markup"><code>&lt;!-- intro -->
 &lt;div class="detail-intro" data-component="detail-intro">
 	&lt;img class="intro-background" src="/assets/images/bmw-i3/bmw-i3-dashboard.png" alt="BMW i3 dashboard" />
-	&lt;section class="intro-content max-width-centered">
+	&lt;section class="intro-content max-width-centered" data-intro-section>
 		&lt;article class="intro-text" data-intro-text>
 			&lt;header>
 				&lt;img itemprop="image" class="intro-title-image" src="/assets/images/bmw-i3/bmw-i3-small.png" alt="BMW i3 small" />
@@ -118,12 +118,6 @@ Or delete this file if not applicable.
 			&lt;/header>
 			&lt;p itemprop="description">Introtekst over de nieuwe BMW i3. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
 				commodo consequa orem psum dolor sit.&lt;/p>
-			&lt;aside class="social-buttons">
-				&lt;p>Deze test delen via&lt;/p>	&lt;a target="_blank" href="http://www.facebook.com/sharer.php?s=100&amp;p[url]=http%3A%2F%2Fwww.car-ux.com%2Fbmw-i3%2Fbmw-i3.html&amp;p[title]=Car%20UX%20-%20BMW i3%20Business model 1.5 TDI&amp;p[summary]=Facebook%20-%20share%20text"
-				class="social-button button-facebook" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=368,width=600');return false;">Facebook&lt;/a>
-				&lt;a target="_blank" href="http://twitter.com/share?text=Twitter%20-%20share%20text&amp;url=http%3A%2F%2Fwww.car-ux.com%2Fbmw-i3%2Fbmw-i3.html" class="social-button button-twitter" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=438,width=600');return false;">Twitter&lt;/a>
-				&lt;a target="_blank" class="social-button button-gplus" href="https://plus.google.com/share?url=http://www.car-ux.com/bmw-i3/bmw-i3.html" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;">Google Plus&lt;/a>
-			&lt;/aside>
 		&lt;/article>
 		&lt;!--
 		-->
@@ -176,6 +170,14 @@ Or delete this file if not applicable.
 			&lt;/div>
 			&lt;!-- /widget-score -->
 		&lt;/div>
+		&lt;!--
+		-->
+		&lt;aside class="social-buttons" data-social-buttons>
+			&lt;p>Deze test delen via&lt;/p>	&lt;a target="_blank" href="http://www.facebook.com/sharer.php?s=100&amp;p[url]=http%3A%2F%2Fwww.car-ux.com%2Fbmw-i3%2Fbmw-i3.html&amp;p[title]=Car%20UX%20-%20BMW i3%20Business model 1.5 TDI&amp;p[summary]=Facebook%20-%20share%20text"
+			class="social-button button-facebook" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=368,width=600');return false;">Facebook&lt;/a>
+			&lt;a target="_blank" href="http://twitter.com/share?text=Twitter%20-%20share%20text&amp;url=http%3A%2F%2Fwww.car-ux.com%2Fbmw-i3%2Fbmw-i3.html" class="social-button button-twitter" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=438,width=600');return false;">Twitter&lt;/a>
+			&lt;a target="_blank" class="social-button button-gplus" href="https://plus.google.com/share?url=http://www.car-ux.com/bmw-i3/bmw-i3.html" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;">Google Plus&lt;/a>
+		&lt;/aside>
 	&lt;/section>
 &lt;/div>
 &lt;!-- /intro --></code></pre>
@@ -210,30 +212,43 @@ Or delete this file if not applicable.
   max-width: 100%;
 }
 .detail-intro .intro-content {
-  margin-top: -170px;
+  background-color: #ffffff;
+}
+@media screen and (min-width: 920px) {
+  .detail-intro .intro-content {
+    margin-top: -170px;
+  }
 }
 .detail-intro .intro-text {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+  -webkit-transition: height 0.2s ease-out;
+  transition: height 0.2s ease-out;
   background-color: #ffffff;
+  padding: 30px 30px 25px 33px;
+}
+@media screen and (min-width: 620px) {
+  .detail-intro .intro-text {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    display: inline-block;
+    vertical-align: top;
+    width: 66.66%;
+    padding-bottom: 0;
+  }
+}
+.detail-intro .intro-text h1,
+.detail-intro .intro-text .intro-title-image {
   display: inline-block;
   vertical-align: top;
-  padding: 30px 30px 25px 33px;
-  width: 66.66%;
-}
-.detail-intro .intro-text .intro-title-image,
-.detail-intro .intro-text h1 {
-  display: inline-block;
-  vertical-align: middle;
 }
 .detail-intro .intro-text .intro-title-image {
   margin-right: 20px;
 }
 .detail-intro .intro-text h1 {
   display: inline-block;
-  vertical-align: middle;
+  vertical-align: top;
   margin: 0;
+  max-width: 70%;
 }
 .detail-intro .intro-text .subtitle {
   display: block;
@@ -241,6 +256,36 @@ Or delete this file if not applicable.
 }
 .detail-intro .intro-text p {
   font-size: 1.6em;
+}
+.detail-intro .widget-score-block .widget-score {
+  -webkit-transition: height 0.2s ease-out;
+  transition: height 0.2s ease-out;
+}
+@media screen and (min-width: 620px) {
+  .detail-intro .widget-score-block {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    display: inline-block;
+    vertical-align: top;
+    width: 33.33%;
+  }
+}
+.detail-intro .social-buttons {
+  -webkit-transition: margin 0.2s ease-out;
+  transition: margin 0.2s ease-out;
+  background-color: #ffffff;
+  padding: 0 0 30px 30px;
+}
+@media screen and (min-width: 620px) {
+  .detail-intro .social-buttons {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    display: inline-block;
+    vertical-align: top;
+    width: 66.66%;
+  }
 }
 .detail-intro .social-buttons .social-button {
   text-indent: 9999px;
@@ -255,15 +300,8 @@ Or delete this file if not applicable.
 .detail-intro .social-buttons p {
   color: #7f7f7f;
   font-size: 1.2em;
-  margin: 10px 0;
-}
-.detail-intro .widget-score-block {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  display: inline-block;
-  vertical-align: top;
-  width: 33.33%;
+  margin: 0;
+  padding: 10px 0;
 }
 
 /*# sourceMappingURL=_detail-intro.css.map */
@@ -291,21 +329,27 @@ Or delete this file if not applicable.
                             <div class="app-guide-code">	<pre class="language-javascript"><code>(function(d, w){
 	'use strict';
 
-	var introTextElm = d.querySelector('[data-intro-text]');
-	var widgetScoreElm = d.querySelector('[data-component="widget-score"]');
+	var introComponentElm = d.querySelector('[data-component="detail-intro"]');
+	var introTextElm = introComponentElm.querySelector('[data-intro-text]');
+	var widgetScoreElm = introComponentElm.querySelector('[data-component="widget-score"]');
+	var introSectionElm = introComponentElm.querySelector('[data-intro-section]');
+	var socialButtonsElm = introComponentElm.querySelector('[data-social-buttons]');
 
 	// Make the widget height equal to the height of introTextElm
 	function equalizeHeight() {
-		widgetScoreElm.style.height = introTextElm.offsetHeight + 'px';
+		if (helpers.breakSize !== 'extra-small') {
+			introSectionElm.style.height = widgetScoreElm.style.height = (introTextElm.offsetHeight + socialButtonsElm.offsetHeight) + 'px';
+			socialButtonsElm.style.marginTop = -(socialButtonsElm.offsetHeight) + 'px';
+		} else {
+			socialButtonsElm.style.marginTop = introSectionElm.style.height = widgetScoreElm.style.height = '';
+		}
 	}
-	//equalizeHeight(); // Because IE might take some time before firing the load event
 
 	// Fire equalizeHeight debounced on the resize event
 	w.addEventListener('resize', debounce(equalizeHeight, 250), false);
 
 	// Make sure all images inside introTextElm are loaded
 	w.addEventListener('load', equalizeHeight, false);
-
 }(document, window));</code></pre>
                                 <ul class="app-guide-code-options">
                                     <li>
