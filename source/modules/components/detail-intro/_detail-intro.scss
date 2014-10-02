@@ -89,6 +89,10 @@
 			display: inline-block;
 			vertical-align: top;
 			width: 66.66%;
+
+			// Set a negative margin to the height of the social-buttons
+			// container to avoid movement on initial page load
+			margin-top: -102px;
 		}
 
 		.social-button {
