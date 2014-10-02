@@ -3,14 +3,15 @@
 
 /* header component */
 
-//nav-breakpoints
-$nav-breakpoint-m: 600px;
-$nav-breakpoint-s: 450px;
-$nav-breakpoint-xs: 360px;
+//navigation specific breakpoints
+$nav-break-extra-small: 590px;
 
 .header {
 	position: relative;
-	height: 80px;
+	height: 60px;
+	@include min-screen($nav-break-extra-small) {
+		height: 80px;
+	}
 
 	.header-content {
 		width: 100%;
@@ -25,21 +26,31 @@ $nav-breakpoint-xs: 360px;
 	}
 	.logo-area {
 		position: relative;
-		height: 80px;
-		width: 19%;
-		min-width: 95px;
+		height: 60px;
+		width: 76px;
 		background-color: $yellow;
+		@include min-screen($nav-break-extra-small) {
+			height: 80px;
+			width: 19%;
+			min-width: 95px;
+		}
 	}
 	.logo {
 		display: block;
 		position: absolute;
 		background-color: $black;
-		height: 40px;
-		width: 55px;
-		top: 20px;
-		right: 20px;
+		height: 30px;
+		width: 40px;
+		top: 15px;
+		right: 18px;
 		color: $yellow;
 		text-align: right;
+		@include min-screen($nav-break-extra-small) {
+			height: 40px;
+			width: 55px;
+			top: 20px;
+			right: 20px;
+		}
 	}
 	nav {
 		ul {
@@ -47,58 +58,46 @@ $nav-breakpoint-xs: 360px;
 			-webkit-margin-after: 0;
 			-webkit-padding-start: 0;
 			margin-top: 25px;
-			margin-left: -15px;
-			@media only screen and (max-width: $nav-breakpoint-m) {
-				margin-top: 28px;
+			margin-left: -8px;
+			@include min-screen($break-medium) {
+				margin-top: 29px;
 			}
-			@media only screen and (max-width: $nav-breakpoint-s) {
-				margin-top: 3px;
-				margin-left: 0;
+			@include min-screen($nav-break-extra-small) {
+				margin-left: -15px;
 			}
 		}
 		li {
 			display: inline-block;
 			vertical-align: top;
-			margin-left: 45px;
+			margin-left: 26px;
 			list-style: none;
-			@media only screen and (max-width: $nav-breakpoint-m) {
-				margin-left: 30px;
-			}
-			@media only screen and (max-width: $nav-breakpoint-s) {
-				margin-left: 20px;
-				&:first-child {
-					display: none;
-				}
-			}
-			@media only screen and ($nav-breakpoint-xs) {
-				margin-left: 15px;
-			}
-			&:first-child {
-				padding-bottom: 5px;
-				border-bottom: 4px solid $yellow;
-				@media only screen and (max-width: $nav-breakpoint-m) {
-					border-bottom: 3px solid $yellow;
-					padding-bottom: 1px;
-				}
-				a {
-					color: $yellow;
-				}
+			@include min-screen($nav-break-extra-small) {
+				margin-left: 45px;
 			}
 		}
 		a {
 			font-family: $helvetica-nue-bold;
-			font-size: 25px;
+			font-size: 16px;
 			line-height: 1.2;
 			color: $white;
-			@media only screen and (max-width: $nav-breakpoint-m) {
-				font-size: 20px;
-			}
-			@media only screen and (max-width: $nav-breakpoint-xs) {
-				font-size: 16px;
-			}
 			&:hover {
 				color: $yellow;
 			}
+			@include min-screen($nav-break-extra-small) {
+				font-size: 25px;
+			}
+		}
+	}
+	.active-nav-item {
+		border-bottom: 4px solid $yellow;
+		a {
+			color: $yellow;
+		}
+	}
+	.nav-text-large {
+		display: none;
+		@include min-screen($nav-break-extra-small) {
+			display: inline;
 		}
 	}
 	.header-background-left, .header-background-right {
