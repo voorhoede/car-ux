@@ -11,11 +11,13 @@
 // Use `grunt remove-component:component-name` to delete a component.
 //
 
+@import '../../modules/components/comments/comments';
 @import '../../modules/components/demo-component/demo-component';
 @import '../../modules/components/detail-intro/detail-intro';
 @import '../../modules/components/detail-main/detail-main';
 @import '../../modules/components/footer/footer';
 @import '../../modules/components/header/header';
+@import '../../modules/components/highlight/highlight';
 @import '../../modules/components/quote/quote';
 @import '../../modules/components/related/related';
 @import '../../modules/components/score/score';

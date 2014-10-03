@@ -1,15 +1,21 @@
 @import "../../../assets/scss/variables";
 @import "../../../assets/scss/helpers";
 
-/* detail-main component */
+/* comments component */
 
-.detail-main {
-	width: 100%;
-	background-color: $yellow;
-	padding-bottom: 6em;
+.comments {
+	background-color: $light-grey;
+
+	.comments-section {
+		padding: 30px 0;
+	}
+
+	.disqus {
+		background-color: $white;
+		padding: 30px;
+	}
 
 	h1 {
-		color: $white;
 		margin-left: 20px;
 
 		@include min-screen($break-large) {

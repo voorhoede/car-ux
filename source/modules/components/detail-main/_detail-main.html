@@ -5,6 +5,9 @@
 	{% import  "components/quote/_quote.html" as quoteBlock %}
 	{{ quoteBlock.quoteBlock(quote) }}
 
+	{% import  "components/highlight/_highlight.html" as highlight %}
+	{{ highlight.highlightBlock(highlightContent) }}
+
 	{% include "components/score/_score.html" %}
 </main>
 <!-- /detail-main -->

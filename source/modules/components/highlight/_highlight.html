@@ -1,0 +1,17 @@
+
+{% macro highlightBlock(content) %}
+<!-- highlight -->
+<div class="highlight" data-component="highlight">
+	<section class="max-width-centered">
+		<h1>WAT ONS OPVIEL</h1>
+		<div class="hightlight-content">
+			<img src="{{ content.visual }}" alt="{{ content.title }}"/>
+			<div class="highlight-text">
+				<h2>{{ content.title }}</h2>
+				<p>{{ content.text }}</p>
+			</div>
+		</div>
+	</section>
+</div>
+<!-- /highlight -->
+{% endmacro %}
