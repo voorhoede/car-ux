@@ -1,0 +1,22 @@
+/* score component */
+.score {
+  width: 100%;
+  max-width: 900px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.score .score-title,
+.score .score-content {
+  background-color: #ffffff;
+  padding-left: 3em;
+}
+.score .is-expandible .score-content {
+  height: 0;
+  overflow: hidden;
+  transition: height 0.2s ease-out;
+}
+.score .is-expanded .score-content {
+  height: auto;
+}
+
+/*# sourceMappingURL=_score.css.map */
