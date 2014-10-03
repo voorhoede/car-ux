@@ -571,6 +571,26 @@ ol, ul {
     page-break-after: avoid;
   }
 }
+/* comments component */
+.comments {
+  background-color: #f2f2f2;
+}
+.comments .comments-section {
+  padding: 30px 0;
+}
+.comments .disqus {
+  background-color: #ffffff;
+  padding: 30px;
+}
+.comments h1 {
+  margin-left: 20px;
+}
+@media screen and (min-width: 920px) {
+  .comments h1 {
+    margin-left: 0;
+  }
+}
+
 /* demo-component component */
 .demo-component {
   border: 1px solid gray;
@@ -701,6 +721,15 @@ ol, ul {
   width: 100%;
   background-color: #ffc300;
   padding-bottom: 6em;
+}
+.detail-main h1 {
+  color: #ffffff;
+  margin-left: 20px;
+}
+@media screen and (min-width: 920px) {
+  .detail-main h1 {
+    margin-left: 0;
+  }
 }
 
 /* footer component */
@@ -891,6 +920,80 @@ ol, ul {
   background-color: #000000;
 }
 
+/* highlight component */
+.highlight .hightlight-content {
+  position: relative;
+}
+.highlight .hightlight-content img {
+  vertical-align: bottom;
+  width: 100%;
+}
+.highlight .highlight-text {
+  background-color: #ffffff;
+  padding: 30px 25px;
+}
+@media screen and (min-width: 620px) {
+  .highlight .highlight-text {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 10%;
+    margin: auto;
+    width: 80%;
+  }
+}
+@media screen and (min-width: 920px) {
+  .highlight .highlight-text {
+    left: 30px;
+    right: auto;
+    width: 60%;
+  }
+}
+
+/* quote component */
+.quote blockquote {
+  color: #ffffff;
+  position: relative;
+  font-size: 26px;
+  padding: 0 20px;
+  margin: 0 10px;
+}
+@media screen and (min-width: 620px) {
+  .quote blockquote {
+    padding: 0 30px;
+  }
+}
+@media screen and (min-width: 920px) {
+  .quote blockquote {
+    font-size: 36px;
+    padding: 0 0 0 50px;
+  }
+}
+.quote blockquote:before, .quote blockquote:after {
+  position: absolute;
+  font-size: 100px;
+}
+.quote blockquote:before {
+  left: 0;
+  top: -28px;
+  content: '\2018';
+}
+@media screen and (min-width: 920px) {
+  .quote blockquote:before {
+    left: -10px;
+  }
+}
+.quote blockquote:after {
+  right: 0;
+  bottom: -28px;
+  content: '\201A';
+}
+@media screen and (min-width: 920px) {
+  .quote blockquote:after {
+    right: -10px;
+  }
+}
+
 /* related component */
 .related {
   background-color: #f2f2f2;
@@ -996,8 +1099,8 @@ ol, ul {
 .widget-score .score-overview {
   -webkit-box-shadow: 0px 0px 2px 1px #7f7f7f;
   box-shadow: 0px 0px 2px 1px #7f7f7f;
-  -webkit-transition: box-shadow 0.3s ease-out, height 0.5s ease-out;
-  transition: box-shadow 0.3s ease-out, height 0.5s ease-out;
+  -webkit-transition: box-shadow 0.2s ease-out, height 0.5s ease-out;
+  transition: box-shadow 0.2s ease-out, height 0.5s ease-out;
   position: absolute;
   top: 0;
   left: 0;
@@ -1008,11 +1111,16 @@ ol, ul {
   overflow: hidden;
 }
 .widget-score .score-overview:hover {
-  -webkit-box-shadow: 0px 0px 10px 1px #7f7f7f;
-  box-shadow: 0px 0px 10px 1px #7f7f7f;
-  -webkit-transition: box-shadow 0.3s ease-out, height 0.5s ease-out;
-  transition: box-shadow 0.3s ease-out, height 0.5s ease-out;
+  -webkit-box-shadow: 0px 0px 15px 1px #7f7f7f;
+  box-shadow: 0px 0px 15px 1px #7f7f7f;
+  -webkit-transition: box-shadow 0.2s ease-out, height 0.5s ease-out;
+  transition: box-shadow 0.2s ease-out, height 0.5s ease-out;
+}
+.widget-score .score-overview.expanded {
   height: 100%;
+}
+.widget-score .score-overview header {
+  cursor: pointer;
 }
 .widget-score .score-overview .score {
   color: #000000;

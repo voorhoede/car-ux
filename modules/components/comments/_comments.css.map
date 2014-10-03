@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": ";AAKA,SAAU;EACT,gBAAgB,ECFF,OAAO;;ADIrB,2BAAkB;EACjB,OAAO,EAAE,MAAM;;AAGhB,iBAAQ;EACP,gBAAgB,ECRP,OAAO;EDShB,OAAO,EAAE,IAAI;;AAGd,YAAG;EACF,WAAW,EAAE,IAAI;;AEjBlB,oCACA;EFeA,YAAG;IAID,WAAW,EAAE,CAAC",
+"sources": ["../../../../source/modules/components/comments/_comments.scss","../../../../source/assets/scss/core/_colors.scss","../../../../source/assets/scss/mixins/_media-queries.scss"],
+"names": [],
+"file": "_comments.css"
+}

@@ -1,0 +1,45 @@
+/* quote component */
+.quote blockquote {
+  color: #ffffff;
+  position: relative;
+  font-size: 26px;
+  padding: 0 20px;
+  margin: 0 10px;
+}
+@media screen and (min-width: 620px) {
+  .quote blockquote {
+    padding: 0 30px;
+  }
+}
+@media screen and (min-width: 920px) {
+  .quote blockquote {
+    font-size: 36px;
+    padding: 0 0 0 50px;
+  }
+}
+.quote blockquote:before, .quote blockquote:after {
+  position: absolute;
+  font-size: 100px;
+}
+.quote blockquote:before {
+  left: 0;
+  top: -28px;
+  content: '\2018';
+}
+@media screen and (min-width: 920px) {
+  .quote blockquote:before {
+    left: -10px;
+  }
+}
+.quote blockquote:after {
+  right: 0;
+  bottom: -28px;
+  content: '\201A';
+}
+@media screen and (min-width: 920px) {
+  .quote blockquote:after {
+    right: -10px;
+  }
+}
+
+/*# sourceMappingURL=_quote.css.map */

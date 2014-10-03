@@ -2,7 +2,7 @@
 <html class="no-js">
 
 <head>
-    <title>Related (preview) Related | car-ux</title>
+    <title>Comments (preview) Comments | car-ux</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
     <meta name="description" content="ADD A DESCRIPTION" />
@@ -68,10 +68,10 @@
                     <script>
                         window.testApp = {}; // namespace to register modules for testing
                     </script>
-                    <h1 class="section-title">Related</h1>
+                    <h1 class="section-title">Comments</h1>
                     <div class="app-guide-content language-markdown">
                         <!--
-Add an optional short description here for `related` component.
+Add an optional short description here for `comments` component.
 Or delete this file if not applicable.
 -->
                     </div>
@@ -104,54 +104,38 @@ Or delete this file if not applicable.
    title="permalink to this section"></a>
 
 			</h3>
-                            <div class="app-guide-code">	<pre class="language-markup"><code>&lt;!-- related -->
-&lt;div class="related" data-component="related">
-	&lt;section class="max-width-centered">
-		&lt;h1>GERELATEERDE TESTS&lt;/h1>
-		&lt;!--
-		-->
-		&lt;a class="related-product" href="#">
-			&lt;img src="/assets/images/related/nissan-quashqai-tekna-opique.png" alt="Nissan Quashqai Tekna Opique - Si4 4WD Dynamic" />
-			&lt;div class="related-title">
-				&lt;h2>Nissan Quashqai Tekna Opique&lt;span>Si4 4WD Dynamic&lt;/span>&lt;/h2>
-				&lt;span class="related-score">4.5&lt;/span>
-			&lt;/div>
-		&lt;/a>
-		&lt;!--
-		-->
-		&lt;!--
-		-->
-		&lt;a class="related-product" href="#">
-			&lt;img src="/assets/images/related/opel-insignia-business-edition.png" alt="Opel Insignia - Business Edition" />
-			&lt;div class="related-title">
-				&lt;h2>Opel Insignia&lt;span>Business Edition&lt;/span>&lt;/h2>
-				&lt;span class="related-score">2&lt;/span>
-			&lt;/div>
-		&lt;/a>
-		&lt;!--
-		-->
-		&lt;!--
-		-->
-		&lt;a class="related-product" href="#">
-			&lt;img src="/assets/images/related/citroen-c4-picasso.png" alt="Citroën C4 Picasso - Business Edition" />
-			&lt;div class="related-title">
-				&lt;h2>Citroën C4 Picasso&lt;span>Business Edition&lt;/span>&lt;/h2>
-				&lt;span class="related-score">5.5&lt;/span>
-			&lt;/div>
-		&lt;/a>
-		&lt;!--
-		-->
+                            <div class="app-guide-code">	<pre class="language-markup"><code>&lt;!-- comments -->
+&lt;div class="comments" data-component="comments">
+	&lt;section class="comments-section max-width-centered">
+		&lt;h1>DE REACTIES&lt;/h1>
+		&lt;div class="disqus">
+			&lt;div id="disqus_thread">&lt;/div>
+			&lt;script type="text/javascript">
+				/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+				var disqus_shortname = 'carux';
+				/* * * DON'T EDIT BELOW THIS LINE * * */
+				(function() {
+					var dsq = document.createElement('script');
+					dsq.type = 'text/javascript';
+					dsq.async = true;
+					dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+					(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+				})();
+			&lt;/script>
+			&lt;noscript>Please enable JavaScript to view the &lt;a href="http://disqus.com/?ref_noscript">comments powered by Disqus.&lt;/a>
+			&lt;/noscript>	&lt;a href="http://disqus.com" class="dsq-brlink">comments powered by &lt;span class="logo-disqus">Disqus&lt;/span>&lt;/a>
+		&lt;/div>
 	&lt;/section>
 &lt;/div>
-&lt;!-- /related --></code></pre>
+&lt;!-- /comments --></code></pre>
                                 <ul class="app-guide-code-options">
                                     <li>
-                                        <a class="app-guide-icon app-guide-icon-code" href="_related.html"
+                                        <a class="app-guide-icon app-guide-icon-code" href="_comments.html"
                                         title="view source HTML"></a>
                                     </li>
                                     <li>
-                                        <a class="app-guide-icon app-guide-icon-download" href="_related.html"
-                                        download="_related.html" title="download HTML"></a>
+                                        <a class="app-guide-icon app-guide-icon-download" href="_comments.html"
+                                        download="_comments.html" title="download HTML"></a>
                                     </li>
                                 </ul>
                             </div>
@@ -164,85 +148,36 @@ Or delete this file if not applicable.
    title="permalink to this section"></a>
 
 			</h3>
-                            <div class="app-guide-code">	<pre class="language-css"><code>/* related component */
-.related {
+                            <div class="app-guide-code">	<pre class="language-css"><code>/* comments component */
+.comments {
   background-color: #f2f2f2;
-  padding: 0 30px 80px 30px;
 }
-.related h1 {
-  margin: 0;
+.comments .comments-section {
+  padding: 30px 0;
 }
-.related .related-product {
-  border: none;
-  display: none;
-  vertical-align: top;
-  width: 100%;
+.comments .disqus {
+  background-color: #ffffff;
+  padding: 30px;
 }
-.related .related-product:nth-of-type(1), .related .related-product:nth-of-type(2) {
-  display: inline-block;
-}
-@media screen and (min-width: 620px) {
-  .related .related-product {
-    width: 48%;
-  }
-  .related .related-product:nth-of-type(1) {
-    margin-right: 4%;
-  }
+.comments h1 {
+  margin-left: 20px;
 }
 @media screen and (min-width: 920px) {
-  .related .related-product {
-    display: inline-block;
-    width: 31.33%;
-    margin-left: 3%;
+  .comments h1 {
+    margin-left: 0;
   }
-  .related .related-product:nth-of-type(1) {
-    margin: 0;
-  }
-}
-.related .related-product:hover .related-score {
-  color: #000000;
-}
-.related .related-product img {
-  vertical-align: bottom;
-  width: 100%;
-}
-.related .related-product .related-title {
-  background-color: #ffffff;
-  margin-bottom: 20px;
-  position: relative;
-}
-@media screen and (min-width: 620px) {
-  .related .related-product .related-title {
-    min-height: 130px;
-  }
-}
-.related .related-product .related-title h2 {
-  margin: 0;
-  padding: 25px 30px 35px 30px;
-}
-.related .related-product .related-title h2 span {
-  display: block;
-  font-weight: normal;
-}
-.related .related-product .related-title .related-score {
-  display: block;
-  background-color: #ffc300;
-  padding: 10px;
-  position: absolute;
-  bottom: 100%;
-  right: 0;
 }
 
-/*# sourceMappingURL=_related.css.map */
+/*# sourceMappingURL=_comments.css.map */
 </code></pre>
                                 <ul class="app-guide-code-options">
                                     <li>
-                                        <a class="app-guide-icon app-guide-icon-code" href="_related.css"
+                                        <a class="app-guide-icon app-guide-icon-code" href="_comments.css"
                                         title="view source CSS"></a>
                                     </li>
                                     <li>
-                                        <a class="app-guide-icon app-guide-icon-download" href="_related.css"
-                                        download="_related.css" title="download CSS"></a>
+                                        <a class="app-guide-icon app-guide-icon-download" href="_comments.css"
+                                        download="_comments.css" title="download CSS"></a>
                                     </li>
                                 </ul>
                             </div>

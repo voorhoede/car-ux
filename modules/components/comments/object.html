@@ -2,7 +2,7 @@
 <html class="no-js">
 
 <head>
-    <title>Widget score (preview) Widget-score | car-ux</title>
+    <title>Comments (preview) Comments | car-ux</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
     <meta name="description" content="ADD A DESCRIPTION" />
@@ -52,21 +52,31 @@
 <body>
     <!-- use data attributes to target in JS -->
     <div id="page">
-        <!-- widget-score -->
-        <div class="widget-score" data-component="widget-score">
-            <div class="score-overview" data-widget-score-overview>
-                <header>	<span class="icon icon-meter"></span>
-                    <span class="score"></span>
-                    <span class="icon icon-arrow-down"></span>
-                </header>
-                <ul></ul>
-            </div>
-            <div class="score-summary">
-                <ul></ul>
-                <ul></ul>
-            </div>
+        <!-- comments -->
+        <div class="comments" data-component="comments">
+            <section class="comments-section max-width-centered">
+                <h1>DE REACTIES</h1>
+                <div class="disqus">
+                    <div id="disqus_thread"></div>
+                    <script type="text/javascript">
+                        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+                        var disqus_shortname = 'carux';
+                        /* * * DON'T EDIT BELOW THIS LINE * * */
+                        (function() {
+                            var dsq = document.createElement('script');
+                            dsq.type = 'text/javascript';
+                            dsq.async = true;
+                            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                            (document.getElementsByTagName('head')[0] || document.getElementsByTagName(
+                                'body')[0]).appendChild(dsq);
+                        })();
+                    </script>
+                    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+                    </noscript>	<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+                </div>
+            </section>
         </div>
-        <!-- /widget-score -->
+        <!-- /comments -->
         <script src="../../../assets/scripts/vendor.js"></script>
         <script src="../../../assets/scripts/main.js"></script>
         <script src="../../../guide/vendor/prismjs/prism.js"></script>

@@ -107,6 +107,27 @@ Or delete this file if not applicable.
                             <div class="app-guide-code">	<pre class="language-markup"><code>&lt;!-- detail-main -->
 &lt;main class="detail-main" data-component="detail-main">
 	&lt;h1>&lt;/h1>
+	&lt;!-- quote -->
+	&lt;div class="quote" data-component="quote">
+		&lt;section class="max-width-centered">
+			&lt;blockquote>&lt;/blockquote>
+		&lt;/section>
+	&lt;/div>
+	&lt;!-- /quote -->
+	&lt;!-- highlight -->
+	&lt;div class="highlight" data-component="highlight">
+		&lt;section class="max-width-centered">
+			&lt;h1>WAT ONS OPVIEL&lt;/h1>
+			&lt;div class="hightlight-content">
+				&lt;img src="" alt="" />
+				&lt;div class="highlight-text">
+					&lt;h2>&lt;/h2>
+					&lt;p>&lt;/p>
+				&lt;/div>
+			&lt;/div>
+		&lt;/section>
+	&lt;/div>
+	&lt;!-- /highlight -->
 	&lt;!-- score -->
 	&lt;section class="score" data-component="score">
 		&lt;h1>De scores&lt;/h1>
@@ -161,6 +182,15 @@ Or delete this file if not applicable.
   width: 100%;
   background-color: #ffc300;
   padding-bottom: 6em;
+}
+.detail-main h1 {
+  color: #ffffff;
+  margin-left: 20px;
+}
+@media screen and (min-width: 920px) {
+  .detail-main h1 {
+    margin-left: 0;
+  }
 }
 
 /*# sourceMappingURL=_detail-main.css.map */

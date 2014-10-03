@@ -1,0 +1,31 @@
+/* highlight component */
+.highlight .hightlight-content {
+  position: relative;
+}
+.highlight .hightlight-content img {
+  vertical-align: bottom;
+  width: 100%;
+}
+.highlight .highlight-text {
+  background-color: #ffffff;
+  padding: 30px 25px;
+}
+@media screen and (min-width: 620px) {
+  .highlight .highlight-text {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 10%;
+    margin: auto;
+    width: 80%;
+  }
+}
+@media screen and (min-width: 920px) {
+  .highlight .highlight-text {
+    left: 30px;
+    right: auto;
+    width: 60%;
+  }
+}
+
+/*# sourceMappingURL=_highlight.css.map */

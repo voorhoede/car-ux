@@ -95,34 +95,34 @@
                 <div class="widget-score-block">
                     <!-- widget-score -->
                     <div class="widget-score" data-component="widget-score">
-                        <div class="score-overview">
+                        <div class="score-overview" data-widget-score-overview>
                             <header>	<span class="icon icon-meter"></span>
                                 <span class="score">8,5</span>
                                 <span class="icon icon-arrow-down"></span>
                             </header>
                             <ul>
                                 <li>
-                                    <a href="#presence">	<span class="label">Uitstraling</span>
+                                    <a href="#uitstraling">	<span class="label">Uitstraling</span>
                                         <span class="value">4</span>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#presence">	<span class="label">Contrast</span>
+                                    <a href="#contrast">	<span class="label">Contrast</span>
                                         <span class="value">5</span>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#presence">	<span class="label">Focus</span>
+                                    <a href="#focus">	<span class="label">Focus</span>
                                         <span class="value">4</span>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#presence">	<span class="label">Usability</span>
+                                    <a href="#usability">	<span class="label">Usability</span>
                                         <span class="value">4</span>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#presence">	<span class="label">Features</span>
+                                    <a href="#features">	<span class="label">Features</span>
                                         <span class="value">3</span>
                                     </a>
                                 </li>
@@ -157,6 +157,32 @@
         <!-- detail-main -->
         <main class="detail-main" data-component="detail-main">
             <h1>title main</h1>
+            <!-- quote -->
+            <div class="quote" data-component="quote">
+                <section class="max-width-centered">
+                    <blockquote>Iconen zijn op meerdere plekken terug te vinden. Het zijn allemaal lijniconen, maar
+                        voelen niet altijd als onderdeel van dezelfde series.</blockquote>
+                </section>
+            </div>
+            <!-- /quote -->
+            <!-- highlight -->
+            <div class="highlight" data-component="highlight">
+                <section class="max-width-centered">
+                    <h1>WAT ONS OPVIEL</h1>
+                    <div class="hightlight-content">
+                        <img src="/assets/images/bmw-i3/bmw-i3-highlight.png" alt="Kleurgebruik" />
+                        <div class="highlight-text">
+                            <h2>Kleurgebruik</h2>
+                            <p>Het is logisch dat de kleur blauw gebruikt wordt, maar dit had verder doorgevoerd
+                                kunnen worden in de rest van de auto. Verder worden er naast blauw en
+                                oranje bijna geen signaalkleuren gebruikt, terwijl die wel in de rest
+                                van het interieur gebruikt worden. Een uitzondering hier op zijn de parkeersignalen
+                                in het dashboard-schermpje.</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <!-- /highlight -->
             <!-- score -->
             <section class="score" data-component="score">
                 <h1>De scores</h1>
@@ -192,6 +218,31 @@
             <!-- /score -->
         </main>
         <!-- /detail-main -->
+        <!-- comments -->
+        <div class="comments" data-component="comments">
+            <section class="comments-section max-width-centered">
+                <h1>DE REACTIES</h1>
+                <div class="disqus">
+                    <div id="disqus_thread"></div>
+                    <script type="text/javascript">
+                        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+                        var disqus_shortname = 'carux';
+                        /* * * DON'T EDIT BELOW THIS LINE * * */
+                        (function() {
+                            var dsq = document.createElement('script');
+                            dsq.type = 'text/javascript';
+                            dsq.async = true;
+                            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                            (document.getElementsByTagName('head')[0] || document.getElementsByTagName(
+                                'body')[0]).appendChild(dsq);
+                        })();
+                    </script>
+                    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+                    </noscript>	<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+                </div>
+            </section>
+        </div>
+        <!-- /comments -->
         <!-- related -->
         <div class="related" data-component="related">
             <section class="max-width-centered">

@@ -106,7 +106,7 @@ Or delete this file if not applicable.
 			</h3>
                             <div class="app-guide-code">	<pre class="language-markup"><code>&lt;!-- widget-score -->
 &lt;div class="widget-score" data-component="widget-score">
-	&lt;div class="score-overview">
+	&lt;div class="score-overview" data-widget-score-overview>
 		&lt;header>	&lt;span class="icon icon-meter">&lt;/span>
 			&lt;span class="score">&lt;/span>
 			&lt;span class="icon icon-arrow-down">&lt;/span>
@@ -154,8 +154,8 @@ Or delete this file if not applicable.
 .widget-score .score-overview {
   -webkit-box-shadow: 0px 0px 2px 1px #7f7f7f;
   box-shadow: 0px 0px 2px 1px #7f7f7f;
-  -webkit-transition: box-shadow 0.3s ease-out, height 0.5s ease-out;
-  transition: box-shadow 0.3s ease-out, height 0.5s ease-out;
+  -webkit-transition: box-shadow 0.2s ease-out, height 0.5s ease-out;
+  transition: box-shadow 0.2s ease-out, height 0.5s ease-out;
   position: absolute;
   top: 0;
   left: 0;
@@ -166,11 +166,16 @@ Or delete this file if not applicable.
   overflow: hidden;
 }
 .widget-score .score-overview:hover {
-  -webkit-box-shadow: 0px 0px 10px 1px #7f7f7f;
-  box-shadow: 0px 0px 10px 1px #7f7f7f;
-  -webkit-transition: box-shadow 0.3s ease-out, height 0.5s ease-out;
-  transition: box-shadow 0.3s ease-out, height 0.5s ease-out;
+  -webkit-box-shadow: 0px 0px 15px 1px #7f7f7f;
+  box-shadow: 0px 0px 15px 1px #7f7f7f;
+  -webkit-transition: box-shadow 0.2s ease-out, height 0.5s ease-out;
+  transition: box-shadow 0.2s ease-out, height 0.5s ease-out;
+}
+.widget-score .score-overview.expanded {
   height: 100%;
+}
+.widget-score .score-overview header {
+  cursor: pointer;
 }
 .widget-score .score-overview .score {
   color: #000000;
@@ -191,6 +196,40 @@ Or delete this file if not applicable.
                                     <li>
                                         <a class="app-guide-icon app-guide-icon-download" href="_widget-score.css"
                                         download="_widget-score.css" title="download CSS"></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </section>
+                        <section id="section-code-javascript">
+                            <h3 class="app-guide-section-title">
+				JS 
+<a href="#section-code-js"
+   class="app-guide-permalink app-guide-icon"
+   title="permalink to this section"></a>
+
+			</h3>
+                            <div class="app-guide-code">	<pre class="language-javascript"><code>(function(d){
+	'use strict';
+
+	var toggleClass = helpers.dom.toggleClass;
+	var widgetElms = d.querySelectorAll('[data-component="widget-score"]');
+
+	[].forEach.call(widgetElms, function (widgetElm) {
+		var headerElm = widgetElm.querySelector('[data-widget-score-overview]');
+		headerElm.addEventListener('click', function() {
+			toggleClass(this, 'expanded');
+		});
+	});
+
+}(document));</code></pre>
+                                <ul class="app-guide-code-options">
+                                    <li>
+                                        <a class="app-guide-icon app-guide-icon-code" href="_widget-score.js"
+                                        title="view source JavaScript"></a>
+                                    </li>
+                                    <li>
+                                        <a class="app-guide-icon app-guide-icon-download" href="_widget-score.js"
+                                        download="_widget-score.js" title="download JavaScript"></a>
                                     </li>
                                 </ul>
                             </div>

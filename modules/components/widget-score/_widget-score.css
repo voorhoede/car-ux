@@ -13,8 +13,8 @@
 .widget-score .score-overview {
   -webkit-box-shadow: 0px 0px 2px 1px #7f7f7f;
   box-shadow: 0px 0px 2px 1px #7f7f7f;
-  -webkit-transition: box-shadow 0.3s ease-out, height 0.5s ease-out;
-  transition: box-shadow 0.3s ease-out, height 0.5s ease-out;
+  -webkit-transition: box-shadow 0.2s ease-out, height 0.5s ease-out;
+  transition: box-shadow 0.2s ease-out, height 0.5s ease-out;
   position: absolute;
   top: 0;
   left: 0;
@@ -25,11 +25,16 @@
   overflow: hidden;
 }
 .widget-score .score-overview:hover {
-  -webkit-box-shadow: 0px 0px 10px 1px #7f7f7f;
-  box-shadow: 0px 0px 10px 1px #7f7f7f;
-  -webkit-transition: box-shadow 0.3s ease-out, height 0.5s ease-out;
-  transition: box-shadow 0.3s ease-out, height 0.5s ease-out;
+  -webkit-box-shadow: 0px 0px 15px 1px #7f7f7f;
+  box-shadow: 0px 0px 15px 1px #7f7f7f;
+  -webkit-transition: box-shadow 0.2s ease-out, height 0.5s ease-out;
+  transition: box-shadow 0.2s ease-out, height 0.5s ease-out;
+}
+.widget-score .score-overview.expanded {
   height: 100%;
+}
+.widget-score .score-overview header {
+  cursor: pointer;
 }
 .widget-score .score-overview .score {
   color: #000000;

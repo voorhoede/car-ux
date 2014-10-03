@@ -4,5 +4,14 @@
   background-color: #ffc300;
   padding-bottom: 6em;
 }
+.detail-main h1 {
+  color: #ffffff;
+  margin-left: 20px;
+}
+@media screen and (min-width: 920px) {
+  .detail-main h1 {
+    margin-left: 0;
+  }
+}
 
 /*# sourceMappingURL=_detail-main.css.map */
