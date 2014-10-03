@@ -4,17 +4,54 @@
 /* footer component */
 
 .footer {
+	@include clearfix;
+
 	background-color: $black;
-	color: $white;
-	padding-top: 2em;
-	padding-bottom: 5em;
-	.footer-content {
-		width: 100%;
-		max-width: 900px;
-		margin-right: auto;
-		margin-left: auto;
+
+	h1,
+	h2 {
+		margin-top: 0;
 	}
-	.logo {
+
+	.footer-contact {
+		@include box-sizing(border-box);
+
+		background-color: $medium-grey;
+		padding: 30px;
+
+		@include min-screen($break-medium) {
+			float: right;
+			width: 37%;
+		}
+
+		p {
+			background-color: $white;
+			padding: 20px;
+		}
+	}
+
+	.footer-content {
+		@include box-sizing(border-box);
+
+		color: $white;
+		padding: 30px;
+
+		@include min-screen($break-medium) {
+			float: right;
+			width: 63%;
+		}
+
+		@include min-screen($break-large) {
+			padding-left: 0;
+		}
+	}
+
+	.footer-branding {
+
+	}
+
+	.icon-logo,
+	.icon-logo-unitid {
 		display: inline-block;
 		vertical-align: top;
 		background-color: $white;
@@ -23,17 +60,5 @@
 		color: $black;
 		text-align: right;
 		font-size: 1.6em;
-	}
-	.inline-header {
-		display: inline-block;
-	}
-	.footer-button.ui-button-tertiary {
-		display: inline-block;
-		vertical-align: top;
-		color: $black;
-		background-color: $white;
-		&:hover {
-			background-color: $yellow;
-		}
 	}
 }
