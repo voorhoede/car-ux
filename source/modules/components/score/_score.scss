@@ -1,0 +1,17 @@
+@import "../../../assets/scss/variables";
+@import "../../../assets/scss/helpers";
+
+/* score component */
+
+.score {
+	width: 100%;
+	max-width: $max-width-tablet;
+	margin-right: auto;
+	margin-left: auto;
+
+	.score-title,
+	.score-content {
+		background-color: $white;
+		padding-left: 3em;
+	}
+}
