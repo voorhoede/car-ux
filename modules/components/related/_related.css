@@ -1,0 +1,70 @@
+/* related component */
+.related {
+  background-color: #f2f2f2;
+  padding: 0 30px 80px 30px;
+}
+.related h1 {
+  margin: 0;
+}
+.related .related-product {
+  border: none;
+  display: none;
+  vertical-align: top;
+  width: 100%;
+}
+.related .related-product:nth-of-type(1), .related .related-product:nth-of-type(2) {
+  display: inline-block;
+}
+@media screen and (min-width: 620px) {
+  .related .related-product {
+    width: 48%;
+  }
+  .related .related-product:nth-of-type(1) {
+    margin-right: 4%;
+  }
+}
+@media screen and (min-width: 920px) {
+  .related .related-product {
+    display: inline-block;
+    width: 31.33%;
+    margin-left: 3%;
+  }
+  .related .related-product:nth-of-type(1) {
+    margin: 0;
+  }
+}
+.related .related-product:hover .related-score {
+  color: #000000;
+}
+.related .related-product img {
+  vertical-align: bottom;
+  width: 100%;
+}
+.related .related-product .related-title {
+  background-color: #ffffff;
+  margin-bottom: 20px;
+  position: relative;
+}
+@media screen and (min-width: 620px) {
+  .related .related-product .related-title {
+    min-height: 130px;
+  }
+}
+.related .related-product .related-title h2 {
+  margin: 0;
+  padding: 25px 30px 35px 30px;
+}
+.related .related-product .related-title h2 span {
+  display: block;
+  font-weight: normal;
+}
+.related .related-product .related-title .related-score {
+  display: block;
+  background-color: #ffc300;
+  padding: 10px;
+  position: absolute;
+  bottom: 100%;
+  right: 0;
+}
+
+/*# sourceMappingURL=_related.css.map */

@@ -37,6 +37,13 @@
 .detail-intro .intro-text .intro-title-image {
   display: inline-block;
   vertical-align: top;
+  width: 33%;
+}
+@media screen and (min-width: 620px) {
+  .detail-intro .intro-text h1,
+  .detail-intro .intro-text .intro-title-image {
+    width: auto;
+  }
 }
 .detail-intro .intro-text .intro-title-image {
   margin-right: 20px;
