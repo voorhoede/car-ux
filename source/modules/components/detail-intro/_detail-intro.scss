@@ -40,6 +40,11 @@
 		.intro-title-image {
 			display: inline-block;
 			vertical-align: top;
+			width: 33%;
+
+			@include min-screen($break-small) {
+				width: auto;
+			}
 		}
 
 		.intro-title-image {

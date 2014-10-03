@@ -2,8 +2,10 @@
 	"components": [
 		"demo-component",
 		"detail-intro",
+		"detail-main",
 		"footer",
 		"header",
+		"score",
 		"related",
 		"widget-score"
 	],

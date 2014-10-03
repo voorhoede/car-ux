@@ -31,6 +31,10 @@
 		socialSharing: {
 			twitter: 'Twitter - share text',
 			facebook: 'Facebook - share text'
+		},
+		detailMain: {
+			title: 'title main',
+			asdas: 'asdd'
 		}
 	}
 %}
@@ -66,10 +70,9 @@
 {% import  "components/related/_related.html" as related %}
 
 {% block content %}
-
-	{#{% include "components/detail-intro/_detail-intro.html" %}#}
-
 	{{ intro.detailIntro(content) }}
+
+	{% include "components/detail-main/_detail-main.html" %}
 
 	{{ related.related(relatedContent) }}
 

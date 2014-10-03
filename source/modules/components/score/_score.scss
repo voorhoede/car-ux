@@ -1,0 +1,25 @@
+@import "../../../assets/scss/variables";
+@import "../../../assets/scss/helpers";
+
+/* score component */
+
+.score {
+	width: 100%;
+	max-width: $max-width-tablet;
+	margin-right: auto;
+	margin-left: auto;
+
+	.score-title,
+	.score-content {
+		background-color: $white;
+		padding-left: 3em;
+	}
+	.is-expandible .score-content {
+		height: 0;
+		overflow: hidden;
+		transition: height 0.2s ease-out;
+	}
+	.is-expanded .score-content {
+		height: auto;
+	}
+}
