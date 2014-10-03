@@ -5,8 +5,9 @@
 		"detail-main",
 		"footer",
 		"header",
-		"score",
+		"quote",
 		"related",
+		"score",
 		"widget-score"
 	],
 	"views": [

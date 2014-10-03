@@ -16,3 +16,31 @@
 </div>
 <!-- /related -->
 {% endmacro %}
+
+{%
+	set relatedContent = [
+		{
+			title: 'Nissan Quashqai Tekna Opique',
+			subTitle: 'Si4 4WD Dynamic',
+			score: '4.5',
+			visual: '/assets/images/related/nissan-quashqai-tekna-opique.png',
+			url: '#'
+		},
+		{
+			title: 'Opel Insignia',
+			subTitle: 'Business Edition',
+			score: '2',
+			visual: '/assets/images/related/opel-insignia-business-edition.png',
+			url: '#'
+		},
+		{
+			title: 'Citroën C4 Picasso',
+			subTitle: 'Business Edition',
+			score: '5.5',
+			visual: '/assets/images/related/citroen-c4-picasso.png',
+			url: '#'
+		}
+	]
+%}
+
+{{ related(relatedContent) }}
