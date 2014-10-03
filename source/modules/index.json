@@ -1,9 +1,10 @@
 {
 	"components": [
 		"demo-component",
+		"detail-intro",
 		"footer",
 		"header",
-		"detail-intro",
+		"related",
 		"widget-score"
 	],
 	"views": [

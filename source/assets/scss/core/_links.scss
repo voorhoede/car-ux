@@ -10,7 +10,6 @@ a,
 		border-bottom-color: transparent;
 		color: $yellow;
 
-
-		@include transition(color 0.3s ease-out, border-bottom-color 0.3s ease-out);
+		@include transition(color .2s ease-out, border-bottom-color .2s ease-out);
 	}
 }

@@ -35,12 +35,42 @@
 	}
 %}
 
+{%
+	set relatedContent = [
+		{
+			title: 'Nissan Quashqai Tekna Opique',
+			subTitle: 'Si4 4WD Dynamic',
+			score: '4.5',
+			visual: '/assets/images/related/nissan-quashqai-tekna-opique.png',
+			url: '#'
+		},
+		{
+			title: 'Opel Insignia',
+			subTitle: 'Business Edition',
+			score: '2',
+			visual: '/assets/images/related/opel-insignia-business-edition.png',
+			url: '#'
+		},
+		{
+			title: 'Citroën C4 Picasso',
+			subTitle: 'Business Edition',
+			score: '5.5',
+			visual: '/assets/images/related/citroen-c4-picasso.png',
+			url: '#'
+		}
+	]
+%}
+
 {% extends "views/_base-view/base-view.html" %}
 {% import  "components/detail-intro/_detail-intro.html" as intro %}
+{% import  "components/related/_related.html" as related %}
 
 {% block content %}
 
 	{#{% include "components/detail-intro/_detail-intro.html" %}#}
 
 	{{ intro.detailIntro(content) }}
+
+	{{ related.related(relatedContent) }}
+
 {% endblock %}
