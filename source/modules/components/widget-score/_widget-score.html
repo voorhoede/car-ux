@@ -1,6 +1,6 @@
 <!-- widget-score -->
 <div class="widget-score" data-component="widget-score">
-	<div class="score-overview">
+	<div class="score-overview" data-widget-score-overview>
 		<header>
 			<span class="icon icon-meter"></span>
 			<span class="score">{{ content.widgetScore.score }}</span>
@@ -9,7 +9,7 @@
 		<ul>
 			{% for property, value in content.widgetScore.scoreDetails %}
 			<li>
-				<a href="#presence">
+				<a href="#{{ property }}">
 					<span class="label">{{ property | capitalize }}</span>
 					<span class="value">{{ value }}</span>
 				</a>

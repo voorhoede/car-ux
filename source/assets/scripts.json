@@ -3,12 +3,14 @@
     ],
     "common": [
 		"helpers/debounce",
+		"helpers/dom",
 		"helpers/media-queries",
 		"expandible"
     ],
     "components": [
 		"detail-intro",
-		"score"
+		"score",
+		"widget-score"
     ],
     "views": [
     ]
