@@ -1,0 +1,16 @@
+{% macro summaryBlock(content) %}
+<!-- summary -->
+<div class="summary" data-component="summary">
+	<section class="max-width-centered">
+		<h1>DE TEST</h1>
+		<div class="summary-content">
+			<div class="summary-text">
+				<h2>{{ content.title }}</h2>
+				<p>{{ content.text }}</p>
+			</div>
+			<img src="{{ content.visual }}" alt="{{ content.title }}"/>
+		</div>
+	</section>
+</div>
+<!-- /summary -->
+{% endmacro %}

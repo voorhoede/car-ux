@@ -1,6 +1,9 @@
 <!-- detail-main -->
 <main class="detail-main" data-component="detail-main">
-	<h1>{{ content.detailMain.title }}</h1>
+	<span data-placeholder>&nbsp;</span>
+
+	{% import  "components/summary/_summary.html" as summaryBlock %}
+	{{ summaryBlock.summaryBlock(summaryContent) }}
 
 	{% import  "components/quote/_quote.html" as quoteBlock %}
 	{{ quoteBlock.quoteBlock(quote) }}

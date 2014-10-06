@@ -1,0 +1,26 @@
+@import "../../../assets/scss/variables";
+@import "../../../assets/scss/helpers";
+
+/* summary component */
+
+.summary {
+	margin-top: -$intro-summary-overlap;
+
+	h1 {
+		color: $black;
+	}
+
+	.summary-content {
+		margin-bottom: 80px;
+
+		img {
+			vertical-align: bottom;
+			width: 100%;
+		}
+	}
+
+	.summary-text {
+		background-color: $white;
+		padding: 30px 25px;
+	}
+}
