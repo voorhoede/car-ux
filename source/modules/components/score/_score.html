@@ -1,123 +1,34 @@
+{% macro scoreExpandible(content) %}
+	{% for property, value in content.widgetScore.scoreDetails %}
+	<div class="score-item {% if loop.first %} is-expanded {% endif %}"
+		 data-expandible
+		 data-expandible-open-on-focus="true"><!--data-expandible-close-on-blur="true"-->
+		<a href="#"
+		   name="{{ property }}"
+		   class="score-title"
+		   data-expandible-handle="toggle">
+			<h2>{{ property | capitalize }}</h2>
+			<span class="arrow-box"></span>
+		</a>
+		<div class="score-content" data-expandible-content>
+			<div class="score-box">
+				<span class="score-number">{{ value.score }}</span>
+				<span class="score-icon"></span>
+			</div>
+			<p>
+				{{ value.description }}
+			</p>
+		</div>
+	</div>
+	{% endfor %}
+{% endmacro %}
+
 <!-- score -->
 <section class="score" data-component="score">
 	<div class="score-heading">
 		<h1>DE SCORES</h1>
-		<span class="testing-date-person">Getest op 12 juni 2014 door Hylke van Maaren en Miranda Schenkel</span>
+		<span class="testing-date-person">{{ content.testTagline }}</span>
 	</div>
-	<div class="score-item"
-		 data-expandible
-		 data-expandible-open-on-focus="true"><!--data-expandible-close-on-blur="true"-->
-		<a href="#"
-			class="score-title"
-			data-expandible-handle="toggle">
-			<h2>Uitstraling</h2>
-			<span class="arrow-box"></span>
-		</a>
-		<div class="score-content" data-expandible-content>
-			<div class="score-box">
-				<span class="score-number">10</span>
-				<span class="score-icon"></span>
-			</div>
-			<p>
-				De blauwe lijnen die op het exterieur en in het interieur te vinden zijn komen ook in de
-				interfaces terug, dit is een mooi detail. Tab-achtige lijnen komen voor zowel in de UI
-				als in het dashboard achter de UI. De backlights van de knoppen om de UI heen zijn niet
-				blauw, maar rood. Het font dat gebruikt is is niet hetzelfde als op de buttons, maar
-				dit stoort niet.
-			</p>
-		</div>
-	</div>
-	<div class="score-item"
-		 data-expandible
-		 data-expandible-open-on-focus="true"><!--data-expandible-close-on-blur="true"-->
-		<a href="#"
-		   class="score-title"
-		   data-expandible-handle="toggle">
-			<h2>Contrast</h2>
-			<span class="arrow-box"></span>
-		</a>
-		<div class="score-content" data-expandible-content>
-			<div class="score-box">
-				<span class="score-number">5</span>
-				<span class="score-icon"></span>
-			</div>
-			<p>
-				De blauwe lijnen die op het exterieur en in het interieur te vinden zijn komen ook in de
-				interfaces terug, dit is een mooi detail. Tab-achtige lijnen komen voor zowel in de UI
-				als in het dashboard achter de UI. De backlights van de knoppen om de UI heen zijn niet
-				blauw, maar rood. Het font dat gebruikt is is niet hetzelfde als op de buttons, maar
-				dit stoort niet.
-			</p>
-		</div>
-	</div>
-	<div class="score-item"
-		 data-expandible
-		 data-expandible-open-on-focus="true"><!--data-expandible-close-on-blur="true"-->
-		<a href="#"
-		   class="score-title"
-		   data-expandible-handle="toggle">
-			<h2>Focus</h2>
-			<span class="arrow-box"></span>
-		</a>
-		<div class="score-content" data-expandible-content>
-			<div class="score-box">
-				<span class="score-number">10</span>
-				<span class="score-icon"></span>
-			</div>
-			<p>
-				De blauwe lijnen die op het exterieur en in het interieur te vinden zijn komen ook in de
-				interfaces terug, dit is een mooi detail. Tab-achtige lijnen komen voor zowel in de UI
-				als in het dashboard achter de UI. De backlights van de knoppen om de UI heen zijn niet
-				blauw, maar rood. Het font dat gebruikt is is niet hetzelfde als op de buttons, maar
-				dit stoort niet.
-			</p>
-		</div>
-	</div>
-	<div class="score-item"
-		 data-expandible
-		 data-expandible-open-on-focus="true"><!--data-expandible-close-on-blur="true"-->
-		<a href="#"
-		   class="score-title"
-		   data-expandible-handle="toggle">
-			<h2>Usability</h2>
-			<span class="arrow-box"></span>
-		</a>
-		<div class="score-content" data-expandible-content>
-			<div class="score-box">
-				<span class="score-number">6</span>
-				<span class="score-icon"></span>
-			</div>
-			<p>
-				De blauwe lijnen die op het exterieur en in het interieur te vinden zijn komen ook in de
-				interfaces terug, dit is een mooi detail. Tab-achtige lijnen komen voor zowel in de UI
-				als in het dashboard achter de UI. De backlights van de knoppen om de UI heen zijn niet
-				blauw, maar rood. Het font dat gebruikt is is niet hetzelfde als op de buttons, maar
-				dit stoort niet.
-			</p>
-		</div>
-	</div>
-	<div class="score-item"
-		 data-expandible
-		 data-expandible-open-on-focus="true"><!--data-expandible-close-on-blur="true"-->
-		<a href="#"
-		   class="score-title"
-		   data-expandible-handle="toggle">
-			<h2>Features</h2>
-			<span class="arrow-box"></span>
-		</a>
-		<div class="score-content" data-expandible-content>
-			<div class="score-box">
-				<span class="score-number">8</span>
-				<span class="score-icon"></span>
-			</div>
-			<p>
-				De blauwe lijnen die op het exterieur en in het interieur te vinden zijn komen ook in de
-				interfaces terug, dit is een mooi detail. Tab-achtige lijnen komen voor zowel in de UI
-				als in het dashboard achter de UI. De backlights van de knoppen om de UI heen zijn niet
-				blauw, maar rood. Het font dat gebruikt is is niet hetzelfde als op de buttons, maar
-				dit stoort niet.
-			</p>
-		</div>
-	</div>
+	{{ scoreExpandible(content) }}
 </section>
 <!-- /score -->
