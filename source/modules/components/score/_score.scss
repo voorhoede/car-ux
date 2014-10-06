@@ -43,7 +43,10 @@
 	.score-title,
 	.score-content {
 		background-color: $white;
-		padding-left: 3em;
+		padding-left: 2em;
+		@include min-screen($break-medium) {
+			padding-right: 3em;
+		}
 	}
 	.score-title {
 		display: block;
@@ -92,6 +95,7 @@
 			position: absolute;
 			top: 20px;
 			left: 30px;
+			margin-bottom: 0;
 		}
 	}
 	.score-number {
@@ -114,6 +118,7 @@
 	.score-content p {
 		margin-top: 0;
 		margin-left: 0;
+		margin-bottom: 0;
 		@include min-screen($break-medium) {
 			margin-left: 195px;
 		}
@@ -126,6 +131,6 @@
 	.is-expanded .score-content {
 		height: auto;
 		padding-top: 15px;
-		padding-bottom: 20px;
+		padding-bottom: 15px;
 	}
 }
