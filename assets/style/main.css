@@ -608,7 +608,8 @@ ol, ul {
 /* intro component */
 .detail-intro {
   background-color: #f2f2f2;
-  padding: 30px 0;
+  padding-top: 30px;
+  padding-bottom: 45%;
 }
 .detail-intro .intro-background {
   display: block;
@@ -923,10 +924,10 @@ ol, ul {
 }
 
 /* highlight component */
-.highlight .hightlight-content {
+.highlight .highlight-content {
   position: relative;
 }
-.highlight .hightlight-content img {
+.highlight .highlight-content img {
   vertical-align: bottom;
   width: 100%;
 }
@@ -1210,6 +1211,25 @@ ol, ul {
   height: auto;
   padding-top: 15px;
   padding-bottom: 15px;
+}
+
+/* summary component */
+.summary {
+  margin-top: -45%;
+}
+.summary h1 {
+  color: #000000;
+}
+.summary .summary-content {
+  margin-bottom: 80px;
+}
+.summary .summary-content img {
+  vertical-align: bottom;
+  width: 100%;
+}
+.summary .summary-text {
+  background-color: #ffffff;
+  padding: 30px 25px;
 }
 
 /* widget-score component */

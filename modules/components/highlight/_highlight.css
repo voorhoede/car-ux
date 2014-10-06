@@ -1,8 +1,8 @@
 /* highlight component */
-.highlight .hightlight-content {
+.highlight .highlight-content {
   position: relative;
 }
-.highlight .hightlight-content img {
+.highlight .highlight-content img {
   vertical-align: bottom;
   width: 100%;
 }

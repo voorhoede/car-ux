@@ -1,7 +1,8 @@
 /* intro component */
 .detail-intro {
   background-color: #f2f2f2;
-  padding: 30px 0;
+  padding-top: 30px;
+  padding-bottom: 45%;
 }
 .detail-intro .intro-background {
   display: block;

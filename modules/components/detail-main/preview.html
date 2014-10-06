@@ -5,9 +5,25 @@
     <title> Detail main (preview) Detail-main | car-ux </title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-    <meta name="description" content="ADD A DESCRIPTION" />
+    <meta name="description" content="Car UX" />
     <meta name="viewport" content="width=device-width initial-scale=1" />
-    <link rel="shortcut icon" href="../../..//assets/images/favicon.ico" type="image/ico" />
+    <link rel="shortcut icon" href="../../..//assets/images/favicons/favicon.ico" type="image/ico" />
+    <link rel="apple-touch-icon" sizes="57x57" href="../../..//assets/images/favicons/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../../..//assets/images/favicons/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../../..//assets/images/favicons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../../..//assets/images/favicons/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="../../..//assets/images/favicons/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="../../..//assets/images/favicons/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../../..//assets/images/favicons/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../../..//assets/images/favicons/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../../..//assets/images/favicons/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" href="../../..//assets/images/favicons/favicon-192x192.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="../../..//assets/images/favicons/favicon-160x160.png" sizes="160x160">
+    <link rel="icon" type="image/png" href="../../..//assets/images/favicons/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="../../..//assets/images/favicons/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="../../..//assets/images/favicons/favicon-32x32.png" sizes="32x32">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-TileImage" content="../../..//assets/images/favicons/mstile-144x144.png">
     <script>
         (function(e) {
             e.className = e.className.replace('no-js', 'js');
@@ -100,8 +116,19 @@ Or delete this file if not applicable.
 
 			</h3>
                             <div class="app-guide-code"> <pre class="language-markup"><code>&lt;!-- detail-main -->
-&lt;main class="detail-main" data-component="detail-main">
-	&lt;h1>&lt;/h1>
+&lt;main class="detail-main" data-component="detail-main"> &lt;span data-placeholder>&nbsp;&lt;/span>
+	&lt;!-- summary -->
+	&lt;div class="summary" data-component="summary">
+		&lt;section class="max-width-centered">
+			&lt;h1>DE TEST&lt;/h1>
+			&lt;div class="summary-content">
+				&lt;div class="summary-text">
+					&lt;h2>&lt;/h2>
+					&lt;p>&lt;/p>
+				&lt;/div> &lt;img src="" alt="" /> &lt;/div>
+		&lt;/section>
+	&lt;/div>
+	&lt;!-- /summary -->
 	&lt;!-- quote -->
 	&lt;div class="quote" data-component="quote">
 		&lt;section class="max-width-centered">
@@ -113,7 +140,7 @@ Or delete this file if not applicable.
 	&lt;div class="highlight" data-component="highlight">
 		&lt;section class="max-width-centered">
 			&lt;h1>WAT ONS OPVIEL&lt;/h1>
-			&lt;div class="hightlight-content"> &lt;img src="" alt="" />
+			&lt;div class="highlight-content"> &lt;img src="" alt="" />
 				&lt;div class="highlight-text">
 					&lt;h2>&lt;/h2>
 					&lt;p>&lt;/p>
@@ -125,57 +152,7 @@ Or delete this file if not applicable.
 	&lt;!-- score -->
 	&lt;section class="score" data-component="score">
 		&lt;div class="score-heading">
-			&lt;h1>DE SCORES&lt;/h1> &lt;span class="testing-date-person">Getest op 12 juni 2014 door Hylke van Maaren en Miranda Schenkel&lt;/span> &lt;/div>
-		&lt;div class="score-item" data-expandible data-expandible-open-on-focus="true">
-			&lt;!--data-expandible-close-on-blur="true"-->
-			&lt;a href="#" class="score-title" data-expandible-handle="toggle">
-				&lt;h2>Uitstraling&lt;/h2> &lt;span class="arrow-box">&lt;/span> &lt;/a>
-			&lt;div class="score-content" data-expandible-content>
-				&lt;div class="score-box"> &lt;span class="score-number">10&lt;/span> &lt;span class="score-icon">&lt;/span> &lt;/div>
-				&lt;p> De blauwe lijnen die op het exterieur en in het interieur te vinden zijn komen ook in de interfaces terug, dit is een mooi detail. Tab-achtige lijnen komen voor zowel in de UI als in het dashboard achter de UI. De backlights van de knoppen om de UI
-					heen zijn niet blauw, maar rood. Het font dat gebruikt is is niet hetzelfde als op de buttons, maar dit stoort niet. &lt;/p>
-			&lt;/div>
-		&lt;/div>
-		&lt;div class="score-item" data-expandible data-expandible-open-on-focus="true">
-			&lt;!--data-expandible-close-on-blur="true"-->
-			&lt;a href="#" class="score-title" data-expandible-handle="toggle">
-				&lt;h2>Contrast&lt;/h2> &lt;span class="arrow-box">&lt;/span> &lt;/a>
-			&lt;div class="score-content" data-expandible-content>
-				&lt;div class="score-box"> &lt;span class="score-number">5&lt;/span> &lt;span class="score-icon">&lt;/span> &lt;/div>
-				&lt;p> De blauwe lijnen die op het exterieur en in het interieur te vinden zijn komen ook in de interfaces terug, dit is een mooi detail. Tab-achtige lijnen komen voor zowel in de UI als in het dashboard achter de UI. De backlights van de knoppen om de UI
-					heen zijn niet blauw, maar rood. Het font dat gebruikt is is niet hetzelfde als op de buttons, maar dit stoort niet. &lt;/p>
-			&lt;/div>
-		&lt;/div>
-		&lt;div class="score-item" data-expandible data-expandible-open-on-focus="true">
-			&lt;!--data-expandible-close-on-blur="true"-->
-			&lt;a href="#" class="score-title" data-expandible-handle="toggle">
-				&lt;h2>Focus&lt;/h2> &lt;span class="arrow-box">&lt;/span> &lt;/a>
-			&lt;div class="score-content" data-expandible-content>
-				&lt;div class="score-box"> &lt;span class="score-number">10&lt;/span> &lt;span class="score-icon">&lt;/span> &lt;/div>
-				&lt;p> De blauwe lijnen die op het exterieur en in het interieur te vinden zijn komen ook in de interfaces terug, dit is een mooi detail. Tab-achtige lijnen komen voor zowel in de UI als in het dashboard achter de UI. De backlights van de knoppen om de UI
-					heen zijn niet blauw, maar rood. Het font dat gebruikt is is niet hetzelfde als op de buttons, maar dit stoort niet. &lt;/p>
-			&lt;/div>
-		&lt;/div>
-		&lt;div class="score-item" data-expandible data-expandible-open-on-focus="true">
-			&lt;!--data-expandible-close-on-blur="true"-->
-			&lt;a href="#" class="score-title" data-expandible-handle="toggle">
-				&lt;h2>Usability&lt;/h2> &lt;span class="arrow-box">&lt;/span> &lt;/a>
-			&lt;div class="score-content" data-expandible-content>
-				&lt;div class="score-box"> &lt;span class="score-number">6&lt;/span> &lt;span class="score-icon">&lt;/span> &lt;/div>
-				&lt;p> De blauwe lijnen die op het exterieur en in het interieur te vinden zijn komen ook in de interfaces terug, dit is een mooi detail. Tab-achtige lijnen komen voor zowel in de UI als in het dashboard achter de UI. De backlights van de knoppen om de UI
-					heen zijn niet blauw, maar rood. Het font dat gebruikt is is niet hetzelfde als op de buttons, maar dit stoort niet. &lt;/p>
-			&lt;/div>
-		&lt;/div>
-		&lt;div class="score-item" data-expandible data-expandible-open-on-focus="true">
-			&lt;!--data-expandible-close-on-blur="true"-->
-			&lt;a href="#" class="score-title" data-expandible-handle="toggle">
-				&lt;h2>Features&lt;/h2> &lt;span class="arrow-box">&lt;/span> &lt;/a>
-			&lt;div class="score-content" data-expandible-content>
-				&lt;div class="score-box"> &lt;span class="score-number">8&lt;/span> &lt;span class="score-icon">&lt;/span> &lt;/div>
-				&lt;p> De blauwe lijnen die op het exterieur en in het interieur te vinden zijn komen ook in de interfaces terug, dit is een mooi detail. Tab-achtige lijnen komen voor zowel in de UI als in het dashboard achter de UI. De backlights van de knoppen om de UI
-					heen zijn niet blauw, maar rood. Het font dat gebruikt is is niet hetzelfde als op de buttons, maar dit stoort niet. &lt;/p>
-			&lt;/div>
-		&lt;/div>
+			&lt;h1>DE SCORES&lt;/h1> &lt;span class="testing-date-person">&lt;/span> &lt;/div>
 	&lt;/section>
 	&lt;!-- /score -->
 &lt;/main>

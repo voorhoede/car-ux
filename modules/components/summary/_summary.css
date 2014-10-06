@@ -1,0 +1,20 @@
+/* summary component */
+.summary {
+  margin-top: -45%;
+}
+.summary h1 {
+  color: #000000;
+}
+.summary .summary-content {
+  margin-bottom: 80px;
+}
+.summary .summary-content img {
+  vertical-align: bottom;
+  width: 100%;
+}
+.summary .summary-text {
+  background-color: #ffffff;
+  padding: 30px 25px;
+}
+
+/*# sourceMappingURL=_summary.css.map */
