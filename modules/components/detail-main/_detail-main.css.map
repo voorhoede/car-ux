@@ -1,6 +1,6 @@
 {
 "version": 3,
-"mappings": ";AAKA,YAAa;EACZ,KAAK,EAAE,IAAI;EACX,gBAAgB,ECPL,OAAO;EDQlB,cAAc,EAAE,GAAG;;AAEnB,eAAG;EACF,KAAK,ECNI,OAAO;EDOhB,WAAW,EAAE,IAAI;;AEXlB,oCACA;EFQA,eAAG;IAKD,WAAW,EAAE,CAAC",
+"mappings": ";AAKA,YAAa;EACZ,KAAK,EAAE,IAAI;EACX,gBAAgB,ECPL,OAAO;EDQlB,cAAc,EAAE,GAAG;;AAEnB,eAAG;EACF,KAAK,ECNI,OAAO;EDOhB,UAAU,EAAE,IAAI;EAChB,WAAW,EAAE,IAAI;EACjB,aAAa,EAAE,IAAI;;AEbpB,oCACA;EFQA,eAAG;IAOD,WAAW,EAAE,CAAC",
 "sources": ["../../../../source/modules/components/detail-main/_detail-main.scss","../../../../source/assets/scss/core/_colors.scss","../../../../source/assets/scss/mixins/_media-queries.scss"],
 "names": [],
 "file": "_detail-main.css"
