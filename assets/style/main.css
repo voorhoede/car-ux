@@ -609,7 +609,7 @@ ol, ul {
 .detail-intro {
   background-color: #f2f2f2;
   padding-top: 30px;
-  padding-bottom: 45%;
+  padding-bottom: 450px;
 }
 .detail-intro .intro-background {
   display: block;
@@ -701,12 +701,14 @@ ol, ul {
   }
 }
 .detail-intro .social-buttons .social-button {
+  -webkit-transition: background 0.2s ease-out;
+  transition: background 0.2s ease-out;
   text-indent: 9999px;
   white-space: nowrap;
   overflow: hidden;
   outline: none;
-  background-color: #000000;
   display: inline-block;
+  border: none;
   width: 30px;
   height: 30px;
 }
@@ -1215,7 +1217,7 @@ ol, ul {
 
 /* summary component */
 .summary {
-  margin-top: -45%;
+  margin-top: -450px;
 }
 .summary h1 {
   color: #000000;
