@@ -10,7 +10,9 @@
 
 	h1 {
 		color: $white;
+		margin-top: 60px;
 		margin-left: 20px;
+		margin-bottom: 20px;
 
 		@include min-screen($break-large) {
 			margin-left: 0;

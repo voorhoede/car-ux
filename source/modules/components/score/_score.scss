@@ -9,10 +9,114 @@
 	margin-right: auto;
 	margin-left: auto;
 
+	h1 {
+		margin-top: 0;
+		margin-bottom: 0;
+		@include min-screen($break-medium) {
+			display: inline-block;
+		}
+	}
+	.testing-date-person {
+		position: relative;
+		display: inline-block;
+		margin-right: 20px;
+		margin-left: 20px;
+		font-family: $helvetica-nue;
+		font-size: 1.2em;
+		color: $white;
+		@include min-screen($break-medium) {
+			position: absolute;
+			right: 0;
+			bottom: 4px;
+			margin-right: 0;
+			margin-left: 0;
+		}
+	}
+	.score-item {
+		margin-bottom: 10px;
+	}
+	.score-heading {
+		position: relative;
+		margin-top: 60px;
+		margin-bottom: 20px;
+	}
 	.score-title,
 	.score-content {
 		background-color: $white;
 		padding-left: 3em;
+	}
+	.score-title {
+		display: block;
+		position: relative;
+		padding-top: 1.125em;
+		padding-bottom: 1.125em;
+		text-decoration: none;
+		border-bottom: none;
+		&:hover {
+			color: $black;
+			text-decoration: none;
+		}
+		h2 {
+			font-family: $helvetica-nue-bold;
+			font-size: 25px;
+			margin-top: 0;
+			margin-bottom: 0;
+		}
+	}
+	.is-expanded .score-title {
+		margin-bottom: 1px;
+	}
+	.arrow-box {
+		position: absolute;
+		top: 0;
+		right: 0;
+		height: 100%;
+		width: 50px;
+		background-color: $medium-grey;
+	}
+	.score-content {
+		position: relative;
+		padding-right: 3em;
+		@include min-screen($break-medium) {
+			padding-right: 10em;
+		}
+	}
+	.score-box {
+		position: relative;
+		display: inline-block;
+		width: 175px;
+		height: 80px;
+		margin-bottom: 20px;
+		background-color: $yellow;
+		@include min-screen($break-medium) {
+			position: absolute;
+			top: 20px;
+			left: 30px;
+		}
+	}
+	.score-number {
+		display: inline-block;
+		padding-top: 5px;
+		padding-left: 17px;
+		font-family: $helvetica-nue-bold;
+		font-size: 36px;
+	}
+	.score-icon {
+		position: absolute;
+		top: 12px;
+		right: 50px;
+		width: 50px;
+		height: 50px;
+		@include box-sizing(border-box);
+		border: 2px solid black;
+		border-radius: 25px;
+	}
+	.score-content p {
+		margin-top: 0;
+		margin-left: 0;
+		@include min-screen($break-medium) {
+			margin-left: 195px;
+		}
 	}
 	.is-expandible .score-content {
 		height: 0;
@@ -21,5 +125,7 @@
 	}
 	.is-expanded .score-content {
 		height: auto;
+		padding-top: 15px;
+		padding-bottom: 20px;
 	}
 }
