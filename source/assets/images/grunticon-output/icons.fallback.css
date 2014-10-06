@@ -1,3 +1,15 @@
+.icon-facebook:hover,
+.icon-facebook:focus,
+.icon-facebook-yellow-black { background-image: url('png/facebook-yellow-black.png'); background-repeat: no-repeat; }
+
+.icon-facebook { background-image: url('png/facebook.png'); background-repeat: no-repeat; }
+
+.icon-gplus:hover,
+.icon-gplus:focus,
+.icon-gplus-yellow-black { background-image: url('png/gplus-yellow-black.png'); background-repeat: no-repeat; }
+
+.icon-gplus { background-image: url('png/gplus.png'); background-repeat: no-repeat; }
+
 .icon-left-blue { background-image: url('png/left-blue.png'); background-repeat: no-repeat; }
 
 .icon-left:hover,
@@ -7,4 +19,10 @@
 .icon-left-yellow { background-image: url('png/left-yellow.png'); background-repeat: no-repeat; }
 
 .icon-left { background-image: url('png/left.png'); background-repeat: no-repeat; }
+
+.icon-twitter:hover,
+.icon-twitter:focus,
+.icon-twitter-yellow-black { background-image: url('png/twitter-yellow-black.png'); background-repeat: no-repeat; }
+
+.icon-twitter { background-image: url('png/twitter.png'); background-repeat: no-repeat; }
 
