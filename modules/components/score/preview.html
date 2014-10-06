@@ -2,7 +2,7 @@
 <html class="no-js">
 
 <head>
-    <title>Score (preview) Score | car-ux</title>
+    <title> Score (preview) Score | car-ux </title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
     <meta name="description" content="ADD A DESCRIPTION" />
@@ -43,27 +43,23 @@
         ]);
     </script>
     <noscript>
-        <link rel="stylesheet" href="../../..//assets/images/grunticon-output/icons.fallback.css" />
-    </noscript>
+        <link rel="stylesheet" href="../../..//assets/images/grunticon-output/icons.fallback.css" /> </noscript>
     <link rel="stylesheet" href="../../..//assets/style/main.css">
     <!--<link rel="stylesheet" href="../../..//guide//voorhoede-core-styles.css">-->
     <!--<link rel="stylesheet" href="../../..//guide//core-layout.css">-->
     <link rel="stylesheet" href="../../..//guide/guide.css">
     <link rel="stylesheet" href="../../..//guide/vendor/prismjs/prism.css">
-    <link rel="stylesheet" href="../../..//assets/style/main.css">
-</head>
+    <link rel="stylesheet" href="../../..//assets/style/main.css"> </head>
 
 <body>
     <!-- use data attributes to target in JS -->
     <div id="page">
         <div class="page">
             <div class="core-layout">
-                <header class="app-guide-content">
-                    <img src="../../..//guide/images/voorhoede-logo.svg" onerror="this.src='../../..//guide/images/voorhoede-logo.min.png'"
+                <header class="app-guide-content"> <img src="../../..//guide/images/voorhoede-logo.svg" onerror="this.src='../../..//guide/images/voorhoede-logo.min.png'"
                     alt="De Voorhoede" height="75" width="75" />
                     <h1>car-ux</h1>
-                    <h2>Front-end guide for car-ux by de Voorhoede</h2>
-                </header>
+                    <h2>Front-end guide for car-ux by de Voorhoede</h2> </header>
                 <main class="app-guide-main">
                     <script>
                         window.testApp = {}; // namespace to register modules for testing
@@ -82,9 +78,8 @@ Or delete this file if not applicable.
                     </div>
                     <p>Or set your own width in px:</p>
                     <form id="resize-form">
-                        <label>	<span>Width</span>
-                            <input type="number" name="width" id="resize-width" required/>
-                        </label>
+                        <label> <span>Width</span>
+                            <input type="number" name="width" id="resize-width" required/> </label>
                         <button type="submit">Set!</button>
                     </form>
                     <iframe id="preview-iframe" src="object.html" width="100%" height="400px"></iframe>
@@ -104,29 +99,58 @@ Or delete this file if not applicable.
    title="permalink to this section"></a>
 
 			</h3>
-                            <div class="app-guide-code">	<pre class="language-markup"><code>&lt;!-- score -->
+                            <div class="app-guide-code"> <pre class="language-markup"><code>&lt;!-- score -->
 &lt;section class="score" data-component="score">
-	&lt;h1>De scores&lt;/h1>
-	&lt;div data-expandible data-expandible-open-on-focus="true">
+	&lt;div class="score-heading">
+		&lt;h1>DE SCORES&lt;/h1> &lt;span class="testing-date-person">Getest op 12 juni 2014 door Hylke van Maaren en Miranda Schenkel&lt;/span> &lt;/div>
+	&lt;div class="score-item" data-expandible data-expandible-open-on-focus="true">
 		&lt;!--data-expandible-close-on-blur="true"-->
-		&lt;h2 class="score-title" data-expandible-handle="toggle">
-			&lt;a href="#">Uitstraling&lt;span class="arrow-box">&lt;/span>&lt;/a>
-		&lt;/h2>
+		&lt;a href="#" class="score-title" data-expandible-handle="toggle">
+			&lt;h2>Uitstraling&lt;/h2> &lt;span class="arrow-box">&lt;/span> &lt;/a>
 		&lt;div class="score-content" data-expandible-content>
-			&lt;div class="score-img">&lt;/div>
-			&lt;p>De blauwe lijnen die op het exterieur en in het interieur te vinden zijn komen ook in de interfaces terug, dit is een mooi detail. Tab-achtige lijnen komen voor zowel in de UI als in het dashboard achter de UI. De backlights van de knoppen om de UI
-				heen zijn niet blauw, maar rood. Het font dat gebruikt is is niet hetzelfde als op de buttons, maar dit stoort niet.&lt;/p>
+			&lt;div class="score-box"> &lt;span class="score-number">10&lt;/span> &lt;span class="score-icon">&lt;/span> &lt;/div>
+			&lt;p> De blauwe lijnen die op het exterieur en in het interieur te vinden zijn komen ook in de interfaces terug, dit is een mooi detail. Tab-achtige lijnen komen voor zowel in de UI als in het dashboard achter de UI. De backlights van de knoppen om de UI
+				heen zijn niet blauw, maar rood. Het font dat gebruikt is is niet hetzelfde als op de buttons, maar dit stoort niet. &lt;/p>
 		&lt;/div>
 	&lt;/div>
-	&lt;div data-expandible data-expandible-open-on-focus="true">
+	&lt;div class="score-item" data-expandible data-expandible-open-on-focus="true">
 		&lt;!--data-expandible-close-on-blur="true"-->
-		&lt;h2 class="score-title" data-expandible-handle="toggle">
-			&lt;a href="#">Contrast&lt;span class="arrow-box">&lt;/span>&lt;/a>
-		&lt;/h2>
+		&lt;a href="#" class="score-title" data-expandible-handle="toggle">
+			&lt;h2>Contrast&lt;/h2> &lt;span class="arrow-box">&lt;/span> &lt;/a>
 		&lt;div class="score-content" data-expandible-content>
-			&lt;div class="score-img">&lt;/div>
-			&lt;p>De blauwe lijnen die op het exterieur en in het interieur te vinden zijn komen ook in de interfaces terug, dit is een mooi detail. Tab-achtige lijnen komen voor zowel in de UI als in het dashboard achter de UI. De backlights van de knoppen om de UI
-				heen zijn niet blauw, maar rood. Het font dat gebruikt is is niet hetzelfde als op de buttons, maar dit stoort niet.&lt;/p>
+			&lt;div class="score-box"> &lt;span class="score-number">5&lt;/span> &lt;span class="score-icon">&lt;/span> &lt;/div>
+			&lt;p> De blauwe lijnen die op het exterieur en in het interieur te vinden zijn komen ook in de interfaces terug, dit is een mooi detail. Tab-achtige lijnen komen voor zowel in de UI als in het dashboard achter de UI. De backlights van de knoppen om de UI
+				heen zijn niet blauw, maar rood. Het font dat gebruikt is is niet hetzelfde als op de buttons, maar dit stoort niet. &lt;/p>
+		&lt;/div>
+	&lt;/div>
+	&lt;div class="score-item" data-expandible data-expandible-open-on-focus="true">
+		&lt;!--data-expandible-close-on-blur="true"-->
+		&lt;a href="#" class="score-title" data-expandible-handle="toggle">
+			&lt;h2>Focus&lt;/h2> &lt;span class="arrow-box">&lt;/span> &lt;/a>
+		&lt;div class="score-content" data-expandible-content>
+			&lt;div class="score-box"> &lt;span class="score-number">10&lt;/span> &lt;span class="score-icon">&lt;/span> &lt;/div>
+			&lt;p> De blauwe lijnen die op het exterieur en in het interieur te vinden zijn komen ook in de interfaces terug, dit is een mooi detail. Tab-achtige lijnen komen voor zowel in de UI als in het dashboard achter de UI. De backlights van de knoppen om de UI
+				heen zijn niet blauw, maar rood. Het font dat gebruikt is is niet hetzelfde als op de buttons, maar dit stoort niet. &lt;/p>
+		&lt;/div>
+	&lt;/div>
+	&lt;div class="score-item" data-expandible data-expandible-open-on-focus="true">
+		&lt;!--data-expandible-close-on-blur="true"-->
+		&lt;a href="#" class="score-title" data-expandible-handle="toggle">
+			&lt;h2>Usability&lt;/h2> &lt;span class="arrow-box">&lt;/span> &lt;/a>
+		&lt;div class="score-content" data-expandible-content>
+			&lt;div class="score-box"> &lt;span class="score-number">6&lt;/span> &lt;span class="score-icon">&lt;/span> &lt;/div>
+			&lt;p> De blauwe lijnen die op het exterieur en in het interieur te vinden zijn komen ook in de interfaces terug, dit is een mooi detail. Tab-achtige lijnen komen voor zowel in de UI als in het dashboard achter de UI. De backlights van de knoppen om de UI
+				heen zijn niet blauw, maar rood. Het font dat gebruikt is is niet hetzelfde als op de buttons, maar dit stoort niet. &lt;/p>
+		&lt;/div>
+	&lt;/div>
+	&lt;div class="score-item" data-expandible data-expandible-open-on-focus="true">
+		&lt;!--data-expandible-close-on-blur="true"-->
+		&lt;a href="#" class="score-title" data-expandible-handle="toggle">
+			&lt;h2>Features&lt;/h2> &lt;span class="arrow-box">&lt;/span> &lt;/a>
+		&lt;div class="score-content" data-expandible-content>
+			&lt;div class="score-box"> &lt;span class="score-number">8&lt;/span> &lt;span class="score-icon">&lt;/span> &lt;/div>
+			&lt;p> De blauwe lijnen die op het exterieur en in het interieur te vinden zijn komen ook in de interfaces terug, dit is een mooi detail. Tab-achtige lijnen komen voor zowel in de UI als in het dashboard achter de UI. De backlights van de knoppen om de UI
+				heen zijn niet blauw, maar rood. Het font dat gebruikt is is niet hetzelfde als op de buttons, maar dit stoort niet. &lt;/p>
 		&lt;/div>
 	&lt;/div>
 &lt;/section>
@@ -151,17 +175,133 @@ Or delete this file if not applicable.
    title="permalink to this section"></a>
 
 			</h3>
-                            <div class="app-guide-code">	<pre class="language-css"><code>/* score component */
+                            <div class="app-guide-code"> <pre class="language-css"><code>/* score component */
 .score {
   width: 100%;
   max-width: 900px;
   margin-right: auto;
   margin-left: auto;
 }
+.score h1 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+@media screen and (min-width: 900px) {
+  .score h1 {
+    display: inline-block;
+  }
+}
+.score .testing-date-person {
+  position: relative;
+  display: inline-block;
+  margin-right: 20px;
+  margin-left: 20px;
+  font-family: "Helvetica Nue", Helvetica, Arial, sans-serif;
+  font-size: 1.2em;
+  color: #ffffff;
+}
+@media screen and (min-width: 900px) {
+  .score .testing-date-person {
+    position: absolute;
+    right: 0;
+    bottom: 4px;
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+.score .score-item {
+  margin-bottom: 10px;
+}
+.score .score-heading {
+  position: relative;
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
 .score .score-title,
 .score .score-content {
   background-color: #ffffff;
   padding-left: 3em;
+}
+.score .score-title {
+  display: block;
+  position: relative;
+  padding-top: 1.125em;
+  padding-bottom: 1.125em;
+  text-decoration: none;
+  border-bottom: none;
+}
+.score .score-title:hover {
+  color: #000000;
+  text-decoration: none;
+}
+.score .score-title h2 {
+  font-family: "Helvetica Nue Bold", Helvetica, Arial, sans-serif;
+  font-size: 25px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.score .is-expanded .score-title {
+  margin-bottom: 1px;
+}
+.score .arrow-box {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 50px;
+  background-color: #dcdcdc;
+}
+.score .score-content {
+  position: relative;
+  padding-right: 3em;
+}
+@media screen and (min-width: 900px) {
+  .score .score-content {
+    padding-right: 10em;
+  }
+}
+.score .score-box {
+  position: relative;
+  display: inline-block;
+  width: 175px;
+  height: 80px;
+  margin-bottom: 20px;
+  background-color: #ffc300;
+}
+@media screen and (min-width: 900px) {
+  .score .score-box {
+    position: absolute;
+    top: 20px;
+    left: 30px;
+  }
+}
+.score .score-number {
+  display: inline-block;
+  padding-top: 5px;
+  padding-left: 17px;
+  font-family: "Helvetica Nue Bold", Helvetica, Arial, sans-serif;
+  font-size: 36px;
+}
+.score .score-icon {
+  position: absolute;
+  top: 12px;
+  right: 50px;
+  width: 50px;
+  height: 50px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 2px solid black;
+  border-radius: 25px;
+}
+.score .score-content p {
+  margin-top: 0;
+  margin-left: 0;
+}
+@media screen and (min-width: 900px) {
+  .score .score-content p {
+    margin-left: 195px;
+  }
 }
 .score .is-expandible .score-content {
   height: 0;
@@ -170,6 +310,8 @@ Or delete this file if not applicable.
 }
 .score .is-expanded .score-content {
   height: auto;
+  padding-top: 15px;
+  padding-bottom: 20px;
 }
 
 /*# sourceMappingURL=_score.css.map */
@@ -193,7 +335,7 @@ Or delete this file if not applicable.
    title="permalink to this section"></a>
 
 			</h3>
-                            <div class="app-guide-code">	<pre class="language-javascript"><code>(function(d) {
+                            <div class="app-guide-code"> <pre class="language-javascript"><code>(function(d) {
 	'use strict';
 
 	//var scoreFirst = d.querySelector('[data-score-first]');
@@ -216,44 +358,44 @@ Or delete this file if not applicable.
                 </main>
             </div>
         </div>
-        <footer class="app-guide-footer">This page is generated using <a href="http://voorhoede.nl">De Voorhoede</a>'s template builder</footer>
-        <script
-        src="../../..//assets/scripts/vendor.js"></script>
-            <script src="../../..//assets/scripts/main.js"></script>
-            <script src="../../..//guide/vendor/prismjs/prism.js"></script>
-            <script>
-                (function() {
-                    var iframe = document.getElementById('preview-iframe'),
-                        widthInput = document.getElementById('resize-width');
-                    iframe.addEventListener('load', function() {
-                        widthInput.value = parseInt(window.getComputedStyle(iframe).width);
-                        iframe.height = iframe.contentWindow.document.body.clientHeight +
-                            10;
-                    }, false);
-                    window.onresize = function() {
-                        widthInput.value = parseInt(window.getComputedStyle(iframe).width);
-                    };
-                    document.getElementById('desktop').addEventListener("click", function() {
-                        iframe.width = "1224px";
-                    }, false);
-                    document.getElementById('phone').addEventListener("click", function() {
-                        iframe.width = "320px";
-                    }, false);
-                    document.getElementById('tablet').addEventListener("click", function() {
-                        iframe.width = "1024px";
-                    }, false);
-                    iframe.addEventListener('transitionend', function() {
-                        iframe.height = iframe.contentWindow.document.body.clientHeight +
-                            10;
-                        widthInput.value = parseInt(window.getComputedStyle(iframe).width);
-                    }, false);
-                    document.getElementById('resize-form').addEventListener('submit', function(
-                        event) {
-                        event.preventDefault();
-                        iframe.width = widthInput.value + 'px';
-                    }, false);
-                }());
-            </script>
+        <footer class="app-guide-footer"> This page is generated using <a href="http://voorhoede.nl">De Voorhoede</a>'s template builder
+            </footer>
+        <script src="../../..//assets/scripts/vendor.js"></script>
+        <script src="../../..//assets/scripts/main.js"></script>
+        <script src="../../..//guide/vendor/prismjs/prism.js"></script>
+        <script>
+            (function() {
+                var iframe = document.getElementById('preview-iframe'),
+                    widthInput = document.getElementById('resize-width');
+                iframe.addEventListener('load', function() {
+                    widthInput.value = parseInt(window.getComputedStyle(iframe).width);
+                    iframe.height = iframe.contentWindow.document.body.clientHeight +
+                        10;
+                }, false);
+                window.onresize = function() {
+                    widthInput.value = parseInt(window.getComputedStyle(iframe).width);
+                };
+                document.getElementById('desktop').addEventListener("click", function() {
+                    iframe.width = "1224px";
+                }, false);
+                document.getElementById('phone').addEventListener("click", function() {
+                    iframe.width = "320px";
+                }, false);
+                document.getElementById('tablet').addEventListener("click", function() {
+                    iframe.width = "1024px";
+                }, false);
+                iframe.addEventListener('transitionend', function() {
+                    iframe.height = iframe.contentWindow.document.body.clientHeight +
+                        10;
+                    widthInput.value = parseInt(window.getComputedStyle(iframe).width);
+                }, false);
+                document.getElementById('resize-form').addEventListener('submit', function(
+                    event) {
+                    event.preventDefault();
+                    iframe.width = widthInput.value + 'px';
+                }, false);
+            }());
+        </script>
     </div>
 </body>
 

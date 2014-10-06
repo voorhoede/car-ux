@@ -5,10 +5,126 @@
   margin-right: auto;
   margin-left: auto;
 }
+.score h1 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+@media screen and (min-width: 900px) {
+  .score h1 {
+    display: inline-block;
+  }
+}
+.score .testing-date-person {
+  position: relative;
+  display: inline-block;
+  margin-right: 20px;
+  margin-left: 20px;
+  font-family: "Helvetica Nue", Helvetica, Arial, sans-serif;
+  font-size: 1.2em;
+  color: #ffffff;
+}
+@media screen and (min-width: 900px) {
+  .score .testing-date-person {
+    position: absolute;
+    right: 0;
+    bottom: 4px;
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+.score .score-item {
+  margin-bottom: 10px;
+}
+.score .score-heading {
+  position: relative;
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
 .score .score-title,
 .score .score-content {
   background-color: #ffffff;
   padding-left: 3em;
+}
+.score .score-title {
+  display: block;
+  position: relative;
+  padding-top: 1.125em;
+  padding-bottom: 1.125em;
+  text-decoration: none;
+  border-bottom: none;
+}
+.score .score-title:hover {
+  color: #000000;
+  text-decoration: none;
+}
+.score .score-title h2 {
+  font-family: "Helvetica Nue Bold", Helvetica, Arial, sans-serif;
+  font-size: 25px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.score .is-expanded .score-title {
+  margin-bottom: 1px;
+}
+.score .arrow-box {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 50px;
+  background-color: #dcdcdc;
+}
+.score .score-content {
+  position: relative;
+  padding-right: 3em;
+}
+@media screen and (min-width: 900px) {
+  .score .score-content {
+    padding-right: 10em;
+  }
+}
+.score .score-box {
+  position: relative;
+  display: inline-block;
+  width: 175px;
+  height: 80px;
+  margin-bottom: 20px;
+  background-color: #ffc300;
+}
+@media screen and (min-width: 900px) {
+  .score .score-box {
+    position: absolute;
+    top: 20px;
+    left: 30px;
+  }
+}
+.score .score-number {
+  display: inline-block;
+  padding-top: 5px;
+  padding-left: 17px;
+  font-family: "Helvetica Nue Bold", Helvetica, Arial, sans-serif;
+  font-size: 36px;
+}
+.score .score-icon {
+  position: absolute;
+  top: 12px;
+  right: 50px;
+  width: 50px;
+  height: 50px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 2px solid black;
+  border-radius: 25px;
+}
+.score .score-content p {
+  margin-top: 0;
+  margin-left: 0;
+}
+@media screen and (min-width: 900px) {
+  .score .score-content p {
+    margin-left: 195px;
+  }
 }
 .score .is-expandible .score-content {
   height: 0;
@@ -17,6 +133,8 @@
 }
 .score .is-expanded .score-content {
   height: auto;
+  padding-top: 15px;
+  padding-bottom: 20px;
 }
 
 /*# sourceMappingURL=_score.css.map */

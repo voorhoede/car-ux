@@ -1,18 +1,16 @@
 {% extends "views/_base-view/base-view.html" %} {% macro linkSection(section) %}
 <a href="{{ '#section-' + section }}"
-class="app-guide-permalink app-guide-icon" title="permalink to this section"></a>{% endmacro %} {% block styles %}
+class="app-guide-permalink app-guide-icon" title="permalink to this section"></a> {% endmacro %} {% block styles %}
 <link rel="stylesheet" href="{{ pathToAssets + 'style/main.css' }}">
 <!--<link rel="stylesheet" href="{{ pathToGuide }}/voorhoede-core-styles.css">-->
 <!--<link rel="stylesheet" href="{{ pathToGuide }}/core-layout.css">-->
-<link rel="stylesheet" href="{{ pathToGuide }}guide.css">{% endblock %} {% block header %}{% endblock %} {% block content %}
+<link rel="stylesheet" href="{{ pathToGuide }}guide.css"> {% endblock %} {% block header %}{% endblock %} {% block content %}
 <div class="page">
     <div class="core-layout">
-        <header class="app-guide-content">
-            <img src="{{ pathToGuide }}images/voorhoede-logo.svg" onerror="this.src='{{ pathToGuide }}images/voorhoede-logo.min.png'"
+        <header class="app-guide-content"> <img src="{{ pathToGuide }}images/voorhoede-logo.svg" onerror="this.src='{{ pathToGuide }}images/voorhoede-logo.min.png'"
             alt="De Voorhoede" height="75" width="75" />
             <h1>{{ project.title }}</h1>
-            <h2>Front-end guide for {{ project.title}} by de Voorhoede</h2>
-        </header>{% block maincontent %} {% endblock %}</div>
-</div>{% endblock %} {% block footer %}
-<footer class="app-guide-footer">This page is generated using <a href="http://voorhoede.nl">De Voorhoede</a>'s template builder</footer>{%
-endblock %}
+            <h2>Front-end guide for {{ project.title}} by de Voorhoede</h2> </header> {% block maincontent %} {% endblock %} </div>
+</div> {% endblock %} {% block footer %}
+<footer class="app-guide-footer"> This page is generated using <a href="http://voorhoede.nl">De Voorhoede</a>'s template builder </footer>
+{% endblock %}
