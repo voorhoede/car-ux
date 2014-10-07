@@ -956,6 +956,24 @@ ol, ul {
   }
 }
 
+/* home-main component */
+.home-main {
+  width: 100%;
+  background-color: #f2f2f2;
+  padding-bottom: 8em;
+}
+.home-main h1 {
+  color: #000000;
+  margin-top: 60px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 920px) {
+  .home-main h1 {
+    margin-left: 0;
+  }
+}
+
 /* quote component */
 .quote blockquote {
   color: #ffffff;
@@ -1284,6 +1302,7 @@ ol, ul {
 
 /* BMW-I3 VIEW */
 /* DEMO-VIEW VIEW */
+/* HOME VIEW */
 body {
   font-size: 10px;
 }
