@@ -958,6 +958,11 @@ ol, ul {
 }
 
 /* home-intro component */
+.home-intro {
+  width: 100%;
+  background-color: #f2f2f2;
+}
+
 /* home-main component */
 .home-main {
   width: 100%;
