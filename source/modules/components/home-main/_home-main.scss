@@ -1,0 +1,21 @@
+@import "../../../assets/scss/variables";
+@import "../../../assets/scss/helpers";
+
+/* home-main component */
+
+.home-main {
+	width: 100%;
+	background-color: $light-grey;
+	padding-bottom: 8em;
+
+	h1 {
+		color: $black;
+		margin-top: 60px;
+		margin-left: 20px;
+		margin-bottom: 20px;
+
+		@include min-screen($break-large) {
+			margin-left: 0;
+		}
+	}
+}
