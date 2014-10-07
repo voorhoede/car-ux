@@ -14,7 +14,7 @@ module.exports = function (grunt) {
 				'compile-previews',
                 'compile-preview-objects',
 				'compile-index',
-				'jsbeautifier:distribution-html',
+				//'jsbeautifier:distribution-html',
 				'copy:guide',
 				// uglify base.css, main.css?
 				'clean:distribution-cleanup',
