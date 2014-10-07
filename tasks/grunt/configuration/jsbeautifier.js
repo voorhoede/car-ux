@@ -15,7 +15,7 @@ function getConfiguration(grunt) {
                     indentChar: '\t',
                     indentSize: 1,
                     maxPreserveNewlines: 1,
-                    preserveNewlines: false
+                    preserveNewlines: true
                 },
                 css: {
                     indentChar: '\t',
@@ -35,7 +35,7 @@ function getConfiguration(grunt) {
                     indentChar: ' ',
                     indentSize: 4,
                     maxPreserveNewlines: 0,
-                    preserveNewlines: false,
+                    preserveNewlines: true,
                     wrapLineLength: 100
                 }
             }
