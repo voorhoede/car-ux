@@ -112,17 +112,12 @@
   font-family: "HelveticaNeue-Bold", Helvetica, Arial, sans-serif;
   font-size: 36px;
 }
-.score .score-icon {
+.score .score-icon.icon-gauge3 {
   position: absolute;
   top: 12px;
   right: 50px;
   width: 50px;
   height: 50px;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  border: 2px solid black;
-  border-radius: 25px;
 }
 .score .score-content p {
   margin-top: 0;
