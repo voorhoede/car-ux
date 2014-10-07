@@ -33,6 +33,42 @@
 .widget-score .score-overview.expanded {
   height: 100%;
 }
+.widget-score .score-overview ul {
+  margin-top: 5px;
+  padding: 0 30px;
+}
+.widget-score .score-overview ul li {
+  margin-bottom: 14px;
+}
+.widget-score .score-overview ul li a {
+  border: none;
+  font-family: "HelveticaNeue-Bold", Helvetica, Arial, sans-serif;
+  font-size: 25px;
+}
+.widget-score .score-overview ul li a:before, .widget-score .score-overview ul li a:after {
+  content: " ";
+  display: table;
+}
+.widget-score .score-overview ul li a:after {
+  clear: both;
+}
+.widget-score .score-overview ul li a:hover {
+  color: #000000;
+}
+.widget-score .score-overview ul li a:hover .label {
+  -webkit-transition: border-bottom 0.2s ease-out;
+  transition: border-bottom 0.2s ease-out;
+  border-bottom: 1px solid #000000;
+}
+.widget-score .score-overview ul li a .label {
+  -webkit-transition: border-bottom 0.2s ease-out;
+  transition: border-bottom 0.2s ease-out;
+  float: left;
+  border-bottom: 1px solid transparent;
+}
+.widget-score .score-overview ul li a .value {
+  float: right;
+}
 .widget-score .score-overview header {
   cursor: pointer;
   padding: 15px 30px;
