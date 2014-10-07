@@ -36,15 +36,15 @@ $nav-break-extra-small: 590px;
 		}
 	}
 	.logo {
+		@include hide-text();
+		border: none;
 		display: block;
 		position: absolute;
-		background-color: $black;
 		height: 30px;
 		width: 40px;
 		top: 15px;
 		right: 18px;
-		color: $yellow;
-		text-align: right;
+		background-size: contain;
 		@include min-screen($nav-break-extra-small) {
 			height: 40px;
 			width: 55px;
