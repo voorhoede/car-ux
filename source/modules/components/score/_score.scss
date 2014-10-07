@@ -105,15 +105,12 @@
 		font-family: $helvetica-neue-bold;
 		font-size: 36px;
 	}
-	.score-icon {
+	.score-icon.icon-gauge3 {
 		position: absolute;
 		top: 12px;
 		right: 50px;
 		width: 50px;
 		height: 50px;
-		@include box-sizing(border-box);
-		border: 2px solid black;
-		border-radius: 25px;
 	}
 	.score-content p {
 		margin-top: 0;
