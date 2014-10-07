@@ -1,4 +1,9 @@
+@import "../../../assets/scss/variables";
+@import "../../../assets/scss/helpers";
+
 .icon {
+	@include hide-text();
+
 	display: inline-block;
 	width: 30px;
 	height: 30px;
@@ -19,5 +24,15 @@
 	&.icon-arrow-up {
 		width: 30px;
 		height: 20px;
+	}
+
+	&.icon-car-ux-logo-white {
+		width: 60px;
+		height: 43px;
+	}
+
+	&.icon-unitid-logo {
+		width: 107px;
+		height: 49px;
 	}
 }

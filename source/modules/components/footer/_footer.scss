@@ -24,6 +24,11 @@
 			width: 37%;
 		}
 
+		h2 {
+			font-family: $helvetica-neue-bold;
+			font-size: 25px;
+		}
+
 		p {
 			background-color: $white;
 			padding: 20px;
@@ -47,18 +52,12 @@
 	}
 
 	.footer-branding {
+		.icon {
+			margin-right: 30px;
 
-	}
-
-	.icon-logo,
-	.icon-logo-unitid {
-		display: inline-block;
-		vertical-align: top;
-		background-color: $white;
-		height: 40px;
-		width: 55px;
-		color: $black;
-		text-align: right;
-		font-size: 1.6em;
+			&:last-of-type {
+				margin-right: 0;
+			}
+		}
 	}
 }

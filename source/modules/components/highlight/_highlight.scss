@@ -7,6 +7,11 @@
 	.highlight-content {
 		position: relative;
 
+		h2 {
+			font-family: $helvetica-neue-bold;
+			font-size: 25px;
+		}
+
 		img {
 			vertical-align: bottom;
 			width: 100%;

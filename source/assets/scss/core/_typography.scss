@@ -20,21 +20,28 @@ h1 {
 	font-family: $helvetica-neue-bold;
 	font-size: 36px;
 	line-height: 1.1;
+	margin: 0 0 20px 0;
 }
 h2 {
 	font-family: $helvetica-neue;
 	font-size: 25px;
 	line-height: 1.1;
 }
-h2 {
+h3 {
 	font-family: $helvetica-neue;
 	font-size: 20px;
 	line-height: 1.1;
 }
 p {
+	font-family: $helvetica-neue;
 	font-size: 1.6em;
 	line-height: 1.6;
 }
 ol, ul {
 	font-size: 1.6em;
+}
+
+blockquote {
+	font-family: $helvetica-neue-bold;
+	font-size: 3.6em;
 }

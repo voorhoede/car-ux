@@ -13,6 +13,11 @@
 	.summary-content {
 		margin-bottom: 80px;
 
+		h2 {
+			font-family: $helvetica-neue-bold;
+			font-size: 25px;
+		}
+
 		img {
 			vertical-align: bottom;
 			width: 100%;

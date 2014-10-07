@@ -28,7 +28,7 @@
 
 		&:before {
 			left: 0;
-			top: -28px;
+			top: -48px;
 			content: '\2018';
 
 			@include min-screen($break-large) {
