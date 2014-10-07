@@ -7,6 +7,7 @@
 		"footer",
 		"header",
 		"highlight",
+		"home-main",
 		"quote",
 		"related",
 		"score",
@@ -15,6 +16,7 @@
 	],
 	"views": [
 		"bmw-i3",
-		"demo-view"
+		"demo-view",
+		"home"
 	]
 }
