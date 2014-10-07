@@ -738,6 +738,7 @@ ol, ul {
   }
 }
 
+/* featured component */
 /* footer component */
 .footer {
   background-color: #000000;
@@ -956,6 +957,7 @@ ol, ul {
   }
 }
 
+/* home-intro component */
 /* home-main component */
 .home-main {
   width: 100%;
@@ -1234,6 +1236,7 @@ ol, ul {
   padding-bottom: 15px;
 }
 
+/* shortlist component */
 /* summary component */
 .summary {
   margin-top: -450px;
