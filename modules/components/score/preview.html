@@ -2,7 +2,9 @@
 <html class="no-js">
 
 <head>
-    <title> Score (preview) Score | car-ux </title>
+    <title>
+        Score (preview) Score | car-ux
+    </title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
     <meta name="description" content="Car UX" />
@@ -60,23 +62,27 @@
         ]);
     </script>
     <noscript>
-        <link rel="stylesheet" href="../../..//assets/images/grunticon-output/icons.fallback.css" /> </noscript>
+        <link rel="stylesheet" href="../../..//assets/images/grunticon-output/icons.fallback.css" />
+    </noscript>
     <link rel="stylesheet" href="../../..//assets/style/main.css">
     <!--<link rel="stylesheet" href="../../..//guide//voorhoede-core-styles.css">-->
     <!--<link rel="stylesheet" href="../../..//guide//core-layout.css">-->
     <link rel="stylesheet" href="../../..//guide/guide.css">
     <link rel="stylesheet" href="../../..//guide/vendor/prismjs/prism.css">
-    <link rel="stylesheet" href="../../..//assets/style/main.css"> </head>
+    <link rel="stylesheet" href="../../..//assets/style/main.css">
+</head>
 
 <body>
     <!-- use data attributes to target in JS -->
     <div id="page">
         <div class="page">
             <div class="core-layout">
-                <header class="app-guide-content"> <img src="../../..//guide/images/voorhoede-logo.svg" onerror="this.src='../../..//guide/images/voorhoede-logo.min.png'"
+                <header class="app-guide-content">
+                    <img src="../../..//guide/images/voorhoede-logo.svg" onerror="this.src='../../..//guide/images/voorhoede-logo.min.png'"
                     alt="De Voorhoede" height="75" width="75" />
                     <h1>car-ux</h1>
-                    <h2>Front-end guide for car-ux by de Voorhoede</h2> </header>
+                    <h2>Front-end guide for car-ux by de Voorhoede</h2>
+                </header>
                 <main class="app-guide-main">
                     <script>
                         window.testApp = {}; // namespace to register modules for testing
@@ -95,8 +101,10 @@ Or delete this file if not applicable.
                     </div>
                     <p>Or set your own width in px:</p>
                     <form id="resize-form">
-                        <label> <span>Width</span>
-                            <input type="number" name="width" id="resize-width" required/> </label>
+                        <label>
+                            <span>Width</span>
+                            <input type="number" name="width" id="resize-width" required/>
+                        </label>
                         <button type="submit">Set!</button>
                     </form>
                     <iframe id="preview-iframe" src="object.html" width="100%" height="400px"></iframe>
@@ -116,10 +124,14 @@ Or delete this file if not applicable.
    title="permalink to this section"></a>
 
 			</h3>
-                            <div class="app-guide-code"> <pre class="language-markup"><code>&lt;!-- score -->
+                            <div class="app-guide-code">
+                                <pre class="language-markup"><code>&lt;!-- score -->
 &lt;section class="score" data-component="score">
 	&lt;div class="score-heading">
-		&lt;h1>DE SCORES&lt;/h1> &lt;span class="testing-date-person">&lt;/span> &lt;/div>
+		&lt;h1>DE SCORES&lt;/h1>
+		&lt;span class="testing-date-person">&lt;/span>
+	&lt;/div>
+
 &lt;/section>
 &lt;!-- /score --></code></pre>
                                 <ul class="app-guide-code-options">
@@ -142,7 +154,8 @@ Or delete this file if not applicable.
    title="permalink to this section"></a>
 
 			</h3>
-                            <div class="app-guide-code"> <pre class="language-css"><code>/* score component */
+                            <div class="app-guide-code">
+                                <pre class="language-css"><code>/* score component */
 .score {
   width: 100%;
   max-width: 900px;
@@ -310,7 +323,8 @@ Or delete this file if not applicable.
    title="permalink to this section"></a>
 
 			</h3>
-                            <div class="app-guide-code"> <pre class="language-javascript"><code>(function(d) {
+                            <div class="app-guide-code">
+                                <pre class="language-javascript"><code>(function(d) {
 	'use strict';
 
 	//var scoreFirst = d.querySelector('[data-score-first]');
@@ -333,8 +347,9 @@ Or delete this file if not applicable.
                 </main>
             </div>
         </div>
-        <footer class="app-guide-footer"> This page is generated using <a href="http://voorhoede.nl">De Voorhoede</a>'s template builder
-            </footer>
+        <footer class="app-guide-footer">
+            This page is generated using <a href="http://voorhoede.nl">De Voorhoede</a>'s template builder
+        </footer>
         <script src="../../..//assets/scripts/vendor.js"></script>
         <script src="../../..//assets/scripts/main.js"></script>
         <script src="../../..//guide/vendor/prismjs/prism.js"></script>
@@ -342,33 +357,41 @@ Or delete this file if not applicable.
             (function() {
                 var iframe = document.getElementById('preview-iframe'),
                     widthInput = document.getElementById('resize-width');
+
                 iframe.addEventListener('load', function() {
                     widthInput.value = parseInt(window.getComputedStyle(iframe).width);
                     iframe.height = iframe.contentWindow.document.body.clientHeight +
                         10;
                 }, false);
+
                 window.onresize = function() {
                     widthInput.value = parseInt(window.getComputedStyle(iframe).width);
                 };
+
                 document.getElementById('desktop').addEventListener("click", function() {
                     iframe.width = "1224px";
                 }, false);
+
                 document.getElementById('phone').addEventListener("click", function() {
                     iframe.width = "320px";
                 }, false);
+
                 document.getElementById('tablet').addEventListener("click", function() {
                     iframe.width = "1024px";
                 }, false);
+
                 iframe.addEventListener('transitionend', function() {
                     iframe.height = iframe.contentWindow.document.body.clientHeight +
                         10;
                     widthInput.value = parseInt(window.getComputedStyle(iframe).width);
                 }, false);
+
                 document.getElementById('resize-form').addEventListener('submit', function(
                     event) {
                     event.preventDefault();
                     iframe.width = widthInput.value + 'px';
                 }, false);
+
             }());
         </script>
     </div>

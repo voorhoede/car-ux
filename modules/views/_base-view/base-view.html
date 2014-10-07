@@ -2,15 +2,15 @@
 <html class="no-js">
 
 <head>
-    <title> {% block title %} {{ name | capitalize }} | {{ project.title }} {% endblock %} </title>
-    <meta http-equiv="X-UA-Compatible"
-    content="IE=edge">
+    <title>
+        {% block title %} {{ name | capitalize }} | {{ project.title }} {% endblock %}
+    </title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
     <meta name="description" content="Car UX" />
     <meta name="viewport" content="width=device-width initial-scale=1" /> {% if (mode != 'development') %}
-    <base href="http://voorhoede.github.io/car-ux/" />{% endif %}
-    <link rel="shortcut icon" href="{{ pathToAssets }}images/favicons/favicon.ico" type="image/ico"
-    />
+    <base href="http://voorhoede.github.io/{{ project.title }}/" />{% endif %}
+    <link rel="shortcut icon" href="{{ pathToAssets }}images/favicons/favicon.ico" type="image/ico" />
     <link rel="apple-touch-icon" sizes="57x57" href="{{ pathToAssets }}images/favicons/apple-touch-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="114x114" href="{{ pathToAssets }}images/favicons/apple-touch-icon-114x114.png">
     <link rel="apple-touch-icon" sizes="72x72" href="{{ pathToAssets }}images/favicons/apple-touch-icon-72x72.png">
@@ -62,18 +62,24 @@
         ]);
     </script>
     <noscript>
-        <link rel="stylesheet" href="{{ pathToAssets }}images/grunticon-output/icons.fallback.css" /> </noscript> {% block styles %}
-    <link rel="stylesheet" href="{{ pathToAssets }}style/main.css"
-    /> {% endblock %} </head>
+        <link rel="stylesheet" href="{{ pathToAssets }}images/grunticon-output/icons.fallback.css" />
+    </noscript>
+    {% block styles %}
+    <link rel="stylesheet" href="{{ pathToAssets }}style/main.css" /> {% endblock %}
+</head>
 
 <body>
     <!-- use data attributes to target in JS -->
-    <div id="page"> {% block header %} {% include "components/header/_header.html" %} {% endblock %} {% block content
-        %} Include content here {% endblock %} {% block footer %} {% include "components/footer/_footer.html"
+    <div id="page">
+        {% block header %} {% include "components/header/_header.html" %} {% endblock %} {% block content %}
+        Include content here {% endblock %} {% block footer %} {% include "components/footer/_footer.html"
         %} {% endblock %} {% if (mode == 'development') %}
-        <script src="//localhost:35729/livereload.js"></script> {% endif %} {% block scripts %}
+        <script src="//localhost:35729/livereload.js"></script>
+        {% endif %} {% block scripts %}
         <script src="{{ pathToAssets + 'scripts/vendor.js' }}"></script>
-        <script src="{{ pathToAssets + 'scripts/main.js' }}"></script> {% endblock %} </div>
+        <script src="{{ pathToAssets + 'scripts/main.js' }}"></script>
+        {% endblock %}
+    </div>
 </body>
 
 </html>
