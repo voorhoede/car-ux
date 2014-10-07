@@ -405,6 +405,7 @@ th {
   display: inline-block;
   padding: 20px;
   text-decoration: none;
+  font-family: "HelveticaNeue-Bold", Helvetica, Arial, sans-serif;
   font-size: 14px;
 }
 .ui-button-primary:hover,
@@ -441,6 +442,10 @@ th {
   font-style: normal;
 }
 .icon {
+  text-indent: 9999px;
+  white-space: nowrap;
+  overflow: hidden;
+  outline: none;
   display: inline-block;
   width: 30px;
   height: 30px;
@@ -456,6 +461,14 @@ th {
 .icon.icon-arrow-down, .icon.icon-arrow-up {
   width: 30px;
   height: 20px;
+}
+.icon.icon-car-ux-logo-white {
+  width: 60px;
+  height: 43px;
+}
+.icon.icon-unitid-logo {
+  width: 107px;
+  height: 49px;
 }
 
 a,
@@ -495,6 +508,7 @@ h1 {
   font-family: "HelveticaNeue-Bold", Helvetica, Arial, sans-serif;
   font-size: 36px;
   line-height: 1.1;
+  margin: 0 0 20px 0;
 }
 
 h2 {
@@ -503,19 +517,25 @@ h2 {
   line-height: 1.1;
 }
 
-h2 {
+h3 {
   font-family: "HelveticaNeue", Helvetica, Arial, sans-serif;
   font-size: 20px;
   line-height: 1.1;
 }
 
 p {
+  font-family: "HelveticaNeue", Helvetica, Arial, sans-serif;
   font-size: 1.6em;
   line-height: 1.6;
 }
 
 ol, ul {
   font-size: 1.6em;
+}
+
+blockquote {
+  font-family: "HelveticaNeue-Bold", Helvetica, Arial, sans-serif;
+  font-size: 3.6em;
 }
 
 /*

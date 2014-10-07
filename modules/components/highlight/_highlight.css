@@ -2,6 +2,10 @@
 .highlight .highlight-content {
   position: relative;
 }
+.highlight .highlight-content h2 {
+  font-family: "HelveticaNeue-Bold", Helvetica, Arial, sans-serif;
+  font-size: 25px;
+}
 .highlight .highlight-content img {
   vertical-align: bottom;
   width: 100%;

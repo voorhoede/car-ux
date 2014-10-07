@@ -26,6 +26,10 @@
     width: 37%;
   }
 }
+.footer .footer-contact h2 {
+  font-family: "HelveticaNeue-Bold", Helvetica, Arial, sans-serif;
+  font-size: 25px;
+}
 .footer .footer-contact p {
   background-color: #ffffff;
   padding: 20px;
@@ -48,16 +52,11 @@
     padding-left: 0;
   }
 }
-.footer .icon-logo,
-.footer .icon-logo-unitid {
-  display: inline-block;
-  vertical-align: top;
-  background-color: #ffffff;
-  height: 40px;
-  width: 55px;
-  color: #000000;
-  text-align: right;
-  font-size: 1.6em;
+.footer .footer-branding .icon {
+  margin-right: 30px;
+}
+.footer .footer-branding .icon:last-of-type {
+  margin-right: 0;
 }
 
 /*# sourceMappingURL=_footer.css.map */

@@ -4,6 +4,7 @@
   overflow: hidden;
   position: relative;
   min-height: 220px;
+  padding-bottom: 15px;
 }
 .widget-score ul {
   margin: 0;
@@ -23,6 +24,7 @@
   height: 80px;
   background-color: #ffc300;
   overflow: hidden;
+  z-index: 1;
 }
 .widget-score .score-overview:hover {
   -webkit-box-shadow: 0px 0px 15px 1px #7f7f7f;
@@ -103,10 +105,14 @@
   margin-bottom: 0;
 }
 .widget-score .score-summary ul li {
+  position: relative;
   margin-bottom: 15px;
+  padding-left: 30px;
 }
 .widget-score .score-summary ul li .icon {
-  vertical-align: middle;
+  position: absolute;
+  left: 0;
+  top: 1px;
   margin-right: 20px;
 }
 

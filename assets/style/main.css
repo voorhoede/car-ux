@@ -405,6 +405,7 @@ th {
   display: inline-block;
   padding: 20px;
   text-decoration: none;
+  font-family: "HelveticaNeue-Bold", Helvetica, Arial, sans-serif;
   font-size: 14px;
 }
 .ui-button-primary:hover,
@@ -441,6 +442,10 @@ th {
   font-style: normal;
 }
 .icon {
+  text-indent: 9999px;
+  white-space: nowrap;
+  overflow: hidden;
+  outline: none;
   display: inline-block;
   width: 30px;
   height: 30px;
@@ -456,6 +461,14 @@ th {
 .icon.icon-arrow-down, .icon.icon-arrow-up {
   width: 30px;
   height: 20px;
+}
+.icon.icon-car-ux-logo-white {
+  width: 60px;
+  height: 43px;
+}
+.icon.icon-unitid-logo {
+  width: 107px;
+  height: 49px;
 }
 
 a,
@@ -495,6 +508,7 @@ h1 {
   font-family: "HelveticaNeue-Bold", Helvetica, Arial, sans-serif;
   font-size: 36px;
   line-height: 1.1;
+  margin: 0 0 20px 0;
 }
 
 h2 {
@@ -503,19 +517,25 @@ h2 {
   line-height: 1.1;
 }
 
-h2 {
+h3 {
   font-family: "HelveticaNeue", Helvetica, Arial, sans-serif;
   font-size: 20px;
   line-height: 1.1;
 }
 
 p {
+  font-family: "HelveticaNeue", Helvetica, Arial, sans-serif;
   font-size: 1.6em;
   line-height: 1.6;
 }
 
 ol, ul {
   font-size: 1.6em;
+}
+
+blockquote {
+  font-family: "HelveticaNeue-Bold", Helvetica, Arial, sans-serif;
+  font-size: 3.6em;
 }
 
 /*
@@ -785,6 +805,10 @@ ol, ul {
     width: 37%;
   }
 }
+.footer .footer-contact h2 {
+  font-family: "HelveticaNeue-Bold", Helvetica, Arial, sans-serif;
+  font-size: 25px;
+}
 .footer .footer-contact p {
   background-color: #ffffff;
   padding: 20px;
@@ -807,16 +831,11 @@ ol, ul {
     padding-left: 0;
   }
 }
-.footer .icon-logo,
-.footer .icon-logo-unitid {
-  display: inline-block;
-  vertical-align: top;
-  background-color: #ffffff;
-  height: 40px;
-  width: 55px;
-  color: #000000;
-  text-align: right;
-  font-size: 1.6em;
+.footer .footer-branding .icon {
+  margin-right: 30px;
+}
+.footer .footer-branding .icon:last-of-type {
+  margin-right: 0;
 }
 
 /* header component */
@@ -865,7 +884,6 @@ ol, ul {
   width: 40px;
   top: 15px;
   right: 18px;
-  background-size: contain;
 }
 @media screen and (min-width: 590px) {
   .header .logo {
@@ -876,9 +894,7 @@ ol, ul {
   }
 }
 .header nav ul {
-  -webkit-margin-before: 0;
-  -webkit-margin-after: 0;
-  -webkit-padding-start: 0;
+  margin-bottom: 0;
   margin-top: 22px;
   margin-left: -8px;
 }
@@ -951,6 +967,10 @@ ol, ul {
 /* highlight component */
 .highlight .highlight-content {
   position: relative;
+}
+.highlight .highlight-content h2 {
+  font-family: "HelveticaNeue-Bold", Helvetica, Arial, sans-serif;
+  font-size: 25px;
 }
 .highlight .highlight-content img {
   vertical-align: bottom;
@@ -1027,7 +1047,7 @@ ol, ul {
 }
 .quote blockquote:before {
   left: 0;
-  top: -28px;
+  top: -48px;
   content: '\2018';
 }
 @media screen and (min-width: 920px) {
@@ -1050,9 +1070,6 @@ ol, ul {
 .related {
   background-color: #f2f2f2;
   padding: 0 30px 80px 30px;
-}
-.related h1 {
-  margin: 0;
 }
 .related .related-product {
   border: none;
@@ -1095,16 +1112,20 @@ ol, ul {
 }
 @media screen and (min-width: 620px) {
   .related .related-product .related-title {
-    min-height: 130px;
+    min-height: 155px;
   }
 }
 .related .related-product .related-title h2 {
   margin: 0;
   padding: 25px 30px 35px 30px;
+  font-family: "HelveticaNeue-Bold", Helvetica, Arial, sans-serif;
+  font-size: 25px;
 }
 .related .related-product .related-title h2 span {
   display: block;
-  font-weight: normal;
+  font-family: "HelveticaNeue", Helvetica, Arial, sans-serif;
+  font-size: 20px;
+  line-height: 2;
 }
 .related .related-product .related-title .related-score {
   display: block;
@@ -1113,6 +1134,10 @@ ol, ul {
   position: absolute;
   bottom: 100%;
   right: 0;
+  font-family: "HelveticaNeue-Bold", Helvetica, Arial, sans-serif;
+  font-size: 30px;
+  min-width: 40px;
+  text-align: center;
 }
 
 /* score component */
@@ -1183,8 +1208,7 @@ ol, ul {
 .score .score-title h2 {
   font-family: "HelveticaNeue-Bold", Helvetica, Arial, sans-serif;
   font-size: 25px;
-  margin-top: 0;
-  margin-bottom: 0;
+  margin: 0;
 }
 .score .is-expanded .score-title {
   margin-bottom: 1px;
@@ -1336,6 +1360,10 @@ ol, ul {
 .summary .summary-content {
   margin-bottom: 80px;
 }
+.summary .summary-content h2 {
+  font-family: "HelveticaNeue-Bold", Helvetica, Arial, sans-serif;
+  font-size: 25px;
+}
 .summary .summary-content img {
   vertical-align: bottom;
   width: 100%;
@@ -1351,6 +1379,7 @@ ol, ul {
   overflow: hidden;
   position: relative;
   min-height: 220px;
+  padding-bottom: 15px;
 }
 .widget-score ul {
   margin: 0;
@@ -1370,6 +1399,7 @@ ol, ul {
   height: 80px;
   background-color: #ffc300;
   overflow: hidden;
+  z-index: 1;
 }
 .widget-score .score-overview:hover {
   -webkit-box-shadow: 0px 0px 15px 1px #7f7f7f;
@@ -1450,10 +1480,14 @@ ol, ul {
   margin-bottom: 0;
 }
 .widget-score .score-summary ul li {
+  position: relative;
   margin-bottom: 15px;
+  padding-left: 30px;
 }
 .widget-score .score-summary ul li .icon {
-  vertical-align: middle;
+  position: absolute;
+  left: 0;
+  top: 1px;
   margin-right: 20px;
 }
 

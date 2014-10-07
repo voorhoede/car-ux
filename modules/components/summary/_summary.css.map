@@ -1,7 +1,7 @@
 {
 "version": 3,
-"mappings": ";AAKA,QAAS;EACR,UAAU,EAAE,MAAuB;;AAEnC,WAAG;EACF,KAAK,ECRI,OAAO;;ADWjB,yBAAiB;EAChB,aAAa,EAAE,IAAI;;AAEnB,6BAAI;EACH,cAAc,EAAE,MAAM;EACtB,KAAK,EAAE,IAAI;;AAIb,sBAAc;EACb,gBAAgB,ECjBP,OAAO;EDkBhB,OAAO,EAAE,SAAS",
-"sources": ["../../../../source/modules/components/summary/_summary.scss","../../../../source/assets/scss/core/_colors.scss"],
+"mappings": ";AAKA,QAAS;EACR,UAAU,EAAE,MAAuB;;AAEnC,WAAG;EACF,KAAK,ECRI,OAAO;;ADWjB,yBAAiB;EAChB,aAAa,EAAE,IAAI;;AAEnB,4BAAG;EACF,WAAW,EEJU,kDAAoB;EFKzC,SAAS,EAAE,IAAI;;AAGhB,6BAAI;EACH,cAAc,EAAE,MAAM;EACtB,KAAK,EAAE,IAAI;;AAIb,sBAAc;EACb,gBAAgB,ECtBP,OAAO;EDuBhB,OAAO,EAAE,SAAS",
+"sources": ["../../../../source/modules/components/summary/_summary.scss","../../../../source/assets/scss/core/_colors.scss","../../../../source/assets/scss/_variables.scss"],
 "names": [],
 "file": "_summary.css"
 }

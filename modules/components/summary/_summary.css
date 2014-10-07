@@ -8,6 +8,10 @@
 .summary .summary-content {
   margin-bottom: 80px;
 }
+.summary .summary-content h2 {
+  font-family: "HelveticaNeue-Bold", Helvetica, Arial, sans-serif;
+  font-size: 25px;
+}
 .summary .summary-content img {
   vertical-align: bottom;
   width: 100%;
