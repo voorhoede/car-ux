@@ -1,3 +1,70 @@
 /* shortlist component */
+.shortlist {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.shortlist h1 {
+  margin: 0;
+}
+.shortlist .shortlist-product {
+  border: none;
+  display: none;
+  vertical-align: top;
+  width: 100%;
+}
+.shortlist .shortlist-product:nth-of-type(1), .shortlist .shortlist-product:nth-of-type(2) {
+  display: inline-block;
+}
+@media screen and (min-width: 620px) {
+  .shortlist .shortlist-product {
+    width: 48%;
+  }
+  .shortlist .shortlist-product:nth-of-type(1) {
+    margin-right: 4%;
+  }
+}
+@media screen and (min-width: 920px) {
+  .shortlist .shortlist-product {
+    display: inline-block;
+    width: 31.33%;
+    margin-left: 3%;
+  }
+  .shortlist .shortlist-product:nth-of-type(1) {
+    margin: 0;
+  }
+}
+.shortlist .shortlist-product:hover .shortlist-score {
+  color: #000000;
+}
+.shortlist .shortlist-product img {
+  vertical-align: bottom;
+  width: 100%;
+}
+.shortlist .shortlist-product .shortlist-title {
+  background-color: #ffffff;
+  margin-bottom: 20px;
+  position: relative;
+}
+@media screen and (min-width: 620px) {
+  .shortlist .shortlist-product .shortlist-title {
+    min-height: 130px;
+  }
+}
+.shortlist .shortlist-product .shortlist-title h2 {
+  margin: 0;
+  padding: 25px 30px 35px 30px;
+}
+.shortlist .shortlist-product .shortlist-title h2 span {
+  display: block;
+  font-weight: normal;
+}
+.shortlist .shortlist-product .shortlist-title .shortlist-score {
+  display: block;
+  background-color: #ffc300;
+  padding: 10px;
+  position: absolute;
+  bottom: 100%;
+  right: 0;
+}
 
 /*# sourceMappingURL=_shortlist.css.map */

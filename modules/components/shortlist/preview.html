@@ -144,7 +144,42 @@ Or delete this file if not applicable.
 			<div class="app-guide-code">
 				<pre class="language-markup"><code>&lt;!-- shortlist -->
 &lt;div class="shortlist" data-component="shortlist">
-	Write HTML for `shortlist` component
+	&lt;section class="max-width-centered">
+		&lt;h1>DE TOP BESTE INTERFACES&lt;/h1>
+		&lt;!--
+		-->
+		&lt;a class="shortlist-product" href="#">
+			&lt;img src="assets/images/related/nissan-quashqai-tekna-opique.png" alt="Nissan Quashqai Tekna Opique - Si4 4WD Dynamic" />
+			&lt;div class="shortlist-title">
+				&lt;h2>Nissan Quashqai Tekna Opique&lt;span>Si4 4WD Dynamic&lt;/span>&lt;/h2>
+				&lt;span class="shortlist-score">4.5&lt;/span>
+			&lt;/div>
+		&lt;/a>
+		&lt;!--
+		-->
+		&lt;!--
+		-->
+		&lt;a class="shortlist-product" href="#">
+			&lt;img src="assets/images/related/opel-insignia-business-edition.png" alt="Opel Insignia - Business Edition" />
+			&lt;div class="shortlist-title">
+				&lt;h2>Opel Insignia&lt;span>Business Edition&lt;/span>&lt;/h2>
+				&lt;span class="shortlist-score">2&lt;/span>
+			&lt;/div>
+		&lt;/a>
+		&lt;!--
+		-->
+		&lt;!--
+		-->
+		&lt;a class="shortlist-product" href="#">
+			&lt;img src="assets/images/related/citroen-c4-picasso.png" alt="Citroën C4 Picasso - Business Edition" />
+			&lt;div class="shortlist-title">
+				&lt;h2>Citroën C4 Picasso&lt;span>Business Edition&lt;/span>&lt;/h2>
+				&lt;span class="shortlist-score">5.5&lt;/span>
+			&lt;/div>
+		&lt;/a>
+		&lt;!--
+		-->
+	&lt;/section>
 &lt;/div>
 &lt;!-- /shortlist --></code></pre>
 				<ul class="app-guide-code-options">
@@ -166,6 +201,73 @@ Or delete this file if not applicable.
 			</h3>
 			<div class="app-guide-code">
 				<pre class="language-css"><code>/* shortlist component */
+.shortlist {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.shortlist h1 {
+  margin: 0;
+}
+.shortlist .shortlist-product {
+  border: none;
+  display: none;
+  vertical-align: top;
+  width: 100%;
+}
+.shortlist .shortlist-product:nth-of-type(1), .shortlist .shortlist-product:nth-of-type(2) {
+  display: inline-block;
+}
+@media screen and (min-width: 620px) {
+  .shortlist .shortlist-product {
+    width: 48%;
+  }
+  .shortlist .shortlist-product:nth-of-type(1) {
+    margin-right: 4%;
+  }
+}
+@media screen and (min-width: 920px) {
+  .shortlist .shortlist-product {
+    display: inline-block;
+    width: 31.33%;
+    margin-left: 3%;
+  }
+  .shortlist .shortlist-product:nth-of-type(1) {
+    margin: 0;
+  }
+}
+.shortlist .shortlist-product:hover .shortlist-score {
+  color: #000000;
+}
+.shortlist .shortlist-product img {
+  vertical-align: bottom;
+  width: 100%;
+}
+.shortlist .shortlist-product .shortlist-title {
+  background-color: #ffffff;
+  margin-bottom: 20px;
+  position: relative;
+}
+@media screen and (min-width: 620px) {
+  .shortlist .shortlist-product .shortlist-title {
+    min-height: 130px;
+  }
+}
+.shortlist .shortlist-product .shortlist-title h2 {
+  margin: 0;
+  padding: 25px 30px 35px 30px;
+}
+.shortlist .shortlist-product .shortlist-title h2 span {
+  display: block;
+  font-weight: normal;
+}
+.shortlist .shortlist-product .shortlist-title .shortlist-score {
+  display: block;
+  background-color: #ffc300;
+  padding: 10px;
+  position: absolute;
+  bottom: 100%;
+  right: 0;
+}
 
 /*# sourceMappingURL=_shortlist.css.map */
 </code></pre>
