@@ -33,15 +33,18 @@
   }
 }
 .header .logo {
+  text-indent: 9999px;
+  white-space: nowrap;
+  overflow: hidden;
+  outline: none;
+  border: none;
   display: block;
   position: absolute;
-  background-color: #000000;
   height: 30px;
   width: 40px;
   top: 15px;
   right: 18px;
-  color: #ffc300;
-  text-align: right;
+  background-size: contain;
 }
 @media screen and (min-width: 590px) {
   .header .logo {

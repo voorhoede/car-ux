@@ -440,6 +440,24 @@ th {
   font-weight: normal;
   font-style: normal;
 }
+.icon {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+}
+.icon.icon-gauge3 {
+  width: 54px;
+  height: 54px;
+}
+.icon.icon-min, .icon.icon-min-dark-grey, .icon.icon-plus {
+  width: 19px;
+  height: 19px;
+}
+.icon.icon-arrow-down, .icon.icon-arrow-up {
+  width: 30px;
+  height: 20px;
+}
+
 a,
 .ui-link {
   border-bottom: 1px solid #000000;

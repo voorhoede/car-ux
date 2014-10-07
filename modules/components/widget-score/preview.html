@@ -144,11 +144,11 @@ Or delete this file if not applicable.
 			<div class="app-guide-code">
 				<pre class="language-markup"><code>&lt;!-- widget-score -->
 &lt;div class="widget-score" data-component="widget-score">
-	&lt;div class="score-overview" data-widget-score-overview>
+	&lt;div class="score-overview expanded" data-widget-score-overview>
 		&lt;header>
-			&lt;span class="icon icon-meter">&lt;/span>
+			&lt;span class="icon icon-gauge3">&lt;/span>
 			&lt;span class="score">&lt;/span>
-			&lt;span class="icon icon-arrow-down">&lt;/span>
+			&lt;span class="icon icon-arrow-down" data-score-header-arrow>&lt;/span>
 		&lt;/header>
 		&lt;ul>
 
@@ -219,14 +219,43 @@ Or delete this file if not applicable.
 }
 .widget-score .score-overview header {
   cursor: pointer;
+  padding: 15px 30px;
+  position: relative;
+}
+.widget-score .score-overview header .icon {
+  vertical-align: middle;
+}
+.widget-score .score-overview header .icon-arrow-down,
+.widget-score .score-overview header .icon-arrow-up {
+  position: absolute;
+  right: 30px;
+  top: 30px;
 }
 .widget-score .score-overview .score {
   color: #000000;
-  line-height: 80px;
+  font-family: "HelveticaNeue-Bold", Helvetica, Arial, sans-serif;
+  font-size: 36px;
+  vertical-align: middle;
+  margin-left: 17px;
 }
 .widget-score .score-summary {
+  padding: 30px;
   margin-top: 80px;
   background-color: #dcdcdc;
+  font-family: "HelveticaNeue", Helvetica, Arial, sans-serif;
+}
+.widget-score .score-summary ul {
+  margin-bottom: 30px;
+}
+.widget-score .score-summary ul:last-of-type {
+  margin-bottom: 0;
+}
+.widget-score .score-summary ul li {
+  margin-bottom: 15px;
+}
+.widget-score .score-summary ul li .icon {
+  vertical-align: middle;
+  margin-right: 20px;
 }
 
 /*# sourceMappingURL=_widget-score.css.map */
@@ -255,10 +284,14 @@ Or delete this file if not applicable.
 	var toggleClass = helpers.dom.toggleClass;
 	var widgetElms = d.querySelectorAll('[data-component="widget-score"]');
 
+
 	[].forEach.call(widgetElms, function (widgetElm) {
 		var headerElm = widgetElm.querySelector('[data-widget-score-overview]');
+		var headerArrow = widgetElm.querySelector('[data-score-header-arrow]');
 		headerElm.addEventListener('click', function() {
 			toggleClass(this, 'expanded');
+			toggleClass(headerArrow, 'icon-arrow-down');
+			toggleClass(headerArrow, 'icon-arrow-up');
 		});
 	});
 
@@ -291,7 +324,6 @@ Or delete this file if not applicable.
 		
 
 		
-
 
 		<script src="../../..//assets/scripts/vendor.js"></script>
 		<script src="../../..//assets/scripts/main.js"></script>

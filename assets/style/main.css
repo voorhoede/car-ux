@@ -440,6 +440,24 @@ th {
   font-weight: normal;
   font-style: normal;
 }
+.icon {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+}
+.icon.icon-gauge3 {
+  width: 54px;
+  height: 54px;
+}
+.icon.icon-min, .icon.icon-min-dark-grey, .icon.icon-plus {
+  width: 19px;
+  height: 19px;
+}
+.icon.icon-arrow-down, .icon.icon-arrow-up {
+  width: 30px;
+  height: 20px;
+}
+
 a,
 .ui-link {
   border-bottom: 1px solid #000000;
@@ -836,15 +854,18 @@ ol, ul {
   }
 }
 .header .logo {
+  text-indent: 9999px;
+  white-space: nowrap;
+  overflow: hidden;
+  outline: none;
+  border: none;
   display: block;
   position: absolute;
-  background-color: #000000;
   height: 30px;
   width: 40px;
   top: 15px;
   right: 18px;
-  color: #ffc300;
-  text-align: right;
+  background-size: contain;
 }
 @media screen and (min-width: 590px) {
   .header .logo {
@@ -1298,14 +1319,43 @@ ol, ul {
 }
 .widget-score .score-overview header {
   cursor: pointer;
+  padding: 15px 30px;
+  position: relative;
+}
+.widget-score .score-overview header .icon {
+  vertical-align: middle;
+}
+.widget-score .score-overview header .icon-arrow-down,
+.widget-score .score-overview header .icon-arrow-up {
+  position: absolute;
+  right: 30px;
+  top: 30px;
 }
 .widget-score .score-overview .score {
   color: #000000;
-  line-height: 80px;
+  font-family: "HelveticaNeue-Bold", Helvetica, Arial, sans-serif;
+  font-size: 36px;
+  vertical-align: middle;
+  margin-left: 17px;
 }
 .widget-score .score-summary {
+  padding: 30px;
   margin-top: 80px;
   background-color: #dcdcdc;
+  font-family: "HelveticaNeue", Helvetica, Arial, sans-serif;
+}
+.widget-score .score-summary ul {
+  margin-bottom: 30px;
+}
+.widget-score .score-summary ul:last-of-type {
+  margin-bottom: 0;
+}
+.widget-score .score-summary ul li {
+  margin-bottom: 15px;
+}
+.widget-score .score-summary ul li .icon {
+  vertical-align: middle;
+  margin-right: 20px;
 }
 
 /* BMW-I3 VIEW */
