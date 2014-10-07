@@ -1,266 +1,258 @@
 <!DOCTYPE html>
 <html class="no-js">
-
 <head>
-    <title>
-        _style-guide | car-ux
-    </title>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-    <meta name="description" content="Car UX" />
-    <meta name="viewport" content="width=device-width initial-scale=1" />
-    <base href="http://voorhoede.github.io/car-ux/" />
-    <link rel="shortcut icon" href="assets/images/favicons/favicon.ico" type="image/ico" />
-    <link rel="apple-touch-icon" sizes="57x57" href="assets/images/favicons/apple-touch-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="assets/images/favicons/apple-touch-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="assets/images/favicons/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="assets/images/favicons/apple-touch-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="assets/images/favicons/apple-touch-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="assets/images/favicons/apple-touch-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="assets/images/favicons/apple-touch-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="assets/images/favicons/apple-touch-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicons/apple-touch-icon-180x180.png">
-    <link rel="icon" type="image/png" href="assets/images/favicons/favicon-192x192.png" sizes="192x192">
-    <link rel="icon" type="image/png" href="assets/images/favicons/favicon-160x160.png" sizes="160x160">
-    <link rel="icon" type="image/png" href="assets/images/favicons/favicon-96x96.png" sizes="96x96">
-    <link rel="icon" type="image/png" href="assets/images/favicons/favicon-16x16.png" sizes="16x16">
-    <link rel="icon" type="image/png" href="assets/images/favicons/favicon-32x32.png" sizes="32x32">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="msapplication-TileImage" content="assets/images/favicons/mstile-144x144.png">
-    <script>
-        (function(e) {
-            e.className = e.className.replace('no-js', 'js');
-        }(document.documentElement));
-    </script>
-    <script>
-        /* grunticon Stylesheet Loader | https://github.com/filamentgroup/grunticon | (c) 2012 Scott Jehl, Filament Group, Inc. | MIT license. */
-        window.grunticon = function(e) {
-            if (e && 3 === e.length) {
-                var t = window,
-                    n = !(!t.document.createElementNS || !t.document.createElementNS(
-                            "http://www.w3.org/2000/svg", "svg").createSVGRect || !document.implementation
-                        .hasFeature("http://www.w3.org/TR/SVG11/feature#Image", "1.1") ||
-                        window.opera && -1 === navigator.userAgent.indexOf("Chrome")),
-                    o = function(o) {
-                        var r = t.document.createElement("link"),
-                            a = t.document.getElementsByTagName("script")[0];
-                        r.rel = "stylesheet", r.href = e[o && n ? 0 : o ? 1 : 2], a.parentNode.insertBefore(
-                            r, a)
-                    },
-                    r = new t.Image;
-                r.onerror = function() {
-                        o(!1)
-                    }, r.onload = function() {
-                        o(1 === r.width && 1 === r.height)
-                    }, r.src =
-                    "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="
-            }
-        };
-        grunticon(["assets/images/grunticon-output/icons.data.svg.css",
-            "assets/images/grunticon-output/icons.data.png.css",
-            "assets/images/grunticon-output/icons.fallback.css"
-        ]);
-    </script>
-    <noscript>
-        <link rel="stylesheet" href="assets/images/grunticon-output/icons.fallback.css" />
-    </noscript>
-    <link rel="stylesheet" href="assets/style/main.css">
-    <!--<link rel="stylesheet" href=".//voorhoede-core-styles.css">-->
-    <!--<link rel="stylesheet" href=".//core-layout.css">-->
-    <link rel="stylesheet" href="./guide.css">
-</head>
+	<title>
+		
+		_style-guide | car-ux
+		
+	</title>
 
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+
+	<meta name="description" content="Car UX" />
+	<meta name="viewport" content="width=device-width initial-scale=1" />
+	<base href="http://voorhoede.github.io/car-ux/" />
+
+	<link rel="shortcut icon" href="assets/images/favicons/favicon.ico" type="image/ico" />
+	<link rel="apple-touch-icon" sizes="57x57" href="assets/images/favicons/apple-touch-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="assets/images/favicons/apple-touch-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="assets/images/favicons/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="assets/images/favicons/apple-touch-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="assets/images/favicons/apple-touch-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="assets/images/favicons/apple-touch-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="assets/images/favicons/apple-touch-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="assets/images/favicons/apple-touch-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicons/apple-touch-icon-180x180.png">
+	<link rel="icon" type="image/png" href="assets/images/favicons/favicon-192x192.png" sizes="192x192">
+	<link rel="icon" type="image/png" href="assets/images/favicons/favicon-160x160.png" sizes="160x160">
+	<link rel="icon" type="image/png" href="assets/images/favicons/favicon-96x96.png" sizes="96x96">
+	<link rel="icon" type="image/png" href="assets/images/favicons/favicon-16x16.png" sizes="16x16">
+	<link rel="icon" type="image/png" href="assets/images/favicons/favicon-32x32.png" sizes="32x32">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="msapplication-TileImage" content="assets/images/favicons/mstile-144x144.png">
+
+	<script>
+		(function (e) {
+			e.className = e.className.replace('no-js','js');
+		}(document.documentElement));
+	</script>
+	
+	<script>
+		/* grunticon Stylesheet Loader | https://github.com/filamentgroup/grunticon | (c) 2012 Scott Jehl, Filament Group, Inc. | MIT license. */
+		window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.createElementNS||!t.document.createElementNS("http://www.w3.org/2000/svg","svg").createSVGRect||!document.implementation.hasFeature("http://www.w3.org/TR/SVG11/feature#Image","1.1")||window.opera&&-1===navigator.userAgent.indexOf("Chrome")),o=function(o){var r=t.document.createElement("link"),a=t.document.getElementsByTagName("script")[0];r.rel="stylesheet",r.href=e[o&&n?0:o?1:2],a.parentNode.insertBefore(r,a)},r=new t.Image;r.onerror=function(){o(!1)},r.onload=function(){o(1===r.width&&1===r.height)},r.src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="}};
+		grunticon(["assets/images/grunticon-output/icons.data.svg.css", "assets/images/grunticon-output/icons.data.png.css", "assets/images/grunticon-output/icons.fallback.css"]);
+	</script>
+	<noscript>
+		<link rel="stylesheet" href="assets/images/grunticon-output/icons.fallback.css" />
+	</noscript>
+	
+	
+<link rel="stylesheet" href="assets/style/main.css">
+<!--<link rel="stylesheet" href=".//voorhoede-core-styles.css">-->
+<!--<link rel="stylesheet" href=".//core-layout.css">-->
+<link rel="stylesheet" href="./guide.css">
+
+</head>
 <body>
-    <!-- use data attributes to target in JS -->
-    <div id="page">
-        <div class="page">
-            <div class="core-layout">
-                <header class="app-guide-content">
-                    <img src="./images/voorhoede-logo.svg" onerror="this.src='./images/voorhoede-logo.min.png'" alt="De Voorhoede"
-                    height="75" width="75" />
-                    <h1>car-ux</h1>
-                    <h2>Front-end guide for car-ux by de Voorhoede</h2>
-                </header>
-                <div class="style-guide">
-                    <h1>Style Guide</h1>
-                    <!--
+	<!-- use data attributes to target in JS -->
+	<div id="page">
+		
+
+		
+<div class="page">
+	<div class="core-layout">
+		<header class="app-guide-content">
+			<img src="./images/voorhoede-logo.svg"
+			     onerror="this.src='./images/voorhoede-logo.min.png'"
+			     alt="De Voorhoede"
+			     height="75" width="75"/>
+				<h1>car-ux</h1>
+				<h2>Front-end guide for car-ux by de Voorhoede</h2>
+		</header>
+
+		
+<div class="style-guide">
+<h1>Style Guide</h1>
+	<!--
 		LOGO:
 	-->
-                    <section id="section-logo" class="app-guide-section">
-                        <h2 class="app-guide-section-title">
+	<section id="section-logo" class="app-guide-section">
+		<h2 class="app-guide-section-title">
 			Logo 
 <a href="#section-logo"
    class="app-guide-permalink app-guide-icon"
    title="permalink to this section"></a>
 
 		</h2>
-                        <img src="assets/images/logo.svg" alt="Car UX logo" class="logo" />
-                    </section>
-                    <!--
+		<img src="assets/images/logo.svg" alt="Car UX logo" class="logo"/>
+	</section>
+	<!--
 		COLORS:
 	-->
-                    <section id="section-colors" class="app-guide-section">
-                        <h2 class="app-guide-section-title">
+	<section id="section-colors" class="app-guide-section">
+		<h2 class="app-guide-section-title">
 			Colors 
 <a href="#section-colors"
    class="app-guide-permalink app-guide-icon"
    title="permalink to this section"></a>
 
 		</h2>
-                        <ul class="app-guide-example-box app-guide-swatches">
-                            <li title="yellow">
-                                <span class="app-guide-info">#ffc300</span>
-                                <span class="app-guide-swatch"></span>
-                                <span class="app-guide-info">$yellow</span>
-                            </li>
-                            <li title="black">
-                                <span class="app-guide-info">#000000</span>
-                                <span class="app-guide-swatch"></span>
-                                <span class="app-guide-info">$black</span>
-                            </li>
-                            <li title="dark-grey">
-                                <span class="app-guide-info">#7f7f7f</span>
-                                <span class="app-guide-swatch"></span>
-                                <span class="app-guide-info">$dark-grey</span>
-                            </li>
-                            <li title="medium-grey">
-                                <span class="app-guide-info">#dcdcdc</span>
-                                <span class="app-guide-swatch"></span>
-                                <span class="app-guide-info">$medium-grey</span>
-                            </li>
-                            <li title="light-grey">
-                                <span class="app-guide-info">#f2f2f2</span>
-                                <span class="app-guide-swatch"></span>
-                                <span class="app-guide-info">$light-grey</span>
-                            </li>
-                            <li title="white">
-                                <span class="app-guide-info">#ffffff</span>
-                                <span class="app-guide-swatch"></span>
-                                <span class="app-guide-info">$white</span>
-                            </li>
-                        </ul>
-                        <p>Note: Each color swatch has a hexadecimal color code (for designers) on top and
-                            an scss variable name (for developers) below.</p>
-                    </section>
-                    <!--
+		<ul class="app-guide-example-box app-guide-swatches">
+			<li title="yellow">
+				<span class="app-guide-info">#ffc300</span>
+				<span class="app-guide-swatch"></span>
+				<span class="app-guide-info">$yellow</span>
+			</li>
+			<li title="black">
+				<span class="app-guide-info">#000000</span>
+				<span class="app-guide-swatch"></span>
+				<span class="app-guide-info">$black</span>
+			</li>
+			<li title="dark-grey">
+				<span class="app-guide-info">#7f7f7f</span>
+				<span class="app-guide-swatch"></span>
+				<span class="app-guide-info">$dark-grey</span>
+			</li>
+			<li title="medium-grey">
+				<span class="app-guide-info">#dcdcdc</span>
+				<span class="app-guide-swatch"></span>
+				<span class="app-guide-info">$medium-grey</span>
+			</li>
+			<li title="light-grey">
+				<span class="app-guide-info">#f2f2f2</span>
+				<span class="app-guide-swatch"></span>
+				<span class="app-guide-info">$light-grey</span>
+			</li>
+			<li title="white">
+				<span class="app-guide-info">#ffffff</span>
+				<span class="app-guide-swatch"></span>
+				<span class="app-guide-info">$white</span>
+			</li>
+		</ul>
+		<p>Note: Each color swatch has a hexadecimal color code (for designers) on top and an scss variable name (for developers) below.</p>
+	</section>
+	<!--
 		ICONS:
 	-->
-                    <section id="section-icons" class="app-guide-section">
-                        <h2 class="app-guide-section-title">
+	<section id="section-icons" class="app-guide-section">
+		<h2 class="app-guide-section-title">
 			Icons 
 <a href="#section-icons"
    class="app-guide-permalink app-guide-icon"
    title="permalink to this section"></a>
 
 		</h2>
-                        <div class="app-guide-section-content">
-                            <p>
-                                Note: Icons are managed using Grunticon, preferring SVG icons and providing a PNG fallback for browsers
-                                not supporting SVG.
-                            </p>
-                            <h3 class="app-guide-section-title">Social media icons</h3>
-                            <ul class="social-media-links">
-                                <li>
-                                    <a href="#" title="Facebook" class="icon-facebook social-media-link"></a>
-                                </li>
-                                <li>
-                                    <a href="#" title="Twitter" class="icon-twitter social-media-link"></a>
-                                </li>
-                                <li>
-                                    <a href="#" title="GooglePlus" class="icon-google social-media-link"></a>
-                                </li>
-                            </ul>
-                        </div>
-                    </section>
-                    <!--
+		<div class="app-guide-section-content">
+			<p>
+				Note: Icons are managed using Grunticon, preferring SVG icons and providing
+				a PNG fallback for browsers not supporting SVG.
+			</p>
+			<h3 class="app-guide-section-title">Social media icons</h3>
+			<ul class="social-media-links">
+				<li><a href="#" title="Facebook" class="icon-facebook social-media-link"></a></li>
+				<li><a href="#" title="Twitter" class="icon-twitter social-media-link"></a></li>
+				<li><a href="#" title="GooglePlus" class="icon-google social-media-link"></a></li>
+			</ul>
+		</div>
+	</section>
+	<!--
 		TYPOGRAPHY:
 	-->
-                    <section id="section-typography" class="app-guide-section">
-                        <h2 class="app-guide-section-title">
+	<section id="section-typography" class="app-guide-section">
+		<h2 class="app-guide-section-title">
 			Typography 
 <a href="#section-typography"
    class="app-guide-permalink app-guide-icon"
    title="permalink to this section"></a>
 
 		</h2>
-                        <div class="app-guide-section-content">
-                            <h3>Header text</h3>
-                            <h1>Helvetica Neue Bold - 36px - Lineheight: 1.1</h1>
-                            <h2>Helvetica Neue - 25px - Lineheight: 1.1</h2>
-                            <h3>Helvetica Neue - 20px - Lineheight: 1.1</h3>
-                            <h3>Heading with text</h3>
-                            <h1>Heading 1</h1>
-                            <p>
-                                Car UX. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum cupiditate eius eveniet omnis pariatur
-                                quidem suscipit? Dolore doloribus eos explicabo magni nemo officia quia,
-                                quisquam repudiandae sapiente voluptatibus? Quidem, sed! Lorem ipsum
-                                dolor sit amet, consectetur adipisicing elit. Cum cupiditate eius eveniet
-                                omnis pariatur quidem suscipit? Dolore doloribus eos explicabo magni
-                                nemo officia quia, quisquam repudiandae sapiente voluptatibus? Quidem,
-                                sed!
-                            </p>
-                            <h2>Heading 2</h2>
-                            <p>
-                                Car UX. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum cupiditate eius eveniet omnis pariatur
-                                quidem suscipit? Dolore doloribus eos explicabo magni nemo officia quia,
-                                quisquam repudiandae sapiente voluptatibus? Quidem, sed!
-                            </p>
-                            <h3>Heading 3</h3>
-                            <p>
-                                Car UX. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum cupiditate eius eveniet omnis pariatur
-                                quidem suscipit? Dolore doloribus eos explicabo magni nemo officia quia.
-                            </p>
-                            <h3>Body text</h3>
-                            <p>
-                                Car UX. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum cupiditate eius eveniet omnis pariatur
-                                quidem suscipit? Dolore doloribus eos explicabo magni nemo officia quia,
-                                quisquam repudiandae sapiente voluptatibus? Quidem, sed! Lorem ipsum
-                                dolor sit amet, consectetur adipisicing elit. Cum cupiditate eius eveniet
-                                omnis pariatur quidem suscipit? Dolore doloribus eos explicabo magni
-                                nemo officia quia, quisquam repudiandae sapiente voluptatibus? Quidem,
-                                sed!
-                            </p>
-                            <p>
-                                Car UX. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum cupiditate eius eveniet omnis pariatur
-                                quidem suscipit? Dolore doloribus eos explicabo magni nemo officia quia,
-                                quisquam repudiandae sapiente voluptatibus? Quidem, sed!
-                            </p>
-                        </div>
-                    </section>
-                    <!--
+		<div class="app-guide-section-content">
+			<h3>Header text</h3>
+			<h1>Helvetica Neue Bold - 36px - Lineheight: 1.1</h1>
+			<h2>Helvetica Neue - 25px - Lineheight: 1.1</h2>
+			<h3>Helvetica Neue - 20px - Lineheight: 1.1</h3>
+
+			<h3>Heading with text</h3>
+
+			<h1>Heading 1</h1>
+			<p>
+				Car UX. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+				Cum cupiditate eius eveniet omnis pariatur quidem suscipit?
+				Dolore doloribus eos explicabo magni nemo officia quia,
+				quisquam repudiandae sapiente voluptatibus? Quidem, sed!
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+				Cum cupiditate eius eveniet omnis pariatur quidem suscipit?
+				Dolore doloribus eos explicabo magni nemo officia quia,
+				quisquam repudiandae sapiente voluptatibus? Quidem, sed!
+			</p>
+			<h2>Heading 2</h2>
+			<p>
+				Car UX. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+				Cum cupiditate eius eveniet omnis pariatur quidem suscipit?
+				Dolore doloribus eos explicabo magni nemo officia quia,
+				quisquam repudiandae sapiente voluptatibus? Quidem, sed!
+			</p>
+			<h3>Heading 3</h3>
+			<p>
+				Car UX. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+				Cum cupiditate eius eveniet omnis pariatur quidem suscipit?
+				Dolore doloribus eos explicabo magni nemo officia quia.
+			</p>
+
+			<h3>Body text</h3>
+			<p>
+				Car UX. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+				Cum cupiditate eius eveniet omnis pariatur quidem suscipit?
+				Dolore doloribus eos explicabo magni nemo officia quia,
+				quisquam repudiandae sapiente voluptatibus? Quidem, sed!
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+				Cum cupiditate eius eveniet omnis pariatur quidem suscipit?
+				Dolore doloribus eos explicabo magni nemo officia quia,
+				quisquam repudiandae sapiente voluptatibus? Quidem, sed!
+			</p>
+			<p>
+				Car UX. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+				Cum cupiditate eius eveniet omnis pariatur quidem suscipit?
+				Dolore doloribus eos explicabo magni nemo officia quia,
+				quisquam repudiandae sapiente voluptatibus? Quidem, sed!
+			</p>
+		</div>
+	</section>
+	<!--
 		LINKS:
 	-->
-                    <section id="section-links" class="app-guide-section">
-                        <h2 class="app-guide-section-title">
+	<section id="section-links" class="app-guide-section">
+		<h2 class="app-guide-section-title">
 			Buttons and Links 
 <a href="#section-links"
    class="app-guide-permalink app-guide-icon"
    title="permalink to this section"></a>
 
 		</h2>
-                        <div class="app-guide-section-content">
-                            <div class="app-guide-example">
-                                <h3 class="app-guide-section-title">Primary action - block level</h3>
-                                <a href="#" class="ui-button-primary">Meer over Car UX</a>
-                            </div>
-                            <div class="app-guide-example">
-                                <h3 class="app-guide-section-title">Secondary action - block level</h3>
-                                <a href="#" class="ui-button-secondary">Meer over Car UX</a>
-                            </div>
-                            <div class="app-guide-example">
-                                <h3 class="app-guide-section-title">Tertiary action - block level</h3>
-                                <a href="#" class="ui-button-tertiary">Meer over Car UX</a>
-                            </div>
-                            <div class="app-guide-example">
-                                <h3 class="app-guide-section-title">Primary action - inline level</h3>
-                                <a href="#" class="ui-link">Meer over Car UX</a>
-                            </div>
-                        </div>
-                    </section>
-                    <!--
+		<div class="app-guide-section-content">
+			<div class="app-guide-example">
+				<h3 class="app-guide-section-title">Primary action - block level</h3>
+				<a href="#" class="ui-button-primary">Meer over Car UX</a>
+			</div>
+			<div class="app-guide-example">
+				<h3 class="app-guide-section-title">Secondary action - block level</h3>
+				<a href="#" class="ui-button-secondary">Meer over Car UX</a>
+			</div>
+			<div class="app-guide-example">
+				<h3 class="app-guide-section-title">Tertiary action - block level</h3>
+				<a href="#" class="ui-button-tertiary">Meer over Car UX</a>
+			</div>
+			<div class="app-guide-example">
+				<h3 class="app-guide-section-title">Primary action - inline level</h3>
+				<a href="#" class="ui-link">Meer over Car UX</a>
+			</div>
+		</div>
+	</section>
+	<!--
 		FORM ELEMENTS:
 	-->
-                    <!--	<section id="section-form-elements" class="app-guide-section">
+<!--	<section id="section-form-elements" class="app-guide-section">
 		<h2 class="app-guide-section-title">
 			Form elements 
 <a href="#section-form-elements"
@@ -374,47 +366,63 @@
 
 		</div>
 	</section>-->
-                    <!--
+
+	<!--
 		LISTS:
 	-->
-                    <section id="section-lists" class="app-guide-section">
-                        <h2 class="app-guide-section-title">
+	<section id="section-lists" class="app-guide-section">
+		<h2 class="app-guide-section-title">
 			Lists 
 <a href="#section-lists"
    class="app-guide-permalink app-guide-icon"
    title="permalink to this section"></a>
 
 		</h2>
-                        <div class="app-guide-section-content">
-                            <h3>Unordered list</h3>
-                            <div class="app-guide-example">
-                                <ul class="unordered-list">
-                                    <li>Combineer cijfers en letters</li>
-                                    <li>Combinner kleine letters en hoofdletters</li>
-                                    <li class="is-disabled">Gebruik speciale tekens</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="app-guide-section-content">
-                            <h3>Ordered list</h3>
-                            <div class="app-guide-example">
-                                <ol class="ordered-list">
-                                    <li>Combineer cijfers en letters</li>
-                                    <li>Combineer kleine letters en hoofdletters</li>
-                                    <li class="is-disabled">Gebruik speciale tekens</li>
-                                </ol>
-                            </div>
-                        </div>
-                    </section>
-                </div>
-            </div>
-        </div>
-        <footer class="app-guide-footer">
-            This page is generated using <a href="http://voorhoede.nl">De Voorhoede</a>'s template builder
-        </footer>
-        <script src="assets/scripts/vendor.js"></script>
-        <script src="assets/scripts/main.js"></script>
-    </div>
-</body>
+		<div class="app-guide-section-content">
+			<h3>Unordered list</h3>
+			<div class="app-guide-example">
+				<ul class="unordered-list">
+					<li>Combineer cijfers en letters</li>
+					<li>Combinner kleine letters en hoofdletters</li>
+					<li class="is-disabled">Gebruik speciale tekens</li>
+				</ul>
+			</div>
+		</div>
+		<div class="app-guide-section-content">
+			<h3>Ordered list</h3>
+			<div class="app-guide-example">
+				<ol class="ordered-list">
+					<li>Combineer cijfers en letters</li>
+					<li>Combineer kleine letters en hoofdletters</li>
+					<li class="is-disabled">Gebruik speciale tekens</li>
+				</ol>
+			</div>
+		</div>
+	</section>
+</div>
 
+
+
+	</div>
+
+</div>
+
+
+
+		
+<footer class="app-guide-footer">
+	This page is generated using <a href="http://voorhoede.nl">De Voorhoede</a>'s template builder
+</footer>
+
+
+
+		
+
+		
+
+		<script src="assets/scripts/vendor.js"></script>
+		<script src="assets/scripts/main.js"></script>
+		
+	</div>
+</body>
 </html>
