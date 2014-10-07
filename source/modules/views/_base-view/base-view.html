@@ -48,12 +48,7 @@
 	</noscript>
 	
 	{% block styles %}
-
-	{% if (mode == 'development') %}
-	<link rel="stylesheet" href="/assets/style/main.css" />
-	{% else %}
 	<link rel="stylesheet" href="{{ pathToAssets }}style/main.css" />
-	{% endif %}
 	{% endblock %}
 </head>
 <body>

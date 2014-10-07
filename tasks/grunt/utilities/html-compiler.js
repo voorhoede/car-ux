@@ -22,7 +22,7 @@ var nunjucks = require('nunjucks');
 		return getModulesDir(dir) + 'views/';
 	}
 
-    var pathToAssets = 'assets/';
+    var pathToAssets = '/assets/';
 
     var env = new nunjucks.Environment([
         new nunjucks.FileSystemLoader(getModulesDir('source'))
