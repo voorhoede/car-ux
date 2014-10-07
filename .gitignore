@@ -6,6 +6,9 @@ web
 !source/vendor/**/*.css
 !source/assets/images/grunticon-output/*.css
 
+# Generated images
+source/assets/images/grunticon-output
+
 # OS
 .DS_Store
 thumbs.db
