@@ -21,6 +21,11 @@ function getConfiguration(grunt) {
                 src: ['**'],
                 dest: 'web/assets/images/'
             }, {
+				expand: true,
+				cwd: 'source/assets/fonts/',
+				src: ['**'],
+				dest: 'web/assets/fonts/'
+			}, {
                 expand: true,
                 cwd: 'source/vendor/',
                 src: ['**'],

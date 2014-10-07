@@ -25,13 +25,18 @@ module.exports = function (grunt) {
 				var filename = name + '/_' + name + '.html';
 				var template = compiler.getTemplate('components/' + filename);
 				var componentsDir = compiler.getComponentsDir();
+
+				var pathToAssets = compiler.pathToAssets;
+				if(mode !== 'development'){
+					pathToAssets = 'assets/';
+				}
+
 				var html = template.render({
                     'project': project,
 					'webRoot': webRoot,
-					'pathToAssets': compiler.pathToAssets,
+					'pathToAssets': pathToAssets,
 					'pathToStubs': webRoot + 'stubs/',
-					'mode': mode,
-                    'intro' : 'lorem ipsum'
+					'mode': mode
 				});
 				grunt.file.write(componentsDir + filename, html);
 				grunt.log.writeln('Compiled component to '+ componentsDir + filename);
@@ -47,11 +52,16 @@ module.exports = function (grunt) {
                 var intro = file.exists(introFilename) ? file.read(introFilename) : '';
                 intro = marked(intro);
 
+				var pathToAssets = compiler.pathToAssets;
+				if(mode !== 'development'){
+					pathToAssets = 'assets/';
+				}
+
 				var html = template.render({
 					'webRoot': webRoot,
 					'name': name,
 					'project': project,
-					'pathToAssets': compiler.pathToAssets,
+					'pathToAssets': pathToAssets,
 					'pathToGuide': './',
 					'pathToStubs': webRoot + 'stubs/',
 					'mode': mode,
