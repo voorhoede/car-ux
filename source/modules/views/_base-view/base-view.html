@@ -12,6 +12,7 @@
 
 	<meta name="description" content="Car UX" />
 	<meta name="viewport" content="width=device-width initial-scale=1" />
+	{% if (mode != 'development') %}<base href="http://voorhoede.github.io/car-ux/" />{% endif %}
 
 	<link rel="shortcut icon" href="{{ pathToAssets }}images/favicons/favicon.ico" type="image/ico" />
 	<link rel="apple-touch-icon" sizes="57x57" href="{{ pathToAssets }}images/favicons/apple-touch-icon-57x57.png">
@@ -47,7 +48,12 @@
 	</noscript>
 	
 	{% block styles %}
+
+	{% if (mode == 'development') %}
+	<link rel="stylesheet" href="/assets/style/main.css" />
+	{% else %}
 	<link rel="stylesheet" href="{{ pathToAssets }}style/main.css" />
+	{% endif %}
 	{% endblock %}
 </head>
 <body>
