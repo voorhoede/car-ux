@@ -40,14 +40,38 @@ $headerHeight: 		80px;
 		}
 
 		ul {
-			li {
-				a {
-					.label {
+			margin-top: 5px;
+			padding: 0 30px;
 
+			li {
+				margin-bottom: 14px;
+
+				a {
+					@include clearfix();
+
+					border: none;
+					font-family: $helvetica-neue-bold;
+					font-size: 25px;
+
+					&:hover {
+						color: $black;
+
+						.label {
+							@include transition(border-bottom .2s ease-out);
+
+							border-bottom: 1px solid $black;
+						}
+					}
+
+					.label {
+						@include transition(border-bottom .2s ease-out);
+
+						float: left;
+						border-bottom: 1px solid transparent;
 					}
 
 					.value {
-
+						float: right;
 					}
 				}
 			}
