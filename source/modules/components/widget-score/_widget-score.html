@@ -1,10 +1,10 @@
 <!-- widget-score -->
 <div class="widget-score" data-component="widget-score">
-	<div class="score-overview" data-widget-score-overview>
+	<div class="score-overview expanded" data-widget-score-overview>
 		<header>
-			<span class="icon icon-meter"></span>
+			<span class="icon icon-gauge3"></span>
 			<span class="score">{{ content.widgetScore.score }}</span>
-			<span class="icon icon-arrow-down"></span>
+			<span class="icon icon-arrow-down" data-score-header-arrow></span>
 		</header>
 		<ul>
 			{% for property, value in content.widgetScore.scoreDetails %}
@@ -25,7 +25,7 @@
 		</ul>
 		<ul>
 			{% for badText in content.widgetScore.summary.bad %}
-				<li><span class="icon icon-min"></span>{{ badText }}</li>
+				<li><span class="icon icon-min-dark-grey"></span>{{ badText }}</li>
 			{% endfor %}
 		</ul>
 	</div>

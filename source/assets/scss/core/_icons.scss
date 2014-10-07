@@ -1,0 +1,23 @@
+.icon {
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+
+	&.icon-gauge3 {
+		width: 54px;
+		height: 54px;
+	}
+
+	&.icon-min,
+	&.icon-min-dark-grey,
+	&.icon-plus {
+		width: 19px;
+		height: 19px;
+	}
+
+	&.icon-arrow-down,
+	&.icon-arrow-up {
+		width: 30px;
+		height: 20px;
+	}
+}
