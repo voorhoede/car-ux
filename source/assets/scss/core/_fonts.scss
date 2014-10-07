@@ -4,22 +4,16 @@
 
 @font-face {
 	font-family: 'HelveticaNeue';
-	src: url('#{$path-fonts}HelveticaNeue.eot');
-	src: url('#{$path-fonts}HelveticaNeue.eot?#iefix') format('embedded-opentype'),
-	url('#{$path-fonts}HelveticaNeue.woff') format('woff'),
-	url('#{$path-fonts}HelveticaNeue.ttf') format('truetype'),
-	url('#{$path-fonts}HelveticaNeue.svg') format('svg');
+	src: 	url('#{$path-fonts}HelveticaNeue.woff') format('woff'),
+		 	url('#{$path-fonts}HelveticaNeue.ttf') format('truetype');
 	font-weight: normal;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: 'HelveticaNeue-Bold';
-	src: url('#{$path-fonts}HelveticaNeue-Bold.eot');
-	src: url('#{$path-fonts}HelveticaNeue-Bold.eot?#iefix') format('embedded-opentype'),
-	url('#{$path-fonts}HelveticaNeue-Bold.woff') format('woff'),
-	url('#{$path-fonts}HelveticaNeue-Bold.ttf') format('truetype'),
-	url('#{$path-fonts}HelveticaNeue-Bold.svg') format('svg');
+	src: 	url('#{$path-fonts}HelveticaNeue-Bold.woff') format('woff'),
+			url('#{$path-fonts}HelveticaNeue-Bold.ttf') format('truetype');
 	font-weight: normal;
 	font-style: normal;
 }
