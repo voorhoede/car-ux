@@ -2,8 +2,8 @@
 <!-- shortlist -->
 <div class="shortlist" data-component="shortlist">
 	<section class="max-width-centered">
-		<h1>DE TOP BESTE INTERFACES</h1>
-		{% for product in content %}<!--
+		<h1>{{ content.mainTitle }}</h1>
+		{% for product in content.products %}<!--
 		--><a class="shortlist-product" href="{{ product.url }}">
 		<img src="{{ product.visual }}" alt="{{ product.title  + ' - ' + product.subTitle }}" />
 		<div class="shortlist-title">
@@ -19,7 +19,7 @@
 			</ul>
 			<ul>
 				{% for badText in product.summary.bad %}
-				<li><span class="icon icon-min-dark-grey"></span>{{ badText }}</li>
+				<li><span class="icon icon-min-light-grey"></span>{{ badText }}</li>
 				{% endfor %}
 			</ul>
 			<hr/>
