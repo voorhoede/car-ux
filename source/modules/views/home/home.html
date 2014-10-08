@@ -1,10 +1,30 @@
 {%
-set homeIntroContent = {
-backgroundImage: pathToAssets + 'images/home/home-intro.png',
-backgroundImageAlt: '',
-title: 'WAAR GAAT DIT OVER?',
-description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, Lorem ipsum dolor sit amet, consectetur adipisicing elit.'
-}
+	set navigation = [
+		{
+			label: 'Home',
+			href: hrefPrefix + '/modules/views/home/home.html',
+			active: true
+		},
+		{
+			label: 'Reviews',
+			href: hrefPrefix + '/modules/views/reviews/reviews.html',
+			active: false
+		},
+		{
+			label: 'Over<span class="nav-text-large"> Car UX</span>',
+			href: hrefPrefix + '/modules/views/about/about.html',
+			active: false
+		}
+	]
+%}
+
+{%
+	set homeIntroContent = {
+		backgroundImage: pathToAssets + 'images/home/home-intro.png',
+		backgroundImageAlt: '',
+		title: 'WAAR GAAT DIT OVER?',
+		description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, Lorem ipsum dolor sit amet, consectetur adipisicing elit.'
+	}
 %}
 
 {%

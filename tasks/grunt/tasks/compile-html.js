@@ -30,7 +30,7 @@ module.exports = function (grunt) {
 				var hrefPrefix = compiler.hrefPrefix;
 				if(mode !== 'development'){
 					pathToAssets = 'assets/';
-					hrefPrefix = '/car-ux/';
+					hrefPrefix = '/car-ux';
 				}
 
 				var html = template.render({
@@ -59,7 +59,7 @@ module.exports = function (grunt) {
 				var hrefPrefix = compiler.hrefPrefix;
 				if(mode !== 'development'){
 					pathToAssets = 'assets/';
-					hrefPrefix = '/car-ux/';
+					hrefPrefix = '/car-ux';
 				}
 
 				var html = template.render({
