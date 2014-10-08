@@ -1,8 +1,18 @@
+{%
+set homeIntroContent = {
+backgroundImage: pathToAssets + 'images/home/home-intro.png',
+backgroundImageAlt: '',
+title: 'WAAR GAAT DIT OVER?',
+description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor  et dolore magna aliqua.'
+}
+%}
+
 {% extends "views/_base-view/base-view.html" %}
+{% import  "components/home-intro/_home-intro.html" as homeIntro %}
 
 {% block content %}
 
-{% include "components/home-intro/_home-intro.html" %}
+{{ homeIntro.homeIntro(homeIntroContent) }}
 {% include "components/home-main/_home-main.html" %}
 
 {% endblock %}

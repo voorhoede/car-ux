@@ -6,4 +6,10 @@
 .home-intro {
 	width: 100%;
 	background-color: $light-grey;
+
+	.home-intro-background {
+		display: block;
+		margin: 0 auto;
+		max-width: 100%;
+	}
 }
