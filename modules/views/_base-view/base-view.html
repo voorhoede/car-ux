@@ -55,7 +55,8 @@
 	<!-- use data attributes to target in JS -->
 	<div id="page">
 		{% block header %}
-			{% include "components/header/_header.html" %}
+			{% import "components/header/_header.html" as header %}
+			{{ header.header(navigation) }}
 		{% endblock %}
 
 		{% block content %}
