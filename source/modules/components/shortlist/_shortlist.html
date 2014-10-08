@@ -2,8 +2,8 @@
 <!-- shortlist -->
 <div class="shortlist" data-component="shortlist">
 	<section class="max-width-centered">
-		<h1>DE TOP BESTE INTERFACES</h1>
-		{% for product in content %}<!--
+		<h1>{{ content.mainTitle }}</h1>
+		{% for product in content.products %}<!--
 		--><a class="shortlist-product" href="{{ product.url }}">
 		<img src="{{ product.visual }}" alt="{{ product.title  + ' - ' + product.subTitle }}" />
 		<div class="shortlist-title">
