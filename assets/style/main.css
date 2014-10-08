@@ -508,7 +508,8 @@ h1 {
   font-family: "HelveticaNeue-Bold", Helvetica, Arial, sans-serif;
   font-size: 36px;
   line-height: 1.1;
-  margin: 0 0 20px 0;
+  margin: 0;
+  padding-bottom: 20px;
 }
 
 h2 {
@@ -773,7 +774,6 @@ blockquote {
   color: #ffffff;
   margin-top: 60px;
   margin-left: 20px;
-  margin-bottom: 20px;
 }
 @media screen and (min-width: 920px) {
   .detail-main h1 {
@@ -783,7 +783,7 @@ blockquote {
 
 /* featured component */
 .featured {
-  padding: 0 30px 30px 30px;
+  padding: 0 30px;
 }
 .featured .featured-content {
   position: relative;
@@ -1175,9 +1175,8 @@ blockquote {
 }
 .home-main h1 {
   color: #000000;
-  margin-top: 60px;
+  padding-top: 60px;
   margin-left: 0;
-  margin-bottom: 20px;
 }
 
 /* quote component */
@@ -1311,6 +1310,7 @@ blockquote {
 .score h1 {
   margin-top: 0;
   margin-bottom: 0;
+  padding-bottom: 0;
 }
 @media screen and (min-width: 900px) {
   .score h1 {

@@ -8,6 +8,7 @@
 .score h1 {
   margin-top: 0;
   margin-bottom: 0;
+  padding-bottom: 0;
 }
 @media screen and (min-width: 900px) {
   .score h1 {
