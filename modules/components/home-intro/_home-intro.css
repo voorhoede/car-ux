@@ -1,12 +1,65 @@
 /* home-intro component */
 .home-intro {
+  position: relative;
   width: 100%;
+  padding-top: 0;
   background-color: #f2f2f2;
+}
+@media screen and (min-width: 920px) {
+  .home-intro {
+    padding-top: 30px;
+  }
 }
 .home-intro .home-intro-background {
   display: block;
   margin: 0 auto;
-  max-width: 100%;
+}
+.home-intro .home-intro-content {
+  position: relative;
+  width: 100%;
+  margin-top: -190px;
+  padding-top: 30px;
+  background-color: #ffc300;
+  text-align: center;
+}
+.home-intro .home-intro-content:before, .home-intro .home-intro-content:after {
+  content: " ";
+  display: table;
+}
+.home-intro .home-intro-content:after {
+  clear: both;
+}
+@media screen and (min-width: 680px) {
+  .home-intro .home-intro-content {
+    position: absolute;
+    left: 50%;
+    bottom: 25px;
+    margin-top: 0;
+    margin-left: -320px;
+    max-width: 640px;
+  }
+}
+.home-intro .home-intro-content h1 {
+  padding-right: 30px;
+  padding-left: 30px;
+}
+.home-intro .home-intro-content p {
+  padding-right: 30px;
+  padding-left: 30px;
+}
+.home-intro .home-intro-content .about-button {
+  float: right;
+}
+@media screen and (min-width: 500px) {
+  .home-intro .triangle {
+    width: 0;
+    height: 0;
+    margin-right: auto;
+    margin-left: auto;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-top: 25px solid #ffc300;
+  }
 }
 
 /*# sourceMappingURL=_home-intro.css.map */

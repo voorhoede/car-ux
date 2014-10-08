@@ -262,8 +262,13 @@ Or delete this file if not applicable.
 				<pre class="language-css"><code>/* intro component */
 .detail-intro {
   background-color: #f2f2f2;
-  padding-top: 30px;
+  padding-top: 0;
   padding-bottom: 450px;
+}
+@media screen and (min-width: 920px) {
+  .detail-intro {
+    padding-top: 30px;
+  }
 }
 .detail-intro .intro-background {
   display: block;
