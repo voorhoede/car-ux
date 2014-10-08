@@ -19,7 +19,6 @@
 	],
 	"views": [
 		"bmw-i3",
-		"demo-view",
 		"home",
 		"reviews"
 	]
