@@ -31,3 +31,10 @@ body {
 	margin-left: auto;
 	margin-right: auto;
 }
+
+hr {
+	background-color: $light-grey;
+	border: none;
+	height: 1px;
+	margin: 0 auto;
+}

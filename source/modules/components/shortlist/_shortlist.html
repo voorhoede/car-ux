@@ -10,37 +10,85 @@
 			<h2>{{ product.title }}<span>{{ product.subTitle }}</span></h2>
 			<span class="shortlist-score">{{ product.score }}</span>
 		</div>
+		<div class="shortlist-summary">
+			<hr/>
+			<ul>
+				{% for goodText in product.summary.good %}
+				<li><span class="icon icon-plus-yellow"></span>{{ goodText }}</li>
+				{% endfor %}
+			</ul>
+			<ul>
+				{% for badText in product.summary.bad %}
+				<li><span class="icon icon-min-dark-grey"></span>{{ badText }}</li>
+				{% endfor %}
+			</ul>
+			<hr/>
+			<time>{{ product.date }}</time>
+		</div>
 	</a><!--
-		-->{% endfor %}
+	-->{% endfor %}
 	</section>
 </div>
 <!-- /shortlist -->
 {% endmacro %}
 
 {%
-set shortlistContent = [
-{
-title: 'Nissan Quashqai Tekna Opique',
-subTitle: 'Si4 4WD Dynamic',
-score: '4.5',
-visual: pathToAssets + 'images/related/nissan-quashqai-tekna-opique.png',
-url: '#'
-},
-{
-title: 'Opel Insignia',
-subTitle: 'Business Edition',
-score: '2',
-visual: pathToAssets + 'images/related/opel-insignia-business-edition.png',
-url: '#'
-},
-{
-title: 'Citroën C4 Picasso',
-subTitle: 'Business Edition',
-score: '5.5',
-visual: pathToAssets + 'images/related/citroen-c4-picasso.png',
-url: '#'
-}
-]
+	set shortlistContent = [
+		{
+			title: 'Nissan Quashqai Tekna Opique',
+			subTitle: 'Si4 4WD Dynamic',
+			score: '4.5',
+			visual: pathToAssets + 'images/related/nissan-quashqai-tekna-opique.png',
+			url: '#',
+			date: '02-02-2014',
+			summary: {
+				good: [
+					'De UI is contrastrijk',
+					'Hardware knop'
+				],
+				bad: [
+					'De inputmethode',
+					'Navigatie viel tegen'
+				]
+			}
+		},
+		{
+			title: 'Opel Insignia',
+			subTitle: 'Business Edition',
+			score: '2',
+			visual: pathToAssets + 'images/related/opel-insignia-business-edition.png',
+			url: '#',
+			date: '02-02-2014',
+			summary: {
+				good: [
+					'De UI is contrastrijk',
+					'Hardware knop'
+				],
+				bad: [
+					'De inputmethode',
+					'Navigatie viel tegen'
+				]
+			}
+		},
+		{
+			title: 'Citroën C4 Picasso',
+			subTitle: 'Business Edition',
+			score: '5.5',
+			visual: pathToAssets + 'images/related/citroen-c4-picasso.png',
+			url: '#',
+			date: '02-02-2014',
+			summary: {
+				good: [
+					'De UI is contrastrijk',
+					'Hardware knop'
+				],
+				bad: [
+					'De inputmethode',
+					'Navigatie viel tegen'
+				]
+			}
+		}
+	]
 %}
 
 {{ shortlist(shortlistContent) }}
