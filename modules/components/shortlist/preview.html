@@ -154,9 +154,28 @@ Or delete this file if not applicable.
 				&lt;h2>Nissan Quashqai Tekna Opique&lt;span>Si4 4WD Dynamic&lt;/span>&lt;/h2>
 				&lt;span class="shortlist-score">4.5&lt;/span>
 			&lt;/div>
+			&lt;div class="shortlist-summary">
+				&lt;hr/>
+				&lt;ul>
+
+					&lt;li>&lt;span class="icon icon-plus-yellow">&lt;/span>De UI is contrastrijk&lt;/li>
+
+					&lt;li>&lt;span class="icon icon-plus-yellow">&lt;/span>Hardware knop&lt;/li>
+
+				&lt;/ul>
+				&lt;ul>
+
+					&lt;li>&lt;span class="icon icon-min-dark-grey">&lt;/span>De inputmethode&lt;/li>
+
+					&lt;li>&lt;span class="icon icon-min-dark-grey">&lt;/span>Navigatie viel tegen&lt;/li>
+
+				&lt;/ul>
+				&lt;hr/>
+				&lt;time>02-02-2014&lt;/time>
+			&lt;/div>
 		&lt;/a>
 		&lt;!--
-		-->
+	-->
 		&lt;!--
 		-->
 		&lt;a class="shortlist-product" href="#">
@@ -165,9 +184,28 @@ Or delete this file if not applicable.
 				&lt;h2>Opel Insignia&lt;span>Business Edition&lt;/span>&lt;/h2>
 				&lt;span class="shortlist-score">2&lt;/span>
 			&lt;/div>
+			&lt;div class="shortlist-summary">
+				&lt;hr/>
+				&lt;ul>
+
+					&lt;li>&lt;span class="icon icon-plus-yellow">&lt;/span>De UI is contrastrijk&lt;/li>
+
+					&lt;li>&lt;span class="icon icon-plus-yellow">&lt;/span>Hardware knop&lt;/li>
+
+				&lt;/ul>
+				&lt;ul>
+
+					&lt;li>&lt;span class="icon icon-min-dark-grey">&lt;/span>De inputmethode&lt;/li>
+
+					&lt;li>&lt;span class="icon icon-min-dark-grey">&lt;/span>Navigatie viel tegen&lt;/li>
+
+				&lt;/ul>
+				&lt;hr/>
+				&lt;time>02-02-2014&lt;/time>
+			&lt;/div>
 		&lt;/a>
 		&lt;!--
-		-->
+	-->
 		&lt;!--
 		-->
 		&lt;a class="shortlist-product" href="#">
@@ -176,9 +214,28 @@ Or delete this file if not applicable.
 				&lt;h2>Citroën C4 Picasso&lt;span>Business Edition&lt;/span>&lt;/h2>
 				&lt;span class="shortlist-score">5.5&lt;/span>
 			&lt;/div>
+			&lt;div class="shortlist-summary">
+				&lt;hr/>
+				&lt;ul>
+
+					&lt;li>&lt;span class="icon icon-plus-yellow">&lt;/span>De UI is contrastrijk&lt;/li>
+
+					&lt;li>&lt;span class="icon icon-plus-yellow">&lt;/span>Hardware knop&lt;/li>
+
+				&lt;/ul>
+				&lt;ul>
+
+					&lt;li>&lt;span class="icon icon-min-dark-grey">&lt;/span>De inputmethode&lt;/li>
+
+					&lt;li>&lt;span class="icon icon-min-dark-grey">&lt;/span>Navigatie viel tegen&lt;/li>
+
+				&lt;/ul>
+				&lt;hr/>
+				&lt;time>02-02-2014&lt;/time>
+			&lt;/div>
 		&lt;/a>
 		&lt;!--
-		-->
+	-->
 	&lt;/section>
 &lt;/div>
 &lt;!-- /shortlist --></code></pre>
@@ -202,11 +259,8 @@ Or delete this file if not applicable.
 			<div class="app-guide-code">
 				<pre class="language-css"><code>/* shortlist component */
 .shortlist {
-  padding-left: 30px;
-  padding-right: 30px;
-}
-.shortlist h1 {
-  margin: 0;
+  background-color: #f2f2f2;
+  padding: 0 30px 80px 30px;
 }
 .shortlist .shortlist-product {
   border: none;
@@ -235,7 +289,8 @@ Or delete this file if not applicable.
     margin: 0;
   }
 }
-.shortlist .shortlist-product:hover .shortlist-score {
+.shortlist .shortlist-product:hover .shortlist-score,
+.shortlist .shortlist-product:hover li {
   color: #000000;
 }
 .shortlist .shortlist-product img {
@@ -244,7 +299,6 @@ Or delete this file if not applicable.
 }
 .shortlist .shortlist-product .shortlist-title {
   background-color: #ffffff;
-  margin-bottom: 20px;
   position: relative;
 }
 @media screen and (min-width: 620px) {
@@ -254,11 +308,15 @@ Or delete this file if not applicable.
 }
 .shortlist .shortlist-product .shortlist-title h2 {
   margin: 0;
-  padding: 25px 30px 35px 30px;
+  padding: 25px 30px 10px 30px;
+  font-family: "HelveticaNeue-Bold", Helvetica, Arial, sans-serif;
+  font-size: 25px;
 }
 .shortlist .shortlist-product .shortlist-title h2 span {
   display: block;
-  font-weight: normal;
+  font-family: "HelveticaNeue", Helvetica, Arial, sans-serif;
+  font-size: 20px;
+  line-height: 2;
 }
 .shortlist .shortlist-product .shortlist-title .shortlist-score {
   display: block;
@@ -267,6 +325,47 @@ Or delete this file if not applicable.
   position: absolute;
   bottom: 100%;
   right: 0;
+  font-family: "HelveticaNeue-Bold", Helvetica, Arial, sans-serif;
+  font-size: 30px;
+  min-width: 40px;
+  text-align: center;
+}
+.shortlist .shortlist-product .shortlist-summary {
+  background-color: #ffffff;
+  margin-bottom: 20px;
+  padding: 0 30px 20px 30px;
+  text-align: right;
+}
+.shortlist .shortlist-product .shortlist-summary ul {
+  font-family: "HelveticaNeue", Helvetica, Arial, sans-serif;
+  padding: 0;
+  list-style-type: none;
+  margin: 0 0 30px 0;
+  text-align: left;
+}
+.shortlist .shortlist-product .shortlist-summary ul:first-of-type {
+  padding-top: 20px;
+}
+.shortlist .shortlist-product .shortlist-summary ul:last-of-type {
+  margin-bottom: 0;
+}
+.shortlist .shortlist-product .shortlist-summary ul li {
+  position: relative;
+  margin-bottom: 15px;
+  padding-left: 30px;
+}
+.shortlist .shortlist-product .shortlist-summary ul li .icon {
+  position: absolute;
+  left: 0;
+  top: 1px;
+  margin-right: 20px;
+}
+.shortlist .shortlist-product .shortlist-summary time {
+  color: #7f7f7f;
+  font-family: "HelveticaNeue", Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  padding-top: 10px;
+  display: inline-block;
 }
 
 /*# sourceMappingURL=_shortlist.css.map */

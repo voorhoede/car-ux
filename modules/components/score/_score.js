@@ -1,8 +1,5 @@
-(function(d) {
+(function() {
 	'use strict';
 
-	//var scoreFirst = d.querySelector('[data-score-first]');
-
 	new window.Expandible();
-
-})(document);
+})();

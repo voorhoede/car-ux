@@ -459,6 +459,9 @@ var helpers = helpers || {};
 	'use strict';
 
 	var introComponentElm = d.querySelector('[data-component="detail-intro"]');
+	if (!introComponentElm) {
+		return;
+	}
 	var introTextElm = introComponentElm.querySelector('[data-intro-text]');
 	var widgetScoreElm = introComponentElm.querySelector('[data-component="widget-score"]');
 	var introSectionElm = introComponentElm.querySelector('[data-intro-section]');
@@ -480,14 +483,11 @@ var helpers = helpers || {};
 	// Make sure all images inside introTextElm are loaded
 	w.addEventListener('load', equalizeHeight, false);
 }(document, window));
-(function(d) {
+(function() {
 	'use strict';
 
-	//var scoreFirst = d.querySelector('[data-score-first]');
-
 	new window.Expandible();
-
-})(document);
+})();
 (function(d){
 	'use strict';
 
