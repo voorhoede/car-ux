@@ -649,7 +649,7 @@ blockquote {
 .detail-intro {
   background-color: #f2f2f2;
   padding-top: 0;
-  padding-bottom: 450px;
+  padding-bottom: 500px;
 }
 @media screen and (min-width: 920px) {
   .detail-intro {
@@ -1566,7 +1566,7 @@ blockquote {
 
 /* summary component */
 .summary {
-  margin-top: -450px;
+  margin-top: -500px;
 }
 .summary h1 {
   color: #000000;
