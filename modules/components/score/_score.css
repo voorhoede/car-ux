@@ -118,7 +118,11 @@
   font-family: "HelveticaNeue-Bold", Helvetica, Arial, sans-serif;
   font-size: 36px;
 }
-.score .score-icon.icon-gauge3 {
+.score .score-icon.icon-gauge1,
+.score .score-icon.icon-gauge2,
+.score .score-icon.icon-gauge3,
+.score .score-icon.icon-gauge4,
+.score .score-icon.icon-gauge5 {
   position: absolute;
   top: 12px;
   right: 50px;
