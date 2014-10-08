@@ -144,9 +144,35 @@ Or delete this file if not applicable.
 			<div class="app-guide-code">
 				<pre class="language-markup"><code>&lt;!-- home-main -->
 &lt;div class="home-main" data-component="home-main">
+
 	&lt;!-- featured -->
 	&lt;div class="featured" data-component="featured">
-		Write HTML for `featured` component
+		&lt;section class="max-width-centered">
+			&lt;h1>&lt;/h1>
+			&lt;div class="featured-content">
+				&lt;div class="featured-content-wrapper">
+					&lt;time>&lt;/time>
+					&lt;h2>
+					
+					&lt;span class="subtitle">&lt;/span>
+				&lt;/h2>
+					&lt;div class="featured-score">
+						&lt;span class="icon icon-gauge1">&lt;/span>
+
+					&lt;/div>
+					&lt;hr/>
+					&lt;ul>
+
+					&lt;/ul>
+					&lt;!--
+				-->
+					&lt;ul>
+
+					&lt;/ul>
+				&lt;/div>
+				&lt;img src="" alt="undefined undefined" />
+			&lt;/div>
+		&lt;/section>
 	&lt;/div>
 	&lt;!-- /featured -->
 
@@ -188,13 +214,8 @@ Or delete this file if not applicable.
 .home-main h1 {
   color: #000000;
   margin-top: 60px;
-  margin-left: 20px;
+  margin-left: 0;
   margin-bottom: 20px;
-}
-@media screen and (min-width: 920px) {
-  .home-main h1 {
-    margin-left: 0;
-  }
 }
 
 /*# sourceMappingURL=_home-main.css.map */
