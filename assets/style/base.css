@@ -450,7 +450,7 @@ th {
   width: 30px;
   height: 30px;
 }
-.icon.icon-gauge3 {
+.icon.icon-gauge1, .icon.icon-gauge2, .icon.icon-gauge3, .icon.icon-gauge4, .icon.icon-gauge5 {
   width: 54px;
   height: 54px;
 }
