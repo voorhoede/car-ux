@@ -1646,6 +1646,19 @@ blockquote {
 /* BMW-I3 VIEW */
 /* DEMO-VIEW VIEW */
 /* HOME VIEW */
+/* REVIEWS VIEW */
+.view-reviews h1 {
+  padding-top: 20px;
+}
+.view-reviews .shortlist .shortlist-product {
+  display: inline-block;
+  margin-left: 0;
+  margin-right: 2%;
+}
+.view-reviews .shortlist .shortlist-product:last-of-type {
+  margin-right: 0;
+}
+
 body {
   font-size: 10px;
 }

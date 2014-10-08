@@ -1,0 +1,14 @@
+/* REVIEWS VIEW */
+.view-reviews h1 {
+  padding-top: 20px;
+}
+.view-reviews .shortlist .shortlist-product {
+  display: inline-block;
+  margin-left: 0;
+  margin-right: 2%;
+}
+.view-reviews .shortlist .shortlist-product:last-of-type {
+  margin-right: 0;
+}
+
+/*# sourceMappingURL=_reviews.css.map */
