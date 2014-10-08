@@ -7,8 +7,10 @@
 			<div class="featured-content-wrapper">
 				<time>{{ content.date }}</time>
 				<h2>
-					{{ content.title }}
-					<span class="subtitle">{{ content.subTitle }}</span>
+					<a href="{{ content.url }}">
+						{{ content.title }}
+						<span class="subtitle">{{ content.subTitle }}</span>
+					</a>
 				</h2>
 				<div class="featured-score">
 					<span class="icon icon-gauge{{ content.score | gauge }}"></span>
@@ -32,3 +34,25 @@
 </div>
 <!-- /featured -->
 {% endmacro %}
+
+{%
+	set featuredContent = {
+		mainTitle: 'NIEUW DIEPTEPUNT',
+		title: 'Land Rover Evoque',
+		subTitle: 'Si4 4WD Dynamic',
+		score: '2,2',
+		date: '02-02-2014',
+		url: '#',
+		visual: pathToAssets + 'images/home/home-featured.png',
+		summary: {
+			good: [
+				'Lorem ipsum dolor sit amet, consectetur adipiscing',
+				'Eliti vestibulum consequat lobortis justo vitae.'
+			],
+			bad: [
+				'Vollit vestibulum consequat lobortis justo posuere.',
+				'Bestibulum consequat mauris eget diam risus.'
+			]
+		}
+	}
+%}
