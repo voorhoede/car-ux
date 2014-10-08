@@ -28,6 +28,24 @@ var nunjucks = require('nunjucks');
         new nunjucks.FileSystemLoader(getModulesDir('source'))
     ]);
 
+	env.addFilter('gauge', function(str) {
+		var output = 1;
+		var max = 5;
+		var min = 1;
+
+		if (str) {
+			output = Math.round((parseInt(str.replace(',', '.'), 10) / 10) * max);
+		}
+
+		if (output > max) {
+			output = max;
+		} else if (output < min) {
+			output = min;
+		}
+
+		return output;
+	});
+
     function isNotUnderscored (str) {
         return !(str.substring(0,1).match(/_/g));
     }
