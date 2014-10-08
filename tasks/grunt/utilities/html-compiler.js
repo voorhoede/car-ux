@@ -23,6 +23,7 @@ var nunjucks = require('nunjucks');
 	}
 
     var pathToAssets = '/assets/';
+	var hrefPrefix = '';
 
     var env = new nunjucks.Environment([
         new nunjucks.FileSystemLoader(getModulesDir('source'))
@@ -75,6 +76,7 @@ var nunjucks = require('nunjucks');
 	    getComponentsDir: getComponentsDir,
 	    getViewsDir: getViewsDir,
         pathToAssets: pathToAssets,
+		hrefPrefix: hrefPrefix,
         getTemplate: getTemplate,
         getComponents: getComponents,
         getViews: getViews,

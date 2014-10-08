@@ -27,14 +27,17 @@ module.exports = function (grunt) {
 				var componentsDir = compiler.getComponentsDir();
 
 				var pathToAssets = compiler.pathToAssets;
+				var hrefPrefix = compiler.hrefPrefix;
 				if(mode !== 'development'){
 					pathToAssets = 'assets/';
+					hrefPrefix = '/car-ux/';
 				}
 
 				var html = template.render({
                     'project': project,
 					'webRoot': webRoot,
 					'pathToAssets': pathToAssets,
+					'hrefPrefix': hrefPrefix,
 					'pathToStubs': webRoot + 'stubs/',
 					'mode': mode
 				});
@@ -53,8 +56,10 @@ module.exports = function (grunt) {
                 intro = marked(intro);
 
 				var pathToAssets = compiler.pathToAssets;
+				var hrefPrefix = compiler.hrefPrefix;
 				if(mode !== 'development'){
 					pathToAssets = 'assets/';
+					hrefPrefix = '/car-ux/';
 				}
 
 				var html = template.render({
@@ -62,10 +67,12 @@ module.exports = function (grunt) {
 					'name': name,
 					'project': project,
 					'pathToAssets': pathToAssets,
+					'hrefPrefix': hrefPrefix,
 					'pathToGuide': './',
 					'pathToStubs': webRoot + 'stubs/',
 					'mode': mode,
                     'intro': intro
+
 				});
 				grunt.file.write(viewsDir + filename, html);
 				grunt.log.writeln('Compiled view to '+ viewsDir + filename);
