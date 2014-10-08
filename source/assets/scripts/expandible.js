@@ -9,6 +9,11 @@
  * The component has support for keyboard and assistive technologies using ARIA properties.
  */
 
+/**
+ * This script was altered for Car UX score component. Search for 'Car UX' to find where exactly.
+ */
+
+
 (function () {
 	'use strict';
 	var doc = document;
@@ -231,12 +236,22 @@
 	 */
 	Expandible.prototype.toggle = function (isExpanded) {
 		var component = this, element = this.element, settings = this.settings;
+		// Next 3 lines were added custom for Car UX score component
+		var iconArrow = element.querySelector('[data-icon-arrow]');
+		var arrowUpClass = 'icon-arrow-up';
+		var arrowDownClass = 'icon-arrow-down';
 		isExpanded = (isExpanded !== undefined) ? isExpanded : !component.isExpanded;
 		if (isExpanded) {
 			element.classList.add(settings.expandedClass);
+			// Next 2 lines were added custom for Car UX score component
+			iconArrow.classList.remove(arrowDownClass);
+			iconArrow.classList.add(arrowUpClass);
 		}
 		else {
 			element.classList.remove(settings.expandedClass);
+			// Next 2 lines were added custom for Car UX score component
+			iconArrow.classList.remove(arrowUpClass);
+			iconArrow.classList.add(arrowDownClass);
 		}
 		[].forEach.call(this.handles, function (handle) {
 			handle.setAttribute('aria-expanded', isExpanded);
