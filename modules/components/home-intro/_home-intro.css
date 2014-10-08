@@ -3,5 +3,10 @@
   width: 100%;
   background-color: #f2f2f2;
 }
+.home-intro .home-intro-background {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+}
 
 /*# sourceMappingURL=_home-intro.css.map */

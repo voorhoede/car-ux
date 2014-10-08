@@ -144,7 +144,16 @@ Or delete this file if not applicable.
 			<div class="app-guide-code">
 				<pre class="language-markup"><code>&lt;!-- home-intro -->
 &lt;div class="home-intro" data-component="home-intro">
-	Write HTML for `home-intro` component
+	&lt;img class="home-intro-background" src="assets/images/home/home-intro.png" alt="" />
+	&lt;section class="home-intro-content max-width-centered">
+		&lt;h1 itemprop="name">
+			WAAR GAAT DIT OVER?
+		&lt;/h1>
+		&lt;p itemprop="description">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor et dolore magna aliqua.
+		&lt;/p>
+		&lt;a>&lt;/a>
+	&lt;/section>
 &lt;/div>
 &lt;!-- /home-intro --></code></pre>
 				<ul class="app-guide-code-options">
@@ -169,6 +178,11 @@ Or delete this file if not applicable.
 .home-intro {
   width: 100%;
   background-color: #f2f2f2;
+}
+.home-intro .home-intro-background {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
 }
 
 /*# sourceMappingURL=_home-intro.css.map */
