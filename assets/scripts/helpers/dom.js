@@ -14,6 +14,22 @@ var helpers = helpers || {};
 	helpers.dom = helpers.dom || {};
 
 	/**
+	 * containsClass
+	 * Borrowed from: http://hacks.mozilla.org/2010/01/classlist-in-firefox-3-6/
+	 * @param {HTMLElement} element
+	 * @param {String} className
+	 */
+	function containsClass (element, className) {
+		if (document.documentElement.classList) {
+			return element.classList.contains(className);
+		} else {
+			var re = new RegExp('(^|\\s)' + className + '(\\s|$)');
+			return element.className.match(re);
+		}
+	}
+	helpers.dom.containsClass = containsClass;
+
+	/**
 	 * Borrowed from: http://hacks.mozilla.org/2010/01/classlist-in-firefox-3-6/
 	 * @param {HtmlElement} element
 	 * @param {String} className

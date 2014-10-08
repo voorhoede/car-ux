@@ -34,6 +34,22 @@ var helpers = helpers || {};
 	helpers.dom = helpers.dom || {};
 
 	/**
+	 * containsClass
+	 * Borrowed from: http://hacks.mozilla.org/2010/01/classlist-in-firefox-3-6/
+	 * @param {HTMLElement} element
+	 * @param {String} className
+	 */
+	function containsClass (element, className) {
+		if (document.documentElement.classList) {
+			return element.classList.contains(className);
+		} else {
+			var re = new RegExp('(^|\\s)' + className + '(\\s|$)');
+			return element.className.match(re);
+		}
+	}
+	helpers.dom.containsClass = containsClass;
+
+	/**
 	 * Borrowed from: http://hacks.mozilla.org/2010/01/classlist-in-firefox-3-6/
 	 * @param {HtmlElement} element
 	 * @param {String} className
@@ -494,8 +510,7 @@ var helpers = helpers || {};
 	var toggleClass = helpers.dom.toggleClass;
 	var widgetElms = d.querySelectorAll('[data-component="widget-score"]');
 
-
-	[].forEach.call(widgetElms, function (widgetElm) {
+	[].forEach.call([].slice.call(widgetElms), function (widgetElm) {
 		var headerElm = widgetElm.querySelector('[data-widget-score-overview]');
 		var headerArrow = widgetElm.querySelector('[data-score-header-arrow]');
 		headerElm.addEventListener('click', function() {
