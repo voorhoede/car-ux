@@ -2,6 +2,9 @@
 	'use strict';
 
 	var introComponentElm = d.querySelector('[data-component="detail-intro"]');
+	if (!introComponentElm) {
+		return;
+	}
 	var introTextElm = introComponentElm.querySelector('[data-intro-text]');
 	var widgetScoreElm = introComponentElm.querySelector('[data-component="widget-score"]');
 	var introSectionElm = introComponentElm.querySelector('[data-intro-section]');
