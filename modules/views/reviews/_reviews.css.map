@@ -1,7 +1,7 @@
 {
 "version": 3,
-"mappings": ";AAKC,gBAAG;EACF,WAAW,EAAE,IAAI;;AAKjB,2CAAmB;EAClB,OAAO,EAAE,YAAY;EACrB,WAAW,EAAE,CAAC;EACd,YAAY,EAAE,EAAE;;AAEhB,wDAAe;EACd,YAAY,EAAE,CAAC",
-"sources": ["../../../../source/modules/views/reviews/_reviews.scss"],
+"mappings": ";AAIA,aAAc;EACb,cAAc,EAAE,IAAI;EACpB,gBAAgB,ECFF,OAAO;;ADIrB,gBAAG;EACF,WAAW,EAAE,IAAI;;AAKjB,2CAAmB;EAClB,OAAO,EAAE,YAAY;EACrB,WAAW,EAAE,CAAC;EACd,YAAY,EAAE,EAAE;;AAEhB,wDAAe;EACd,YAAY,EAAE,CAAC",
+"sources": ["../../../../source/modules/views/reviews/_reviews.scss","../../../../source/assets/scss/core/_colors.scss"],
 "names": [],
 "file": "_reviews.css"
 }

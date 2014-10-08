@@ -616,7 +616,7 @@ blockquote {
   background-color: #f2f2f2;
 }
 .comments .comments-section {
-  padding: 30px 0;
+  padding-top: 30px;
 }
 .comments .disqus {
   background-color: #ffffff;
@@ -1229,7 +1229,7 @@ blockquote {
 /* related component */
 .related {
   background-color: #f2f2f2;
-  padding: 0 30px 80px 30px;
+  padding: 30px 30px 60px 30px;
 }
 .related .related-product {
   border: none;
@@ -1708,8 +1708,12 @@ blockquote {
 /* BMW-I3 VIEW */
 /* HOME VIEW */
 /* REVIEWS VIEW */
+.view-reviews {
+  padding-bottom: 60px;
+  background-color: #f2f2f2;
+}
 .view-reviews h1 {
-  padding-top: 20px;
+  padding-top: 40px;
 }
 .view-reviews .shortlist .shortlist-product {
   display: inline-block;
