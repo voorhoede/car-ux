@@ -1,4 +1,22 @@
-{% extends "views/_base-view/base-view.html" %}
+{%
+	set navigation = [
+		{
+			label: 'Home',
+			href: hrefPrefix + '/modules/views/home/home.html',
+			active: false
+		},
+		{
+			label: 'Reviews',
+			href: hrefPrefix + '/modules/views/reviews/reviews.html',
+			active: true
+		},
+		{
+			label: 'Over<span class="nav-text-large"> Car UX</span>',
+			href: hrefPrefix + '/modules/views/about/about.html',
+			active: false
+		}
+	]
+%}
 
 {% block content %}
 	<section class="view-reviews">
@@ -104,3 +122,12 @@
 		]
 	}
 %}
+
+{% extends "views/_base-view/base-view.html" %}
+
+{% block content %}
+<section class="view-reviews">
+	{% import "components/shortlist/_shortlist.html" as shortlist %}
+	{{ shortlist.shortlist(shortlistContent) }}
+</section>
+{% endblock %}

@@ -1,4 +1,24 @@
 {%
+	set navigation = [
+		{
+			label: 'Home',
+			href: hrefPrefix + '/modules/views/home/home.html',
+			active: false
+		},
+		{
+			label: 'Reviews',
+			href: hrefPrefix + '/modules/views/reviews/reviews.html',
+			active: true
+		},
+		{
+			label: 'Over<span class="nav-text-large"> Car UX</span>',
+			href: hrefPrefix + '/modules/views/about/about.html',
+			active: false
+		}
+	]
+%}
+
+{%
 	set content = {
 		pageUrl: 'http://www.car-ux.com/bmw-i3/bmw-i3.html',
 		backgroundImage: pathToAssets + 'images/bmw-i3/bmw-i3-dashboard.png',
