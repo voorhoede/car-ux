@@ -1,14 +1,17 @@
 /* quote component */
+.quote {
+  padding-bottom: 40px;
+}
 .quote blockquote {
   color: #ffffff;
   position: relative;
   font-size: 26px;
-  padding: 0 20px;
+  padding: 0 20px 0 40px;
   margin: 0 10px;
 }
 @media screen and (min-width: 620px) {
   .quote blockquote {
-    padding: 0 30px;
+    padding: 0 40px;
   }
 }
 @media screen and (min-width: 920px) {
@@ -33,7 +36,7 @@
 }
 .quote blockquote:after {
   right: 0;
-  bottom: -28px;
+  bottom: -42px;
   content: '\201A';
 }
 @media screen and (min-width: 920px) {
