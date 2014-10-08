@@ -75,6 +75,13 @@
 		height: 100%;
 		width: 50px;
 		background-color: $medium-grey;
+		.icon {
+			position: absolute;
+			width: 15px;
+			height: 10px;
+			top: 20px;
+			left: 18px;
+		}
 	}
 	.score-content {
 		position: relative;

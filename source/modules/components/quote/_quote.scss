@@ -4,15 +4,16 @@
 /* quote component */
 
 .quote {
+	padding-bottom: 40px;
 	blockquote {
 		color: $white;
 		position: relative;
 		font-size: 26px;
-		padding: 0 20px;
+		padding: 0 20px 0 40px;
 		margin: 0 10px;
 
 		@include min-screen($break-small) {
-			padding: 0 30px;
+			padding: 0 40px;
 		}
 
 		@include min-screen($break-large) {
@@ -38,7 +39,7 @@
 
 		&:after {
 			right: 0;
-			bottom: -28px;
+			bottom: -42px;
 			content: '\201A';
 
 			@include min-screen($break-large) {
