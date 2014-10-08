@@ -8,6 +8,27 @@ description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do e
 %}
 
 {%
+	set featuredContent = {
+		mainTitle: 'NIEUW DIEPTEPUNT',
+		title: 'Land Rover Evoque',
+		subTitle: 'Si4 4WD Dynamic',
+		score: '2,2',
+		date: '02-02-2014',
+		visual: pathToAssets + 'images/home/home-featured.png',
+		summary: {
+			good: [
+				'Lorem ipsum dolor sit amet, consectetur adipiscing',
+				'Eliti vestibulum consequat lobortis justo vitae.'
+			],
+			bad: [
+				'Vollit vestibulum consequat lobortis justo posuere.',
+				'Bestibulum consequat mauris eget diam risus.'
+			]
+		}
+	}
+%}
+
+{%
 	set shortlistContent = [
 		{
 			title: 'Nissan Quashqai Tekna Opique',
