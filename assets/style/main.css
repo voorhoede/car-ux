@@ -1221,6 +1221,13 @@ blockquote {
   width: 50px;
   background-color: #dcdcdc;
 }
+.score .arrow-box .icon {
+  position: absolute;
+  width: 15px;
+  height: 10px;
+  top: 20px;
+  left: 18px;
+}
 .score .score-content {
   position: relative;
   padding-right: 3em;
