@@ -8,6 +8,7 @@ $home-intro-break-small: 680px;
 	position: relative;
 	width: 100%;
 	padding-top: 0;
+	overflow: hidden;
 	background-color: $light-grey;
 	@include min-screen($break-large) {
 		padding-top: 30px;
