@@ -5,8 +5,11 @@
 
 .detail-intro {
 	background-color: $light-grey;
-	padding-top: 30px;
+	padding-top: 0;
 	padding-bottom: $intro-summary-overlap;
+	@include min-screen($break-large) {
+		padding-top: 30px;
+	}
 
 	.intro-background {
 		display: block;
