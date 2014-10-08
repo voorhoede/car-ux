@@ -22,6 +22,9 @@
   font-size: 16px;
   margin-top: 5px;
 }
+.featured .featured-content h2 a {
+  border: none;
+}
 .featured .featured-content ul {
   font-family: "HelveticaNeue", Helvetica, Arial, sans-serif;
   list-style-type: none;
