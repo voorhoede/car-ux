@@ -111,7 +111,11 @@
 		font-family: $helvetica-neue-bold;
 		font-size: 36px;
 	}
-	.score-icon.icon-gauge3 {
+	.score-icon.icon-gauge1,
+	.score-icon.icon-gauge2,
+	.score-icon.icon-gauge3,
+	.score-icon.icon-gauge4,
+	.score-icon.icon-gauge5 {
 		position: absolute;
 		top: 12px;
 		right: 50px;

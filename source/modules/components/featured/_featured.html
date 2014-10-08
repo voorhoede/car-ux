@@ -11,7 +11,7 @@
 					<span class="subtitle">{{ content.subTitle }}</span>
 				</h2>
 				<div class="featured-score">
-					<span class="icon icon-gauge1"></span>
+					<span class="icon icon-gauge{{ content.score | gauge }}"></span>
 					{{ content.score}}
 				</div>
 				<hr/>

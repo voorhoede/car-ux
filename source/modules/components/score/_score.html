@@ -13,7 +13,7 @@
 		<div class="score-content" data-expandible-content>
 			<div class="score-box">
 				<span class="score-number">{{ value.score }}</span>
-				<span class="score-icon icon icon-gauge3"></span></span>
+				<span class="score-icon icon icon-gauge{{ value.score | gauge }}"></span>
 			</div>
 			<p>
 				{{ value.description }}
