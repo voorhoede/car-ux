@@ -1,7 +1,6 @@
 {
 	"components": [
 		"comments",
-		"demo-component",
 		"detail-intro",
 		"detail-main",
 		"featured",
