@@ -87,7 +87,7 @@
   line-height: 1.2;
   color: #ffffff;
 }
-.header nav a:hover {
+.header nav a:hover, .header nav a:focus {
   color: #ffc300;
 }
 @media screen and (min-width: 590px) {

@@ -30,7 +30,7 @@
     margin: 0;
   }
 }
-.related .related-product:hover .related-score {
+.related .related-product:hover .related-score, .related .related-product:focus .related-score {
   color: #000000;
 }
 .related .related-product img {

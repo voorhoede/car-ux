@@ -408,9 +408,11 @@ th {
   font-family: "HelveticaNeue-Bold", Helvetica, Arial, sans-serif;
   font-size: 14px;
 }
-.ui-button-primary:hover,
+.ui-button-primary:hover, .ui-button-primary:focus,
 .ui-button-secondary:hover,
-.ui-button-tertiary:hover {
+.ui-button-secondary:focus,
+.ui-button-tertiary:hover,
+.ui-button-tertiary:focus {
   -webkit-transition: color 0.2s ease-out, background-color 0.2s ease-out;
   transition: color 0.2s ease-out, background-color 0.2s ease-out;
   background-color: #ffc300;
@@ -424,7 +426,8 @@ th {
 }
 
 .ui-button-tertiary,
-.ui-button-tertiary:hover {
+.ui-button-tertiary:hover,
+.ui-button-tertiary:focus {
   background-color: #dcdcdc;
   color: #7f7f7f;
 }
@@ -481,8 +484,9 @@ a,
   -webkit-transition: color 0.2s ease-out, border-bottom 0.2s ease-out;
   transition: color 0.2s ease-out, border-bottom 0.2s ease-out;
 }
-a:hover,
-.ui-link:hover {
+a:hover, a:focus,
+.ui-link:hover,
+.ui-link:focus {
   border-bottom-color: transparent;
   color: #ffc300;
   -webkit-transition: color 0.2s ease-out, border-bottom-color 0.2s ease-out;
@@ -1037,7 +1041,7 @@ blockquote {
   line-height: 1.2;
   color: #ffffff;
 }
-.header nav a:hover {
+.header nav a:hover, .header nav a:focus {
   color: #ffc300;
 }
 @media screen and (min-width: 590px) {
@@ -1265,7 +1269,7 @@ blockquote {
     margin: 0;
   }
 }
-.related .related-product:hover .related-score {
+.related .related-product:hover .related-score, .related .related-product:focus .related-score {
   color: #000000;
 }
 .related .related-product img {
@@ -1369,7 +1373,7 @@ blockquote {
   text-decoration: none;
   border-bottom: none;
 }
-.score .score-title:hover {
+.score .score-title:hover, .score .score-title:focus {
   color: #000000;
   text-decoration: none;
 }
@@ -1509,7 +1513,8 @@ blockquote {
   }
 }
 .shortlist .shortlist-product:hover .shortlist-score,
-.shortlist .shortlist-product:hover li {
+.shortlist .shortlist-product:hover li, .shortlist .shortlist-product:focus .shortlist-score,
+.shortlist .shortlist-product:focus li {
   color: #000000;
 }
 .shortlist .shortlist-product img {
@@ -1638,7 +1643,7 @@ blockquote {
   overflow: hidden;
   z-index: 1;
 }
-.widget-score .score-overview:hover {
+.widget-score .score-overview:hover, .widget-score .score-overview:focus {
   -webkit-box-shadow: 0px 0px 15px 1px #7f7f7f;
   box-shadow: 0px 0px 15px 1px #7f7f7f;
   -webkit-transition: box-shadow 0.2s ease-out, height 0.5s ease-out;
@@ -1666,10 +1671,10 @@ blockquote {
 .widget-score .score-overview ul li a:after {
   clear: both;
 }
-.widget-score .score-overview ul li a:hover {
+.widget-score .score-overview ul li a:hover, .widget-score .score-overview ul li a:focus {
   color: #000000;
 }
-.widget-score .score-overview ul li a:hover .label {
+.widget-score .score-overview ul li a:hover .label, .widget-score .score-overview ul li a:focus .label {
   -webkit-transition: border-bottom 0.2s ease-out;
   transition: border-bottom 0.2s ease-out;
   border-bottom: 1px solid #000000;

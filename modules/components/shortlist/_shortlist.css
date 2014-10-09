@@ -31,7 +31,8 @@
   }
 }
 .shortlist .shortlist-product:hover .shortlist-score,
-.shortlist .shortlist-product:hover li {
+.shortlist .shortlist-product:hover li, .shortlist .shortlist-product:focus .shortlist-score,
+.shortlist .shortlist-product:focus li {
   color: #000000;
 }
 .shortlist .shortlist-product img {

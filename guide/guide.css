@@ -42,13 +42,32 @@
   content: "\e604";
 }
 
-html {
-  padding: 0 10px;
+.core-layout {
+  width: 100%;
+  background-color: #f2f2f2;
 }
 
-.core-layout {
-  padding-left: 30px;
+.app-guide-content {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 900px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 40px;
   padding-right: 30px;
+  padding-left: 30px;
+  background-color: #ffffff;
+}
+
+.app-guide-subtitle {
+  margin-bottom: 0;
+  line-height: normal;
+}
+
+.style-guide {
+  padding-bottom: 60px;
 }
 
 .app-guide-section {
@@ -69,6 +88,7 @@ html {
 .app-guide-logo-box {
   display: inline-block;
   margin-right: 4px;
+  padding: 10px;
 }
 
 .app-guide-logo-box-1 {
@@ -83,7 +103,6 @@ html {
   display: block;
   width: 100%;
   max-width: 130px;
-  padding: 10px;
 }
 
 a {
@@ -191,12 +210,6 @@ a.app-guide-icon {
   padding: 2px 3px;
 }
 
-.app-guide-footer {
-  margin: 1em 0;
-  clear: both;
-  text-align: center;
-}
-
 .app-guide-swatches:before, .app-guide-swatches:after {
   content: " ";
   display: table;
@@ -265,33 +278,11 @@ a.app-guide-icon {
   margin-right: 12px;
 }
 
-.app-guide-nav, .app-guide-main {
+.app-guide-main {
   position: relative;
   display: block;
-  width: 100%;
 }
 
-@media screen and (min-width: 720px) {
-  .app-guide-nav {
-    width: 25%;
-    float: left;
-    transition: .3s all;
-    opacity: 1;
-  }
-
-  .app-guide-nav.is-hidden {
-    margin-left: -50%;
-  }
-
-  .app-guide-main {
-    float: left;
-    transition: .3s all;
-  }
-
-  .app-guide-main.nav-is-closed {
-    width: 100%;
-  }
-}
 iframe {
   transition: all .5s ease-in;
 }
@@ -309,10 +300,20 @@ iframe {
   right: 10px;
 }
 
-.app-guide-nav.is-hidden .app-guide-toggle-menu {
-  position: fixed;
-  left: 0;
-  z-index: 1;
+.app-guide-footer {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  clear: both;
+  background-color: #000000;
+  text-align: center;
+  font-size: 1.6em;
+  color: #ffffff;
+}
+.app-guide-footer a {
+  color: #ffc300;
+}
+.app-guide-footer a:hover, .app-guide-footer a:focus {
+  color: #dcdcdc;
 }
 
 /*# sourceMappingURL=guide.css.map */
