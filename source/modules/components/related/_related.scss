@@ -37,7 +37,8 @@
 			}
 		}
 		
-		&:hover {
+		&:hover,
+		&:focus {
 			.related-score {
 				color: $black;
 			}

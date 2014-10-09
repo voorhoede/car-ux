@@ -37,7 +37,8 @@
 			}
 		}
 
-		&:hover {
+		&:hover,
+		&:focus {
 			.shortlist-score,
 			li {
 				color: $black;

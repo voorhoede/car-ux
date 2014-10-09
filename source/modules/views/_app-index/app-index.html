@@ -7,8 +7,7 @@
 {% endblock %}
 
 {% block maincontent %}
-
-<main class="app-guide-main">
+<main class="app-guide-main app-guide-content">
 
 	{% if (mode == 'distribution') %}
 	<p>
@@ -19,7 +18,7 @@
 	</p>
 	{% endif %}
 
-	<section id="section-app" class="app-guide-section app-guide-content">
+	<section id="section-app" class="app-guide-section">
 		<h2 class="app-guide-section-title">
 			App {{ guide.linkSection('app') }}
 		</h2>
@@ -37,7 +36,7 @@
 		</ul>
 	</section>
 
-	<section id="section-views" class="app-guide-section app-guide-content">
+	<section id="section-views" class="app-guide-section">
 		<h2 class="app-guide-section-title">
 			Views {{ guide.linkSection('views') }}
 		</h2>
@@ -65,7 +64,7 @@
 	</section>
 
 
-	<section id="section-components" class="app-guide-section app-guide-content">
+	<section id="section-components" class="app-guide-section">
 		<h2 class="app-guide-section-title">
 			Components {{ guide.linkSection('components') }}
 		</h2>
