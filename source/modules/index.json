@@ -18,6 +18,7 @@
 		"widget-score"
 	],
 	"views": [
+		"about",
 		"bmw-i3",
 		"home",
 		"reviews"

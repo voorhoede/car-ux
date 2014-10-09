@@ -1,0 +1,41 @@
+{%
+	set navigation = [
+		{
+			label: 'Home',
+			href: hrefPrefix + '/modules/views/home/home.html',
+			active: false
+		},
+		{
+			label: 'Reviews',
+			href: hrefPrefix + '/modules/views/reviews/reviews.html',
+			active: true
+		},
+		{
+			label: 'Over<span class="nav-text-large"> Car UX</span>',
+			href: hrefPrefix + '/modules/views/about/about.html',
+			active: false
+		}
+	]
+%}
+
+{% extends "views/_base-view/base-view.html" %}
+
+{% block content %}
+	<div class="about">
+		<section class="max-width-centered">
+			<h1>OVER CAR UX</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A dicta earum error impedit iure, provident tempore! Accusantium dolorem illum libero minus, necessitatibus nesciunt omnis pariatur reiciendis repellat repudiandae ut vitae.</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid at cum dolor harum illum labore magni nam nihil non nulla omnis provident quas quis quisquam rem, reprehenderit sit ullam voluptate?</p>
+			<h2>LOREM</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A dicta earum error impedit iure, provident tempore! Accusantium dolorem illum libero minus, necessitatibus nesciunt omnis pariatur reiciendis repellat repudiandae ut vitae.</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid at cum dolor harum illum labore magni nam nihil non nulla omnis provident quas quis quisquam rem, reprehenderit sit ullam voluptate?</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A dicta earum error impedit iure, provident tempore! Accusantium dolorem illum libero minus, necessitatibus nesciunt omnis pariatur reiciendis repellat repudiandae ut vitae.</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid at cum dolor harum illum labore magni nam nihil non nulla omnis provident quas quis quisquam rem, reprehenderit sit ullam voluptate?</p>
+			<h3>LOREM</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A dicta earum error impedit iure, provident tempore! Accusantium dolorem illum libero minus, necessitatibus nesciunt omnis pariatur reiciendis repellat repudiandae ut vitae.</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid at cum dolor harum illum labore magni nam nihil non nulla omnis provident quas quis quisquam rem, reprehenderit sit ullam voluptate?</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A dicta earum error impedit iure, provident tempore! Accusantium dolorem illum libero minus, necessitatibus nesciunt omnis pariatur reiciendis repellat repudiandae ut vitae.</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid at cum dolor harum illum labore magni nam nihil non nulla omnis provident quas quis quisquam rem, reprehenderit sit ullam voluptate?</p>
+		</section>
+	</div>
+{% endblock %}

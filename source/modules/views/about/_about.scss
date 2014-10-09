@@ -1,0 +1,12 @@
+@import "../../../assets/scss/variables";
+@import "../../../assets/scss/helpers";
+
+/* ABOUT VIEW */
+.about {
+	background-color: $light-grey;
+	padding: 0 30px 30px 30px;
+
+	h1 {
+		padding-top: 40px;
+	}
+}
