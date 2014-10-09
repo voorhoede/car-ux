@@ -240,6 +240,10 @@ a.app-guide-icon {
   padding: 2px 3px;
 }
 
+.app-guide-example-box {
+  list-style: none;
+}
+
 .app-guide-swatches:before, .app-guide-swatches:after {
   content: " ";
   display: table;
@@ -256,6 +260,15 @@ a.app-guide-icon {
   margin: 0 auto;
   width: 80px;
   height: 80px;
+}
+
+.app-guide-icons ul {
+  margin-left: 0;
+  padding-left: 40px;
+}
+.app-guide-icons li {
+  display: inline-block;
+  margin-right: 4px;
 }
 
 [title="yellow"] .app-guide-swatch {
