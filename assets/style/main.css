@@ -1728,6 +1728,15 @@ blockquote {
   margin-right: 20px;
 }
 
+/* ABOUT VIEW */
+.about {
+  background-color: #f2f2f2;
+  padding: 0 30px 30px 30px;
+}
+.about h1 {
+  padding-top: 40px;
+}
+
 /* BMW-I3 VIEW */
 /* HOME VIEW */
 /* REVIEWS VIEW */

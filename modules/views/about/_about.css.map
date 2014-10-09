@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": ";AAIA,MAAO;EACN,gBAAgB,ECDF,OAAO;EDErB,OAAO,EAAE,gBAAgB;;AAEzB,SAAG;EACF,WAAW,EAAE,IAAI",
+"sources": ["../../../../source/modules/views/about/_about.scss","../../../../source/assets/scss/core/_colors.scss"],
+"names": [],
+"file": "_about.css"
+}
