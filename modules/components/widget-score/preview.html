@@ -43,7 +43,7 @@ Widget score (preview)
 	<script>
 		/* grunticon Stylesheet Loader | https://github.com/filamentgroup/grunticon | (c) 2012 Scott Jehl, Filament Group, Inc. | MIT license. */
 		window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.createElementNS||!t.document.createElementNS("http://www.w3.org/2000/svg","svg").createSVGRect||!document.implementation.hasFeature("http://www.w3.org/TR/SVG11/feature#Image","1.1")||window.opera&&-1===navigator.userAgent.indexOf("Chrome")),o=function(o){var r=t.document.createElement("link"),a=t.document.getElementsByTagName("script")[0];r.rel="stylesheet",r.href=e[o&&n?0:o?1:2],a.parentNode.insertBefore(r,a)},r=new t.Image;r.onerror=function(){o(!1)},r.onload=function(){o(1===r.width&&1===r.height)},r.src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="}};
-		grunticon(["../../..//assets/images/grunticon-output/icons.data.svg.css?"+new Date().getTime(), "../../..//assets/images/grunticon-output/icons.data.png.css?"+new Date().getTime(), "../../..//assets/images/grunticon-output/icons.fallback.css?"+new Date().getTime()]);
+		grunticon(["../../..//assets/images/grunticon-output/icons.data.svg.css", "../../..//assets/images/grunticon-output/icons.data.png.css", "../../..//assets/images/grunticon-output/icons.fallback.css"]);
 	</script>
 	<noscript>
 		<link rel="stylesheet" href="../../..//assets/images/grunticon-output/icons.fallback.css" />
@@ -153,35 +153,35 @@ Or delete this file if not applicable.
 		&lt;ul>
 
 			&lt;li>
-				&lt;a href="#uitstraling">
+				&lt;a href="#uitstraling" tabindex="-1">
 					&lt;span class="label">Uitstraling&lt;/span>
 					&lt;span class="value">4&lt;/span>
 				&lt;/a>
 			&lt;/li>
 
 			&lt;li>
-				&lt;a href="#contrast">
+				&lt;a href="#contrast" tabindex="-1">
 					&lt;span class="label">Contrast&lt;/span>
 					&lt;span class="value">5&lt;/span>
 				&lt;/a>
 			&lt;/li>
 
 			&lt;li>
-				&lt;a href="#focus">
+				&lt;a href="#focus" tabindex="-1">
 					&lt;span class="label">Focus&lt;/span>
 					&lt;span class="value">4&lt;/span>
 				&lt;/a>
 			&lt;/li>
 
 			&lt;li>
-				&lt;a href="#usability">
+				&lt;a href="#usability" tabindex="-1">
 					&lt;span class="label">Usability&lt;/span>
 					&lt;span class="value">4&lt;/span>
 				&lt;/a>
 			&lt;/li>
 
 			&lt;li>
-				&lt;a href="#features">
+				&lt;a href="#features" tabindex="-1">
 					&lt;span class="label">Features&lt;/span>
 					&lt;span class="value">3&lt;/span>
 				&lt;/a>
@@ -373,6 +373,16 @@ Or delete this file if not applicable.
 		var headerElm = widgetElm.querySelector('[data-widget-score-overview]');
 		var headerArrow = widgetElm.querySelector('[data-score-header-arrow]');
 		headerElm.addEventListener('click', function() {
+
+			var anchors = this.querySelectorAll('a');
+			[].forEach.call([].slice.call(anchors), function(anchor) {
+				if (anchor.getAttribute('tabindex') === '-1') {
+					anchor.setAttribute('tabindex', '0');
+				} else {
+					anchor.setAttribute('tabindex', '-1');
+				}
+			});
+
 			toggleClass(this, 'expanded');
 			toggleClass(headerArrow, 'icon-arrow-down');
 			toggleClass(headerArrow, 'icon-arrow-up');
