@@ -213,6 +213,10 @@ a.app-guide-icon {
     }
 }
 
+.app-guide-example-box {
+	list-style: none;
+}
+
 .app-guide-swatches {
     @include clearfix();
 }
@@ -225,6 +229,17 @@ a.app-guide-icon {
     margin: 0 auto;
     width:  $guide-swatch-size;
     height: $guide-swatch-size;
+}
+
+.app-guide-icons {
+	ul {
+		margin-left: 0;
+		padding-left: 40px;
+	}
+	li {
+		display: inline-block;
+		margin-right: 4px;
+	}
 }
 
 //colors
