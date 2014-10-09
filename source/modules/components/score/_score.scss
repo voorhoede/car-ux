@@ -66,10 +66,20 @@
 			margin: 0;
 		}
 	}
-	.is-expanded .score-title {
+	.score-title {
 		margin-bottom: 1px;
 	}
-	.arrow-box {
+	.is-expandible .score-title {
+		margin-bottom: 0;
+	}
+	.is-expanded.is-expandible .score-title {
+		margin-bottom: 1px;
+	}
+	.arrow-box{
+		display: none;
+	}
+	.is-expandible .arrow-box {
+		display: block;
 		position: absolute;
 		top: 0;
 		right: 0;
@@ -86,10 +96,21 @@
 	}
 	.score-content {
 		position: relative;
+		padding-top: 15px;
 		padding-right: 3em;
+		padding-bottom: 15px;
 		@include min-screen($break-medium) {
 			padding-right: 10em;
 		}
+	}
+	.is-expandible .score-content {
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+	.is-expanded.is-expandible .score-content {
+		height: auto;
+		padding-top: 15px;
+		padding-bottom: 15px;
 	}
 	.score-box {
 		position: relative;
@@ -124,21 +145,16 @@
 		height: 50px;
 	}
 	.score-content p {
-		margin-top: 0;
-		margin-left: 0;
-		margin-bottom: 0;
-		@include min-screen($break-medium) {
-			margin-left: 195px;
-		}
-	}
+		 margin-top: 0;
+		 margin-left: 0;
+		 margin-bottom: 0;
+		 @include min-screen($break-medium) {
+			 margin-left: 195px;
+		 }
+	 }
 	.is-expandible .score-content {
 		height: 0;
 		overflow: hidden;
 		transition: height 0.2s ease-out;
-	}
-	.is-expanded .score-content {
-		height: auto;
-		padding-top: 15px;
-		padding-bottom: 15px;
 	}
 }
