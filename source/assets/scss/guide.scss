@@ -12,6 +12,11 @@ html {
     padding: 0 10px;
 }
 
+.core-layout {
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
 .app-guide-section {
     padding: .5em 1.5em;
 }
@@ -19,7 +24,6 @@ html {
 .app-guide-content {
     p {
         max-width: 48em;
-        font-size: 1em;
         line-height: 1.5em;
         margin-top: 1em;
         margin-bottom: 1em;
@@ -28,6 +32,26 @@ html {
 
 .app-guide-section-title {
     position: relative;
+}
+
+.app-guide-logo-box {
+	display: inline-block;
+	margin-right: 4px;
+}
+
+.app-guide-logo-box-1 {
+	background-color: $yellow;
+}
+
+.app-guide-logo-box-2 {
+	background-color: $black;
+}
+
+.app-guide-logo {
+	display: block;
+	width: 100%;
+	max-width: 130px;
+	padding: 10px;
 }
 
 a {
