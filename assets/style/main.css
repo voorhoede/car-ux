@@ -637,20 +637,6 @@ blockquote {
   }
 }
 
-/* demo-component component */
-.demo-component {
-  border: 1px solid gray;
-}
-.demo-component p {
-  font-weight: bold;
-  color: blue;
-}
-.demo-component .icon-left {
-  width: 14px;
-  height: 22px;
-  display: block;
-}
-
 /* intro component */
 .detail-intro {
   background-color: #f2f2f2;
