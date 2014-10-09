@@ -10,7 +10,7 @@
 		<ul>
 			{% for property, value in content.widgetScore.scoreDetails %}
 			<li>
-				<a href="#{{ property }}">
+				<a href="#{{ property }}" tabindex="-1">
 					<span class="label">{{ property | capitalize }}</span>
 					<span class="value">{{ value.score }}</span>
 				</a>

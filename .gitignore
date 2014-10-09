@@ -7,7 +7,7 @@ web
 !source/assets/images/grunticon-output/*.css
 
 # Generated images
-source/assets/images/grunticon-output
+source/assets/images/grunticon-output/png
 
 # OS
 .DS_Store
