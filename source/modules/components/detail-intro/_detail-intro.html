@@ -1,4 +1,5 @@
 {% macro detailIntro(content) %}
+{% import "components/widget-score/_widget-score.html" as widgetScore %}
 <!-- intro -->
 <div class="detail-intro" data-component="detail-intro">
 	<img class="intro-background" src="{{ content.backgroundImage }}" alt="{{ content.backgroundImageAlt }}" />
@@ -16,7 +17,7 @@
 			</p>
 		</article><!--
 		--><div class="widget-score-block">
-			{% include "components/widget-score/_widget-score.html" %}
+			{{ widgetScore.widgetScore(content) }}
 		</div><!--
 		--><aside class="social-buttons" data-social-buttons>
 			<p>Deze test delen via</p>
