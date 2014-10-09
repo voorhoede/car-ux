@@ -240,10 +240,20 @@ Or delete this file if not applicable.
   font-size: 25px;
   margin: 0;
 }
-.score .is-expanded .score-title {
+.score .score-title {
+  margin-bottom: 1px;
+}
+.score .is-expandible .score-title {
+  margin-bottom: 0;
+}
+.score .is-expanded.is-expandible .score-title {
   margin-bottom: 1px;
 }
 .score .arrow-box {
+  display: none;
+}
+.score .is-expandible .arrow-box {
+  display: block;
   position: absolute;
   top: 0;
   right: 0;
@@ -251,7 +261,7 @@ Or delete this file if not applicable.
   width: 50px;
   background-color: #dcdcdc;
 }
-.score .arrow-box .icon {
+.score .is-expandible .arrow-box .icon {
   position: absolute;
   width: 15px;
   height: 10px;
@@ -260,12 +270,23 @@ Or delete this file if not applicable.
 }
 .score .score-content {
   position: relative;
+  padding-top: 15px;
   padding-right: 3em;
+  padding-bottom: 15px;
 }
 @media screen and (min-width: 900px) {
   .score .score-content {
     padding-right: 10em;
   }
+}
+.score .is-expandible .score-content {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.score .is-expanded.is-expandible .score-content {
+  height: auto;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 .score .score-box {
   position: relative;
@@ -315,11 +336,6 @@ Or delete this file if not applicable.
   height: 0;
   overflow: hidden;
   transition: height 0.2s ease-out;
-}
-.score .is-expanded .score-content {
-  height: auto;
-  padding-top: 15px;
-  padding-bottom: 15px;
 }
 
 /*# sourceMappingURL=_score.css.map */
