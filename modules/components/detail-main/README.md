@@ -1,4 +1,1 @@
-<!--
-Add an optional short description here for `detail-main` component.
-Or delete this file if not applicable.
--->
+The detail-main component is a wrapper component, made to contain other components. It has a width, background-color and padding-bottom.

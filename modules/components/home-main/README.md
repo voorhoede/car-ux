@@ -1,4 +1,1 @@
-<!--
-Add an optional short description here for `home-main` component.
-Or delete this file if not applicable.
--->
+The home-main component is a wrapper component, made to contain other components. It has a width, background-color and padding-bottom.

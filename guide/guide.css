@@ -42,6 +42,22 @@
   content: "\e604";
 }
 
+/*These rules are added to not break the app guide layout*/
+.app-guide-preview .summary {
+  margin-top: 0;
+}
+.app-guide-preview .detail-main .summary,
+.app-guide-preview .detail-main .quote,
+.app-guide-preview .detail-main .highlight,
+.app-guide-preview .detail-main .score {
+  display: none;
+}
+.app-guide-preview .home-main .featured,
+.app-guide-preview .home-main .shortlist {
+  display: none;
+}
+
+/*Guide styles*/
 .core-layout {
   width: 100%;
   background-color: #f2f2f2;
@@ -55,10 +71,23 @@
   max-width: 900px;
   margin-right: auto;
   margin-left: auto;
-  padding-top: 40px;
+  padding-top: 20px;
   padding-right: 30px;
   padding-left: 30px;
   background-color: #ffffff;
+}
+
+.app-guide-content.app-guide-markdown {
+  padding-top: 0;
+  padding-bottom: 20px;
+}
+.app-guide-content.app-guide-markdown p {
+  margin: 0;
+}
+
+.app-guide-content.app-guide-header {
+  padding-top: 40px;
+  padding-bottom: 20px;
 }
 
 .app-guide-subtitle {
@@ -71,7 +100,7 @@
 }
 
 .app-guide-section {
-  padding: .5em 1.5em;
+  padding: 2em 3em;
 }
 
 .app-guide-content p {
@@ -112,13 +141,13 @@ a {
 a.app-guide-icon {
   color: #ADBCC7;
   text-decoration: none;
+  border-bottom: none;
+  font-size: 18px;
 }
 
 .app-guide-permalink {
   position: absolute;
-  left: -1.5em;
-  font-size: .7em;
-  margin-top: .5em;
+  left: -25px;
   text-decoration: none;
 }
 .app-guide-permalink:before {
@@ -191,6 +220,7 @@ a.app-guide-icon {
 
 .app-guide-code {
   position: relative;
+  font-size: 16px;
 }
 
 .app-guide-code-options {

@@ -1,4 +1,1 @@
-<!--
-Add an optional short description here for `summary` component.
-Or delete this file if not applicable.
--->
+The summary component has a margin-top of -500px. For layout reasons this margin has been removed in the component preview.
