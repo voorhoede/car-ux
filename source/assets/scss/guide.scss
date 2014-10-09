@@ -12,6 +12,11 @@ html {
     padding: 0 10px;
 }
 
+.core-layout {
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
 .app-guide-section {
     padding: .5em 1.5em;
 }
@@ -19,7 +24,6 @@ html {
 .app-guide-content {
     p {
         max-width: 48em;
-        font-size: 1em;
         line-height: 1.5em;
         margin-top: 1em;
         margin-bottom: 1em;
