@@ -13,7 +13,8 @@
 	font-family: $helvetica-neue-bold;
 	font-size: 14px;
 
-	&:hover {
+	&:hover,
+	&:focus {
 		@include transition(color .2s ease-out, background-color .2s ease-out);
 
 		background-color: $yellow;
@@ -28,7 +29,8 @@
 }
 
 .ui-button-tertiary,
-.ui-button-tertiary:hover {
+.ui-button-tertiary:hover,
+.ui-button-tertiary:focus {
 	background-color: $medium-grey;
 	color: $dark-grey;
 }

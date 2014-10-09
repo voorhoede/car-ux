@@ -8,13 +8,30 @@ $guide-graphic-color: #708091;
 $guide-swatch-size: 80px;
 $guide-box-size: 126px;
 
-html {
-    padding: 0 10px;
+.core-layout {
+	width: 100%;
+	background-color: $light-grey;
 }
 
-.core-layout {
-	padding-left: 30px;
+.app-guide-content {
+	@include box-sizing(border-box);
+	width: 100%;
+	max-width: $max-width-tablet;
+	margin-right: auto;
+	margin-left: auto;
+	padding-top: 40px;
 	padding-right: 30px;
+	padding-left: 30px;
+	background-color: $white;
+}
+
+.app-guide-subtitle {
+	margin-bottom: 0;
+	line-height: normal;
+}
+
+.style-guide {
+	padding-bottom: 60px;
 }
 
 .app-guide-section {
@@ -37,6 +54,7 @@ html {
 .app-guide-logo-box {
 	display: inline-block;
 	margin-right: 4px;
+	padding: 10px;
 }
 
 .app-guide-logo-box-1 {
@@ -51,7 +69,6 @@ html {
 	display: block;
 	width: 100%;
 	max-width: 130px;
-	padding: 10px;
 }
 
 a {
@@ -160,12 +177,6 @@ a.app-guide-icon {
     }
 }
 
-.app-guide-footer {
-    margin: 1em 0;
-    clear:both;
-    text-align: center;
-}
-
 .app-guide-swatches {
     @include clearfix();
 }
@@ -233,34 +244,9 @@ a.app-guide-icon {
 
 // guide grid
 
-.app-guide-nav, .app-guide-main {
+.app-guide-main {
     position: relative;
     display: block;
-    width: 100%;
-}
-
-@media screen and (min-width: 720px) {
-    .app-guide-nav {
-        width: 25%;
-        float: left;
-        transition: .3s all;
-        opacity: 1;
-    }
-
-    .app-guide-nav.is-hidden {
-        margin-left: -50%;
-    }
-
-    .app-guide-main {
-//        width: 75%;
-        float:left;
-        transition: .3s all;
-    }
-
-    .app-guide-main.nav-is-closed {
-        width: 100%;
-    }
-
 }
 
 // guide resize iframe
@@ -285,8 +271,20 @@ iframe {
     position: absolute;
     right: 10px;
 }
-.app-guide-nav.is-hidden .app-guide-toggle-menu {
-    position:fixed;
-    left: 0;
-    z-index: 1;
+
+.app-guide-footer {
+	padding-top: 30px;
+	padding-bottom: 30px;
+	clear:both;
+	background-color: $black;
+	text-align: center;
+	font-size: 1.6em;
+	color: $white;
+	a {
+		color: $yellow;
+		&:hover,
+		&:focus {
+			color: $medium-grey;
+		}
+	}
 }

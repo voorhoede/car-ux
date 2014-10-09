@@ -6,7 +6,8 @@ a,
 
 	@include transition(color .2s ease-out, border-bottom .2s ease-out);
 
-	&:hover {
+	&:hover,
+	&:focus {
 		border-bottom-color: transparent;
 		color: $yellow;
 
