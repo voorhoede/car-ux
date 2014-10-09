@@ -8,6 +8,28 @@ $guide-graphic-color: #708091;
 $guide-swatch-size: 80px;
 $guide-box-size: 126px;
 
+/*These rules are added to not break the app guide layout*/
+.app-guide-preview {
+	.summary {
+		margin-top: 0;
+	}
+	.detail-main {
+		.summary,
+		.quote,
+		.highlight,
+		.score {
+			display: none;
+		}
+	}
+	.home-main {
+		.featured,
+		.shortlist {
+			display: none;
+		}
+	}
+}
+
+/*Guide styles*/
 .core-layout {
 	width: 100%;
 	background-color: $light-grey;
@@ -19,10 +41,23 @@ $guide-box-size: 126px;
 	max-width: $max-width-tablet;
 	margin-right: auto;
 	margin-left: auto;
-	padding-top: 40px;
+	padding-top: 20px;
 	padding-right: 30px;
 	padding-left: 30px;
 	background-color: $white;
+}
+
+.app-guide-content.app-guide-markdown {
+	padding-top: 0;
+	padding-bottom: 20px;
+	p {
+		margin: 0;
+	}
+}
+
+.app-guide-content.app-guide-header {
+	padding-top: 40px;
+	padding-bottom: 20px;
 }
 
 .app-guide-subtitle {
@@ -35,7 +70,7 @@ $guide-box-size: 126px;
 }
 
 .app-guide-section {
-    padding: .5em 1.5em;
+    padding: 2em 3em;
 }
 
 .app-guide-content {
@@ -78,13 +113,13 @@ a {
 a.app-guide-icon {
     color: $guide-link-color;
     text-decoration: none;
+	border-bottom: none;
+	font-size: 18px;
 }
 
 .app-guide-permalink {
     position: absolute;
-    left: -1.5em;
-    font-size: .7em;
-    margin-top: .5em;
+    left: -25px;
     text-decoration: none;
 
     &:before {
@@ -156,6 +191,7 @@ a.app-guide-icon {
 
 .app-guide-code {
     position: relative;
+	font-size: 16px;
 }
 
 .app-guide-code-options {
