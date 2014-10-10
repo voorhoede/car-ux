@@ -1,6 +1,133 @@
+{%
+	set navigation = [
+		{
+			label: 'Home',
+			href: hrefPrefix + '/modules/views/home/home.html',
+			active: false
+		},
+		{
+			label: 'Reviews',
+			href: hrefPrefix + '/modules/views/reviews/reviews.html',
+			active: true
+		},
+		{
+			label: 'Over<span class="nav-text-large"> Car UX</span>',
+			href: hrefPrefix + '/modules/views/about/about.html',
+			active: false
+		}
+	]
+		%}
+
+	{%
+		set content = {
+		pageUrl: 'http://www.car-ux.com/mercedes-c2-2-nl/mercedes-c2-2-nl.html',
+		backgroundImage: pathToAssets + 'images/bmw-i3-nl/bmw-i3-dashboard.png',
+		backgroundImageAlt: 'BMW i3 dashboard',
+		titleImage: pathToAssets + 'images/bmw-i3-nl/bmw-i3-small.png',
+		titleImageAlt: 'BMW i3 small',
+		title: 'Mercedes',
+		subtitle: 'C2.2',
+		description: 'Introtekst over de nieuwe BMW i3. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequa orem psum dolor sit.',
+		testTagline: 'Getest op 12 juni 2014 door Hylke van Maaren en Miranda Schenkel',
+		widgetScore: {
+			score: '8,5',
+			scoreDetails: {
+				uitstraling: {
+					score: '4',
+					description: 'De blauwe lijnen die op het exterieur en in het interieur te vinden zijn komen ook in de interfaces terug, dit is een mooi detail. Tab-achtige lijnen komen voor zowel in de UI als in het dashboard achter de UI. De backlights van de knoppen om de UI heen zijn niet blauw, maar rood. Het font dat gebruikt is is niet hetzelfde als op de buttons, maar dit stoort niet.'
+				},
+				contrast: {
+					score: '5',
+					description: 'De blauwe lijnen die op het exterieur en in het interieur te vinden zijn komen ook in de interfaces terug, dit is een mooi detail. Tab-achtige lijnen komen voor zowel in de UI als in het dashboard achter de UI. De backlights van de knoppen om de UI heen zijn niet blauw, maar rood. Het font dat gebruikt is is niet hetzelfde als op de buttons, maar dit stoort niet.'
+				},
+				focus: {
+					score: '4',
+					description: 'De blauwe lijnen die op het exterieur en in het interieur te vinden zijn komen ook in de interfaces terug, dit is een mooi detail. Tab-achtige lijnen komen voor zowel in de UI als in het dashboard achter de UI. De backlights van de knoppen om de UI heen zijn niet blauw, maar rood. Het font dat gebruikt is is niet hetzelfde als op de buttons, maar dit stoort niet.'
+				},
+				usability: {
+					score: '4',
+					description: 'De blauwe lijnen die op het exterieur en in het interieur te vinden zijn komen ook in de interfaces terug, dit is een mooi detail. Tab-achtige lijnen komen voor zowel in de UI als in het dashboard achter de UI. De backlights van de knoppen om de UI heen zijn niet blauw, maar rood. Het font dat gebruikt is is niet hetzelfde als op de buttons, maar dit stoort niet.'
+				},
+				features: {
+					score: '3',
+					description: 'De blauwe lijnen die op het exterieur en in het interieur te vinden zijn komen ook in de interfaces terug, dit is een mooi detail. Tab-achtige lijnen komen voor zowel in de UI als in het dashboard achter de UI. De backlights van de knoppen om de UI heen zijn niet blauw, maar rood. Het font dat gebruikt is is niet hetzelfde als op de buttons, maar dit stoort niet.'
+				}
+			},
+			summary: {
+				good: [
+					'De UI is contrastrijk',
+					'Hardware knop'
+				],
+				bad: [
+					'De inputmethode',
+					'Navigatie viel tegen'
+				]
+			}
+		},
+		socialSharing: {
+			twitter: 'Twitter - share text',
+			facebook: 'Facebook - share text'
+		}
+	}
+		%}
+
+	{%
+		set summaryContent = {
+		title: 'Het UI design vormt één geheel met het design van het interieur van de auto',
+		text: 'Dit nieuwe model van BMW heeft twee grote beeldschermen Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequa orem psum dolor sit.<br/><br/>Nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequa orem psum dolor sit amet, consectetur adipisicing elit.',
+		visual: pathToAssets + 'images/bmw-i3-nl/bmw-i3-summary.png'
+	}
+		%}
+
+	{%
+		set quote = 'Iconen zijn op meerdere plekken terug te vinden. Het zijn allemaal lijniconen, maar voelen niet altijd als onderdeel van dezelfde serie.'
+		%}
+
+	{%
+		set highlightContent = {
+		title: 'Kleurgebruik',
+		text: 'Het is logisch dat de kleur blauw gebruikt wordt, maar dit had verder doorgevoerd kunnen worden in de rest van de auto. Verder worden er naast blauw en oranje bijna geen signaalkleuren gebruikt, terwijl die wel in de rest van het interieur gebruikt worden. Een uitzondering hier op zijn de parkeersignalen in het dashboard-schermpje.',
+		visual: pathToAssets + 'images/bmw-i3-nl/bmw-i3-highlight.png'
+	}
+		%}
+
+	{%
+		set relatedContent = [
+		{
+			title: 'Nissan Quashqai Tekna Opique',
+			subTitle: 'Si4 4WD Dynamic',
+			score: '4.5',
+			visual: pathToAssets + 'images/related/nissan-quashqai-tekna-opique.png',
+			url: hrefPrefix + '/modules/views/bmw-i3-nl/bmw-i3-nl.html'
+		},
+		{
+			title: 'Opel Insignia',
+			subTitle: 'Business Edition',
+			score: '2',
+			visual: pathToAssets + 'images/related/opel-insignia-business-edition.png',
+			url: hrefPrefix + '/modules/views/bmw-i3-nl/bmw-i3-nl.html'
+		},
+		{
+			title: 'Citroën C4 Picasso',
+			subTitle: 'Business Edition',
+			score: '5.5',
+			visual: pathToAssets + 'images/related/citroen-c4-picasso.png',
+			url: hrefPrefix + '/modules/views/bmw-i3-nl/bmw-i3-nl.html'
+		}
+	]
+%}
+
 {% extends "views/_base-view/base-view.html" %}
+{% import  "components/detail-intro/_detail-intro.html" as intro %}
+{% import  "components/related/_related.html" as related %}
 
 {% block content %}
-    <h1>Mercedes-c2-2-nl</h1>
-    Write content for this view here.
+	{{ intro.detailIntro(content) }}
+
+	{% include "components/detail-main/_detail-main.html" %}
+
+	{% include "components/comments/_comments.html" %}
+
+	{{ related.related(relatedContent) }}
+
 {% endblock %}
