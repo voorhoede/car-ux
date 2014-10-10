@@ -1,45 +1,32 @@
-{% macro scoreExpandible(content) %}
-<!-- score -->
-<section class="score" data-component="score">
-	<div class="score-heading">
-		<h1>DE SCORES</h1>
-		<span class="testing-date-person">{{ content.testTagline }}</span>
-	</div>
-	{% for property, value in content.widgetScore.scoreDetails %}
-	<div class="score-item {% if loop.first %} is-expanded {% endif %}"
-		 data-expandible
-		 data-expandible-open-on-focus="true"><!--data-expandible-close-on-blur="true"-->
-		<a href="#0"
-		   name="{{ property }}"
-		   class="score-title"
-		   data-expandible-handle="toggle">
-			<h2>{{ property | capitalize }}</h2>
-			<span class="arrow-box"><span data-icon-arrow class="icon {% if loop.first %} icon-arrow-up {% else %} icon-arrow-down {% endif %}"></span></span>
-		</a>
-		<div class="score-content" data-expandible-content>
-			<div class="score-box">
-				<span class="score-number">{{ value.score }}</span>
-				<span class="score-icon icon icon-gauge{{ value.score | gauge }}"></span>
-			</div>
-			<p>
-				{{ value.description }}
-			</p>
-		</div>
-	</div>
-	{% endfor %}
-</section>
-<!-- /score -->
-{% endmacro %}
-
 {%
-	set content = {
-		pageUrl: 'http://www.car-ux.com/bmw-i3-nl/bmw-i3-nl.html',
+	set navigation = [
+		{
+			label: 'Home',
+			href: hrefPrefix + '/modules/views/home/home.html',
+			active: false
+		},
+		{
+			label: 'Reviews',
+			href: hrefPrefix + '/modules/views/reviews/reviews.html',
+			active: true
+		},
+		{
+			label: 'Over<span class="nav-text-large"> Car UX</span>',
+			href: hrefPrefix + '/modules/views/about/about.html',
+			active: false
+		}
+	]
+		%}
+
+	{%
+		set content = {
+		pageUrl: 'http://www.car-ux.com/nissan-qashqai-tekna-1-5-dci-nl/nissan-qashqai-tekna-1-5-dci-nl.html',
 		backgroundImage: pathToAssets + 'images/bmw-i3-nl/bmw-i3-dashboard.png',
 		backgroundImageAlt: 'BMW i3 dashboard',
 		titleImage: pathToAssets + 'images/bmw-i3-nl/bmw-i3-small.png',
 		titleImageAlt: 'BMW i3 small',
-		title: 'BMW i3',
-		subtitle: 'Business model 1.5 TDI',
+		title: 'Nissan Qashqai',
+		subtitle: 'Tekna 1.5 DCI',
 		description: 'Introtekst over de nieuwe BMW i3. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequa orem psum dolor sit.',
 		testTagline: 'Getest op 12 juni 2014 door Hylke van Maaren en Miranda Schenkel',
 		widgetScore: {
@@ -82,5 +69,65 @@
 			facebook: 'Facebook - share text'
 		}
 	}
+		%}
+
+	{%
+		set summaryContent = {
+		title: 'Het UI design vormt één geheel met het design van het interieur van de auto',
+		text: 'Dit nieuwe model van BMW heeft twee grote beeldschermen Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequa orem psum dolor sit.<br/><br/>Nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequa orem psum dolor sit amet, consectetur adipisicing elit.',
+		visual: pathToAssets + 'images/bmw-i3-nl/bmw-i3-summary.png'
+	}
+		%}
+
+	{%
+		set quote = 'Iconen zijn op meerdere plekken terug te vinden. Het zijn allemaal lijniconen, maar voelen niet altijd als onderdeel van dezelfde serie.'
+		%}
+
+	{%
+		set highlightContent = {
+		title: 'Kleurgebruik',
+		text: 'Het is logisch dat de kleur blauw gebruikt wordt, maar dit had verder doorgevoerd kunnen worden in de rest van de auto. Verder worden er naast blauw en oranje bijna geen signaalkleuren gebruikt, terwijl die wel in de rest van het interieur gebruikt worden. Een uitzondering hier op zijn de parkeersignalen in het dashboard-schermpje.',
+		visual: pathToAssets + 'images/bmw-i3-nl/bmw-i3-highlight.png'
+	}
+		%}
+
+	{%
+		set relatedContent = [
+		{
+			title: 'Nissan Quashqai Tekna Opique',
+			subTitle: 'Si4 4WD Dynamic',
+			score: '4.5',
+			visual: pathToAssets + 'images/related/nissan-quashqai-tekna-opique.png',
+			url: hrefPrefix + '/modules/views/bmw-i3-nl/bmw-i3-nl.html'
+		},
+		{
+			title: 'Opel Insignia',
+			subTitle: 'Business Edition',
+			score: '2',
+			visual: pathToAssets + 'images/related/opel-insignia-business-edition.png',
+			url: hrefPrefix + '/modules/views/bmw-i3-nl/bmw-i3-nl.html'
+		},
+		{
+			title: 'Citroën C4 Picasso',
+			subTitle: 'Business Edition',
+			score: '5.5',
+			visual: pathToAssets + 'images/related/citroen-c4-picasso.png',
+			url: hrefPrefix + '/modules/views/bmw-i3-nl/bmw-i3-nl.html'
+		}
+	]
 %}
-{{ scoreExpandible(content) }}
+
+{% extends "views/_base-view/base-view.html" %}
+{% import  "components/detail-intro/_detail-intro.html" as intro %}
+{% import  "components/related/_related.html" as related %}
+
+{% block content %}
+	{{ intro.detailIntro(content) }}
+
+	{% include "components/detail-main/_detail-main.html" %}
+
+	{% include "components/comments/_comments.html" %}
+
+	{{ related.related(relatedContent) }}
+
+{% endblock %}
