@@ -162,9 +162,9 @@ Or delete this file if not applicable.
 				&lt;/ul>
 				&lt;ul>
 
-					&lt;li>&lt;span class="icon icon-min-light-grey">&lt;/span>De inputmethode&lt;/li>
+					&lt;li>&lt;span class="icon icon-min-red">&lt;/span>De inputmethode&lt;/li>
 
-					&lt;li>&lt;span class="icon icon-min-light-grey">&lt;/span>Navigatie viel tegen&lt;/li>
+					&lt;li>&lt;span class="icon icon-min-red">&lt;/span>Navigatie viel tegen&lt;/li>
 
 				&lt;/ul>
 				&lt;hr/>
@@ -192,9 +192,9 @@ Or delete this file if not applicable.
 				&lt;/ul>
 				&lt;ul>
 
-					&lt;li>&lt;span class="icon icon-min-light-grey">&lt;/span>De inputmethode&lt;/li>
+					&lt;li>&lt;span class="icon icon-min-red">&lt;/span>De inputmethode&lt;/li>
 
-					&lt;li>&lt;span class="icon icon-min-light-grey">&lt;/span>Navigatie viel tegen&lt;/li>
+					&lt;li>&lt;span class="icon icon-min-red">&lt;/span>Navigatie viel tegen&lt;/li>
 
 				&lt;/ul>
 				&lt;hr/>
@@ -222,9 +222,9 @@ Or delete this file if not applicable.
 				&lt;/ul>
 				&lt;ul>
 
-					&lt;li>&lt;span class="icon icon-min-light-grey">&lt;/span>De inputmethode&lt;/li>
+					&lt;li>&lt;span class="icon icon-min-red">&lt;/span>De inputmethode&lt;/li>
 
-					&lt;li>&lt;span class="icon icon-min-light-grey">&lt;/span>Navigatie viel tegen&lt;/li>
+					&lt;li>&lt;span class="icon icon-min-red">&lt;/span>Navigatie viel tegen&lt;/li>
 
 				&lt;/ul>
 				&lt;hr/>
@@ -260,10 +260,13 @@ Or delete this file if not applicable.
   padding: 0 30px 0 30px;
 }
 .shortlist .shortlist-product {
+  -webkit-transition: box-shadow 0.2s ease-out;
+  transition: box-shadow 0.2s ease-out;
   border: none;
   display: none;
   vertical-align: top;
   width: 100%;
+  margin-bottom: 20px;
 }
 .shortlist .shortlist-product:nth-of-type(1), .shortlist .shortlist-product:nth-of-type(2) {
   display: inline-block;
@@ -285,6 +288,12 @@ Or delete this file if not applicable.
   .shortlist .shortlist-product:nth-of-type(1) {
     margin: 0;
   }
+}
+.shortlist .shortlist-product:hover, .shortlist .shortlist-product:focus {
+  -webkit-transition: box-shadow 0.2s ease-out;
+  transition: box-shadow 0.2s ease-out;
+  -webkit-box-shadow: 0 0 15px 1px #7f7f7f;
+  box-shadow: 0 0 15px 1px #7f7f7f;
 }
 .shortlist .shortlist-product:hover .shortlist-score,
 .shortlist .shortlist-product:hover li, .shortlist .shortlist-product:focus .shortlist-score,
@@ -330,7 +339,6 @@ Or delete this file if not applicable.
 }
 .shortlist .shortlist-product .shortlist-summary {
   background-color: #ffffff;
-  margin-bottom: 20px;
   padding: 0 30px 20px 30px;
   text-align: right;
 }

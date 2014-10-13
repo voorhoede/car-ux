@@ -150,7 +150,7 @@ Or delete this file if not applicable.
 		&lt;!--data-expandible-close-on-blur="true"-->
 		&lt;a href="#0" name="uitstraling" class="score-title" data-expandible-handle="toggle">
 			&lt;h2>Uitstraling&lt;/h2>
-			&lt;span class="arrow-box">&lt;span data-icon-arrow class="icon  icon-arrow-up ">&lt;/span>&lt;/span>
+			&lt;span class="arrow-box">&lt;span class="score-read-more">Lees meer&lt;/span>&lt;span data-icon-arrow class="icon  icon-arrow-up ">&lt;/span>&lt;/span>
 		&lt;/a>
 		&lt;div class="score-content" data-expandible-content>
 			&lt;div class="score-box">
@@ -168,7 +168,7 @@ Or delete this file if not applicable.
 		&lt;!--data-expandible-close-on-blur="true"-->
 		&lt;a href="#0" name="contrast" class="score-title" data-expandible-handle="toggle">
 			&lt;h2>Contrast&lt;/h2>
-			&lt;span class="arrow-box">&lt;span data-icon-arrow class="icon  icon-arrow-down ">&lt;/span>&lt;/span>
+			&lt;span class="arrow-box">&lt;span class="score-read-more">Lees meer&lt;/span>&lt;span data-icon-arrow class="icon  icon-arrow-down ">&lt;/span>&lt;/span>
 		&lt;/a>
 		&lt;div class="score-content" data-expandible-content>
 			&lt;div class="score-box">
@@ -186,7 +186,7 @@ Or delete this file if not applicable.
 		&lt;!--data-expandible-close-on-blur="true"-->
 		&lt;a href="#0" name="focus" class="score-title" data-expandible-handle="toggle">
 			&lt;h2>Focus&lt;/h2>
-			&lt;span class="arrow-box">&lt;span data-icon-arrow class="icon  icon-arrow-down ">&lt;/span>&lt;/span>
+			&lt;span class="arrow-box">&lt;span class="score-read-more">Lees meer&lt;/span>&lt;span data-icon-arrow class="icon  icon-arrow-down ">&lt;/span>&lt;/span>
 		&lt;/a>
 		&lt;div class="score-content" data-expandible-content>
 			&lt;div class="score-box">
@@ -204,7 +204,7 @@ Or delete this file if not applicable.
 		&lt;!--data-expandible-close-on-blur="true"-->
 		&lt;a href="#0" name="usability" class="score-title" data-expandible-handle="toggle">
 			&lt;h2>Usability&lt;/h2>
-			&lt;span class="arrow-box">&lt;span data-icon-arrow class="icon  icon-arrow-down ">&lt;/span>&lt;/span>
+			&lt;span class="arrow-box">&lt;span class="score-read-more">Lees meer&lt;/span>&lt;span data-icon-arrow class="icon  icon-arrow-down ">&lt;/span>&lt;/span>
 		&lt;/a>
 		&lt;div class="score-content" data-expandible-content>
 			&lt;div class="score-box">
@@ -222,7 +222,7 @@ Or delete this file if not applicable.
 		&lt;!--data-expandible-close-on-blur="true"-->
 		&lt;a href="#0" name="features" class="score-title" data-expandible-handle="toggle">
 			&lt;h2>Features&lt;/h2>
-			&lt;span class="arrow-box">&lt;span data-icon-arrow class="icon  icon-arrow-down ">&lt;/span>&lt;/span>
+			&lt;span class="arrow-box">&lt;span class="score-read-more">Lees meer&lt;/span>&lt;span data-icon-arrow class="icon  icon-arrow-down ">&lt;/span>&lt;/span>
 		&lt;/a>
 		&lt;div class="score-content" data-expandible-content>
 			&lt;div class="score-box">
@@ -348,12 +348,29 @@ Or delete this file if not applicable.
   width: 50px;
   background-color: #dcdcdc;
 }
+@media screen and (min-width: 620px) {
+  .score .is-expandible .arrow-box {
+    width: 130px;
+  }
+}
 .score .is-expandible .arrow-box .icon {
   position: absolute;
   width: 15px;
   height: 10px;
   top: 20px;
-  left: 18px;
+  right: 18px;
+}
+.score .is-expandible .arrow-box .score-read-more {
+  display: none;
+  font-family: "HelveticaNeue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  padding-left: 10px;
+  line-height: 47px;
+}
+@media screen and (min-width: 620px) {
+  .score .is-expandible .arrow-box .score-read-more {
+    display: inline;
+  }
 }
 .score .score-content {
   position: relative;

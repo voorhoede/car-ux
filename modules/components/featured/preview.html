@@ -144,6 +144,8 @@ Or delete this file if not applicable.
 	&lt;section class="max-width-centered">
 		&lt;h1>NIEUW DIEPTEPUNT&lt;/h1>
 		&lt;div class="featured-content">
+			&lt;img src="assets/images/home/home-featured.png" alt="Land Rover Evoque Si4 4WD Dynamic" />
+
 			&lt;div class="featured-content-wrapper">
 				&lt;time>02-02-2014&lt;/time>
 				&lt;h2>
@@ -167,13 +169,13 @@ Or delete this file if not applicable.
 				-->
 				&lt;ul>
 
-					&lt;li>&lt;span class="icon icon-min-light-grey">&lt;/span>Vollit vestibulum consequat lobortis justo posuere.&lt;/li>
+					&lt;li>&lt;span class="icon icon-min-red">&lt;/span>Vollit vestibulum consequat lobortis justo posuere.&lt;/li>
 
-					&lt;li>&lt;span class="icon icon-min-light-grey">&lt;/span>Bestibulum consequat mauris eget diam risus.&lt;/li>
+					&lt;li>&lt;span class="icon icon-min-red">&lt;/span>Bestibulum consequat mauris eget diam risus.&lt;/li>
 
 				&lt;/ul>
 			&lt;/div>
-			&lt;img src="assets/images/home/home-featured.png" alt="Land Rover Evoque Si4 4WD Dynamic" />
+
 		&lt;/div>
 	&lt;/section>
 &lt;/div>
@@ -206,6 +208,26 @@ Or delete this file if not applicable.
 .featured .featured-content .featured-content-wrapper {
   background-color: #ffffff;
   padding: 25px 30px 0 30px;
+}
+@media screen and (min-width: 620px) {
+  .featured .featured-content .featured-content-wrapper {
+    margin-bottom: 110px;
+  }
+}
+@media screen and (min-width: 700px) {
+  .featured .featured-content .featured-content-wrapper {
+    margin-bottom: 110px;
+  }
+}
+@media screen and (min-width: 790px) {
+  .featured .featured-content .featured-content-wrapper {
+    margin-bottom: 160px;
+  }
+}
+@media screen and (min-width: 920px) {
+  .featured .featured-content .featured-content-wrapper {
+    margin-bottom: 180px;
+  }
 }
 .featured .featured-content time {
   color: #7f7f7f;
@@ -251,18 +273,9 @@ Or delete this file if not applicable.
   padding-bottom: 10px;
 }
 .featured .featured-content ul li {
-  display: none;
   position: relative;
   margin-bottom: 15px;
   padding-left: 30px;
-}
-.featured .featured-content ul li:first-child {
-  display: list-item;
-}
-@media screen and (min-width: 620px) {
-  .featured .featured-content ul li {
-    display: list-item;
-  }
 }
 .featured .featured-content ul li .icon {
   position: absolute;
@@ -274,17 +287,11 @@ Or delete this file if not applicable.
   background-color: #ffc300;
   position: absolute;
   right: 0;
-  bottom: 0;
+  top: 0;
   padding: 7px 9px;
   min-width: 92px;
   font-family: "HelveticaNeue-Bold", Helvetica, Arial, sans-serif;
   font-size: 30px;
-}
-@media screen and (min-width: 620px) {
-  .featured .featured-content .featured-score {
-    top: 0;
-    bottom: auto;
-  }
 }
 .featured .featured-content .featured-score .icon-gauge1,
 .featured .featured-content .featured-score .icon-gauge2,
@@ -298,6 +305,13 @@ Or delete this file if not applicable.
 .featured .featured-content img {
   vertical-align: bottom;
   width: 100%;
+}
+@media screen and (min-width: 620px) {
+  .featured .featured-content img {
+    position: absolute;
+    top: 100%;
+    left: 0;
+  }
 }
 
 /*# sourceMappingURL=_featured.css.map */

@@ -90,12 +90,29 @@
   width: 50px;
   background-color: #dcdcdc;
 }
+@media screen and (min-width: 620px) {
+  .score .is-expandible .arrow-box {
+    width: 130px;
+  }
+}
 .score .is-expandible .arrow-box .icon {
   position: absolute;
   width: 15px;
   height: 10px;
   top: 20px;
-  left: 18px;
+  right: 18px;
+}
+.score .is-expandible .arrow-box .score-read-more {
+  display: none;
+  font-family: "HelveticaNeue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  padding-left: 10px;
+  line-height: 47px;
+}
+@media screen and (min-width: 620px) {
+  .score .is-expandible .arrow-box .score-read-more {
+    display: inline;
+  }
 }
 .score .score-content {
   position: relative;

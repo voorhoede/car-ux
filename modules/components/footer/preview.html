@@ -157,8 +157,12 @@ Or delete this file if not applicable.
 				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmo veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequaorem ipsum dolor sit amet, consectetur ad.
 			&lt;/p>
 			&lt;div class="footer-branding">
-				&lt;span class="icon icon-car-ux-logo-white">CAR UX&lt;/span>
-				&lt;span class="icon icon-unitid-logo">UNITiD&lt;/span>
+				&lt;a href="/">
+					&lt;span class="icon icon-car-ux-logo-white">CAR UX&lt;/span>
+				&lt;/a>
+				&lt;a href="http://www.unitid.nl/">
+					&lt;span class="icon icon-unitid-logo">UNITiD&lt;/span>
+				&lt;/a>
 			&lt;/div>
 		&lt;/div>
 	&lt;/div>
@@ -207,7 +211,7 @@ Or delete this file if not applicable.
 @media screen and (min-width: 900px) {
   .footer .footer-contact {
     float: right;
-    width: 37%;
+    width: 31.5%;
   }
 }
 .footer .footer-contact h2 {
@@ -228,7 +232,7 @@ Or delete this file if not applicable.
 @media screen and (min-width: 900px) {
   .footer .footer-content {
     float: right;
-    width: 63%;
+    width: 68.5%;
   }
 }
 @media screen and (min-width: 920px) {
@@ -236,8 +240,10 @@ Or delete this file if not applicable.
     padding-left: 0;
   }
 }
-.footer .footer-branding .icon {
+.footer .footer-branding a {
+  display: inline-block;
   margin-right: 30px;
+  border-bottom: none;
 }
 .footer .footer-branding .icon:last-of-type {
   margin-right: 0;

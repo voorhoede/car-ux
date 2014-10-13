@@ -425,9 +425,7 @@ th {
   font-size: 12px;
 }
 
-.ui-button-tertiary,
-.ui-button-tertiary:hover,
-.ui-button-tertiary:focus {
+.ui-button-tertiary {
   background-color: #dcdcdc;
   color: #7f7f7f;
 }
@@ -459,7 +457,7 @@ th {
   width: 54px;
   height: 54px;
 }
-.icon.icon-min, .icon.icon-min-dark-grey, .icon.icon-min-light-grey, .icon.icon-plus, .icon.icon-plus-yellow {
+.icon.icon-min, .icon.icon-min-red, .icon.icon-min-dark-grey, .icon.icon-min-light-grey, .icon.icon-plus, .icon.icon-plus-yellow {
   width: 19px;
   height: 19px;
 }
@@ -784,6 +782,26 @@ blockquote {
   background-color: #ffffff;
   padding: 25px 30px 0 30px;
 }
+@media screen and (min-width: 620px) {
+  .featured .featured-content .featured-content-wrapper {
+    margin-bottom: 110px;
+  }
+}
+@media screen and (min-width: 700px) {
+  .featured .featured-content .featured-content-wrapper {
+    margin-bottom: 110px;
+  }
+}
+@media screen and (min-width: 790px) {
+  .featured .featured-content .featured-content-wrapper {
+    margin-bottom: 160px;
+  }
+}
+@media screen and (min-width: 920px) {
+  .featured .featured-content .featured-content-wrapper {
+    margin-bottom: 180px;
+  }
+}
 .featured .featured-content time {
   color: #7f7f7f;
 }
@@ -828,18 +846,9 @@ blockquote {
   padding-bottom: 10px;
 }
 .featured .featured-content ul li {
-  display: none;
   position: relative;
   margin-bottom: 15px;
   padding-left: 30px;
-}
-.featured .featured-content ul li:first-child {
-  display: list-item;
-}
-@media screen and (min-width: 620px) {
-  .featured .featured-content ul li {
-    display: list-item;
-  }
 }
 .featured .featured-content ul li .icon {
   position: absolute;
@@ -851,17 +860,11 @@ blockquote {
   background-color: #ffc300;
   position: absolute;
   right: 0;
-  bottom: 0;
+  top: 0;
   padding: 7px 9px;
   min-width: 92px;
   font-family: "HelveticaNeue-Bold", Helvetica, Arial, sans-serif;
   font-size: 30px;
-}
-@media screen and (min-width: 620px) {
-  .featured .featured-content .featured-score {
-    top: 0;
-    bottom: auto;
-  }
 }
 .featured .featured-content .featured-score .icon-gauge1,
 .featured .featured-content .featured-score .icon-gauge2,
@@ -875,6 +878,13 @@ blockquote {
 .featured .featured-content img {
   vertical-align: bottom;
   width: 100%;
+}
+@media screen and (min-width: 620px) {
+  .featured .featured-content img {
+    position: absolute;
+    top: 100%;
+    left: 0;
+  }
 }
 
 /* footer component */
@@ -902,7 +912,7 @@ blockquote {
 @media screen and (min-width: 900px) {
   .footer .footer-contact {
     float: right;
-    width: 37%;
+    width: 31.5%;
   }
 }
 .footer .footer-contact h2 {
@@ -923,7 +933,7 @@ blockquote {
 @media screen and (min-width: 900px) {
   .footer .footer-content {
     float: right;
-    width: 63%;
+    width: 68.5%;
   }
 }
 @media screen and (min-width: 920px) {
@@ -931,8 +941,10 @@ blockquote {
     padding-left: 0;
   }
 }
-.footer .footer-branding .icon {
+.footer .footer-branding a {
+  display: inline-block;
   margin-right: 30px;
+  border-bottom: none;
 }
 .footer .footer-branding .icon:last-of-type {
   margin-right: 0;
@@ -1144,6 +1156,7 @@ blockquote {
 .home-intro .home-intro-content h1 {
   padding-right: 30px;
   padding-left: 30px;
+  padding-bottom: 0;
 }
 .home-intro .home-intro-content p {
   padding-right: 30px;
@@ -1195,7 +1208,7 @@ blockquote {
 @media screen and (min-width: 920px) {
   .quote blockquote {
     font-size: 36px;
-    padding: 0 0 0 50px;
+    padding: 0 40px 0 50px;
   }
 }
 .quote blockquote:before, .quote blockquote:after {
@@ -1229,10 +1242,13 @@ blockquote {
   padding: 30px 30px 60px 30px;
 }
 .related .related-product {
+  -webkit-transition: box-shadow 0.2s ease-out;
+  transition: box-shadow 0.2s ease-out;
   border: none;
   display: none;
   vertical-align: top;
   width: 100%;
+  margin-bottom: 20px;
 }
 .related .related-product:nth-of-type(1), .related .related-product:nth-of-type(2) {
   display: inline-block;
@@ -1255,6 +1271,12 @@ blockquote {
     margin: 0;
   }
 }
+.related .related-product:hover, .related .related-product:focus {
+  -webkit-transition: box-shadow 0.2s ease-out;
+  transition: box-shadow 0.2s ease-out;
+  -webkit-box-shadow: 0 0 15px 1px #7f7f7f;
+  box-shadow: 0 0 15px 1px #7f7f7f;
+}
 .related .related-product:hover .related-score, .related .related-product:focus .related-score {
   color: #000000;
 }
@@ -1264,7 +1286,6 @@ blockquote {
 }
 .related .related-product .related-title {
   background-color: #ffffff;
-  margin-bottom: 20px;
   position: relative;
 }
 @media screen and (min-width: 620px) {
@@ -1389,12 +1410,29 @@ blockquote {
   width: 50px;
   background-color: #dcdcdc;
 }
+@media screen and (min-width: 620px) {
+  .score .is-expandible .arrow-box {
+    width: 130px;
+  }
+}
 .score .is-expandible .arrow-box .icon {
   position: absolute;
   width: 15px;
   height: 10px;
   top: 20px;
-  left: 18px;
+  right: 18px;
+}
+.score .is-expandible .arrow-box .score-read-more {
+  display: none;
+  font-family: "HelveticaNeue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  padding-left: 10px;
+  line-height: 47px;
+}
+@media screen and (min-width: 620px) {
+  .score .is-expandible .arrow-box .score-read-more {
+    display: inline;
+  }
 }
 .score .score-content {
   position: relative;
@@ -1472,10 +1510,13 @@ blockquote {
   padding: 0 30px 0 30px;
 }
 .shortlist .shortlist-product {
+  -webkit-transition: box-shadow 0.2s ease-out;
+  transition: box-shadow 0.2s ease-out;
   border: none;
   display: none;
   vertical-align: top;
   width: 100%;
+  margin-bottom: 20px;
 }
 .shortlist .shortlist-product:nth-of-type(1), .shortlist .shortlist-product:nth-of-type(2) {
   display: inline-block;
@@ -1497,6 +1538,12 @@ blockquote {
   .shortlist .shortlist-product:nth-of-type(1) {
     margin: 0;
   }
+}
+.shortlist .shortlist-product:hover, .shortlist .shortlist-product:focus {
+  -webkit-transition: box-shadow 0.2s ease-out;
+  transition: box-shadow 0.2s ease-out;
+  -webkit-box-shadow: 0 0 15px 1px #7f7f7f;
+  box-shadow: 0 0 15px 1px #7f7f7f;
 }
 .shortlist .shortlist-product:hover .shortlist-score,
 .shortlist .shortlist-product:hover li, .shortlist .shortlist-product:focus .shortlist-score,
@@ -1542,7 +1589,6 @@ blockquote {
 }
 .shortlist .shortlist-product .shortlist-summary {
   background-color: #ffffff;
-  margin-bottom: 20px;
   padding: 0 30px 20px 30px;
   text-align: right;
 }
@@ -1598,7 +1644,7 @@ blockquote {
 }
 .summary .summary-text {
   background-color: #ffffff;
-  padding: 30px 25px;
+  padding: 30px 40px;
 }
 
 /* widget-score component */

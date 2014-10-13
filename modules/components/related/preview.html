@@ -203,10 +203,13 @@ Or delete this file if not applicable.
   padding: 30px 30px 60px 30px;
 }
 .related .related-product {
+  -webkit-transition: box-shadow 0.2s ease-out;
+  transition: box-shadow 0.2s ease-out;
   border: none;
   display: none;
   vertical-align: top;
   width: 100%;
+  margin-bottom: 20px;
 }
 .related .related-product:nth-of-type(1), .related .related-product:nth-of-type(2) {
   display: inline-block;
@@ -229,6 +232,12 @@ Or delete this file if not applicable.
     margin: 0;
   }
 }
+.related .related-product:hover, .related .related-product:focus {
+  -webkit-transition: box-shadow 0.2s ease-out;
+  transition: box-shadow 0.2s ease-out;
+  -webkit-box-shadow: 0 0 15px 1px #7f7f7f;
+  box-shadow: 0 0 15px 1px #7f7f7f;
+}
 .related .related-product:hover .related-score, .related .related-product:focus .related-score {
   color: #000000;
 }
@@ -238,7 +247,6 @@ Or delete this file if not applicable.
 }
 .related .related-product .related-title {
   background-color: #ffffff;
-  margin-bottom: 20px;
   position: relative;
 }
 @media screen and (min-width: 620px) {
