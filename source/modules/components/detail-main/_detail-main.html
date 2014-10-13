@@ -11,6 +11,7 @@
 	{% import  "components/highlight/_highlight.html" as highlight %}
 	{{ highlight.highlightBlock(highlightContent) }}
 
-	{% include "components/score/_score.html" %}
+	{% import "components/score/_score.html" as score %}
+	{{ score.scoreExpandible(content) }}
 </main>
 <!-- /detail-main -->
