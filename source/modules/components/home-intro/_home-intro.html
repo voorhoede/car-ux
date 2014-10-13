@@ -9,7 +9,7 @@
 		<p itemprop="description">
 			{{ content.description }}
 		</p>
-		<a href="#" class="about-button ui-button-secondary">Meer over Car UX</a>
+		<a href="{{ content.url }}" class="about-button ui-button-secondary">Meer over Car UX</a>
 	</section>
 	<div class="triangle"></div>
 </div>
@@ -19,6 +19,7 @@
 {# this will only output in component guide #}
 {%
 	set homeIntroContent = {
+		url: '#',
 		backgroundImage: pathToAssets + 'images/home/home-intro.png',
 		backgroundImageAlt: '',
 		title: 'WAAR GAAT DIT OVER?',
