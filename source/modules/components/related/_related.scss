@@ -8,10 +8,13 @@
 	padding: 30px 30px 60px 30px;
 
 	.related-product {
+		@include transition(box-shadow .2s ease-out);
+
 		border: none;
 		display: none;
 		vertical-align: top;
 		width: 100%;
+		margin-bottom: 20px;
 
 		// Show only the first two items
 		&:nth-of-type(1),
@@ -39,6 +42,9 @@
 		
 		&:hover,
 		&:focus {
+			@include transition(box-shadow .2s ease-out);
+			@include box-shadow(0 0 15px 1px $dark-grey);
+
 			.related-score {
 				color: $black;
 			}
@@ -51,7 +57,6 @@
 
 		.related-title {
 			background-color: $white;
-			margin-bottom: 20px;
 			position: relative;
 
 			@include min-screen($break-small) {

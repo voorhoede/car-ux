@@ -87,12 +87,25 @@
 		height: 100%;
 		width: 50px;
 		background-color: $medium-grey;
+		@include min-screen($break-small) {
+			width: 130px;
+		}
 		.icon {
 			position: absolute;
 			width: 15px;
 			height: 10px;
 			top: 20px;
-			left: 18px;
+			right: 18px;
+		}
+		.score-read-more {
+			display: none;
+			font-family: $helvetica-neue;
+			font-size: 16px;
+			padding-left: 10px;
+			line-height: 47px;
+			@include min-screen($break-small) {
+				display: inline;
+			}
 		}
 	}
 	.score-content {

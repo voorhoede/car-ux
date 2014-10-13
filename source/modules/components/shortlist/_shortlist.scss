@@ -8,10 +8,13 @@
 	padding: 0 30px 0 30px;
 
 	.shortlist-product {
+		@include transition(box-shadow .2s ease-out);
+
 		border: none;
 		display: none;
 		vertical-align: top;
 		width: 100%;
+		margin-bottom: 20px;
 
 		// Show only the first two items
 		&:nth-of-type(1),
@@ -39,6 +42,9 @@
 
 		&:hover,
 		&:focus {
+			@include transition(box-shadow .2s ease-out);
+			@include box-shadow(0 0 15px 1px $dark-grey);
+
 			.shortlist-score,
 			li {
 				color: $black;
@@ -88,7 +94,6 @@
 
 		.shortlist-summary {
 			background-color: $white;
-			margin-bottom: 20px;
 			padding: 0 30px 20px 30px;
 			text-align: right;
 

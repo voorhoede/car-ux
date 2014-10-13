@@ -2,11 +2,11 @@
 {% import "components/widget-score/_widget-score.html" as widgetScore %}
 <!-- intro -->
 <div class="detail-intro" data-component="detail-intro">
-	<img class="intro-background" src="{{ content.backgroundImage }}" alt="{{ content.backgroundImageAlt }}" />
+	<img itemprop="image" class="intro-background" src="{{ content.backgroundImage }}" alt="{{ content.backgroundImageAlt }}" />
 	<section class="intro-content max-width-centered" data-intro-section>
 		<article class="intro-text" data-intro-text>
 			<header>
-				<img itemprop="image" class="intro-title-image" src="{{ content.titleImage }}" alt="{{ content.titleImageAlt }}" />
+				<img class="intro-title-image" src="{{ content.titleImage }}" alt="{{ content.titleImageAlt }}" />
 				<h1 itemprop="name">
 					{{ content.title }}
 					<span class="subtitle">{{ content.subtitle }}</span>

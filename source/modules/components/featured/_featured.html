@@ -4,6 +4,8 @@
 	<section class="max-width-centered">
 		<h1>{{ content.mainTitle }}</h1>
 		<div class="featured-content">
+			<img src="{{ content.visual }}" alt="{{ content.title + ' ' + content.subTitle }}"/>
+
 			<div class="featured-content-wrapper">
 				<time>{{ content.date }}</time>
 				<h2>
@@ -24,11 +26,11 @@
 				</ul><!--
 				--><ul>
 					{% for badText in content.summary.bad %}
-					<li><span class="icon icon-min-light-grey"></span>{{ badText }}</li>
+					<li><span class="icon icon-min-red"></span>{{ badText }}</li>
 					{% endfor %}
 				</ul>
 			</div>
-			<img src="{{ content.visual }}" alt="{{ content.title + ' ' + content.subTitle }}"/>
+
 		</div>
 	</section>
 </div>
