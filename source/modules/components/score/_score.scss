@@ -114,8 +114,24 @@
 		padding-right: 3em;
 		padding-bottom: 15px;
 		@include min-screen($break-medium) {
-			padding-right: 10em;
+			padding-right: 5em;
+			&.has-visual {
+				padding-right: 2em;
+				p {
+					width: 50%;
+				}
+				.score-content-visual {
+					@include box-sizing(border-box);
+					width: 25%;
+					vertical-align: top;
+					padding-left: 20px;
+				}
+			}
 		}
+	}
+	.score-content-visual {
+		margin-top: 1em;
+		max-width: 100%;
 	}
 	.is-expandible .score-content {
 		padding-top: 0;
@@ -124,24 +140,27 @@
 	.is-expanded.is-expandible .score-content {
 		height: auto;
 		padding-top: 15px;
-		padding-bottom: 15px;
+		padding-bottom: 30px;
+	}
+	.score-box-wrapper {
+		display: inline-block;
+		vertical-align: top;
+		width: 25%;
+
 	}
 	.score-box {
 		position: relative;
-		display: inline-block;
+		margin-bottom: 20px;
 		width: 175px;
 		height: 80px;
-		margin-bottom: 20px;
 		background-color: $yellow;
 		@include min-screen($break-medium) {
-			position: absolute;
-			top: 20px;
-			left: 30px;
 			margin-bottom: 0;
 		}
 	}
 	.score-number {
 		display: inline-block;
+		vertical-align: top;
 		padding-top: 5px;
 		padding-left: 17px;
 		font-family: $helvetica-neue-bold;
@@ -159,11 +178,11 @@
 		height: 50px;
 	}
 	.score-content p {
-		 margin-top: 0;
-		 margin-left: 0;
-		 margin-bottom: 0;
+		margin: 0;
 		 @include min-screen($break-medium) {
-			 margin-left: 195px;
+			 display: inline-block;
+			 vertical-align: top;
+			 width: 75%;
 		 }
 	 }
 	.is-expandible .score-content {
