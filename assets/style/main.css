@@ -1442,8 +1442,26 @@ blockquote {
 }
 @media screen and (min-width: 900px) {
   .score .score-content {
-    padding-right: 10em;
+    padding-right: 5em;
   }
+  .score .score-content.has-visual {
+    padding-right: 2em;
+  }
+  .score .score-content.has-visual p {
+    width: 50%;
+  }
+  .score .score-content.has-visual .score-content-visual {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 25%;
+    vertical-align: top;
+    padding-left: 20px;
+  }
+}
+.score .score-content-visual {
+  margin-top: 1em;
+  max-width: 100%;
 }
 .score .is-expandible .score-content {
   padding-top: 0;
@@ -1452,26 +1470,28 @@ blockquote {
 .score .is-expanded.is-expandible .score-content {
   height: auto;
   padding-top: 15px;
-  padding-bottom: 15px;
+  padding-bottom: 30px;
+}
+.score .score-box-wrapper {
+  display: inline-block;
+  vertical-align: top;
+  width: 25%;
 }
 .score .score-box {
   position: relative;
-  display: inline-block;
+  margin-bottom: 20px;
   width: 175px;
   height: 80px;
-  margin-bottom: 20px;
   background-color: #ffc300;
 }
 @media screen and (min-width: 900px) {
   .score .score-box {
-    position: absolute;
-    top: 20px;
-    left: 30px;
     margin-bottom: 0;
   }
 }
 .score .score-number {
   display: inline-block;
+  vertical-align: top;
   padding-top: 5px;
   padding-left: 17px;
   font-family: "HelveticaNeue-Bold", Helvetica, Arial, sans-serif;
@@ -1489,13 +1509,13 @@ blockquote {
   height: 50px;
 }
 .score .score-content p {
-  margin-top: 0;
-  margin-left: 0;
-  margin-bottom: 0;
+  margin: 0;
 }
 @media screen and (min-width: 900px) {
   .score .score-content p {
-    margin-left: 195px;
+    display: inline-block;
+    vertical-align: top;
+    width: 75%;
   }
 }
 .score .is-expandible .score-content {
