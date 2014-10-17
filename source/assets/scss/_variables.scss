@@ -8,10 +8,10 @@
 //
 
 //Font variables
-$helvetica-neue-fallback: 	Helvetica, Arial, sans-serif;
+$helvetica-neue-fallback: 	Arial, sans-serif;
 
-$helvetica-neue-bold: 		'HelveticaNeue-Bold', $helvetica-neue-fallback;
-$helvetica-neue: 			'HelveticaNeue', $helvetica-neue-fallback;
+$helvetica-neue-bold: 		$helvetica-neue-fallback;
+$helvetica-neue: 			$helvetica-neue-fallback;
 
 // Paths
 
