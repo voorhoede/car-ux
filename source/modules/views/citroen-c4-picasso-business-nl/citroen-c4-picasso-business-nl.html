@@ -21,46 +21,52 @@
 	{%
 		set content = {
 		pageUrl: 'http://www.car-ux.com/citroen-c4-picasso-business-nl/citroen-c4-picasso-business-nl.html',
-		backgroundImage: pathToAssets + 'images/bmw-i3-nl/bmw-i3-dashboard.png',
-		backgroundImageAlt: 'BMW i3 dashboard',
-		titleImage: pathToAssets + 'images/bmw-i3-nl/bmw-i3-small.png',
-		titleImageAlt: 'BMW i3 small',
+		backgroundImage: pathToAssets + 'images/citroen-c4-picasso-business-nl/c4-picasso-business-dashboard.png',
+		backgroundImageAlt: 'Citroen C4 Picasso dashboard',
+		titleImage: pathToAssets + 'images/citroen-c4-picasso-business-nl/c4-picasso-business-small.png',
+		titleImageAlt: 'Citroen C4 Picasso small',
 		title: 'Citroen C4 Picasso',
-		subtitle: 'Business',
-		description: 'Introtekst over de nieuwe BMW i3. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequa orem psum dolor sit.',
-		testTagline: 'Getest op 12 juni 2014 door Hylke van Maaren en Miranda Schenkel',
+		subtitle: 'Business Versie',
+		description: 'Introtekst over de nieuwe Citroën C4 Picasso. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequa orem psum dolor sit.',
+		testTagline: 'Getest op 5 mei 2014 door Hylke van Maaren, Miranda Schenkel en Niels Mulder',
 		widgetScore: {
-			score: '8,5',
+			score: '6,5',
 			scoreDetails: {
 				uitstraling: {
-					score: '4',
-					description: 'De blauwe lijnen die op het exterieur en in het interieur te vinden zijn komen ook in de interfaces terug, dit is een mooi detail. Tab-achtige lijnen komen voor zowel in de UI als in het dashboard achter de UI. De backlights van de knoppen om de UI heen zijn niet blauw, maar rood. Het font dat gebruikt is is niet hetzelfde als op de buttons, maar dit stoort niet.'
+					score: '6',
+					description: 'De uitstraling is vooruitstrevend en minimalistisch. De UI sluit daar niet bij aan. Het design van de twee losse schermen verschilt, wat soms verwarrend is. De fysieke knoppen zijn weggewerkt rondom het onderste scherm, in het dashboard.',
+                    visual: pathToAssets + 'images/citroen-c4-picasso-business-nl/c4-picasso-business-uitstraling.png'
 				},
 				contrast: {
-					score: '5',
-					description: 'De blauwe lijnen die op het exterieur en in het interieur te vinden zijn komen ook in de interfaces terug, dit is een mooi detail. Tab-achtige lijnen komen voor zowel in de UI als in het dashboard achter de UI. De backlights van de knoppen om de UI heen zijn niet blauw, maar rood. Het font dat gebruikt is is niet hetzelfde als op de buttons, maar dit stoort niet.'
-				},
+					score: '6,5',
+					description: 'De kleuren spreken voor zich. Er is veel blauw gebruikt. Het gecentreerde dashboard voelt onwennig aan en is vervelend voor de bestuurder. Door het panoramadak komt er te veel zonlicht binnen.',
+                    visual: pathToAssets + 'images/citroen-c4-picasso-business-nl/c4-picasso-business-contrast-2.png'
+
+                },
 				focus: {
-					score: '4',
-					description: 'De blauwe lijnen die op het exterieur en in het interieur te vinden zijn komen ook in de interfaces terug, dit is een mooi detail. Tab-achtige lijnen komen voor zowel in de UI als in het dashboard achter de UI. De backlights van de knoppen om de UI heen zijn niet blauw, maar rood. Het font dat gebruikt is is niet hetzelfde als op de buttons, maar dit stoort niet.'
+					score: '7',
+					description: 'De twee schermen in het dashboard komen niet overeen qua stijl. De iconen zijn echter wel doelgericht en eenvoudig. De toptaken worden alleen gestart met de fysieke knoppen, de subtaken op het touchscreen. De fysieke knoppen zijn niet mooi, maar nodigen wel uit om de drukken. ',
+                    visual: pathToAssets + 'images/citroen-c4-picasso-business-nl/c4-picasso-business-focus.png'
 				},
 				usability: {
-					score: '4',
-					description: 'De blauwe lijnen die op het exterieur en in het interieur te vinden zijn komen ook in de interfaces terug, dit is een mooi detail. Tab-achtige lijnen komen voor zowel in de UI als in het dashboard achter de UI. De backlights van de knoppen om de UI heen zijn niet blauw, maar rood. Het font dat gebruikt is is niet hetzelfde als op de buttons, maar dit stoort niet.'
+					score: '6,5',
+					description: 'Er is rekening gehouden met de input van de bestuurder. Zo zit de bevestigingsknop bijvoorbeeld links in het scherm, dicht bij de bestuuder. ',
+                    visual: pathToAssets + 'images/citroen-c4-picasso-business-nl/c4-picasso-business-usability.png'
 				},
 				features: {
-					score: '3',
-					description: 'De blauwe lijnen die op het exterieur en in het interieur te vinden zijn komen ook in de interfaces terug, dit is een mooi detail. Tab-achtige lijnen komen voor zowel in de UI als in het dashboard achter de UI. De backlights van de knoppen om de UI heen zijn niet blauw, maar rood. Het font dat gebruikt is is niet hetzelfde als op de buttons, maar dit stoort niet.'
+					score: '6',
+					description: 'De navigatiekaart is niet erg mooi.',
+                    visual: pathToAssets + 'images/citroen-c4-picasso-business-nl/c4-picasso-business-features.png'
 				}
 			},
 			summary: {
 				good: [
-					'De UI is contrastrijk',
-					'Hardware knop'
+					'Knoppen verwerkt in dashboard',
+					'Eenvoudige iconen'
 				],
 				bad: [
-					'De inputmethode',
-					'Navigatie viel tegen'
+					'Verschillende schermdesigns',
+					'Navigatiekaart niet mooi'
 				]
 			}
 		},
@@ -73,21 +79,21 @@
 
 	{%
 		set summaryContent = {
-		title: 'Het UI design vormt één geheel met het design van het interieur van de auto',
-		text: 'Dit nieuwe model van BMW heeft twee grote beeldschermen Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequa orem psum dolor sit.<br/><br/>Nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequa orem psum dolor sit amet, consectetur adipisicing elit.',
-		visual: pathToAssets + 'images/bmw-i3-nl/bmw-i3-summary.png'
+		title: 'Dashboardschermen vormen geen eenheid',
+		text: 'De nieuwe C4 Picasso heeft twee schermen in het dashboard verwerkt. De schermen zitten vlak onder elkaar en worden gescheiden door de ventilatieschachten. De schermen komen echter niet overeen qua stijl, wat de eenheid in de schermen weghaalt.',
+		visual: pathToAssets + 'images/citroen-c4-picasso-business-nl/c4-picasso-business-summary.png'
 	}
 		%}
 
 	{%
-		set quote = 'Iconen zijn op meerdere plekken terug te vinden. Het zijn allemaal lijniconen, maar voelen niet altijd als onderdeel van dezelfde serie.'
+		set quote = 'Er is rekening gehouden met input van de bestuurder. Zo zit de bevestig knop bijvoorbeeld links in het scherm.'
 		%}
 
 	{%
 		set highlightContent = {
-		title: 'Kleurgebruik',
-		text: 'Het is logisch dat de kleur blauw gebruikt wordt, maar dit had verder doorgevoerd kunnen worden in de rest van de auto. Verder worden er naast blauw en oranje bijna geen signaalkleuren gebruikt, terwijl die wel in de rest van het interieur gebruikt worden. Een uitzondering hier op zijn de parkeersignalen in het dashboard-schermpje.',
-		visual: pathToAssets + 'images/bmw-i3-nl/bmw-i3-highlight.png'
+		title: 'Dashboard',
+		text: 'Het gecentreerde dashboard oogt vooruitstrevend. Het dashboard voelt echter onwennig aan, omdat je automatisch boven je stuur kijkt naar je dashboard. Het is vervelend voor de bestuurder, omdat hij continu naar rechts moet kijken voor de informatie op het dashboard.',
+		visual: pathToAssets + 'images/citroen-c4-picasso-business-nl/c4-picasso-business-highlight-2.png'
 	}
 		%}
 
@@ -108,9 +114,9 @@
 			url: hrefPrefix + '/modules/views/bmw-i3-nl/bmw-i3-nl.html'
 		},
 		{
-			title: 'Citroën C4 Picasso',
-			subTitle: 'Business Edition',
-			score: '5.5',
+			title: 'BMW i3',
+			subTitle: 'Full Electric',
+			score: '8.5',
 			visual: pathToAssets + 'images/related/citroen-c4-picasso.png',
 			url: hrefPrefix + '/modules/views/bmw-i3-nl/bmw-i3-nl.html'
 		}
