@@ -70,20 +70,20 @@ $guide-box-size: 126px;
 }
 
 .app-guide-section {
-    padding: 2em 3em;
+	padding: 2em 3em;
 }
 
 .app-guide-content {
-    p {
-        max-width: 48em;
-        line-height: 1.5em;
-        margin-top: 1em;
-        margin-bottom: 1em;
-    }
+	p {
+		max-width: 48em;
+		line-height: 1.5em;
+		margin-top: 1em;
+		margin-bottom: 1em;
+	}
 }
 
 .app-guide-section-title {
-    position: relative;
+	position: relative;
 }
 
 .app-guide-logo-box {
@@ -111,106 +111,108 @@ a {
 }
 
 a.app-guide-icon {
-    color: $guide-link-color;
-    text-decoration: none;
+	color: $guide-link-color;
+	text-decoration: none;
 	border-bottom: none;
 	font-size: 18px;
 }
 
 .app-guide-permalink {
-    position: absolute;
-    left: -25px;
-    text-decoration: none;
+	position: absolute;
+	left: -25px;
+	text-decoration: none;
 
-    &:before {
-        content: '\e602';
-    }
+	&:before {
+		content: '\e602';
+	}
 }
 
 .app-guide-example {
-    padding: 1.5em 10px;
+	padding: 1.5em 10px;
 }
 
 .app-guide-preview {
-    position: relative;
-    @include clearfix();
+	position: relative;
+	@include clearfix();
 }
 
 .app-guide-preview-top,
 .app-guide-preview-bottom {
-    position: relative;
+	position: relative;
 }
 
 .app-guide-preview-top {
-    margin-top: 2em;
+	margin-top: 2em;
 }
 
 .app-guide-preview-bottom {
-    margin-bottom: 2em;
+	margin-bottom: 2em;
 }
 
 .app-guide-crop-mark {
-    position: relative;
-    &:before,
-    &:after {
-        content: " ";
-        display: block;
-        position: absolute;
-        width: 1em;
-        height: 1em;
-        border-color: $guide-graphic-color;
-        border-style: solid;
-    }
-    &:before {
-        left: -1em;
-    }
-    &:after {
-        right: -1em;
-    }
+	position: relative;
+	&:before,
+	&:after {
+		content: " ";
+		display: block;
+		position: absolute;
+		width: 1em;
+		height: 1em;
+		border-color: $guide-graphic-color;
+		border-style: solid;
+	}
+	&:before {
+		left: -1em;
+	}
+	&:after {
+		right: -1em;
+	}
 }
+
 .app-guide-preview-top .app-guide-crop-mark {
-    &:before,
-    &:after {
-        top: -1em;
-    }
-    &:before {
-        border-width: 0 2px 2px 0;
-    }
-    &:after {
-        border-width: 0 0 2px 2px;
-    }
+	&:before,
+	&:after {
+		top: -1em;
+	}
+	&:before {
+		border-width: 0 2px 2px 0;
+	}
+	&:after {
+		border-width: 0 0 2px 2px;
+	}
 }
+
 .app-guide-preview-bottom .app-guide-crop-mark {
-    &:before {
-        border-width: 2px 2px 0 0;
-    }
-    &:after {
-        border-width: 2px 0 0 2px;
-    }
+	&:before {
+		border-width: 2px 2px 0 0;
+	}
+	&:after {
+		border-width: 2px 0 0 2px;
+	}
 }
 
 .app-guide-code {
-    position: relative;
+	position: relative;
 	font-size: 16px;
 }
 
 .app-guide-code-options {
-    position: absolute;
-    right: 0;
-    top: 0;
-    margin: 0;
-    padding-left: 0;
-    list-style: none;
-    background: $guide-graphic-color;
+	position: absolute;
+	right: 0;
+	top: 0;
+	margin: 0;
+	padding-left: 0;
+	list-style: none;
+	background: $guide-graphic-color;
 
-    li {
-        display: inline-block;
-    }
+	li {
+		display: inline-block;
+	}
 
-    a {
-        color: white;
-        padding: 2px 3px;
-    }
+	a {
+		color: white;
+		padding: 2px 3px;
+	}
 }
 
 .app-guide-example-box {
@@ -218,17 +220,17 @@ a.app-guide-icon {
 }
 
 .app-guide-swatches {
-    @include clearfix();
+	@include clearfix();
 }
 
 .app-guide-swatch {
-    display: block;
-    border-width: 16px;
-    border-style: solid;
-    border-color: #e3e3e3;
-    margin: 0 auto;
-    width:  $guide-swatch-size;
-    height: $guide-swatch-size;
+	display: block;
+	border-width: 16px;
+	border-style: solid;
+	border-color: #e3e3e3;
+	margin: 0 auto;
+	width: $guide-swatch-size;
+	height: $guide-swatch-size;
 }
 
 .app-guide-icons {
@@ -245,88 +247,87 @@ a.app-guide-icon {
 //colors
 
 [title="yellow"] .app-guide-swatch {
-    background-color: $yellow;
+	background-color: $yellow;
 }
 
 [title="black"] .app-guide-swatch {
-    background-color: $black;
+	background-color: $black;
 }
 
 [title="dark-grey"] .app-guide-swatch {
-    background-color: $dark-grey;
+	background-color: $dark-grey;
 }
 
 [title="medium-grey"] .app-guide-swatch {
-    background-color: $medium-grey;
+	background-color: $medium-grey;
 }
 
 [title="light-grey"] .app-guide-swatch {
-    background-color: $light-grey;
+	background-color: $light-grey;
 }
 
 [title="white"] .app-guide-swatch {
-    background-color: $white;
+	background-color: $white;
 }
 
 .app-guide-swatches li {
-    float: left;
-    width: 120px;
+	float: left;
+	width: 120px;
 	list-style: none;
 }
 
 .app-guide-info {
-    display: block;
-    text-align: center;
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
-    font-size: 0.9em;
+	display: block;
+	text-align: center;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+	font-size: 0.9em;
 }
 
 // icons
 
 .social-media-links {
-    @include clearfix;
+	@include clearfix;
 
-    li {
-        float: left;
-        margin-right: 12px;
-    }
+	li {
+		float: left;
+		margin-right: 12px;
+	}
 }
 
 // guide grid
 
 .app-guide-main {
-    position: relative;
-    display: block;
+	position: relative;
+	display: block;
 }
 
 // guide resize iframe
 
 iframe {
-    transition: all .5s ease-in;
+	transition: all .5s ease-in;
 }
 
 .resize-buttons {
-    display: block;
+	display: block;
 }
-
 
 // styling specific elements for the styleguide
 
 .ui-link-background {
-    background-color:#5f92cd;
+	background-color: #5f92cd;
 }
 
 // toggle menu button
 .app-guide-toggle-menu {
-    position: absolute;
-    right: 10px;
+	position: absolute;
+	right: 10px;
 }
 
 .app-guide-footer {
 	padding-top: 30px;
 	padding-bottom: 30px;
-	clear:both;
+	clear: both;
 	background-color: $black;
 	text-align: center;
 	font-size: 1.6em;
