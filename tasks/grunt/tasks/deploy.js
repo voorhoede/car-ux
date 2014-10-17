@@ -18,7 +18,8 @@ module.exports = function (grunt) {
 				'copy:guide',
 				// uglify base.css, main.css?
 				'clean:distribution-cleanup',
-				'compress:distribution'
+				'compress:distribution',
+				'clean-urls'
 			]);
 		}
 	);

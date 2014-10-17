@@ -73,7 +73,35 @@ function getConfiguration(grunt) {
                 src: 'distribution/modules/views/_style-guide/_style-guide.html',
                 dest: 'distribution/guide/style-guide.html'
             }]
-        }
+        },
+		'cleanUrls-guide': {
+			files: [{
+				expand: true,
+				cwd: 'distribution/',
+				src: ['**'],
+				dest: 'distribution/front-end-guide/'
+			}]
+		},
+		'cleanUrls': {
+			files: [{
+				expand: true,
+				cwd: 'distribution/front-end-guide/assets/',
+				src: ['**'],
+				dest: 'distribution/assets/'
+			},{
+				src: 'distribution/front-end-guide/modules/views/home/home.html',
+				dest: 'distribution/index.html'
+			}, {
+				expand: true,
+				cwd: 'distribution/front-end-guide/modules/views/',
+				src: ['**/*.html', '!_*/**'],
+				dest: 'distribution/',
+				rename: function(dest, src) {
+					var filename = src.substring(src.lastIndexOf('/') + 1);
+					return dest + src.replace(filename,'index.html');
+				}
+			}]
+		}
     };
 }
 
