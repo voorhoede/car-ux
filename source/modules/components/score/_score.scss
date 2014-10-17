@@ -88,7 +88,7 @@
 		right: 0;
 		height: 100%;
 		width: 50px;
-		background-color: $medium-grey;
+		background-color: $black;
 		@include min-screen($break-small) {
 			width: 140px;
 		}
@@ -102,6 +102,7 @@
 		.score-read-more {
 			@include normal-font();
 
+			color: $white;
 			display: none;
 			font-size: 16px;
 			padding-left: 15px;

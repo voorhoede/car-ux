@@ -16,7 +16,7 @@
 	.footer-contact {
 		@include box-sizing(border-box);
 
-		background-color: $medium-grey;
+		background-color: $yellow;
 		padding: 30px;
 
 		@include min-screen($break-medium) {
@@ -31,7 +31,6 @@
 		}
 
 		p {
-			background-color: $white;
 			padding: 20px;
 		}
 	}

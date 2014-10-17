@@ -13,7 +13,6 @@ module.exports = function (grunt) {
         'grunticon',
         'htmlmin',
 		'imagemin',
-        'jsbeautifier',
         'jshint',
         'prompt',
         'sass',
