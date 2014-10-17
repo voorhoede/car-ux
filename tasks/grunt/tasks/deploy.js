@@ -11,7 +11,7 @@ module.exports = function (grunt) {
 				'cssmin:distribution',
 				'concat:distribution',
 				'compile-html',
-				'jsbeautifier:distribution-components',
+				//'jsbeautifier:distribution-components',
 				'compile-previews',
                 'compile-preview-objects',
 				'compile-index',
