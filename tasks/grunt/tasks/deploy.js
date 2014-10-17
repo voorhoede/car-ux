@@ -15,6 +15,7 @@ module.exports = function (grunt) {
 				'compile-previews',
                 'compile-preview-objects',
 				'compile-index',
+				'imagemin',
 				//'jsbeautifier:distribution-html',
 				'copy:guide',
 				'uglify:distribution',
