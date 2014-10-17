@@ -5,6 +5,7 @@
 		"helpers/debounce",
 		"helpers/dom",
 		"helpers/media-queries",
+		"debug",
 		"equalHeights",
 		"expandible"
     ],
