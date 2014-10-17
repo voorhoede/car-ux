@@ -43,7 +43,7 @@
 		&:hover,
 		&:focus {
 			@include transition(box-shadow .2s ease-out);
-			@include box-shadow(0 0 15px 1px $dark-grey);
+			@include box-shadow(0 0 15px 1px $shadow-color);
 
 			.related-score {
 				color: $black;
