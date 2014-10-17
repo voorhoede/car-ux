@@ -14,7 +14,12 @@ function getConfiguration(grunt) {
 				sources.push('source/vendor/'+name+'.js');
 			});
 			scriptIndex.common.forEach(function(name){
-				sources.push('source/assets/scripts/'+name+'.js');
+				// Don't include the debug script on development
+				if (destination === 'web' && name === 'debug') {
+					return;
+				} else {
+					sources.push('source/assets/scripts/'+name+'.js');
+				}
 			});
 			scriptIndex.components.forEach(function(name){
 				sources.push('source/modules/components/'+name+'/_'+name+'.js');
