@@ -1,0 +1,5 @@
+AuthName "Restricted Area"
+AuthType Basic
+AuthUserFile /public/sites/www.carui.info/.htpasswd
+AuthGroupFile /dev/null
+require valid-user
