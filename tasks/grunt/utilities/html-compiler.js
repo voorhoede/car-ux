@@ -35,7 +35,7 @@ var nunjucks = require('nunjucks');
 		var min = 1;
 
 		if (str) {
-			output = Math.round((parseInt(str.replace(',', '.'), 10) / 10) * max);
+			output = Math.round((parseInt(str.replace(',', '.'), 10) / 100) * max);
 		}
 
 		if (output > max) {
