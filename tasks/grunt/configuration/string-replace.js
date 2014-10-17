@@ -20,14 +20,11 @@ function getConfiguration(grunt) {
 						var path = match.replace(p1, '');
 						var fullPath = path.replace(filename, '');
 
-						console.log(fullPath);
-
 						if (fullPath === '/home/"') {
 							fullPath = '/"';
 						}
-						//return fullPath;
 
-						return match;
+						return fullPath;
 					}
 				}]
 			}

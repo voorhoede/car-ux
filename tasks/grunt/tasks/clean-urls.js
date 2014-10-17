@@ -8,7 +8,7 @@ module.exports = function (grunt) {
 				'copy:cleanUrls-guide',
 				'clean:cleanUrls',
 				'copy:cleanUrls',
-				//'string-replace'
+				'string-replace'
 			];
 
 			grunt.task.run(tasks);
