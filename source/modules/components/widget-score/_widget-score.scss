@@ -50,10 +50,10 @@ $headerHeight: 		80px;
 				margin-bottom: 14px;
 
 				a {
+					@include header-font();
 					@include clearfix();
 
 					border: none;
-					font-family: $helvetica-neue-bold;
 					font-size: 25px;
 
 					&:hover,
@@ -99,8 +99,9 @@ $headerHeight: 		80px;
 		}
 
 		.score {
+			@include header-font();
+
 			color: $black;
-			font-family: $helvetica-neue-bold;
 			font-size: 36px;
 			vertical-align: middle;
 			margin-left: 17px;
@@ -108,10 +109,11 @@ $headerHeight: 		80px;
 	}
 
 	.score-summary {
+		@include normal-font();
+
 		padding: 30px;
 		margin-top: $headerHeight;
 		background-color: $medium-grey;
-		font-family: $helvetica-neue;
 
 		ul {
 			margin-bottom: 30px;

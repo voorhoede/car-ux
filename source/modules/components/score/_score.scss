@@ -18,11 +18,12 @@
 		}
 	}
 	.testing-date-person {
+		@include normal-font();
+
 		position: relative;
 		display: inline-block;
 		margin-right: 20px;
 		margin-left: 20px;
-		font-family: $helvetica-neue;
 		font-size: 1.2em;
 		color: $white;
 		@include min-screen($break-medium) {
@@ -62,7 +63,8 @@
 			text-decoration: none;
 		}
 		h2 {
-			font-family: $helvetica-neue-bold;
+			@include header-font();
+
 			font-size: 25px;
 			margin: 0;
 		}
@@ -98,8 +100,9 @@
 			right: 18px;
 		}
 		.score-read-more {
+			@include normal-font();
+
 			display: none;
-			font-family: $helvetica-neue;
 			font-size: 16px;
 			padding-left: 15px;
 			line-height: 47px;
@@ -159,11 +162,12 @@
 		}
 	}
 	.score-number {
+		@include header-font();
+
 		display: inline-block;
 		vertical-align: top;
 		padding-top: 5px;
 		padding-left: 17px;
-		font-family: $helvetica-neue-bold;
 		font-size: 36px;
 	}
 	.score-icon.icon-gauge1,

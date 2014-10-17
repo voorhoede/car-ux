@@ -35,12 +35,14 @@
 		}
 
 		h2 {
+			@include header-font();
+
 			margin: 5px 0 10px 0;
-			font-family: $helvetica-neue-bold;
 
 			.subtitle {
+				@include normal-font();
+
 				display: block;
-				font-family: $helvetica-neue;
 				font-size: 16px;
 				margin-top: 5px;
 			}
@@ -51,7 +53,8 @@
 		}
 
 		ul {
-			font-family: $helvetica-neue;
+			@include normal-font();
+
 			list-style-type: none;
 			padding: 0 0 10px 0;
 			margin: 0;
@@ -97,13 +100,14 @@
 		}
 
 		.featured-score {
+			@include header-font();
+
 			background-color: $yellow;
 			position: absolute;
 			right: 0;
 			top: 0;
 			padding: 7px 9px;
 			min-width: 92px;
-			font-family: $helvetica-neue-bold;
 			font-size: 30px;
 
 			.icon-gauge1,

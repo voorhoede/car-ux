@@ -14,7 +14,8 @@
 		margin-bottom: 80px;
 
 		h2 {
-			font-family: $helvetica-neue-bold;
+			@include header-font();
+
 			font-size: 25px;
 		}
 

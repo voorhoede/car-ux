@@ -64,27 +64,30 @@
 			}
 
 			h2 {
+				@include header-font();
+
 				margin: 0;
 				padding: 25px 30px 35px 30px;
-				font-family: $helvetica-neue-bold;
 				font-size: 25px;
 
 				span {
+					@include normal-font();
+
 					display: block;
-					font-family: $helvetica-neue;
 					font-size: 20px;
 					line-height: 2;
 				}
 			}
 
 			.related-score {
+				@include header-font();
+
 				display: block;
 				background-color: $yellow;
 				padding: 10px;
 				position: absolute;
 				bottom: 100%;
 				right: 0;
-				font-family: $helvetica-neue-bold;
 				font-size: 30px;
 				min-width: 40px;
 				text-align: center;
