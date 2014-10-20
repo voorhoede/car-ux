@@ -35,7 +35,7 @@
     box-sizing: border-box;
     display: inline-block;
     vertical-align: top;
-    width: 66.66%;
+    width: 66%;
     padding-bottom: 0;
   }
 }
@@ -78,7 +78,7 @@
     box-sizing: border-box;
     display: inline-block;
     vertical-align: top;
-    width: 33.33%;
+    width: 34%;
   }
 }
 .detail-intro .social-buttons {
