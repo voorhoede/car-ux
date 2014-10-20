@@ -9,7 +9,7 @@ function getConfiguration(grunt) {
         // https://github.com/gruntjs/grunt-contrib-sass#options
         development: {
             options: {
-                sourcemap: true,
+                sourcemap: 'auto',
                 style: 'expanded'
             },
             files: [
