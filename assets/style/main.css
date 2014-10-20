@@ -1574,6 +1574,9 @@ blockquote {
   vertical-align: bottom;
   width: 100%;
 }
+.shortlist .shortlist-product .equalHeight {
+  background-color: #ffffff;
+}
 .shortlist .shortlist-product .shortlist-title {
   background-color: #ffffff;
   position: relative;
@@ -1852,6 +1855,11 @@ hr {
   border: none;
   height: 1px;
   margin: 0 auto;
+}
+
+.equalHeight {
+  -webkit-transition: height 0.2s ease-out;
+  transition: height 0.2s ease-out;
 }
 
 /*# sourceMappingURL=main.css.map */
