@@ -38,3 +38,7 @@ hr {
 	height: 1px;
 	margin: 0 auto;
 }
+
+.equalHeight {
+	@include transition(height .2s ease-out);
+}

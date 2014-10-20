@@ -6,24 +6,26 @@
 		{% for product in content.products %}<!--
 		--><a class="shortlist-product" href="{{ product.url }}">
 		<img src="{{ product.visual }}" alt="{{ product.title  + ' - ' + product.subTitle }}" />
-		<div class="shortlist-title">
-			<h2>{{ product.title }}<span>{{ product.subTitle }}</span></h2>
-			<span class="shortlist-score">{{ product.score }}</span>
-		</div>
-		<div class="shortlist-summary">
-			<hr/>
-			<ul>
-				{% for goodText in product.summary.good %}
-				<li><span class="icon icon-plus-yellow"></span>{{ goodText }}</li>
-				{% endfor %}
-			</ul>
-			<ul>
-				{% for badText in product.summary.bad %}
-				<li><span class="icon icon-min-red"></span>{{ badText }}</li>
-				{% endfor %}
-			</ul>
-			<hr/>
-			<time>{{ product.date }}</time>
+		<div class="equalHeight" data-equal-height>
+			<div class="shortlist-title">
+				<h2>{{ product.title }}<span>{{ product.subTitle }}</span></h2>
+				<span class="shortlist-score">{{ product.score }}</span>
+			</div>
+			<div class="shortlist-summary">
+				<hr/>
+				<ul>
+					{% for goodText in product.summary.good %}
+					<li><span class="icon icon-plus-yellow"></span>{{ goodText }}</li>
+					{% endfor %}
+				</ul>
+				<ul>
+					{% for badText in product.summary.bad %}
+					<li><span class="icon icon-min-red"></span>{{ badText }}</li>
+					{% endfor %}
+				</ul>
+				<hr/>
+				<time>{{ product.date }}</time>
+			</div>
 		</div>
 	</a><!--
 	-->{% endfor %}
