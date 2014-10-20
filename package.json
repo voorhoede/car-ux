@@ -1,8 +1,8 @@
 {
     "name": "car-ux",
-    "title": "car-ux",
+    "title": "Car UI",
     "version": "0.0.0",
-    "repository": "git@bitbucket.org:voorhoede/2dehands-be",
+    "repository": "git@github.com:voorhoede/car-ux.git",
     "private": true,
     "scripts": {
         "deploy": "grunt deploy",
