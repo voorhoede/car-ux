@@ -12,6 +12,7 @@ module.exports = function (grunt) {
                 'compile-html:development',
                 'compile-previews:development',
                 'compile-index:development',
+				'newer:imagemin',
                 'sass:development',
                 'concat:development',
                 'server'
