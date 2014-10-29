@@ -11,6 +11,7 @@ module.exports = function (grunt) {
         'csslint',
         'cssmin',
         'grunticon',
+        'htmlmin',
 		'imagemin',
         'jsbeautifier',
         'jshint',

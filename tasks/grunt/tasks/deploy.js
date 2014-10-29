@@ -20,6 +20,7 @@ module.exports = function (grunt) {
 				'uglify:distribution',
 				'clean:distribution-cleanup',
 				'compress:distribution',
+				'htmlmin',
 				'clean-urls'
 			]);
 		}
