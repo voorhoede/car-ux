@@ -17,24 +17,28 @@ h6 {
 }
 
 h1 {
-	font-family: $helvetica-neue-bold;
+	@include header-font();
+
 	font-size: 36px;
 	line-height: 1.1;
 	margin: 0;
 	padding-bottom: 20px;
 }
 h2 {
-	font-family: $helvetica-neue;
+	@include normal-font();
+
 	font-size: 25px;
 	line-height: 1.1;
 }
 h3 {
-	font-family: $helvetica-neue;
+	@include normal-font();
+
 	font-size: 20px;
 	line-height: 1.1;
 }
 p {
-	font-family: $helvetica-neue;
+	@include normal-font();
+
 	font-size: 1.6em;
 	line-height: 1.6;
 }
@@ -43,6 +47,7 @@ ol, ul {
 }
 
 blockquote {
-	font-family: $helvetica-neue-bold;
+	@include header-font();
+
 	font-size: 3.6em;
 }
