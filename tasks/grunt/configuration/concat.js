@@ -7,15 +7,12 @@ function getConfiguration(grunt) {
 
 	function getFiles(destination){
 		var files = {};
-		files[destination + '/assets/scripts/vendor.js'] = (function(){
+		files[destination + '/assets/scripts/main.js'] = (function(){
 			var sources = [];
+			// Vendor first!
 			scriptIndex.vendor.forEach(function(name){
 				sources.push('source/vendor/'+name+'.js');
 			});
-			return sources;
-		}());
-		files[destination + '/assets/scripts/main.js'] = (function(){
-			var sources = [];
 			scriptIndex.common.forEach(function(name){
 				sources.push('source/assets/scripts/'+name+'.js');
 			});
