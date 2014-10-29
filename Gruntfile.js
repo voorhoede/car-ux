@@ -18,7 +18,8 @@ module.exports = function (grunt) {
         'sass',
         'svgmin',
         'uglify',
-        'watch'
+        'watch',
+		'string-replace'
     ]);
     configuration.modulesIndex = 'source/modules/index.json';
     configuration.modulesScss  = 'source/assets/scss/_modules.scss';

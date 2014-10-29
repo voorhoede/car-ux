@@ -23,6 +23,14 @@ function getConfiguration(grunt) {
 			'distribution/bootstrap.js',
 			'distribution/router.js'
 			//'distribution/stubs'
+		],
+		cleanUrls: [
+			'distribution/assets/',
+			'distribution/guide/',
+			'distribution/modules/',
+			'distribution/vendor/',
+			'distribution/app.zip',
+			'distribution/index.html'
 		]
 	};
 }
