@@ -1,15 +1,12 @@
 (function(){
 	'use strict';
 
-	var debugStyleUri = '/guide/debug.css';
 	var components = document.querySelectorAll('[data-component]');
 
-	addStylesheet(debugStyleUri);
 	annotateComponents();
 
 	if(window.location.href.indexOf('debug') > 0){ toggleDebug(); }
 	window.debug = toggleDebug;
-	//toggleDebug();
 
 	function annotateComponents() {
 		[].forEach.call([].slice.call(components), function(component){
@@ -20,14 +17,6 @@
 			helpers.dom.addClass(label, 'debug-label');
 			component.appendChild(label);
 		});
-	}
-
-	function addStylesheet(uri) {
-		var stylesheet = document.createElement('link');
-		stylesheet.type = 'text/css';
-		stylesheet.rel = 'stylesheet';
-		stylesheet.href = uri;
-		document.getElementsByTagName('head')[0].appendChild(stylesheet);
 	}
 
 	function toggleDebug() {
