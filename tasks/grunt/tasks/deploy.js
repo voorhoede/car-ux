@@ -8,6 +8,7 @@ module.exports = function (grunt) {
 				'clean:distribution',
 				'copy:distribution',
 				'sass:distribution',
+				'cssmin:distribution',
 				'concat:distribution',
 				'compile-html',
 				'jsbeautifier:distribution-components',
