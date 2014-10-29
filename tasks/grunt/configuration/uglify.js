@@ -4,12 +4,12 @@
 function getConfiguration(grunt) {
     'use strict';
     return {
-        app: {
+        distribution: {
             files: [
-//                {
-//                    src: 'distribution/assets/scripts/app.js',
-//                    dest: 'distribution/assets/scripts/app.js'
-//                }
+                {
+                    src: 'distribution/assets/scripts/main.js',
+                    dest: 'distribution/assets/scripts/main.js'
+                }
             ]
         }
     };
