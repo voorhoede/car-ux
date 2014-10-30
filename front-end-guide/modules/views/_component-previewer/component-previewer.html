@@ -30,7 +30,7 @@
 		{{ code.readme }}
 	</div>
 
-	{% if (mode == 'distribution') %}
+	{% if (mode == '//distribution') %}
 	<div class="resize-buttons">
 		<button id="desktop">desktop</button>
 		<button id="phone">phone</button>
@@ -60,7 +60,7 @@
 	{% endif %}
 	{% endif %}
 
-	{% if (mode == 'development') %}
+	{% if (mode != '//development') %}
 	<section id="section-preview" class="app-guide-section">
 		<a class="app-guide-icon app-guide-icon-list app-guide-back"
 		   href="/" title="back to overview"></a>
