@@ -238,8 +238,8 @@
 		var component = this, element = this.element, settings = this.settings;
 		// Next 3 lines were added custom for Car UX score component
 		var iconArrow = element.querySelector('[data-icon-arrow]');
-		var arrowUpClass = 'icon-arrow-up';
-		var arrowDownClass = 'icon-arrow-down';
+		var arrowUpClass = 'icon-arrow-up-white';
+		var arrowDownClass = 'icon-arrow-down-white';
 		isExpanded = (isExpanded !== undefined) ? isExpanded : !component.isExpanded;
 		if (isExpanded) {
 			element.classList.add(settings.expandedClass);
