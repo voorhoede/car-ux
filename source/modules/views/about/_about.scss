@@ -4,9 +4,9 @@
 /* ABOUT VIEW */
 .about {
 	background-color: $light-grey;
-	padding: 0 30px 30px 30px;
 
-	h1 {
-		padding-top: 40px;
+	.summary {
+		margin-top: 0;
+		padding-top: 60px;
 	}
 }
