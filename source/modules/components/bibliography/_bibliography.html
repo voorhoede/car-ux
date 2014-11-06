@@ -10,7 +10,7 @@
 				{% if source.label %}
 					{{ source.label }}
 				{% endif %}
-				{% if source.label %}({% endif %}<a href="{{ source.url }}" target="_blank">{{ source.url }}</a>{% if source.label %}){% endif %}{% if not loop.last %},{% endif %}
+				{% if source.label %}({% endif %}<a rel="nofollow" href="{{ source.url }}" target="_blank">{{ source.url }}</a>{% if source.label %}){% endif %}{% if not loop.last %},{% endif %}
 			</li>
 			{% endfor %}
 		</ol>
