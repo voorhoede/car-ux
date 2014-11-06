@@ -4,7 +4,7 @@ var helpers = helpers || {};
 	'use strict';
 
 	function setBreakSize() {
-		// Set breaSize globally - Removing doubles quotes added by IE
+		// Set breakSize globally - Removing doubles quotes added by IE
 		helpers.breakSize = w.getComputedStyle(d.body, ':after').getPropertyValue('content').replace(/"/g, '');
 	}
 	setBreakSize();
