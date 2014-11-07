@@ -63,13 +63,15 @@ Grunt tasks are available to create new views and components or remove them. Use
 
 The project supports staging in different environments, both on the Voorhoede server and locally.
 
-### Local environments
+### Local environment
 
-    local.car-ux.voorhoede.nl:8888	suggested uri for local dev
-    distribution.car-ux.voorhoede.nl:8888	for testing local distribution
+The `grunt develop` task starts a local webserver which runs on `http://localhost:8888` by default.
+The local environment opens with the front-end guide.
 
-Vhost files for these environments are available in `car-ux.vhost` (see 'Configure vhost'). Local is linked to the source directory and uses bootstrap.js and router.js which allows for instant previewing during development. The distribution environment is linked to the distribution directory. The contents of this directory are generated using the `grunt deploy` task. The distribution contains only static views & components, plus the front-end guide.
+### Remote environment
 
+To make the URL's nicer and easier to read the `grunt deploy` task flattens the file structure.
+This means the remote environment opens with the `home` view, the front-end guide can be found at `/front-end-guide/`.
 
 ## Code quality tools
 
@@ -84,3 +86,4 @@ The project comes with a bunch of script tasks which should make life easier. Th
 To start the grunt task wizard which walks you through all available grunt tasks in the project, simply run the grunt command in the project directory:
 
 	$ grunt
+	
