@@ -34,7 +34,9 @@
 		}
 
 		p {
-			width: 75%;
+			@include min-screen($break-small) {
+				width: 75%;
+			}
 		}
 	}
 
