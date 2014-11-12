@@ -2,7 +2,7 @@
 <!-- score -->
 <section class="score" data-component="score">
 	<div class="score-heading">
-		<h1>DE SCORES</h1>
+		<h1>SCORES</h1>
 		<span class="testing-date-person">{{ content.testTagline }}</span>
 	</div>
 	{% for property, value in content.widgetScore.scoreDetails %}
@@ -14,7 +14,7 @@
 		   class="score-title"
 		   data-expandible-handle="toggle">
 			<h2>{{ property | capitalize }}</h2>
-			<span class="arrow-box"><span class="score-read-more">Lees meer</span><span data-icon-arrow class="icon {% if loop.first %} icon-arrow-up-white {% else %} icon-arrow-down-white {% endif %}"></span></span>
+			<span class="arrow-box"><span class="score-read-more">Read more</span><span data-icon-arrow class="icon {% if loop.first %} icon-arrow-up-white {% else %} icon-arrow-down-white {% endif %}"></span></span>
 		</a>
 		<div class="score-content {% if value.visual %}has-visual{% endif %}" data-expandible-content>
 			<div class="score-box-wrapper">
@@ -36,10 +36,10 @@
 
 {%
 	set content = {
-		pageUrl: 'http://www.car-ux.com/bmw-i3-nl/bmw-i3-nl.html',
-		backgroundImage: pathToAssets + 'images/bmw-i3-nl/bmw-i3-dashboard.png',
+		pageUrl: 'http://www.carui.info/bmw-i3-nl/',
+		backgroundImage: pathToAssets + 'images/bmw-i3-nl/bmw-i3-dashboard.jpg',
 		backgroundImageAlt: 'BMW i3 dashboard',
-		titleImage: pathToAssets + 'images/bmw-i3-nl/bmw-i3-small.png',
+		titleImage: pathToAssets + 'images/bmw-i3-nl/bmw-i3-small.jpg',
 		titleImageAlt: 'BMW i3 small',
 		title: 'BMW i3',
 		subtitle: 'Business model 1.5 TDI',
@@ -51,7 +51,7 @@
 				uitstraling: {
 					score: '4',
 					description: 'De blauwe lijnen die op het exterieur en in het interieur te vinden zijn komen ook in de interfaces terug, dit is een mooi detail. Tab-achtige lijnen komen voor zowel in de UI als in het dashboard achter de UI. De backlights van de knoppen om de UI heen zijn niet blauw, maar rood. Het font dat gebruikt is is niet hetzelfde als op de buttons, maar dit stoort niet.',
-					visual: pathToAssets + 'images/bmw-i3-nl/bmw-i3-small.png'
+					visual: pathToAssets + 'images/bmw-i3-nl/bmw-i3-small.jpg'
 				},
 				contrast: {
 					score: '5',
