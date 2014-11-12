@@ -1,0 +1,51 @@
+@import "../../../assets/scss/variables";
+@import "../../../assets/scss/helpers";
+
+/* bulletpoints component */
+
+.bulletpoints {
+	@include box-sizing(border-box);
+
+	background-color: $light-grey;
+	margin: 16px 0;
+	padding: 30px;
+
+	.bulletpoints {
+		float: left;
+		width: 50%;
+	}
+
+	ul {
+		margin: 0;
+		padding: 0;
+		list-style-type: none;
+
+		li {
+			position: relative;
+			line-height: 22px;
+			margin-bottom: 15px;
+			padding-left: 30px;
+
+			.icon {
+				position: absolute;
+				left: 0;
+				top: 1px;
+				margin-right: 20px;
+			}
+		}
+	}
+}
+
+.half-width .bulletpoints {
+	@include min-screen($break-small) {
+		float: left;
+		width: 50%;
+	}
+}
+
+.medium-width .bulletpoints {
+	@include min-screen($break-small) {
+		float: left;
+		width: 75%;
+	}
+}

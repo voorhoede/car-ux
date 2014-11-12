@@ -1,0 +1,19 @@
+{
+    "vendor": [
+    ],
+    "common": [
+		"helpers/debounce",
+		"helpers/dom",
+		"helpers/media-queries",
+		"debug",
+		"equalHeights",
+		"expandible"
+    ],
+    "components": [
+		"detail-intro",
+		"score",
+		"widget-score"
+    ],
+    "views": [
+    ]
+}

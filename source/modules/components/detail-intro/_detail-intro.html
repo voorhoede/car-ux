@@ -1,0 +1,91 @@
+{% macro detailIntro(content) %}
+{% import "components/widget-score/_widget-score.html" as widgetScore %}
+<!-- intro -->
+<div class="{% if content.widgetScore %}detail-intro{% else %}detail-intro-text{% endif %}" data-component="{% if content.widgetScore %}detail-intro{% else %}detail-intro-text{% endif %}">
+	<img itemprop="image" class="intro-background" src="{{ content.backgroundImage }}" alt="{{ content.backgroundImageAlt }}" />
+	<section class="intro-content max-width-centered" data-intro-section>
+		<article class="intro-text" data-intro-text>
+			<header>
+				{% if content.widgetScore %}
+				<img class="intro-title-image" src="{{ content.titleImage }}" alt="{{ content.titleImageAlt }}" />
+				{% endif %}
+				<h1 itemprop="name">
+					{{ content.title }}
+					<span class="subtitle">{{ content.subtitle }}</span>
+				</h1>
+			</header>
+			{% if content.inlineVisual %}
+			<img class="inline-visual" src="{{ content.inlineVisual }}" alt="{{ content.title }}" />
+			{% endif %}
+			<p itemprop="description">
+				{{ content.description }}
+			</p>
+		</article>{% if content.widgetScore %}<!--
+		--><div class="widget-score-block">
+			{{ widgetScore.widgetScore(content) }}
+		</div><!--
+		--><aside class="social-buttons" data-social-buttons>
+			<p>Share this test on</p>
+			<a target="_blank" href="http://www.facebook.com/sharer.php?s=100&amp;p[url]={{ content.pageUrl | urlencode }}&amp;p[title]=Car%20UX%20-%20{{ content.title }}%20{{ content.subtitle }}&amp;p[summary]={{ content.socialSharing.facebook | urlencode }}" class="social-button icon-facebook" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=368,width=600');return false;">Facebook</a>
+			<a target="_blank" href="http://twitter.com/share?text={{ content.socialSharing.twitter | urlencode }}&amp;url={{ content.pageUrl | urlencode }}" class="social-button icon-twitter" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=438,width=600');return false;">Twitter</a>
+			<a target="_blank" class="social-button icon-gplus" href="https://plus.google.com/share?url={{ content.pageUrl }}" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;">Google Plus</a>
+		</aside>{% endif %}
+	</section>
+</div>
+<!-- /intro -->
+{% endmacro %}
+
+{# this will only output in component guide #}
+{%
+	set content = {
+		pageUrl: 'http://www.carui.info/bmw-i3-nl/',
+		backgroundImage: pathToAssets + 'images/bmw-i3-nl/bmw-i3-dashboard.jpg',
+		backgroundImageAlt: 'BMW i3 dashboard',
+		titleImage: pathToAssets + 'images/bmw-i3-nl/bmw-i3-small.jpg',
+		titleImageAlt: 'BMW i3 small',
+		title: 'BMW i3',
+		subtitle: 'Full Electric',
+		description: 'Introtekst over de nieuwe BMW i3. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequa orem psum dolor sit.',
+		testTagline: 'Getest op 12 juni 2014 door Hylke van Maaren en Miranda Schenkel',
+		widgetScore: {
+			score: '8,5',
+			scoreDetails: {
+				uitstraling: {
+					score: '4',
+					description: 'De blauwe lijnen die op het exterieur en in het interieur te vinden zijn komen ook in de interfaces terug, dit is een mooi detail. Tab-achtige lijnen komen voor zowel in de UI als in het dashboard achter de UI. De backlights van de knoppen om de UI heen zijn niet blauw, maar rood. Het font dat gebruikt is is niet hetzelfde als op de buttons, maar dit stoort niet.'
+				},
+				contrast: {
+					score: '5',
+					description: 'De blauwe lijnen die op het exterieur en in het interieur te vinden zijn komen ook in de interfaces terug, dit is een mooi detail. Tab-achtige lijnen komen voor zowel in de UI als in het dashboard achter de UI. De backlights van de knoppen om de UI heen zijn niet blauw, maar rood. Het font dat gebruikt is is niet hetzelfde als op de buttons, maar dit stoort niet.'
+				},
+				focus: {
+					score: '4',
+					description: 'De blauwe lijnen die op het exterieur en in het interieur te vinden zijn komen ook in de interfaces terug, dit is een mooi detail. Tab-achtige lijnen komen voor zowel in de UI als in het dashboard achter de UI. De backlights van de knoppen om de UI heen zijn niet blauw, maar rood. Het font dat gebruikt is is niet hetzelfde als op de buttons, maar dit stoort niet.'
+				},
+				usability: {
+					score: '4',
+					description: 'De blauwe lijnen die op het exterieur en in het interieur te vinden zijn komen ook in de interfaces terug, dit is een mooi detail. Tab-achtige lijnen komen voor zowel in de UI als in het dashboard achter de UI. De backlights van de knoppen om de UI heen zijn niet blauw, maar rood. Het font dat gebruikt is is niet hetzelfde als op de buttons, maar dit stoort niet.'
+				},
+				features: {
+					score: '3',
+					description: 'De blauwe lijnen die op het exterieur en in het interieur te vinden zijn komen ook in de interfaces terug, dit is een mooi detail. Tab-achtige lijnen komen voor zowel in de UI als in het dashboard achter de UI. De backlights van de knoppen om de UI heen zijn niet blauw, maar rood. Het font dat gebruikt is is niet hetzelfde als op de buttons, maar dit stoort niet.'
+				}
+			},
+			summary: {
+				good: [
+					'De UI is contrastrijk',
+					'Hardware knop'
+				],
+				bad: [
+					'De inputmethode',
+					'Navigatie viel tegen'
+				]
+			}
+		},
+		socialSharing: {
+			twitter: 'Twitter - share text',
+			facebook: 'Facebook - share text'
+		}
+	}
+%}
+{{ detailIntro(content) }}

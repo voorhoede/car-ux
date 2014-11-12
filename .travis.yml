@@ -1,0 +1,12 @@
+language: node_js
+node_js:
+- '0.10'
+before_install:
+- gem install sass
+- npm install -g grunt-cli
+- npm install -g bower
+- bower install
+script: npm run travis
+env:
+  global:
+    secure: YhnnJfxSnJl2ePMFDFpCHmzx1niVkVlCezNRHsuTAagzZhz1kcjWevuvqseMaya20uI5NAVEE1sz4qiESLfnNtj+cNBuvLppuY+n+dN2OW/w3fDn5HpIfAsHYgqDoXNQVXueLtyhahj9JdDoAR1yuuIXmaGaqL/ejFgtfZ4ymck=

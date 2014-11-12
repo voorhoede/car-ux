@@ -1,0 +1,124 @@
+{%
+	set navigation = [
+		{
+			label: 'Home',
+			href: hrefPrefix + '/modules/views/home/home.html',
+			active: true
+		},
+		{
+			label: 'Reviews',
+			href: hrefPrefix + '/modules/views/reviews/reviews.html',
+			active: false
+		},
+		{
+			label: 'About<span class="nav-text-large">&nbsp;Car UI</span>',
+			href: hrefPrefix + '/modules/views/about/about.html',
+			active: false
+		}
+	]
+%}
+
+{%
+	set homeIntroContent = {
+		url: hrefPrefix + '/modules/views/about/about.html',
+		backgroundImage: pathToAssets + 'images/home/home-intro.jpg',
+		backgroundImageAlt: '',
+		title: 'THE \'WHY\' OF CAR UI',
+		description: 'In the Car UI Test initiative, judging from our digital design experience, we assess existing and new cars on their digital displays and associated controls.  '
+	}
+%}
+
+{%
+	set featuredContent = {
+		mainTitle: 'NOT THERE YET',
+		title: 'Opel Insignia',
+		subTitle: 'Sports Tourer Business+ 2.0 CDTI',
+		score: '50',
+		date: '15-05-2014',
+		url: hrefPrefix + '/modules/views/opel-insignia-tourer-bplus-2-0-d-nl/opel-insignia-tourer-bplus-2-0-d-nl.html',
+		visual: pathToAssets + 'images/opel-insignia-nl/opel-insignia-summary.jpg',
+		summary: {
+			good: [
+				'Switching from light to dark environment',
+				'Love the size of the screen'
+			],
+			bad: [
+				'Confirm the input of the touchpad',
+                    'The brightness of the design functions as a \'lamp\''
+			]
+		}
+	}
+%}
+
+{%
+	set shortlistContent = {
+		mainTitle: 'HIGHEST RANKED',
+		products: [
+			{
+				title: 'BMW i3',
+				subTitle: 'Full Electric',
+				score: '85',
+				visual: pathToAssets + 'images/related/bmw-i3.jpg',
+				url: hrefPrefix + '/modules/views/bmw-i3-nl/bmw-i3-nl.html',
+				date: '18-07-2014',
+				summary: {
+					good: [
+						'UI fits with the interior and works like a charm',
+						'The control wheel is within reach'
+					],
+						bad: [
+						'The navigation does not help with electric driving',
+						'Navigation is devious'
+					]
+				}
+			},
+			{
+				title: 'Nissan Qashqai',
+				subTitle: 'Tekna 1.5 dCi',
+				score: '100',
+				visual: pathToAssets + 'images/related/nissan-qashqai.jpg',
+				url: hrefPrefix + '/modules/views/nissan-qashqai-tekna-1-5-dci-nl/nissan-qashqai-tekna-1-5-dci-nl.html',
+				date: '15-05-2014',
+				summary: {
+					good: [
+                        'No nonsense interface',
+                        'Consistent application of the visual style'
+					],
+						bad: [
+                        'Sometimes a bit of a dull interface',
+                        'Display not readable with direct sun froom the glass roof'
+					]
+				}
+			},
+			{
+				title: 'Mercedes-Benz',
+				subTitle: 'C220 CDI Ambition Comfort',
+				score: '75',
+				visual: pathToAssets + 'images/related/mercedes-c220.jpg',
+				url: hrefPrefix + '/modules/views/mercedes-c2-2-nl/mercedes-c2-2-nl.html',
+				date: '05-05-2014',
+				summary: {
+					good: [
+                        'UI fits with the interior',
+                        'Legible and clear screen'
+					],
+						bad: [
+                        'Dashboard screen feels cheap',
+                        'Use of color is not always consistent'
+					]
+				}
+			}
+		]
+	}
+%}
+
+
+{% extends "views/_base-view/base-view.html" %}
+{% import  "components/home-intro/_home-intro.html" as homeIntro %}
+
+{% block content %}
+
+{{ homeIntro.homeIntro(homeIntroContent) }}
+{% include "components/home-main/_home-main.html" %}
+
+{% endblock %}
