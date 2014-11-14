@@ -11,7 +11,7 @@
 			active: true
 		},
 		{
-			label: 'Over<span class="nav-text-large"> Car UI</span>',
+			label: 'About<span class="nav-text-large">&nbsp;Car UI</span>',
 			href: hrefPrefix + '/modules/views/about/about.html',
 			active: false
 		}
@@ -20,42 +20,43 @@
 
 {%
 	set content = {
-		pageUrl: 'http://www.car-ux.com/bmw-i3-nl/bmw-i3-nl.html',
-		backgroundImage: pathToAssets + 'images/bmw-i3-nl/bmw-i3-dashboard.png',
+		pageUrl: 'http://www.carui.info/bmw-i3-nl/',
+		backgroundImage: pathToAssets + 'images/bmw-i3-nl/bmw-i3-dashboard.jpg',
 		backgroundImageAlt: 'BMW i3 dashboard',
-		titleImage: pathToAssets + 'images/bmw-i3-nl/bmw-i3-small.png',
+		titleImage: pathToAssets + 'images/bmw-i3-nl/bmw-i3-small.jpg',
 		titleImageAlt: 'BMW i3 small',
 		title: 'BMW i3',
 		subtitle: 'Full Electric',
-		description: 'De eerste volledig elektrische auto die door ons is getest. BMW heeft een compleet nieuwe weg ingeslagen met de BMW i3 Full Electric. Hij ziet er niet alleen futuristisch uit, maar is het ook echt. Tijd voor ons om kennis te maken. Wij van UNITiD keken uitvoerig naar de functionaliteiten en het design van de interface op de schermen van de auto.',
-		testTagline: 'Getest op 18 juni 2014 door Hylke van Maaren, Jimmy Goedhart en Daan van Klinken',
+		description: 'The first full-electric car that we have tested. BMW embarked on a completely new path with the BMW i3 Full Electric. It doesn’t only look futuristic, it actually is. It’s time for us to get acquainted. At UNITiD we looked at both the features and the design of the interface screens in the car.',
+		testTagline: 'Tested on 18 juni 2014 by Hylke van Maaren, Jimmy Goedhart and Daan van Klinken',
 		widgetScore: {
 			score: '85',
 			scoreDetails: {
-				identiteit: {
+				identity: {
 					score: '85',
-					description: 'De blauwe lijnen die zowel op het exterieur als in het interieur zitten, komen ook in de interface terug. Dit is een mooi detail. De achtergrondverlichting van de knoppen om het gebruikerssysteem heen zijn niet blauw, maar rood. Het lettertype dat wordt gebruikt is niet hetzelfde als op de buttons. Maar dat is gelukkig niet storend.<br/><br/> Het is logisch dat de kleur blauw gebruikt wordt, maar dit had verder doorgevoerd kunnen worden in de rest van de auto. Naast blauw en oranje worden er bijna geen signaalkleuren gebruikt, terwijl die wel in de rest van het interieur gebruikt worden.',
-					visual: pathToAssets + 'images/bmw-i3-nl/bmw-i3-identiteit.png'
+					description: 'The blue lines visible on both the exterior as in the interior, are also present in the interface. This is a nice detail. Yet the backlighting of the buttons surrounding the control system are not blue, but red. The font that is being used is also not the same as on the physical buttons. Though this is not really distracting.',
+					visual: pathToAssets + 'images/bmw-i3-nl/bmw-i3-identiteit.jpg'
 				},
 				hardware: {
 					score: '75',
-					description: 'De animaties verlopen soepel, maar zijn niet altijd even duidelijk. De animaties in de interface helpen je uit te leggen waar je je bevindt in het menu, maar dit werkt niet altijd even goed. Ook schuiven er soms ineens panelen in het scherm waarvan je je afvraagt waar ze vandaan komen. Het voordeel is dat de hardware-knop altijd binnen handbereik is. Je kunt je ogen daardoor altijd op de weg en de display houden.<br/><br/> De volume knop heeft een primaire positie op het dashboard gekregen. Dat is handig.<br/><br/><b>Scherm</b><br/> Het scherm lijkt van een erg goede kwaliteit. Het is helder van kleur, scherp en werkt erg soepel. De grafische processor kan alles makkelijk berekenen. Verder is het glanzende scherm wel mooi, maar stof is er wel erg snel op te zien.',
-                    visual: pathToAssets + 'images/bmw-i3-nl/bmw-i3-hardware.png'
+					description: 'Animations run smooth on the device, but can sometimes be confusing. The animations in the interface help explain your position within the menu, but this doesn’t always come across very well. Sometimes panes sliding into the screen leave you wondering where they came from. Fortunately the hardware button is always within reach so you can keep your eyes on the road.<br/><br/> The volume dialer has also gotten a primary position on the dashboard, which is very convenient. <br/><br/><b>The screen</b><br/> The screen seems to be of very good quality. It is bright, crisp and runs very smooth. The graphical processor has no problems powering the screen. The glossy screen is very nice to look at, but dust becomes noticeable very quickly. ',
+                    visual: pathToAssets + 'images/bmw-i3-nl/bmw-i3-hardware.jpg'
                 },
-				toptaken: {
+				toptasks: {
 					score: '80',
-					description: 'Er is een hiërarchie aanwezig in de interface, maar deze houdt vaak op zodra je een applicatie  opent. Iconen zijn op meerdere plekken terug te vinden. Het zijn allemaal lijniconen, maar ze voelen niet altijd als onderdeel van dezelfde serie aan. In sommige gevallen zijn de iconen niet duidelijk en moet je opzoeken wat ze betekenen.<br/><br/>Via het hoofdmenu zijn de belangrijkste onderdelen direct te vinden. Toch is het een vrij lange lijst.<br/><br/>De shortcut-knoppen naast het klikwiel zijn handig om direct een toptaak op te pakken. Subtaken, zoals de bas instellen, zijn op meerdere plekken terug te vinden. Bijvoorbeeld in de instellingen en in een menu aan de rechterkant van het scherm.',
-                    visual: pathToAssets + 'images/bmw-i3-nl/bmw-i3-toptaken.png'
+					description: 'The interface has a clear hierarchy, though this hierarchy is lost once you open up one of the applications. Icons are being re-used in different places in the interface. They are all outlined, but they don’t always feel as being part of the same icon set. In some instances the icons are straightforward leaving you wondering what they mean.',
+                    visual: pathToAssets + 'images/bmw-i3-nl/bmw-i3-toptaken.jpg'
 				},
 				usability: {
 					score: '75',
-					description: '<b>Navigatie</b><br/>De navigatie valt tegen. Naast het feit dat de interface gecompliceerd is, moet je door enorm veel lijsten om tot een adres te komen. Een handige zoekfunctie ontbreekt. Verder wordt tijdens een route niet duidelijk hoe je daar, met een elektrische auto, goed kunt komen. En ook niet hoe laat (inclusief oplaadtijd). <br/><br/><b>Subtaken</b><br/>Het verbinden van een telefoon (tot vier stuks) gaat erg makkelijk en contacten en media zijn goed te vinden. De bas is aan te passen op een aantal plekken, zoals in de contextuele weergave van de \‘Now playing\’-modus. De \‘Now playing\’-modus zelf is tamelijk lastig te vinden. Er is helaas geen \‘always on top\’-ingang naar \‘Now playing\’ op het display. <br/><br/>De parkeersensoren geven piepjes zodra je gaat inparkeren. De indicatiepiepjes komen echter pas vrij laat.',
-                    visual: pathToAssets + 'images/bmw-i3-nl/bmw-i3-usability.png'
+					description: '<b>Navigation</b><br/>The route navigation disappoints. Apart from the fact that the interface is quite complicated, you have to go through a lot of lists to get to an address. A convenient search tool is missing. During driving it doesn’t communicate how you would get there using an electric car, as it’s not a clear A to B route above a certain distance. Or how long it would take you to get there (including charging times).<br/><br/><b>Sub-tasks</b><br/>Connecting a phone (up to four devices) is very convenient and information like contacts and media files are easy to find.<br/><br/>The bass is configurable in multiples places within the interface, for instance in the contextual view of the ‘Now playing’-mode. The ‘Now playing’-mode itself is difficult to find though. Unfortunately there is no ‘always on top’ entry point to ‘Now Playing’ on the display. 
+<br/><br/> The parking sensors produce little beeps while reverse parking. We did find that there is quite a delay before the indicator beeps are audible. ',
+                    visual: pathToAssets + 'images/bmw-i3-nl/bmw-i3-usability.jpg'
 				},
-				technologie: {
+				technology: {
 					score: '65',
-					description: 'Voor een auto die zo technologisch vooruitstrevend is, is daar weinig van terug te vinden in de interface. Het is vrijwel hetzelfde als in alle andere BMW\'s. Een zeer groot gemis is dan ook de intergratie van het electrisch rijden in de navigatie. Wel weer handig is de park-assist met camera. DIt is duidelijk af te lezen op het mooie scherm.<br/><br/><br/>Een van de voordelen van een electrische auto is dat hij alvast kan voorverwarmen als hij aan het opladebn is. Erg fijn als je in de winter \'s morgens vroeg naar je werk gaat en in een lekker voorverwarmde auto kan stappen. Dit is te bedienen via een bijgeleverde app. De app heeft dezelfde visuele uitstraling als de interface van de auto. Helaas hebben we deze niet kunnen testen, omdat je daar een BMW account voor nodig hebt waar een auto aan gekoppeld is.',
-                    visual: pathToAssets + 'images/bmw-i3-nl/bmw-i3-technologie.png'
+					description: 'For a car that is so technologically advanced, very little of this is reflected in the car interface. It is almost identical to those in other BMW’s. A big shortcoming is the omission of day-to-day use cases for electric driving in the navigation software. On the other hand, the park-assist camera is very convenient. It really shines on the beautiful large display. <br/><br/><br/>One of the advantages of an electric car is that is can be preheated while it is charging. This is great for when it’s cold outside in winter and you can step into nice preheated car before driving to work in the morning. The feature can be controlled via a supplied app. The app has the same visual appearance as the interface of the car. Unfortunately we haven’t been able to test this app as you need a BWM account for this, and an actual car that is paired to the account.',
+                    visual: pathToAssets + 'images/bmw-i3-nl/bmw-i3-technologie.jpg'
 				}
 			},
 			summary: {
@@ -64,8 +65,8 @@
 						'The control wheel is within reach'
 				],
 				bad: [
-					'UI fits with the interior and works like a charm',
-						'The control wheel is within reach'
+					'The input method',
+						'Navigation is not ready for electric driving'
 				]
 			}
 		},
@@ -78,21 +79,26 @@
 
 {%
 	set summaryContent = {
-		title: 'Het systeem vormt één geheel met het interieur van de auto',
-		text: '</br>Hoewel de i3 een extreem futuristische auto is, word je direct begroet met het bekende iDrive systeem dat in alle moderne BMW\’s te vinden is. De knoppen voelen en doen precies hetzelfde, dus als BMW-rijder voel je je gelijk huis.<br/><br/>Het gebruik van de interface voelt erg soepel aan. Hij stottert niet en je hoeft niet te wachten. Ook de hardware-bediening voelt luxe en solide aan: klikjes met het klikwiel, buttons indrukken etc. Ook werkt de interface begrijpelijk. Je kunt bijvoorbeeld gemakkelijk naar radiozenders en bepaalde frequenties opzoeken.<br/><br/><b>Navigeren in een elektrische auto</b><br/>Er zijn een hoop overbodige stappen nodig om te navigeren: Er moet (in ieder geval de eerste keer) een land gekozen worden, terwijl er met deze elektrische auto waarschijnlijk vaak binnen één land gereden wordt. Als het adres compleet is ingevuld zijn er nog twee stappen nodig om te navigeren: \'Bestemming overnemen\' en \'Routebegeleiding starten\'. <br></br>De POI-navigatie werkt erg omslachtig. Er zijn onnodig veel lagen aanwezig, en onduidelijke/te algemene defaults gebruikt. In onze test is het de bestuurder niet gelukt om naar het hele bekende POI \‘Gare du Nord\’ in Parijs te navigeren.</br></br>Bij een elektrische auto komt er een stuk planning kijken bij een lange reis. Het zou fijn zijn als de auto hier een handje bij helpt. Bij onze route (Amsterdam —> Parijs), ongeveer vier keer het bereik van de auto, deed de auto dat niet. Het systeem behandelt de navigatieopdracht als een normale opdracht en geeft de gebruiker een aankomsttijd voor als je in een keer doorrijdt. Als gebruiker moet je dus zelf handmatig laadstations opzoeken, toevoegen en berekenen wanneer het volgende laadstation nodig is. Om de aankomsttijd te bepalen moet de gebruiker ook zelf gaan rekenen met laadtijden, omrijtijden naar laadstations etc. ',
-		visual: pathToAssets + 'images/bmw-i3-nl/bmw-i3-summary-2.png'
+		title: 'The system becomes one with the interior of the car',
+		text: '<br/>Even though the i3 is an extremely futuristic car, you are immediately welcomed by the familiar iDrive system which is found in all modern BMW’s. The buttons feel and do exactly the same, so as a BMW-driver you will feel right at home.
+        <br/><br/>The use of the interface feels very smooth. It doesn’t stutter and you never have to wait. The hardware-controls feel luxurious and robust: clicks with the click wheel, button presses, etc. The interface is easy to comprehend. It is for instance very easy to search for radio stations or specific frequencies. 
+        <br/><br/><br/><b>Navigating in an electric car</b><br/>There are a lot of unnecessary steps required in order to start navigating: You first have to (at least on first-use) select a country, even though it\’s likely this electric car will mainly be driven within one country. Once you have entered the destination address there are still two steps needed in order to start navigation: \‘use as destination\’ and \‘initiate route guidance\’.
+        <br><br/>The POI-navigation is quite cumbersome. There are many unnecessary layers present and obscure, very generic defaults are being used. In our test the driver didn’t succeed to navigate to the well-known POI ‘Gare du Nord’ in Paris.
+        <br/><br/>With an electric car a long distance journey requires quite a bit of planning ahead. It would have been nice if the car would help with that. For our route (Amsterdam > Paris), about four time the range of the car, the car wasn’t able to assist on this. The system treats a long-distance route-navigation just like any other journey and shows an arrival time just as if you would drive the distance in one stretch. As a user you have to manually search for charging stations, add them to your route and calculate when you will be in need of the next charging station. To determine actual arrival time you will have to manually add up charging times, detour times to charging stations, etc.
+',
+		visual: pathToAssets + 'images/bmw-i3-nl/bmw-i3-summary-2.jpg'
 	}
 %}
 
 {%
-	set quote = 'Iconen zijn op meerdere plekken terug te vinden. Het zijn allemaal lijniconen, maar toch voelen ze niet altijd als onderdeel van dezelfde serie aan.'
+	set quote = 'Icons can be found in several places. They are all line icons, but they do not always feel like part of the same series'
 %}
 
 {%
 	set highlightContent = {
-		title: 'Kleurgebruik',
-		text: 'Het is logisch dat de kleur blauw wordt gebruikt, maar dit had verder doorgevoerd kunnen worden. Naast blauw en oranje worden er bijna geen signaalkleuren gebruikt in het systeem, terwijl je die wel in de rest van het interieur tegenkomt.',
-		visual: pathToAssets + 'images/bmw-i3-nl/bmw-i3-highlight-4.png'
+		title: 'Use of colours',
+		text: 'It makes sense that the colour blue is being used, but this could’ve been implemented further. Apart of blue and orange hardly any signal colours are being used in the system, while you do encounter other colours in the rest of the interior.',
+		visual: pathToAssets + 'images/bmw-i3-nl/bmw-i3-highlight-4.jpg'
 	}
 %}
 
@@ -102,21 +108,21 @@
 			title: 'Nissan Qashqai',
 			subTitle: 'Tekna 1.5 dCi',
 			score: '80',
-			visual: pathToAssets + 'images/related/nissan-qashqai.png',
+			visual: pathToAssets + 'images/related/nissan-qashqai.jpg',
 			url: hrefPrefix + '/modules/views/nissan-qashqai-tekna-1-5-dci-nl/nissan-qashqai-tekna-1-5-dci-nl.html'
 		},
 		{
 			title: 'Opel Insignia',
 			subTitle: 'Sports Tourer Business+ 2.0 CDTI',
 			score: '50',
-			visual: pathToAssets + 'images/related/opel-insignia-business-edition.png',
+			visual: pathToAssets + 'images/related/opel-insignia-business-edition.jpg',
 			url: hrefPrefix + '/modules/views/opel-insignia-tourer-bplus-2-0-d-nl/opel-insignia-tourer-bplus-2-0-d-nl.html'
 		},
 		{
 			title: 'Citroën C4 Picasso',
 			subTitle: 'Business Edition',
 			score: '65',
-			visual: pathToAssets + 'images/related/citroen-c4-picasso.png',
+			visual: pathToAssets + 'images/related/citroen-c4-picasso.jpg',
 			url: hrefPrefix + '/modules/views/citroen-c4-picasso-business-nl/citroen-c4-picasso-business-nl.html'
 		}
 	]
