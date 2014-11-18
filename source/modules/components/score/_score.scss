@@ -112,6 +112,12 @@
 			}
 		}
 	}
+	.score-read-more:after {
+		content: 'Read more';
+	}
+	.is-expanded .score-read-more:after {
+		content: 'Hide';
+	}
 	.score-content {
 		position: relative;
 		padding-top: 15px;
