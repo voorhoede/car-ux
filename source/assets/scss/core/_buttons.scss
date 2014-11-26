@@ -17,7 +17,7 @@
 	&:focus {
 		@include transition(color .2s ease-out, background-color .2s ease-out);
 
-		background-color: $yellow;
+		background-color: $white;
 		color: $black;
 	}
 }
