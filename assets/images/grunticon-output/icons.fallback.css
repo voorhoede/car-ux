@@ -12,7 +12,7 @@
 
 .icon-facebook:hover,
 .icon-facebook:focus,
-.icon-facebook-yellow-black { background-image: url('png/facebook-yellow-black.png'); background-repeat: no-repeat; }
+.icon-facebook-yellow-white { background-image: url('png/facebook-yellow-white.png'); background-repeat: no-repeat; }
 
 .icon-facebook { background-image: url('png/facebook.png'); background-repeat: no-repeat; }
 
@@ -28,7 +28,7 @@
 
 .icon-gplus:hover,
 .icon-gplus:focus,
-.icon-gplus-yellow-black { background-image: url('png/gplus-yellow-black.png'); background-repeat: no-repeat; }
+.icon-gplus-yellow-white { background-image: url('png/gplus-yellow-white.png'); background-repeat: no-repeat; }
 
 .icon-gplus { background-image: url('png/gplus.png'); background-repeat: no-repeat; }
 
@@ -54,7 +54,7 @@
 
 .icon-twitter:hover,
 .icon-twitter:focus,
-.icon-twitter-yellow-black { background-image: url('png/twitter-yellow-black.png'); background-repeat: no-repeat; }
+.icon-twitter-yellow-white { background-image: url('png/twitter-yellow-white.png'); background-repeat: no-repeat; }
 
 .icon-twitter { background-image: url('png/twitter.png'); background-repeat: no-repeat; }
 
