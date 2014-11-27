@@ -30,7 +30,10 @@ $nav-break-extra-small: 590px;
 		width: 76px;
 		background-color: $yellow;
 		@include min-screen($nav-break-extra-small) {
+			width: 95px;
 			height: 80px;
+		}
+		@include min-screen($break-large) {
 			width: 19%;
 			min-width: 95px;
 		}
