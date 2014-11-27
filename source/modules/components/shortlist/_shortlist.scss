@@ -78,9 +78,11 @@
 				span {
 					@include normal-font();
 
+					padding-top: 8px;
+					padding-bottom: 8px;
 					display: block;
 					font-size: 20px;
-					line-height: 2;
+					line-height: 1.2;
 				}
 			}
 
