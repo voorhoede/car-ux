@@ -16,9 +16,9 @@ function getConfiguration(grunt) {
             options: {
                 customselectors: {
                     'left-red' : ['.icon-left:hover', '.icon-left:focus'],
-					'facebook-yellow-black': ['.icon-facebook:hover', '.icon-facebook:focus'],
-					'gplus-yellow-black': ['.icon-gplus:hover', '.icon-gplus:focus'],
-					'twitter-yellow-black': ['.icon-twitter:hover', '.icon-twitter:focus']
+					'facebook-yellow-white': ['.icon-facebook:hover', '.icon-facebook:focus'],
+					'gplus-yellow-white': ['.icon-gplus:hover', '.icon-gplus:focus'],
+					'twitter-yellow-white': ['.icon-twitter:hover', '.icon-twitter:focus']
                 },
                 prefix: {
                     prefix: '.icon-'
