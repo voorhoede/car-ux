@@ -1,0 +1,148 @@
+{%
+	set navigation = [
+		{
+			label: 'Home',
+			href: hrefPrefix + '/modules/views/home/home.html',
+			active: false
+		},
+		{
+			label: 'Reviews',
+			href: hrefPrefix + '/modules/views/reviews/reviews.html',
+			active: true
+		},
+		{
+			label: 'About<span class="nav-text-large">&nbsp;Car UI</span>',
+			href: hrefPrefix + '/modules/views/about/about.html',
+			active: false
+		}
+	]
+%}
+
+{%
+	set content = {
+		pageUrl: 'http://www.carui.info/skoda-octavia/',
+		backgroundImage: pathToAssets + 'images/skoda-octavia/skoda-octavia-dashboard.png',
+		backgroundImageAlt: 'Skoda Octavia dashboard',
+		titleImage: pathToAssets + 'images/skoda-octavia/skoda-octavia-small.png',
+		titleImageAlt: 'Skoda Octavia small',
+		title: 'Skoda Octavia',
+		subtitle: '1.6 Greenline Business',
+		description: 'Skoda promises a spacious, safe, comfortable eco-giant with it\'s new Octavia. But have they been paying enough attention to the user interfaces and multimedia system? UNITiD put the car to a test.',
+		testTagline: 'Tested on September 22 2014 by Hylke van Maaren, Nick Hogendoorn and Robbert Ouwerkerk',
+		widgetScore: {
+			score: '85',
+			scoreDetails: {
+				identity: {
+					score: '68',
+					description: 'The thin accent stripes seen in the car\'s interior are also present as highlights in the interface. Skoda mainly uses various shades of grey combined with the green color from it’s logo as accent. While this feels a bit dull and does not create a luxurious feel, it’s consistent use creates a coherent feel and balance between displays and car interior.
+Display items consistently follow this scheme. Icons however, seem pretty randomly designed and randomly applied throughout the interface. Some icons are clearly obsolete, while icons are missing at places where a clarifying icon would help understanding a complex menu structure and enhance user friendliness.',
+					visual: pathToAssets + 'images/skoda-octavia/skoda-octavia-identity.png'
+				},
+				hardware: {
+					score: '72',
+					description: 'All display content is well readable despite the dull, grey displays. Even during the day when the sun shines upon the screen. The physical buttons are highlighted by small green accent lights that light up in the dark. This makes them easier to find and operate while they do not distract from driving.',
+                    visual: pathToAssets + 'images/skoda-octavia/skoda-octavia-hardware.png'
+                },
+				toptasks: {
+					score: '73',
+					description: 'The main menu clearly lists the top tasks, making them easy to access. On top of that, hardware buttons along the sides of the display allow us to directly jump to the various functions.
+The navigation system works decently. We like the autocomplete function while searching for an address and are charmed by the simple destination preview with nearby parking locations. In contrast, the search results seem quite random and the uncategorised list of Points-of-interest don\'t really help out. The map-within-map is something we really don\'t get: why would anyone want to see the same map twice on a single small screen?',
+                    visual: pathToAssets + 'images/skoda-octavia/skoda-octavia-toptasks.png'
+				},
+				usability: {
+					score: '56',
+					description: 'The overall usability of the system is fine. The media system is equipped with proximity sensors that detect if a finger is close to the display or not. This neatly hides unnecessary controls while driving and conveniently places them back once you show intention to interact with the system. We think this is a nifty little addition although it makes it unclear at times what interactions are possible without almost having to touch it. 
+<br/><br/><br/>
+<b>Inconsistency in control</b>
+At times, swiping or dragging actions are available, while on other screens only button control is supported. This makes controlling quite confusing.
+<br/><br/>
+The radio control is a good example: On screen, both the radio stations and radio frequency are displayed as a horizontal line of items. The frequency bar is controlled by dragging and tapping the bar, while the radio stations are only browsable by left and right buttons: dragging or swiping of this bar is not supported. This inconsistent mix of interaction styles, found at various places in the system, makes it hard to predict how items should be interacted with.',
+                    visual: pathToAssets + 'images/skoda-octavia/skoda-octavia-usability.png'
+				},
+				technology: {
+					score: '74',
+					description: 'The Octavia provides all the technical features one would expect on a Business edition. We are quite charmed by the various warnings and alerts that are displayed in a clear way. The proximity detection of the screen that allows decluttering is something we think more cars should integrate.',
+                    visual: pathToAssets + 'images/skoda-octavia/skoda-octavia-technology.png'
+				}
+			},
+			summary: {
+				good: [
+					'UI fits with the interior and works like a charm',
+						'The control wheel is within reach'
+				],
+				bad: [
+					'The input method',
+						'Navigation is not ready for electric driving'
+				]
+			}
+		},
+		socialSharing: {
+			twitter: 'BMW i3 Full Electric. Score: 85/100'
+		}
+	}
+%}
+
+{%
+	set summaryContent = {
+		title: 'A basic UI for a basic car',
+		text: 'As soon as you open the door it becomes clear that the dashboard is pretty standard. Despite the RVS look and glossy black accents on the dashboard, the Octavia has a dull dash.<br/>
+Fortunately, the multimedia system has some more color to it. The green from Skoda\'s logo is thoughtfully applied as highlight color and logo\'s from available radio stations are presented on screen. <br/>
+The majority of settings can be directly altered on the touchscreen. Various physical buttons surround the screen that can also provide input to the screen, allowing decent input options even while driving. The combination of input from touch and physical buttons can however feel slightly confusing at times.
+<br/><br/>
+What we really like is the proximity sensor of the screen that makes sure that the input buttons appear on screen once the hand comes close and makes them disappear once you\'re done. This keeps the screen clear of unnecessary options while driving and keeps it tidy and clean.',
+		visual: pathToAssets + 'images/skoda-octavia/skoda-octavia-summary.png'
+	}
+%}
+
+{%
+	set quote = 'The UI \'proximity detection\' is really cool, and a solution for crowded, small screens. It keeps the screen clean while driving'
+%}
+
+{%
+	set highlightContent = {
+		title: 'Climate control',
+		text: 'The climate control is operated by a combination of physical buttons and the touchscreen. This combination of controls is quite confusing and we found ourselves repeatedly tapping the touchscreen without result.',
+		visual: pathToAssets + 'images/skoda-octavia/skoda-octavia-highlight.png'
+	}
+%}
+
+{%
+	set relatedContent = [
+		{
+			title: 'Nissan Qashqai',
+			subTitle: 'Tekna 1.5 dCi',
+			score: '80',
+			visual: pathToAssets + 'images/related/nissan-qashqai.jpg',
+			url: hrefPrefix + '/modules/views/nissan-qashqai-tekna-1-5-dci-nl/nissan-qashqai-tekna-1-5-dci-nl.html'
+		},
+		{
+			title: 'Opel Insignia',
+			subTitle: 'Sports Tourer Business+ 2.0 CDTI',
+			score: '50',
+			visual: pathToAssets + 'images/related/opel-insignia-business-edition.jpg',
+			url: hrefPrefix + '/modules/views/opel-insignia-tourer-bplus-2-0-d-nl/opel-insignia-tourer-bplus-2-0-d-nl.html'
+		},
+		{
+			title: 'Citroën C4 Picasso',
+			subTitle: 'Business Edition',
+			score: '65',
+			visual: pathToAssets + 'images/related/citroen-c4-picasso.jpg',
+			url: hrefPrefix + '/modules/views/citroen-c4-picasso-business-nl/citroen-c4-picasso-business-nl.html'
+		}
+	]
+%}
+
+{% extends "views/_base-view/base-view.html" %}
+{% import  "components/detail-intro/_detail-intro.html" as intro %}
+{% import  "components/related/_related.html" as related %}
+
+{% block content %}
+	{{ intro.detailIntro(content) }}
+
+	{% include "components/detail-main/_detail-main.html" %}
+
+	{% include "components/comments/_comments.html" %}
+
+	{{ related.related(relatedContent) }}
+
+{% endblock %}
