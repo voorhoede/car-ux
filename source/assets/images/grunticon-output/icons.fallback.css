@@ -12,6 +12,8 @@
 
 .icon-facebook-white-black { background-image: url('png/facebook-white-black.png'); background-repeat: no-repeat; }
 
+.icon-facebook-yellow-black { background-image: url('png/facebook-yellow-black.png'); background-repeat: no-repeat; }
+
 .icon-facebook:hover,
 .icon-facebook:focus,
 .icon-facebook-yellow-white { background-image: url('png/facebook-yellow-white.png'); background-repeat: no-repeat; }
@@ -29,6 +31,8 @@
 .icon-gauge5 { background-image: url('png/gauge5.png'); background-repeat: no-repeat; }
 
 .icon-gplus-white-black { background-image: url('png/gplus-white-black.png'); background-repeat: no-repeat; }
+
+.icon-gplus-yellow-black { background-image: url('png/gplus-yellow-black.png'); background-repeat: no-repeat; }
 
 .icon-gplus:hover,
 .icon-gplus:focus,
@@ -57,6 +61,8 @@
 .icon-plus { background-image: url('png/plus.png'); background-repeat: no-repeat; }
 
 .icon-twitter-white-black { background-image: url('png/twitter-white-black.png'); background-repeat: no-repeat; }
+
+.icon-twitter-yellow-black { background-image: url('png/twitter-yellow-black.png'); background-repeat: no-repeat; }
 
 .icon-twitter:hover,
 .icon-twitter:focus,
