@@ -1,0 +1,27 @@
+<div class="detail-intro" data-component="detail-intro">
+  <img src="{{ item.background_image|imageSize() }}" alt="{{ item.background_image_alt_text }}"/>
+  <section class="intro-content max-width-centered" data-intro-section>
+    <article class="intro-text" data-intro-text>
+      <header>
+        <img class="intro-title-image" src="{{ item.title_image|imageSize() }}" alt="{{ item.title_image_alt_text }}" />
+        <h1 itemprop="name">
+          {{ item.title }}
+          <span class="subtitle">{{ item.sub_title }}</span>
+        </h1>
+      </header>
+      <img class="inline-visual" src="{{  }}" alt="{{  }}" />
+      <p itemprop="description">
+        {{ item.description }}
+      </p>
+    </article>
+    <div class="widget-score-block">
+      
+    </div>
+    <aside class="social-buttons" data-social-buttons>
+      <p>Share this test on</p>
+      <a target="_blank" href="#">Facebook</a>
+      <a target="_blank" href="#">Twitter</a>
+      <a target="_blank" href="#">Google Plus</a>
+    </aside>
+  </section>
+</div>
