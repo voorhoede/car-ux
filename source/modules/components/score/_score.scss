@@ -127,7 +127,7 @@
 			padding-right: 5em;
 			&.has-visual {
 				padding-right: 2em;
-				p {
+				.score-description {
 					width: 50%;
 				}
 				.score-content-visual {
@@ -188,12 +188,15 @@
 		width: 50px;
 		height: 50px;
 	}
-	.score-content p {
+	.score-content .score-description {
 		margin: 0;
 		 @include min-screen($break-medium) {
 			 display: inline-block;
-			 vertical-align: top;
 			 width: 75%;
+
+			 p:first-child {
+			 	margin-top: 0;
+			 }
 		 }
 	 }
 	.is-expandible .score-content {

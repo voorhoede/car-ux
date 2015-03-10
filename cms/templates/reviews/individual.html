@@ -81,6 +81,10 @@
         {{ item.description }}
       </li>
       <li>
+        <strong>tagline: </strong>
+        {{ item.tagline }}
+      </li>
+      <li>
         <strong>twitter: </strong>
         {{ item.twitter }}
       </li>
@@ -106,8 +110,14 @@
               {{ row.score }}
             </li>
             <li>
-              <strong>WYSIWYG text: </strong>
-              {{ row.wysiwyg_text|safe }}
+              <strong>description: </strong>
+              {{ row.description|safe }}
+            </li>
+            <li>
+              <strong>Image: </strong>
+              {# You can pull out a lot more information from the image property. Info here: #}
+                {# http://www.webhook.com/docs/widget-template-reference/#image #}
+                <img src="{{ row.image|imageSize(200) }}" />
             </li>
         {% endfor %}
         </ul>
