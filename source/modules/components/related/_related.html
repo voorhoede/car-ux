@@ -1,14 +1,14 @@
-{% macro related(content) %}
+{% macro related(item) %}
 <!-- related -->
 <div class="related" data-component="related">
 	<section class="max-width-centered">
 		<h1>RELATED TESTS</h1>
-		{% for product in content %}<!--
+		{% for review in item.related_reviews %}<!--
 		--><a class="related-product" href="{{ product.url }}">
-			<img src="{{ product.visual }}" alt="{{ product.title  + ' - ' + product.subTitle }}" />
+			<img src="{{ item.pathToUploads }}{{ review.visual.url }}" alt="{{ review.title  + ' - ' + product.subTitle }}" />
 			<div class="related-title" data-equal-height>
-				<h2>{{ product.title }}<span>{{ product.subTitle }}</span></h2>
-				<span class="related-score">{{ product.score }}</span>
+				<h2>{{ review.title }}<span>{{ review.sub_title }}</span></h2>
+				<span class="related-score">{{ review.score }}</span>
 			</div>
 		</a><!--
 		-->{% endfor %}
@@ -43,4 +43,4 @@
 	]
 %}
 
-{{ related(relatedContent) }}
+{{ related(item) }}
