@@ -1,13 +1,13 @@
-{% macro highlightBlock(content) %}
+{% macro highlightBlock(item) %}
 <!-- highlight -->
 <div class="highlight" data-component="highlight">
 	<section class="max-width-centered">
 		<h1>REMARKABLE</h1>
 		<div class="highlight-content">
-			<img src="{{ content.visual }}" alt="{{ content.title }}"/>
+			<img src="{{ item.pathToUploads }}{{ item.highlight_image.url }}" alt="{{ item.highlight_title }}"/>
 			<div class="highlight-text">
-				<h2>{{ content.title }}</h2>
-				<p>{{ content.text }}</p>
+				<h2>{{ item.highlight_title }}</h2>
+				<p>{{ item.highlight_text }}</p>
 			</div>
 		</div>
 	</section>
@@ -23,4 +23,4 @@
 	}
 %}
 
-{{ highlightBlock(highlightContent) }}
+{{ highlightBlock(item) }}

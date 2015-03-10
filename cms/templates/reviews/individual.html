@@ -160,5 +160,19 @@
         <strong>quote: </strong>
         {{ item.quote }}
       </li>
+      <li>
+        <strong>highlight title: </strong>
+        {{ item.highlight_title }}
+      </li>
+      <li>
+        <strong>highlight text: </strong>
+        {{ item.highlight_text|safe }}
+      </li>
+      <li>
+        <strong>highlight image: </strong>
+        {# You can pull out a lot more information from the image property. Info here: #}
+        {# http://www.webhook.com/docs/widget-template-reference/#image #}
+        <img src="{{ item.highlight_image|imageSize(200) }}" />
+      </li>
   </ul>
 {% endblock %}

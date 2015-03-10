@@ -9,7 +9,7 @@
 	{{ quoteBlock.quoteBlock(item) }}
 
 	{% import  "components/highlight/_highlight.html" as highlight %}
-	{{ highlight.highlightBlock(highlightContent) }}
+	{{ highlight.highlightBlock(item) }}
 
 	{% import "components/score/_score.html" as score %}
 	{{ score.scoreExpandible(content) }}
