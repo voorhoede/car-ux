@@ -13,6 +13,7 @@ module.exports = function (grunt) {
 
 			mode = mode || 'distribution';
 			var webRoot = '../../../';
+			var webhookUploads = 'http://car-ux.webhook.org';
 
 			var pkg = grunt.config('pkg');
             var file = grunt.file;
@@ -37,6 +38,7 @@ module.exports = function (grunt) {
                     'project': project,
 					'webRoot': webRoot,
 					'pathToAssets': pathToAssets,
+					'pathToUploads': webhookUploads,
 					'hrefPrefix': hrefPrefix,
 					'pathToStubs': webRoot + 'stubs/',
 					'mode': mode
@@ -62,16 +64,21 @@ module.exports = function (grunt) {
 					//hrefPrefix = '/car-ux';
 				}
 
+				var filenameJson = 'source/modules/views/' + name + '/' + name + '.json';
+				var item = grunt.file.exists(filenameJson) ? grunt.file.readJSON(filenameJson) : {};
+				item.pathToUploads = webhookUploads;
 				var html = template.render({
 					'webRoot': webRoot,
 					'name': name,
 					'project': project,
 					'pathToAssets': pathToAssets,
+					'pathToUploads': webhookUploads,
 					'hrefPrefix': hrefPrefix,
 					'pathToGuide': './',
 					'pathToStubs': webRoot + 'stubs/',
 					'mode': mode,
-                    'intro': intro
+                    'intro': intro,
+                    'item': item
 
 				});
 				grunt.file.write(viewsDir + filename, html);

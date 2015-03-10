@@ -1,27 +1,126 @@
-<div class="detail-intro" data-component="detail-intro">
-  <img src="{{ item.background_image|imageSize() }}" alt="{{ item.background_image_alt_text }}"/>
-  <section class="intro-content max-width-centered" data-intro-section>
-    <article class="intro-text" data-intro-text>
-      <header>
-        <img class="intro-title-image" src="{{ item.title_image|imageSize() }}" alt="{{ item.title_image_alt_text }}" />
-        <h1 itemprop="name">
-          {{ item.title }}
-          <span class="subtitle">{{ item.sub_title }}</span>
-        </h1>
-      </header>
-      <img class="inline-visual" src="{{  }}" alt="{{  }}" />
-      <p itemprop="description">
+{# ------------------------------------------------------- #}
+{# INDIVIDUAL VIEW FOR EACH reviews #}
+{# This page can use any data from http:localhost:2000/cms/#/form/reviews/ #}
+{# Webhook uses the SWIG.js (like Djagno/Twig) templating system. Their documentation is here: #}
+{# http://paularmstrong.github.io/swig/docs/tags/ #}
+{# Learn about calling data into Webhook pages here: #}
+{# http://www.webhook.com/docs/template-rules-and-filters/ #}
+{# ------------------------------------------------------- #}
+{# Confused what extends and blocks do? Watch a primer: #}
+{# http://www.webhook.com/docs/template-inheritance-blocks/ #}
+{% extends "templates/partials/base.html" %}
+{# This sets our page <title>. It will append this reviews's name to the site title defined in base.html #}
+{% block title %}{% parent %} - {{ item.name }}{% endblock %}
+{% block content %}
+  <p><a href="{{ url('reviews') }}">View a list of all reviews</a></p>
+  <h1>{{ item.name }}</h1>
+  <ul>
+      <li>
+        <strong>Name: </strong>
+        {{ item.name }}
+      </li>
+      <li>
+        <strong>Create Date: </strong>
+        {# Format the date. You can use PHP's date function to format as needed. http://php.net/manual/en/function.date.php #}
+        {{ item.create_date|date('F d Y') }}
+      </li>
+      <li>
+        <strong>Last Updated: </strong>
+        {# Format the date. You can use PHP's date function to format as needed. http://php.net/manual/en/function.date.php #}
+        {{ item.last_updated|date('F d Y') }}
+      </li>
+      <li>
+        <strong>Publish Date: </strong>
+        {# Format the date. You can use PHP's date function to format as needed. http://php.net/manual/en/function.date.php #}
+        {{ item.publish_date|date('F d Y') }}
+      </li>
+      <li>
+        <strong>Preview URL: </strong>
+        {{ item.preview_url }}
+      </li>
+      <li>
+        <strong>Slug: </strong>
+        {{ item.slug }}
+      </li>
+      <li>
+        <strong>background image: </strong>
+        {# You can pull out a lot more information from the image property. Info here: #}
+        {# http://www.webhook.com/docs/widget-template-reference/#image #}
+        <img src="{{ item.background_image|imageSize(200) }}" />
+      </li>
+      <li>
+        <strong>background image alt text: </strong>
+        {{ item.background_image_alt_text }}
+      </li>
+      <li>
+        <strong>title image: </strong>
+        {# You can pull out a lot more information from the image property. Info here: #}
+        {# http://www.webhook.com/docs/widget-template-reference/#image #}
+        <img src="{{ item.title_image|imageSize(200) }}" />
+      </li>
+      <li>
+        <strong>title image alt text: </strong>
+        {{ item.title_image_alt_text }}
+      </li>
+      <li>
+        <strong>title: </strong>
+        {{ item.title }}
+      </li>
+      <li>
+        <strong>sub title: </strong>
+        {{ item.sub_title }}
+      </li>
+      <li>
+        <strong>description: </strong>
         {{ item.description }}
-      </p>
-    </article>
-    <div class="widget-score-block">
-      
-    </div>
-    <aside class="social-buttons" data-social-buttons>
-      <p>Share this test on</p>
-      <a target="_blank" href="#">Facebook</a>
-      <a target="_blank" href="#">Twitter</a>
-      <a target="_blank" href="#">Google Plus</a>
-    </aside>
-  </section>
-</div>
+      </li>
+      <li>
+        <strong>score: </strong>
+        {{ item.score }}
+      </li>
+      <li>
+        <strong>widget score: </strong>
+        {# Loop of your Repeatable Form items. Remember, you can sort the order in your CMS if you need. #}
+        <ul>
+        {% for row in item.widget_score %}
+            <li>
+              <strong>name: </strong>
+              {{ row.name }}
+            </li>
+            <li>
+              <strong>score: </strong>
+              {{ row.score }}
+            </li>
+            <li>
+              <strong>WYSIWYG text: </strong>
+              {{ row.wysiwyg_text|safe }}
+            </li>
+        {% endfor %}
+        </ul>
+      </li>
+      <li>
+        <strong>Positive points: </strong>
+        {# Loop of your Repeatable Form items. Remember, you can sort the order in your CMS if you need. #}
+        <ul>
+        {% for row in item.positive_points %}
+            <li>
+              <strong>point: </strong>
+              {{ row.point }}
+            </li>
+        {% endfor %}
+        </ul>
+      </li>
+      <li>
+        <strong>Negative points: </strong>
+        {# Loop of your Repeatable Form items. Remember, you can sort the order in your CMS if you need. #}
+        <ul>
+        {% for row in item.negative_points %}
+            <li>
+              <strong>point: </strong>
+              {{ row.point }}
+            </li>
+        {% endfor %}
+        </ul>
+      </li>
+  </ul>
+{% endblock %}

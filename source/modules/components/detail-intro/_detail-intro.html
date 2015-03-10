@@ -1,4 +1,4 @@
-{% macro detailIntro(content) %}
+{% macro detailIntro(content, item) %}
 {% import "components/widget-score/_widget-score.html" as widgetScore %}
 <!-- intro -->
 <div class="{% if content.widgetScore %}detail-intro{% else %}detail-intro-text{% endif %}" data-component="{% if content.widgetScore %}detail-intro{% else %}detail-intro-text{% endif %}">
@@ -6,12 +6,12 @@
 	<section class="intro-content max-width-centered" data-intro-section>
 		<article class="intro-text" data-intro-text>
 			<header>
-				{% if content.widgetScore %}
-				<img class="intro-title-image" src="{{ content.titleImage }}" alt="{{ content.titleImageAlt }}" />
+				{% if item.widget_score %}
+				<img class="intro-title-image" src="{{ item.pathToUploads }}{{ item.title_image.url }}" alt="{{ item.title_image_alt_text }}" />
 				{% endif %}
 				<h1 itemprop="name">
-					{{ content.title }}
-					<span class="subtitle">{{ content.subtitle }}</span>
+					{{ item.title }}
+					<span class="subtitle">{{ item.sub_title }}</span>
 				</h1>
 			</header>
 			{% if content.inlineVisual %}
@@ -20,9 +20,9 @@
 			<p itemprop="description">
 				{{ content.description }}
 			</p>
-		</article>{% if content.widgetScore %}<!--
+		</article>{% if item.widget_score %}<!--
 		--><div class="widget-score-block">
-			{{ widgetScore.widgetScore(content) }}
+			{{ widgetScore.widgetScore(content, item) }}
 		</div><!--
 		--><aside class="social-buttons" data-social-buttons>
 			<p>Share this test on</p>
