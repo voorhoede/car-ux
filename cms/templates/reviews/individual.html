@@ -71,8 +71,18 @@
         {{ item.sub_title }}
       </li>
       <li>
+        <strong>Inline visual: </strong>
+        {# You can pull out a lot more information from the image property. Info here: #}
+        {# http://www.webhook.com/docs/widget-template-reference/#image #}
+        <img src="{{ item.inline_visual|imageSize(200) }}" />
+      </li>
+      <li>
         <strong>description: </strong>
         {{ item.description }}
+      </li>
+      <li>
+        <strong>Twitter: </strong>
+        {{ item.twitter }}
       </li>
       <li>
         <strong>score: </strong>

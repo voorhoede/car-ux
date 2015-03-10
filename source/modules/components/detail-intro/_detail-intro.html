@@ -1,8 +1,8 @@
-{% macro detailIntro(content, item) %}
+{% macro detailIntro(item) %}
 {% import "components/widget-score/_widget-score.html" as widgetScore %}
 <!-- intro -->
-<div class="{% if content.widgetScore %}detail-intro{% else %}detail-intro-text{% endif %}" data-component="{% if content.widgetScore %}detail-intro{% else %}detail-intro-text{% endif %}">
-	<img itemprop="image" class="intro-background" src="{{ content.backgroundImage }}" alt="{{ content.backgroundImageAlt }}" />
+<div class="{% if item.widget_score %}detail-intro{% else %}detail-intro-text{% endif %}" data-component="{% if item.widget_score %}detail-intro{% else %}detail-intro-text{% endif %}">
+	<img itemprop="image" class="intro-background" src="{{ item.pathToUploads }}{{ item.background_image.url }}" alt="{{ item.background_image_alt_text }}" />
 	<section class="intro-content max-width-centered" data-intro-section>
 		<article class="intro-text" data-intro-text>
 			<header>
@@ -14,11 +14,11 @@
 					<span class="subtitle">{{ item.sub_title }}</span>
 				</h1>
 			</header>
-			{% if content.inlineVisual %}
-			<img class="inline-visual" src="{{ content.inlineVisual }}" alt="{{ content.title }}" />
+			{% if item.inline_visual %}
+			<img class="inline-visual" src="{{ item.pathToUploads }}{{ item.inline_visual.url }}" alt="{{ item.title }}" />
 			{% endif %}
 			<p itemprop="description">
-				{{ content.description }}
+				{{ item.description }}
 			</p>
 		</article>{% if item.widget_score %}<!--
 		--><div class="widget-score-block">
@@ -26,9 +26,9 @@
 		</div><!--
 		--><aside class="social-buttons" data-social-buttons>
 			<p>Share this test on</p>
-			<a target="_blank" href="http://www.facebook.com/sharer.php?s=100&amp;p[url]={{ content.pageUrl | urlencode }}&amp;p[title]=Car%20UI%20-%20{{ content.title }}%20{{ content.subtitle }}&amp;p[summary]={{ content.description | urlencode }}" class="social-button icon-facebook" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=368,width=600');return false;">Facebook</a>
-			<a target="_blank" href="http://twitter.com/share?text=Car UI - Review: {{ content.socialSharing.twitter | urlencode }}&amp;url={{ content.pageUrl | urlencode }}" class="social-button icon-twitter" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=438,width=600');return false;">Twitter</a>
-			<a target="_blank" class="social-button icon-gplus" href="https://plus.google.com/share?url={{ content.pageUrl }}" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;">Google Plus</a>
+			<a target="_blank" href="http://www.facebook.com/sharer.php?s=100&amp;p[url]={{ item.url | urlencode }}&amp;p[title]=Car%20UI%20-%20{{ item.title }}%20{{ item.sub_title }}&amp;p[summary]={{ item.description | urlencode }}" class="social-button icon-facebook" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=368,width=600');return false;">Facebook</a>
+			<a target="_blank" href="http://twitter.com/share?text=Car UI - Review: {{ item.twitter | urlencode }}&amp;url={{ item.url | urlencode }}" class="social-button icon-twitter" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=438,width=600');return false;">Twitter</a>
+			<a target="_blank" class="social-button icon-gplus" href="https://plus.google.com/share?url={{ item.url }}" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;">Google Plus</a>
 		</aside>{% endif %}
 	</section>
 </div>
