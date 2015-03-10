@@ -3,7 +3,7 @@
 	<span data-placeholder>&nbsp;</span>
 
 	{% import  "components/summary/_summary.html" as summaryBlock %}
-	{{ summaryBlock.summaryBlock(summaryContent) }}
+	{{ summaryBlock.summaryBlock(item) }}
 
 	{% import  "components/quote/_quote.html" as quoteBlock %}
 	{{ quoteBlock.quoteBlock(quote) }}

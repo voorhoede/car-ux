@@ -81,7 +81,7 @@
         {{ item.description }}
       </li>
       <li>
-        <strong>Twitter: </strong>
+        <strong>twitter: </strong>
         {{ item.twitter }}
       </li>
       <li>
@@ -89,7 +89,7 @@
         {{ item.score }}
       </li>
       <li>
-        <strong>Gauge score: </strong>
+        <strong>gauge score: </strong>
         {{ item.gauge_score }}
       </li>
       <li>
@@ -113,7 +113,7 @@
         </ul>
       </li>
       <li>
-        <strong>Positive points: </strong>
+        <strong>positive points: </strong>
         {# Loop of your Repeatable Form items. Remember, you can sort the order in your CMS if you need. #}
         <ul>
         {% for row in item.positive_points %}
@@ -125,7 +125,7 @@
         </ul>
       </li>
       <li>
-        <strong>Negative points: </strong>
+        <strong>negative points: </strong>
         {# Loop of your Repeatable Form items. Remember, you can sort the order in your CMS if you need. #}
         <ul>
         {% for row in item.negative_points %}
@@ -135,6 +135,26 @@
             </li>
         {% endfor %}
         </ul>
+      </li>
+      <li>
+        <strong>summary title: </strong>
+        {{ item.summary_title }}
+      </li>
+      <li>
+        <strong>summary text: </strong>
+        {{ item.summary_text|safe }}
+      </li>
+      <li>
+        <strong>summary visual: </strong>
+        {# You can pull out a lot more information from the image property. Info here: #}
+        {# http://www.webhook.com/docs/widget-template-reference/#image #}
+        <img src="{{ item.summary_visual|imageSize(200) }}" />
+      </li>
+      <li>
+        <strong>summary inline visual: </strong>
+        {# You can pull out a lot more information from the image property. Info here: #}
+        {# http://www.webhook.com/docs/widget-template-reference/#image #}
+        <img src="{{ item.summary_inline_visual|imageSize(200) }}" />
       </li>
   </ul>
 {% endblock %}

@@ -1,4 +1,4 @@
-{% macro summaryBlock(content, visualOnBottom = true) %}
+{% macro summaryBlock(item, visualOnBottom = true) %}
 <!-- summary -->
 <div class="summary" data-component="summary">
 	<section class="max-width-centered">
@@ -7,17 +7,17 @@
 		{% endif %}
 		<div class="summary-content">
 			{% if visualOnBottom == false %}
-			<img src="{{ content.visual }}" alt="{{ content.title }}"/>
+			<img src="{{ item.pathToUploads }}{{ item.summary_visual.url }}" alt="{{ item.summary_title }}"/>
 			{% endif %}
 			<div class="summary-text">
-				<h2>{{ content.title }}</h2>
-				{% if content.inlineVisual %}
-				<img class="inline-visual" src="{{ content.inlineVisual }}" alt="{{ content.title }}" />
+				<h2>{{ item.summary_title }}</h2>
+				{% if item.summary_inline_visual %}
+				<img class="inline-visual" src="{{ item.pathToUploads }}{{ item.summary_inline_visual.url }}" alt="{{ item.summary_title }}" />
 				{% endif %}
-				<p>{{ content.text }}</p>
+				<p>{{ item.summary_text }}</p>
 			</div>
 			{% if visualOnBottom %}
-			<img src="{{ content.visual }}" alt="{{ content.title }}"/>
+			<img src="{{ item.pathToUploads }}{{ item.summary_visual.url }}" alt="{{ item.summary_title }}"/>
 			{% endif %}
 		</div>
 	</section>
@@ -36,4 +36,4 @@
 		inlineVisual: pathToAssets + 'images/about/1.jpg'
 	}
 %}
-{{ summaryBlock(summaryContent) }}
+{{ summaryBlock(item) }}
