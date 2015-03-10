@@ -156,5 +156,9 @@
         {# http://www.webhook.com/docs/widget-template-reference/#image #}
         <img src="{{ item.summary_inline_visual|imageSize(200) }}" />
       </li>
+      <li>
+        <strong>quote: </strong>
+        {{ item.quote }}
+      </li>
   </ul>
 {% endblock %}
