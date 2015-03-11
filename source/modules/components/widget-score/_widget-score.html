@@ -10,7 +10,7 @@
 		<ul>
 			{% for widget_score in item.widget_score %}
 			<li>
-				<a href="#{{ property }}" tabindex="-1">
+				<a href="#{{ widget_score.name }}" tabindex="-1">
 					<span class="label">{{ widget_score.name }}</span>
 					<span class="value">{{ widget_score.score }}</span>
 				</a>
