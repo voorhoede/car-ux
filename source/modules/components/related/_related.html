@@ -3,7 +3,7 @@
 <div class="related" data-component="related">
 	<section class="max-width-centered">
 		<h1>RELATED TESTS</h1>
-		{% for review in item.related_reviews %}<!--
+		{% for review in item.related_review %}<!--
 		--><a class="related-product" href="{{ product.url }}">
 			<img src="{{ item.pathToUploads }}{{ review.visual.url }}" alt="{{ review.title  + ' - ' + product.subTitle }}" />
 			<div class="related-title" data-equal-height>
