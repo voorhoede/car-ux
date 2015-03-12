@@ -14,7 +14,7 @@
 				{% if item.summary_inline_visual %}
 				<img class="inline-visual" src="{{ item.pathToUploads }}{{ item.summary_inline_visual.url }}" alt="{{ item.summary_title }}" />
 				{% endif %}
-				<p>{{ item.summary_text }}</p>
+				{{ item.summary_text }}
 			</div>
 			{% if visualOnBottom %}
 			<img src="{{ item.pathToUploads }}{{ item.summary_visual.url }}" alt="{{ item.summary_title }}"/>
