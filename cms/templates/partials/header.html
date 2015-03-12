@@ -1,4 +1,18 @@
-{# Simple search form, remove from search index #}
-<form action="/search-results/" method="get" data-search-index="false">
- <input type="text" name="q" placeholder="Search" id="tipue_search_input" />
-</form>
+<header class="header" data-component="header">
+	<div class="header-content">
+		<div class="logo-area">
+			<a href="/" class="logo icon-car-ux-logo">CAR UI</a>
+		</div>
+		<nav>
+			<ul>
+				{% for item in cms.navigation.navigation %}
+				<li class="{% if item.active %} active-nav-item {% endif %}">
+					<a href="{{ item.href }}">{{ item.navigation_item }}</a>
+				</li>
+				{% endfor %}
+			</ul>
+		</nav>
+	</div>
+	<div class="header-background-left"></div>
+	<div class="header-background-right"></div>
+</header>
