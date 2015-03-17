@@ -1,7 +1,8 @@
 {% extends "templates/_base/base.html" %}
+{% import "components/shortlist/_shortlist.html" as shortlist %}
 
 {% block content %}
 <section class="view-reviews">
-  {% include "components/shortlist/_shortlist.html" %}
+  {{ shortlist.list("Reviews", cms.reviews) }}
 </section>
 {% endblock %}

@@ -1,11 +1,10 @@
-{% macro related(item) %}
 <!-- related -->
 <div class="related" data-component="related">
 	<section class="max-width-centered">
 		<h1>RELATED TESTS</h1>
-		{% for review in item.related_review %}<!--
+		{% for review in cms.about.related_review %}<!--
 		--><a class="related-product" href="{{ product.url }}">
-			<img src="{{ item.pathToUploads }}{{ review.visual.url }}" alt="{{ review.title  + ' - ' + product.subTitle }}" />
+			<img src="{{ review.related_visual.url }}" alt="{{ review.title  + ' - ' + product.subTitle }}" />
 			<div class="related-title" data-equal-height>
 				<h2>{{ review.title }}<span>{{ review.sub_title }}</span></h2>
 				<span class="related-score">{{ review.score }}</span>
@@ -15,32 +14,3 @@
 	</section>
 </div>
 <!-- /related -->
-{% endmacro %}
-
-{%
-	set relatedContent = [
-		{
-			title: 'Nissan Quashqai Tekna Opique',
-			subTitle: 'Si4 4WD Dynamic',
-			score: '4.5',
-			visual: pathToAssets + 'images/related/nissan-quashqai-tekna-opique.jpg',
-			url: '#'
-		},
-		{
-			title: 'Opel Insignia',
-			subTitle: 'Business Edition',
-			score: '2',
-			visual: pathToAssets + 'images/related/opel-insignia-business-edition.jpg',
-			url: '#'
-		},
-		{
-			title: 'Citroën C4 Picasso',
-			subTitle: 'Business Edition',
-			score: '5.5',
-			visual: pathToAssets + 'images/related/citroen-c4-picasso.jpg',
-			url: '#'
-		}
-	]
-%}
-
-{{ related(item) }}

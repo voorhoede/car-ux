@@ -76,7 +76,7 @@ module.exports = function(grunt) {
         tasks: ['build-static']
       },
       'wh-watch': {
-        files: ['pages/**/*', 'templates/**/*'],
+        files: ['components/**/*', 'pages/**/*', 'templates/**/*'],
         tasks: ['build']
       }
     },
