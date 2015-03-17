@@ -1,0 +1,31 @@
+<!-- intro -->
+{% import "components/widget-score/_widget-score.html" as widgetScore %}
+<div class="{% if item.widget_score %}detail-intro{% else %}detail-intro-text{% endif %}" data-component="{% if item.widget_score %}detail-intro{% else %}detail-intro-text{% endif %}">
+	<img itemprop="image" class="intro-background" src="{{ item.pathToUploads }}{{ item.background_image.url }}" alt="{{ item.background_image_alt_text }}" />
+	<section class="intro-content max-width-centered" data-intro-section>
+		<article class="intro-text" data-intro-text>
+			<header>
+				{% if item.widget_score %}
+				<img class="intro-title-image" src="{{ item.pathToUploads }}{{ item.title_image.url }}" alt="{{ item.title_image_alt_text }}" />
+				{% endif %}
+				<h1 itemprop="name">
+					{{ item.title }}
+					<span class="subtitle">{{ item.sub_title }}</span>
+				</h1>
+			</header>
+			{% if item.inline_visual %}
+			<img class="inline-visual" src="{{ item.pathToUploads }}{{ item.inline_visual.url }}" alt="{{ item.title }}" />
+			{% endif %}
+			<p itemprop="description">
+				{{ item.description }}
+			</p>
+		</article>{% if item.widget_score %}<!--
+		--><div class="widget-score-block">
+			{{ widgetScore.widgetScore(item) }}
+		</div><!--
+		--><aside class="social-buttons" data-social-buttons>
+			<p>Share this test on</p>
+		</aside>{% endif %}
+	</section>
+</div>
+<!-- /intro -->
