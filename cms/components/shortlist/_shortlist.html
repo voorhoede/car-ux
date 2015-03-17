@@ -1,0 +1,38 @@
+<!-- shortlist -->
+<div class="shortlist" data-component="shortlist">
+	<section class="max-width-centered">
+		<h1>{{ content.mainTitle }}</h1>
+		{% for review in cms.reviews %}
+      	<a href="{{ url(object) }}" class="shortlist-product">
+        	<img src="{{ review.summary_visual.url }}" alt="{{ review.title + ' ' + review.subTitle }}"/>
+
+	        <div class="equalHeight" data-equal-height>
+				<div class="shortlist-title">
+		          <h2>
+		            {{ review.title }}
+		            <span>{{ review.sub_title }}</span>
+		          </h2>
+		          <span class="shortlist-score">{{ review.score }}</span>
+		        </div>
+		        <div class="shortlist-summary">
+					<hr/>
+					<ul>
+					{% for points in review.positive_points %}
+						<li><span class="icon icon-plus"></span>{{ points.point }}</li>
+					{% endfor %}
+					</ul>
+					<ul>
+					{% for points in review.negative_points %}
+						<li><span class="icon icon-min-red"></span>{{ points.point }}</li>
+					{% endfor %}  
+					</ul>
+					<hr>
+					<time>{{ review.date }}</time>
+	        	</div>
+	        </div>
+      	</a>
+      	{% endfor %}
+	</section>
+</div>
+<!-- /shortlist -->
+
