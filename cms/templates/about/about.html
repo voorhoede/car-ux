@@ -13,7 +13,7 @@
 					{% if cms.about.main_content_visuals %}
 					<div class="inline-visual">
 						{% for visual in cms.about.main_content_visuals %}
-						<img src="{{ visual.visual.url }}" alt="" />
+						<img src="{{ visual.visual.url }}" alt="{{ visual.visual_alt_text }}" />
 						{% endfor %}
 					</div>
 					{% endif %}
@@ -26,17 +26,19 @@
 		<section class="max-width-centered">
 			<div class="summary-content">
 				{% if cms.about.content_block_visual %}
-				<img src="{{ cms.about.content_block_visual.url }}" alt=""/>
+				<img src="{{ cms.about.content_block_visual.url }}" alt="{{ cms.about.content_block_visual_alt_text }}"/>
 				{% endif %}
 				<div class="summary-text">
 					<h2>{{ cms.about.content_block_title }}</h2>
 					{% if cms.about.content_block_inline_visual %}
-					<img class="inline-visual" src="{{ cms.about.content_block_inline_visual.url }}" alt="" />
+					<img class="inline-visual" 
+						src="{{ cms.about.content_block_inline_visual.url }}" 
+						alt="{{ cms.about.content_block_inline_visual_alt_text}}" />
 					{% endif %}
 					{{ cms.about.content_block_text|safe }}
 				</div>
 				{% if cms.about.content_block_inline_visual %}
-				<img src="{{ cms.about.content_block_bottom_visual.url  }}" alt=""/>
+				<img src="{{ cms.about.content_block_bottom_visual.url  }}" alt="{{ cms.about.content_block_bottom_visual_alt_text }}"/>
 				{% endif %}	
 			</div>
 		</section>
