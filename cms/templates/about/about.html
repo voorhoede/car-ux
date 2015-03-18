@@ -1,12 +1,56 @@
 {% extends "templates/_base/base.html" %}
 {% import "components/detail-intro/_detail-intro.html" as detailIntro %}
-{% import "components/main-content/_main-content.html" as mainContent %}
 
 {% block content %}
 <div class="about">
   {{ detailIntro.detailIntro(cms.about) }}
   <section class="max-width-centered">
-    {{ mainContent.mainContent(cms.about) }}
+    <div class="text-image" data-component="text-image">
+		<section class="max-width-centered">
+			<h1>{{ cms.about.main_content_title }}</h1>
+			<div class="text-image-content">
+				<div class="text-image-block {% if not cms.about.visuals %} medium-width {% else %} half-width {% endif %}">
+					{% if cms.about.main_content_visuals %}
+					<div class="inline-visual">
+						{% for visual in cms.about.main_content_visuals %}
+						<img src="{{ visual.visual.url }}" alt="" />
+						{% endfor %}
+					</div>
+					{% endif %}
+					<p>{{ cms.about.main_content_text|safe }}</p>
+				</div>
+			</div>
+		</section>
+	</div>
+	<div class="summary" data-component="summary">
+		<section class="max-width-centered">
+			<div class="summary-content">
+				{% if cms.about.content_block_visual %}
+				<img src="{{ cms.about.content_block_visual.url }}" alt=""/>
+				{% endif %}
+				<div class="summary-text">
+					<h2>{{ cms.about.content_block_title }}</h2>
+					{% if cms.about.content_block_inline_visual %}
+					<img class="inline-visual" src="{{ cms.about.content_block_inline_visual.url }}" alt="" />
+					{% endif %}
+					{{ cms.about.content_block_text|safe }}
+				</div>
+				{% if cms.about.content_block_inline_visual %}
+				<img src="{{ cms.about.content_block_bottom_visual.url  }}" alt=""/>
+				{% endif %}	
+			</div>
+		</section>
+	</div>
+	<div class="text-image" data-component="text-image">
+		<section class="max-width-centered">
+			<h1>{{ cms.about.additional_content_title }}</h1>
+			<div class="text-image-content">
+				<div class="text-image-block medium-width">
+					<p>{{ cms.about.additional_content_text|safe }}</p>
+				</div>
+			</div>
+		</section>
+	</div>
     {% include "components/bibliography/_bibliography.html" %}
     {% include "components/related/_related.html" %}
   </section>
