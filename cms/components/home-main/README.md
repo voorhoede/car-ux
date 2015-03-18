@@ -1,1 +1,0 @@
-The home-main component is a wrapper component, made to contain other components. It has a width, background-color and padding-bottom.
