@@ -20,7 +20,7 @@ module.exports = function(grunt) {
         files: [
             {
                 expand: true,
-                cwd: 'static/images/grunticon-svgs',
+                cwd: 'source/grunticon-svgs',
                 src: ['*.svg', '*.png'],
                 dest: 'static/images/grunticon-output'
             }
@@ -43,6 +43,23 @@ module.exports = function(grunt) {
             defaultHeight: '30px'
         }
       }
+    },
+    sass: {
+      foo: {
+        options: {
+            sourcemap: true,
+            style: 'expanded'
+        },
+        files: [
+            {
+                expand: true,
+                cwd: 'source/scss',
+                src: ['main.scss'],
+                dest: 'static',
+                ext: '.css'
+            }
+        ]
+      }
     }
   });
 
@@ -51,5 +68,6 @@ module.exports = function(grunt) {
   grunt.loadTasks('tasks');
 
   grunt.loadNpmTasks('grunt-grunticon');
+  grunt.loadNpmTasks('grunt-contrib-sass');
 
 };

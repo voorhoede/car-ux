@@ -178,8 +178,9 @@ module.exports = function(grunt) {
 
   // Check if initialized properly before running all these tasks
   grunt.registerTask('default',  'Clean, Build, Start Local Server, and Watch', function() {
-    grunt.task.run('grunticon')
-    grunt.task.run('configureProxies:wh-server')
+    grunt.task.run('grunticon');
+    grunt.task.run('sass');
+    grunt.task.run('configureProxies:wh-server');
     grunt.task.run('connect:wh-server');
     grunt.task.run('build');
     grunt.task.run('concurrent:wh-concurrent');
