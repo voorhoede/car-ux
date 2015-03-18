@@ -6,7 +6,7 @@
 		<nav>
 			<ul>
 				{% for item in cms.navigation.navigation %}
-				<li {% if getCurrentUrl() == item.url %}class="active" {% endif %}>
+				<li {% if getCurrentUrl() == item.url %}class="active-nav-item" {% endif %}>
 					<a href="{{ item.url }}">{{ item.navigation_item }}</a>
 				</li>
 				{% endfor %}
