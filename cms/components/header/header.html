@@ -6,8 +6,8 @@
 		<nav>
 			<ul>
 				{% for item in cms.navigation.navigation %}
-				<li class="{% if item.active %} active-nav-item {% endif %}">
-					<a href="{{ item.href }}">{{ item.navigation_item }}</a>
+				<li {% if getCurrentUrl() == item.url %}class="active" {% endif %}>
+					<a href="{{ item.url }}">{{ item.navigation_item }}</a>
 				</li>
 				{% endfor %}
 			</ul>
