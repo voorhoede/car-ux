@@ -12,7 +12,7 @@
 {% endmacro %}
 
 {% macro item(review) %}
-  	<a href="{{ url(object) }}" class="shortlist-product">
+  	<a href="{{ url(review) }}" class="shortlist-product">
     	<img src="{{ review.related_visual.url }}" alt="{{ review.title + ' ' + review.subTitle }}"/>
 
         <div class="equalHeight" data-equal-height>
