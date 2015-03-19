@@ -9,15 +9,25 @@
 		<section class="max-width-centered">
 			<h1>{{ cms.about.main_content_title }}</h1>
 			<div class="text-image-content">
-				<div class="text-image-block {% if not cms.about.visuals %} medium-width {% else %} half-width {% endif %}">
-					{% if cms.about.main_content_visuals %}
+				<div class="text-image-block {% if not cms.about.main_content_visuals_top %} medium-width {% else %} half-width {% endif %}">
+					{% if cms.about.main_content_visuals_top %}
 					<div class="inline-visual">
-						{% for visual in cms.about.main_content_visuals %}
+						{% for visual in cms.about.main_content_visuals_top %}
 						<img src="{{ visual.visual.url }}" alt="{{ visual.visual_alt_text }}" />
 						{% endfor %}
 					</div>
 					{% endif %}
-					<p>{{ cms.about.main_content_text|safe }}</p>
+					<p>{{ cms.about.main_content_text_top|safe }}</p>
+				</div>
+				<div class="text-image-block {% if not cms.about.main_content_visuals_bottom %} medium-width {% else %} half-width {% endif %}">
+					{% if cms.about.main_content_visuals_bottom %}
+					<div class="inline-visual">
+						{% for visual in cms.about.main_content_visuals_bottom %}
+						<img src="{{ visual.visual.url }}" alt="{{ visual.visual_alt_text }}" />
+						{% endfor %}
+					</div>
+					{% endif %}
+					<p>{{ cms.about.main_content_text_bottom|safe }}</p>
 				</div>
 			</div>
 		</section>
@@ -36,10 +46,10 @@
 						alt="{{ cms.about.content_block_inline_visual_alt_text}}" />
 					{% endif %}
 					{{ cms.about.content_block_text|safe }}
+					{% if cms.about.content_block_inline_visual %}
+					<img src="{{ cms.about.content_block_bottom_visual.url  }}" alt="{{ cms.about.content_block_bottom_visual_alt_text }}"/>
+					{% endif %}	
 				</div>
-				{% if cms.about.content_block_inline_visual %}
-				<img src="{{ cms.about.content_block_bottom_visual.url  }}" alt="{{ cms.about.content_block_bottom_visual_alt_text }}"/>
-				{% endif %}	
 			</div>
 		</section>
 	</div>

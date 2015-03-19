@@ -78,6 +78,19 @@ module.exports = function(grunt) {
       'wh-watch': {
         files: ['components/**/*', 'pages/**/*', 'templates/**/*'],
         tasks: ['build']
+      },
+      css: {
+          files: ['source/scss/**/*.scss', 'components/**/*.scss'],
+          tasks: ['sass', 'build']
+      },
+      js: {
+          files: [
+              'source/scripts/**/*.js',
+              'components/**/*.js'
+          ],
+          tasks: [
+              'concat'
+          ]
       }
     },
 

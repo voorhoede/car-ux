@@ -66,4 +66,44 @@
 			}
 		}
 	}
+
+	ul {
+		@include box-sizing(border-box);
+		@include clearfix();
+		background-color: $light-grey;
+		list-style-type: none;
+		margin: 16px 0;
+		padding: 30px;
+			
+		li {
+			position: relative;
+			line-height: 22px;
+			margin-bottom: 15px;
+			padding-left: 30px;
+
+			&:before {
+				content: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20200%20200%22%20enable-background%3D%22new%200%200%20200%20200%22%3E%3Cpath%20d%3D%22M190%2077.5h-67.5V10h-45v67.5H10v45h67.5v67.4h45v-67.4H190z%22%2F%3E%3C%2Fsvg%3E');
+				position: absolute;
+				left: 0;
+				top: 1px;
+				margin-right: 20px;
+				width: 19px;
+  				height: 19px;
+			}
+		}
+	}
+
+	.half-width ul {
+		@include min-screen($break-small) {
+			float: left;
+			width: 50%;
+		}
+	}
+
+	.medium-width ul {
+		@include min-screen($break-small) {
+			float: left;
+			width: 75%;
+		}
+	}
 }
