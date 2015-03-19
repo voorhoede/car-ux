@@ -20,7 +20,7 @@ module.exports = function(grunt) {
         files: [
             {
                 expand: true,
-                cwd: 'assets/grunticon-svgs',
+                cwd: 'assets/images/grunticon-svgs',
                 src: ['*.svg', '*.png'],
                 dest: 'static/images/grunticon-output'
             }
@@ -45,7 +45,7 @@ module.exports = function(grunt) {
       }
     },
     copy: {
-      foo: {
+      images: {
         expand: true,
         cwd: 'assets/images/',
         src: ['**'],
@@ -54,10 +54,6 @@ module.exports = function(grunt) {
     },
     sass: {
       foo: {
-        options: {
-            sourcemap: true,
-            style: 'expanded'
-        },
         files: [
             {
                 expand: true,
@@ -71,7 +67,7 @@ module.exports = function(grunt) {
     },
     concat: {
       basic: {
-        src: ['assets/scripts/**/*.js', 'assets/scripts/*.js', 'components/**/*.js', 'templates/**/*.js'],
+        src: ['assets/scripts/**/*.js', 'components/**/*.js', 'templates/**/*.js'],
         dest: 'static/javascript/main.js'
       }
     }
