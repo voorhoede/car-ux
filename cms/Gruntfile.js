@@ -60,6 +60,12 @@ module.exports = function(grunt) {
             }
         ]
       }
+    },
+    concat: {
+      basic: {
+        src: ['source/scripts/**/*.js', 'source/scripts/*.js', 'components/**/*.js', 'templates/**/*.js'],
+        dest: 'static/javascript/main.js'
+      }
     }
   });
 

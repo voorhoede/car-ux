@@ -180,6 +180,7 @@ module.exports = function(grunt) {
   grunt.registerTask('default',  'Clean, Build, Start Local Server, and Watch', function() {
     grunt.task.run('grunticon');
     grunt.task.run('sass');
+    grunt.task.run('concat');
     grunt.task.run('configureProxies:wh-server');
     grunt.task.run('connect:wh-server');
     grunt.task.run('build');
