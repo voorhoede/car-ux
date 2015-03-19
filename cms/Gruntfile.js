@@ -44,6 +44,14 @@ module.exports = function(grunt) {
         }
       }
     },
+    copy: {
+      foo: {
+        expand: true,
+        cwd: 'source/images/',
+        src: ['**'],
+        dest: 'static/images/'
+      }
+    },
     sass: {
       foo: {
         options: {
@@ -55,7 +63,7 @@ module.exports = function(grunt) {
                 expand: true,
                 cwd: 'source/scss',
                 src: ['main.scss'],
-                dest: 'static',
+                dest: 'static/css',
                 ext: '.css'
             }
         ]
@@ -75,5 +83,6 @@ module.exports = function(grunt) {
 
   grunt.loadNpmTasks('grunt-grunticon');
   grunt.loadNpmTasks('grunt-contrib-sass');
+  grunt.loadNpmTasks('grunt-contrib-copy');
 
 };
