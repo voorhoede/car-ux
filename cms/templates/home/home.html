@@ -4,7 +4,9 @@
 
 {% block content %}
 <div class="home-intro" data-component="home-intro">
+  {% if cms.home.intro_background_image %}
   <img class="home-intro-background" src="{{ cms.home.intro_background_image|imageSize() }}" alt="{{ cms.home.intro_background_image_alt_text }}" />
+  {% endif %}
   <section class="home-intro-content">
     <h1 itemprop="name">
       {{ cms.home.name }}
